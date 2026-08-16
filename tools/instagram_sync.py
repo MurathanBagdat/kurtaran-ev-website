@@ -68,6 +68,25 @@ RAPID_PK = {
     "kurtaranev_kedileri": "23565664304",
 }
 
+# Değerlendirilmiş TÜM gönderilerin kalıcı hafızası (karar dahil).
+# "İlan değil" denen gönderiler kayıt üretmediği için animals.json'dan
+# bilinemez; bu dosya olmasa her çalıştırmada yeniden AI'ya giderlerdi.
+GORULEN_PATH = animals.ROOT / "tools" / "gorulen_gonderiler.json"
+
+
+def gorulenleri_yukle() -> dict:
+    if not GORULEN_PATH.exists():
+        return {}
+    try:
+        return json.loads(GORULEN_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def gorulenleri_kaydet(gorulen: dict) -> None:
+    GORULEN_PATH.write_text(json.dumps(gorulen, ensure_ascii=False, indent=2,
+                                       sort_keys=True) + "\n", encoding="utf-8")
+
 
 # ---------------------------------------------------------------------------
 # Yapılandırma
@@ -585,18 +604,25 @@ def kip_rapid(args) -> int:
         items = sorted(akis.get("items") or [], key=lambda x: x.get("taken_at") or 0,
                        reverse=True)[: args.limit]
         print(f"  {len(items)} gönderi alındı (en yeniler)")
+        gorulen = gorulenleri_yukle()
         bilinen = {(a.get("kaynak") or {}).get("gonderiId")
-                   for a in animals.load() if a.get("kaynak")}
+                   for a in animals.load() if a.get("kaynak")} | set(gorulen)
         for item in items:
             gonderi = _rapid_gonderi(item)
-            # Bilinen gönderiyi yeniden ayrıştırma (AI isteği + indirme tasarrufu).
+            # Daha önce değerlendirilen gönderiyi yeniden ayrıştırma — "ilan
+            # değil" denenler dahil (AI isteği + indirme tasarrufu).
             # --guncelle ile eski davranışa dönülür: boş alanlar tazelenir.
             if not args.guncelle and gonderi["id"] in bilinen:
-                print(f"  = zaten kayıtlı, atlandı: {gonderi['id']}")
+                print(f"  = daha önce değerlendirildi, atlandı: {gonderi['id']}")
                 continue
             kayitlar, neden = gonderiyi_isle(gonderi, tur, kullanici,
                                              fotograf_cek=not args.kuru, ai=args._ai,
                                              yayinla=not args.taslak)
+            if not args.kuru:
+                gorulen[gonderi["id"]] = {"hesap": kullanici,
+                                          "karar": neden or "ilan",
+                                          "tarih": animals.now_iso()}
+                gorulenleri_kaydet(gorulen)
             if not kayitlar:
                 print(f"  – atlandı ({neden}): {gonderi['caption'][:50]}…")
                 continue
