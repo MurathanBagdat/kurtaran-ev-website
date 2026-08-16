@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-08-16T19:49:12+00:00",
-  "sayi": 5,
+  "guncelleme": "2026-08-16T20:04:28+00:00",
+  "sayi": 8,
   "hayvanlar": [
     {
       "id": "kedi-tripod-e14378",
@@ -50,7 +50,7 @@ window.KE_DATA = {
         "tarih": null
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
-      "guncelleme": "2026-08-16T19:49:12+00:00",
+      "guncelleme": "2026-08-16T20:04:28+00:00",
       "yasMetni": "1 yaşında",
       "yasGrubu": "yetiskin",
       "arama": "tripod aşırı insan odaklı, sürekli sevilmek isteyen bir prenses. 3 bacaklı olması enerjisinden hiçbir şey kaybettirmedi, rahatlıkla merdiven çıkıp inebiliyor. 1 yaşlarında, dişi ve kısır. 3 bacaklı sevecen enerjik"
@@ -99,7 +99,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T09:19:28+00:00"
       },
       "olusturma": "2026-08-16T09:19:28+00:00",
-      "guncelleme": "2026-08-16T19:49:12+00:00",
+      "guncelleme": "2026-08-16T20:04:28+00:00",
       "yasMetni": "1 yaşında",
       "yasGrubu": "yetiskin",
       "arama": "çizi tam kıtlamalık tatlılıkta bir prenses. kendini sevdirmeye bayılır, kedi ve köpeklerle çok iyi anlaşır. en sevdiği şeylerden bir tanesi ise sürekli esneyerek yatmak. sevecen"
@@ -151,7 +151,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T05:44:00+00:00"
       },
       "olusturma": "2026-08-16T05:44:00+00:00",
-      "guncelleme": "2026-08-16T19:49:12+00:00",
+      "guncelleme": "2026-08-16T20:04:28+00:00",
       "yasMetni": "5 yaşında",
       "yasGrubu": "yetiskin",
       "arama": "dombili dombili, 5 yaşlarında, kısır erkek, şişkocuk, düşük enerjili, insan aşığı bir çocuk. şöyle sakin sakin evde oturup evde kafa dinleyecek bir köşesi olsa, dünyalar onun olur. biri onunla ilgilenince, heyecanlanıp gülücükler saçan dombili’mizin geçici / kalıcı yuvasını arıyoruz. sakin sevecen"
@@ -202,7 +202,7 @@ window.KE_DATA = {
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-08-16T19:49:12+00:00",
+      "guncelleme": "2026-08-16T20:04:28+00:00",
       "yasMetni": "5 aylık",
       "yasGrubu": "yavru",
       "arama": "minnoş çok sakin ve aşırı sevimli biri kendisi, görüp ona hayran olmamak mümkün değil. herkesle dost olabilen, çok uyumlu ve çok az oyuncu bir prenses. 5 aylık, dişi ve kısır. sakin sevecen oyuncu"
@@ -256,10 +256,165 @@ window.KE_DATA = {
         "tarih": "2026-08-14T16:12:31+00:00"
       },
       "olusturma": "2026-08-14T16:12:31+00:00",
-      "guncelleme": "2026-08-16T19:49:12+00:00",
+      "guncelleme": "2026-08-16T20:04:28+00:00",
       "yasMetni": "3,5 yaşında",
       "yasGrubu": "yetiskin",
       "arama": "lily border terrier gönüllü geçici yuva gönüllü geçici yuvamızdaki lily, 3-4 yaşlarında kısır bir kız. başlangıçta biraz ürkek ve temkinli; yüksek seslerden korkuyor ama size bir kez güvendiğinde bambaşka bir köpek oluyor. i̇nsanına çok düşkün, sevilmeye ve temas etmeye bayılıyor. sakin, uyumlu ve ev hayatına alışkın. tasmayla yürüyüşü iyi, çok uzun süre olmadığı sürece evde yalnız kalabiliyor. çocuklarla arası iyi; dışarıda köpeklerle de sorunsuz. kedisiz bir ev ona daha uygun olacaktır. lily’nin ihtiyacı sadece sabırlı, sakin ve kendini güvende hissedeceği bir yuva. size güvendiğinde kocaman bir sevgi yumağı olacak. lily’nin ömürlük yuvasını arıyoruz. ürkek sakin sevecen uyumlu"
+    },
+    {
+      "id": "kopek-coconut-582c08",
+      "tur": "kopek",
+      "isim": "Coconut",
+      "cinsiyet": "disi",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": 12,
+      "kiloKg": null,
+      "boyut": "kucuk",
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": true,
+      "kedilerleUyum": true,
+      "karakter": [
+        "sevecen",
+        "meraklı",
+        "oyuncu",
+        "sosyal"
+      ],
+      "aciklama": "Coconut 1 yaşlarında, kısır dişi, süper tatlı, kıpır kıpır ve maskot gibi bir kız. Müthiş karakteristik bir tipi var. Çok neşeli ve meraklı, sevgi dolu ve sosyal bir tip. Ev hayatına hızlı uyum sağlayabilecek uyumlu bir karakteri olan bir çocuk. Köpeğe alışık, oyuncu bir kedi olursa, kediyle de yaşamaya güzel uyum sağlayabileceğini düşünüyoruz. İkinci köpek olmaya da uygun bir karakteri var. Henüz çok genç olduğu için, evde çok uzun süre yalnız kalmayacağı bir yuva daha uygun olacaktır. Coconut'ın ömürlük yuvasını arıyoruz.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcBfsLHDpaS-0.jpg",
+        "assets/img/animals/ig-DcBfsLHDpaS-1.jpg",
+        "assets/img/animals/ig-DcBfsLHDpaS-2.jpg",
+        "assets/img/animals/ig-DcBfsLHDpaS-3.jpg",
+        "assets/img/animals/ig-DcBfsLHDpaS-4.jpg",
+        "assets/img/animals/ig-DcBfsLHDpaS-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "DcBfsLHDpaS",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcBfsLHDpaS/",
+        "tarih": "2026-08-14T14:09:53+00:00"
+      },
+      "olusturma": "2026-08-14T14:09:53+00:00",
+      "guncelleme": "2026-08-16T20:04:28+00:00",
+      "yasMetni": "1 yaşında",
+      "yasGrubu": "yetiskin",
+      "arama": "coconut coconut 1 yaşlarında, kısır dişi, süper tatlı, kıpır kıpır ve maskot gibi bir kız. müthiş karakteristik bir tipi var. çok neşeli ve meraklı, sevgi dolu ve sosyal bir tip. ev hayatına hızlı uyum sağlayabilecek uyumlu bir karakteri olan bir çocuk. köpeğe alışık, oyuncu bir kedi olursa, kediyle de yaşamaya güzel uyum sağlayabileceğini düşünüyoruz. i̇kinci köpek olmaya da uygun bir karakteri var. henüz çok genç olduğu için, evde çok uzun süre yalnız kalmayacağı bir yuva daha uygun olacaktır. coconut'ın ömürlük yuvasını arıyoruz. sevecen meraklı oyuncu sosyal"
+    },
+    {
+      "id": "kedi-peru-7c155c",
+      "tur": "kedi",
+      "isim": "Peru",
+      "cinsiyet": "disi",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": "Ankara Kedisi",
+      "yasAy": 12,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": false,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen",
+        "sakin"
+      ],
+      "aciklama": "Özgür ruhlu kızımız Peru, çok sevgi dolu ve aşırı sempatik bir prenses. Çok hareketli olmayan ve biraz nazlı biri ama sevilmelere doyamaz. 1 yaşında, dişi ve kısır.",
+      "fotograflar": [
+        "assets/img/animals/ig-Db-ksfzDHMf-0.jpg",
+        "assets/img/animals/ig-Db-ksfzDHMf-1.jpg",
+        "assets/img/animals/ig-Db-ksfzDHMf-2.jpg",
+        "assets/img/animals/ig-Db-ksfzDHMf-3.jpg",
+        "assets/img/animals/ig-Db-ksfzDHMf-4.jpg",
+        "assets/img/animals/ig-Db-ksfzDHMf-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "Db-ksfzDHMf",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/Db-ksfzDHMf/",
+        "tarih": "2026-08-13T10:55:54+00:00"
+      },
+      "olusturma": "2026-08-13T10:55:54+00:00",
+      "guncelleme": "2026-08-16T20:04:28+00:00",
+      "yasMetni": "1 yaşında",
+      "yasGrubu": "yetiskin",
+      "arama": "peru ankara kedisi özgür ruhlu kızımız peru, çok sevgi dolu ve aşırı sempatik bir prenses. çok hareketli olmayan ve biraz nazlı biri ama sevilmelere doyamaz. 1 yaşında, dişi ve kısır. sevecen sakin"
+    },
+    {
+      "id": "kopek-potter-28aa6c",
+      "tur": "kopek",
+      "isim": "Potter",
+      "cinsiyet": "erkek",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": 36,
+      "kiloKg": null,
+      "boyut": "orta",
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": false,
+      "saglikNotu": "Minik çarpık ön bacakları bulunuyor ancak hareketlerini kısıtlamıyor.",
+      "cocuklaUyum": null,
+      "kopeklerleUyum": true,
+      "kedilerleUyum": true,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "Potter, 3 yaşlarında, kısır, erkek, çok iyi huylu ve insan canlısı bir çocuk. Sevilmeye ve ilgi görmeye bayılıyor; tanıştığı herkese kısa sürede güvenip kendini sevdiriyor. Diğer köpeklerle arası iyi, kedilere tepkisiz. Minik çarpık ön bacaklarıyla kendine özgü bir görünümü var; bu durum onun hareketlerini kısıtlamıyor. Sıcacık karakteriyle, ona hak ettiği sevgi dolu ömürlük yuvayı arıyoruz.",
+      "fotograflar": [
+        "assets/img/animals/ig-Db8GcsxDqnI-0.jpg",
+        "assets/img/animals/ig-Db8GcsxDqnI-1.jpg",
+        "assets/img/animals/ig-Db8GcsxDqnI-2.jpg",
+        "assets/img/animals/ig-Db8GcsxDqnI-3.jpg",
+        "assets/img/animals/ig-Db8GcsxDqnI-4.jpg",
+        "assets/img/animals/ig-Db8GcsxDqnI-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "Db8GcsxDqnI",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/Db8GcsxDqnI/",
+        "tarih": "2026-08-12T11:53:07+00:00"
+      },
+      "olusturma": "2026-08-12T11:53:07+00:00",
+      "guncelleme": "2026-08-16T20:04:28+00:00",
+      "yasMetni": "3 yaşında",
+      "yasGrubu": "yetiskin",
+      "arama": "potter potter, 3 yaşlarında, kısır, erkek, çok iyi huylu ve insan canlısı bir çocuk. sevilmeye ve ilgi görmeye bayılıyor; tanıştığı herkese kısa sürede güvenip kendini sevdiriyor. diğer köpeklerle arası iyi, kedilere tepkisiz. minik çarpık ön bacaklarıyla kendine özgü bir görünümü var; bu durum onun hareketlerini kısıtlamıyor. sıcacık karakteriyle, ona hak ettiği sevgi dolu ömürlük yuvayı arıyoruz. minik çarpık ön bacakları bulunuyor ancak hareketlerini kısıtlamıyor. sevecen"
     }
   ]
 };
