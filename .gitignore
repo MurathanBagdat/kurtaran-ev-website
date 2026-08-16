@@ -1,0 +1,42 @@
+# ── Sırlar ───────────────────────────────────────────────────────────────
+# Instagram Graph API erişim jetonu içerir. ASLA commit edilmemeli.
+tools/instagram_config.json
+.env
+.env.*
+!.env.example
+
+# ── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ── macOS ────────────────────────────────────────────────────────────────
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Editör ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── Geçici ───────────────────────────────────────────────────────────────
+*.log
+*.tmp
+site/assets/data/*.tmp
+
+# ─────────────────────────────────────────────────────────────────────────
+# NOT: Aşağıdakiler üretilen dosyalar ama BİLEREK depoda tutuluyor.
+# Site statik olarak yayınlanıyor; bu dosyalar olmadan depo tek başına
+# çalışmaz (hosting'de derleme adımı yok).
+#
+#   site/*.html                  → tools/build.py üretir
+#   site/assets/data/animals.js  → tools/animals.py üretir (animals.json'dan)
+#
+# Kaynakları değiştirdikten sonra ilgili betiği çalıştırıp çıktıyı da
+# commit etmeyi unutmayın.

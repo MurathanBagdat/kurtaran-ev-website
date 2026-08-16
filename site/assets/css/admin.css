@@ -1,0 +1,172 @@
+/* Kurtaran Ev — yönetim paneli. Ana tasarım sistemini genişletir. */
+
+.admin { padding: 40px 0 80px; }
+
+.admin__head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 1.5rem; flex-wrap: wrap; margin-bottom: 28px;
+}
+
+.admin__title { font-family: var(--serif); font-size: 2.6rem; line-height: 1.05; }
+.admin__sub { font-size: .95rem; opacity: .75; margin-top: .3rem; }
+
+/* --- giriş ---------------------------------------------------------------- */
+.login {
+  max-width: 26rem; margin: 60px auto;
+  padding: 34px 32px;
+  border: var(--border) solid var(--navy);
+  background: var(--white);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--navy);
+}
+
+.login h1 { font-family: var(--serif); font-size: 1.9rem; margin-bottom: .5rem; }
+.login p { font-size: .92rem; margin-bottom: 1.4rem; opacity: .8; }
+.login .field { margin-bottom: 1rem; }
+
+/* --- araç çubuğu ---------------------------------------------------------- */
+.admin__tools {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  padding: 16px 18px; margin-bottom: 26px;
+  border: var(--border) solid var(--navy);
+  background: var(--cream-warm);
+}
+
+.admin__tools .spacer { margin-left: auto; }
+
+.admin__stats { display: flex; gap: 1.4rem; flex-wrap: wrap; font-size: .9rem; }
+.admin__stats b { font-family: var(--serif); font-size: 1.4rem; display: block; line-height: 1; }
+
+/* --- liste ---------------------------------------------------------------- */
+.admin-table { width: 100%; border-collapse: collapse; border: var(--border) solid var(--navy); background: var(--white); }
+.admin-table th, .admin-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--navy-15); vertical-align: middle; }
+.admin-table th { background: var(--cream-warm); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+.admin-table tr:last-child td { border-bottom: 0; }
+.admin-table tbody tr:hover { background: var(--cream); }
+.admin-table__thumb { width: 56px; height: 56px; object-fit: cover; border: 1px solid var(--navy); display: block; }
+.admin-table__thumb--empty { display: grid; place-items: center; background: var(--cream-warm); font-size: .65rem; opacity: .6; text-align: center; }
+.admin-table__name { font-family: var(--serif); font-size: 1.2rem; }
+.admin-table__meta { font-size: .82rem; opacity: .7; }
+.admin-table__actions { display: flex; gap: 6px; justify-content: flex-end; }
+
+.btn-mini {
+  padding: .35rem .7rem; border: var(--border) solid var(--navy);
+  background: var(--white); font-size: .8rem; font-weight: 700; cursor: pointer;
+  text-decoration: none; display: inline-block;
+}
+.btn-mini:hover { background: var(--cream-warm); }
+.btn-mini--danger { border-color: var(--orange); color: #c0341a; }
+.btn-mini--danger:hover { background: var(--orange); color: var(--navy); }
+
+/* --- düzenleme kipi ------------------------------------------------------- */
+.modal[hidden] { display: none; }
+.modal {
+  position: fixed; inset: 0; z-index: 200;
+  display: grid; place-items: start center;
+  padding: 28px 16px;
+  background: rgba(24, 54, 83, .55);
+  overflow-y: auto;
+}
+
+.modal__panel {
+  width: min(920px, 100%);
+  background: var(--cream);
+  border: var(--rule) solid var(--navy);
+  box-shadow: 10px 10px 0 rgba(24, 54, 83, .35);
+}
+
+.modal__head {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 20px 26px; border-bottom: var(--border) solid var(--navy);
+  background: var(--cream-warm); position: sticky; top: 0; z-index: 1;
+}
+
+.modal__title { font-family: var(--serif); font-size: 1.7rem; }
+.modal__close { border: 0; background: none; font-size: 1.8rem; line-height: 1; cursor: pointer; padding: 0 .3rem; }
+.modal__body { padding: 26px; }
+.modal__foot {
+  display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+  padding: 18px 26px; border-top: var(--border) solid var(--navy); background: var(--cream-warm);
+  position: sticky; bottom: 0;
+}
+
+/* --- form ----------------------------------------------------------------- */
+.fieldset { border: 0; padding: 0; margin: 0 0 26px; }
+.fieldset > legend {
+  font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--green); padding: 0 0 10px;
+}
+.fieldset__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.fieldset__grid .span-2 { grid-column: span 2; }
+.fieldset__grid .span-3 { grid-column: 1 / -1; }
+
+.field small { font-size: .78rem; opacity: .7; }
+
+.field-tri { display: flex; gap: 0; border: var(--border) solid var(--navy); }
+.field-tri label {
+  flex: 1; text-align: center; padding: .55rem .3rem; font-size: .82rem; font-weight: 700;
+  cursor: pointer; border-right: 1px solid var(--navy-15);
+}
+.field-tri label:last-child { border-right: 0; }
+.field-tri input { position: absolute; opacity: 0; pointer-events: none; }
+.field-tri input:checked + span { display: block; }
+.field-tri label:has(input:checked) { background: var(--navy); color: var(--white); }
+
+.est-toggle { display: flex; align-items: center; gap: .4rem; font-size: .78rem; margin-top: .3rem; }
+.est-toggle input { width: auto; min-height: 0; }
+
+/* --- fotoğraflar ----------------------------------------------------------- */
+.photos { display: flex; flex-wrap: wrap; gap: 12px; margin-top: .5rem; }
+.photo-item { position: relative; width: 110px; height: 110px; border: var(--border) solid var(--navy); }
+.photo-item img { width: 100%; height: 100%; object-fit: cover; }
+.photo-item button {
+  position: absolute; top: -9px; right: -9px; width: 24px; height: 24px;
+  border: var(--border) solid var(--navy); background: var(--orange);
+  font-size: .9rem; line-height: 1; cursor: pointer; padding: 0;
+}
+.photo-add {
+  width: 110px; height: 110px; display: grid; place-items: center; gap: .2rem;
+  border: var(--border) dashed var(--navy-30); background: var(--white);
+  font-size: .8rem; font-weight: 700; cursor: pointer; text-align: center;
+}
+.photo-add:hover { border-color: var(--navy); background: var(--cream-warm); }
+
+/* --- konsol çıktısı -------------------------------------------------------- */
+.console {
+  margin-top: 18px; padding: 16px 18px; max-height: 340px; overflow: auto;
+  border: var(--border) solid var(--navy); background: var(--navy); color: #e8f1f8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .8rem; line-height: 1.55; white-space: pre-wrap;
+}
+.console[hidden] { display: none; }
+
+/* --- bildirim -------------------------------------------------------------- */
+.toast {
+  position: fixed; right: 20px; bottom: 20px; z-index: 300;
+  padding: 14px 18px; max-width: 24rem;
+  border: var(--border) solid var(--navy); background: var(--green); color: var(--white);
+  box-shadow: 6px 6px 0 var(--navy); font-weight: 700; font-size: .92rem;
+}
+.toast[hidden] { display: none; }
+.toast--hata { background: var(--orange); color: var(--navy); }
+
+.admin__offline {
+  padding: 22px 24px; border: var(--border) solid var(--navy); background: var(--yellow);
+  font-size: .95rem; line-height: 1.6;
+}
+.admin__offline code {
+  background: var(--navy); color: var(--white); padding: .15rem .45rem; font-size: .85em;
+}
+
+@media (max-width: 900px) {
+  .fieldset__grid { grid-template-columns: 1fr 1fr; }
+  .fieldset__grid .span-2, .fieldset__grid .span-3 { grid-column: 1 / -1; }
+  .admin-table thead { display: none; }
+  .admin-table, .admin-table tbody, .admin-table tr, .admin-table td { display: block; width: 100%; }
+  .admin-table tr { border-bottom: var(--border) solid var(--navy); padding: 8px 0; }
+  .admin-table td { border: 0; padding: 6px 14px; }
+  .admin-table__actions { justify-content: flex-start; }
+}
+
+@media (max-width: 620px) {
+  .fieldset__grid { grid-template-columns: 1fr; }
+}

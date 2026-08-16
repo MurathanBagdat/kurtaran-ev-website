@@ -1,0 +1,107 @@
+{
+  "_aciklama": "Instagram gönderilerinin elle içe aktarma dosyası. Instagram Graph API erişimi olmadığı sürece bu yol kullanılır. Metinler @kurtaranev_kopekleri ve @kurtaranev_kedileri hesaplarındaki gönderilerden alınmıştır. Çalıştırma: python3 tools/instagram_sync.py --dosya tools/gonderiler.json",
+
+  "gonderiler": [
+    {
+      "hesap": "kurtaranev_kedileri",
+      "id": "ke-minnos",
+      "timestamp": "2026-08-10T12:00:00+00:00",
+      "fotograflar": ["assets/img/animals/minnos.jpg"],
+      "caption": "Minnoş 🌻\nÇok sakin ve aşırı sevimli biri kendisi, görüp ona hayran olmamak mümkün değil 🥰\nHerkesle dost olabilen, çok uyumlu ve çok az oyuncu bir prenses 🧚\n\n🐾 5 Aylık\n🐾 Dişi\n🐾 Kısır\n\nSahiplenmek için biodaki linkten ya da kurtaranev.org üzerinden Sahiplendirme Formumuzu doldurabilirsiniz 🏡"
+    },
+    {
+      "hesap": "kurtaranev_kedileri",
+      "id": "ke-peru",
+      "timestamp": "2026-08-09T12:00:00+00:00",
+      "fotograflar": ["assets/img/animals/peru.jpg"],
+      "caption": "Peru 🧚 #ankarakedisi\nÖzgür ruhlu kızımız Peru, çok sevgi dolu ve aşırı sempatik bir prenses 🥰 çok haraketli olmayan ve biraz nazlı biri ama sevilmelere doyamaz 😻\n\n🐾 1 Yaşında\n🐾 Dişi\n🐾 Kısır\n\nSahiplenmek için biodaki linkten ya da kurtaranev.org üzerinden Sahiplendirme Formumuzu doldurabilirsiniz 🏡"
+    },
+    {
+      "hesap": "kurtaranev_kedileri",
+      "id": "ke-mujgan",
+      "timestamp": "2026-08-08T12:00:00+00:00",
+      "fotograflar": ["assets/img/animals/mujgan.jpg"],
+      "caption": "Müjgan 🌻 #himalayankedi\nDünyalar güzeli bir prenses kendisi, çok sosyal ve uyumlu kendini de sevdirmeye bayılan bir kedi 🥰\n\n🐾 7 Aylık\n🐾 Dişi\n🐾 Kısır\n\nSahiplenmek için biodaki linkten ya da kurtaranev.org üzerinden Sahiplendirme Formumuzu doldurabilirsiniz 🏡"
+    },
+    {
+      "hesap": "kurtaranev_kedileri",
+      "id": "ke-joy",
+      "timestamp": "2026-08-07T12:00:00+00:00",
+      "fotograflar": ["assets/img/animals/joy.jpg"],
+      "caption": "Joy 🧩 #calico\nKendisi aşırı oyuncu ve aşıırı tatlı bir yavru 🥰\nHer şeyi merak ediyor, özellikle ses çıkaran nesnelere çok ilgili 💐\n\n🐾 1.5 Aylık\n🐾 Dişi\n🐾 Kısırlaştırma şartı ile sahiplendirilecektir.\n\nSahiplenmek için biodaki linkten ya da kurtaranev.org üzerinden Sahiplendirme Formumuzu doldurabilirsiniz 🏡"
+    },
+    {
+      "hesap": "kurtaranev_kedileri",
+      "id": "ke-kutu-kardesler",
+      "timestamp": "2026-08-06T12:00:00+00:00",
+      "fotograflar": ["assets/img/animals/kutu-kardesler.jpg"],
+      "caption": "Kutu kardeşler ✨\nKüçücük bir kutunun içinde terk edildiler 🥺\nÖzel olarak beslenip büyütüldüler şimdi ise kalıcı yuvalarını arıyorlar 😻 aşırı sevgi dolu ve oyuncular, yanınızda uyumaya da bayılıyorlar 🐤\n\n🐾 4-5 haftalık\n🐾 ikisi erkek, biri dişi\n🐾 kısırlaştırma şartı ile sahiplendirilecektir.\n\nBu miniklerden birini ya da üçünü birden hayatınıza dahil edebilirsiniz."
+    },
+
+    {
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-lily",
+      "timestamp": "2026-08-10T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/lily.jpg"],
+      "caption": "#Lily #küçükırk #BorderTerrier\nGönüllü geçici yuvamızdaki Lily, 3-4 yaşlarında, kısır bir kız.\nBaşlangıçta biraz ürkek ve temkinli; yüksek seslerden korkuyor ama size bir kez güvendiğinde bambaşka bir köpek oluyor. ❤️\nİnsanına çok düşkün, sevilmeye ve temas etmeye bayılıyor.\nLily'nin ömürlük yuvasını arıyoruz."
+    },
+    {
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-coconut",
+      "timestamp": "2026-08-09T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/coconut.jpg"],
+      "caption": "#Coconut #küçükırk\nCoconut, 1 yaşlarında, kısır dişi, süper tatlı, kıpır kıpır ve maskot gibi bir kız. Müthiş karakteristik bir tipi var. Çok neşeli ve meraklı, sevgi dolu ve sosyal bir tip. Ev hayatına hızlı uyum sağlayabilecek uyumlu bir karakteri olan bir çocuk. Köpeğe alışık, oyuncu bir kedi olursa kediyle de yaşamaya güzel uyum sağlayabileceğini düşünüyoruz. İkinci köpek olmaya da uygun bir karakteri var. Henüz çok genç olduğu için, evde çok uzun süre yalnız kalmayacağı bir yuva daha uygun olacaktır. Coconut'ın ömürlük yuvasını arıyoruz."
+    },
+    {
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-potter",
+      "timestamp": "2026-08-08T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/potter.jpg"],
+      "caption": "#Potter #ortaırk\nPotter, 3 yaşlarında, kısır, erkek, çok iyi huylu ve insan canlısı bir çocuk. Sevilmeye ve ilgi görmeye bayılıyor; tanıştığı herkese kısa sürede güvenip kendini sevdiriyor.\nDiğer köpeklerle arası iyi, kedilere tepkisiz.\nMinik çarpık ön bacaklarıyla kendine özgü bir görünümü var; bu durum onun hareketlerini kısıtlamıyor. 😻\nSıcacık karakteriyle, ona hak ettiği sevgi dolu ömürlük yuvayı arıyoruz."
+    },
+    {
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-hera",
+      "timestamp": "2026-08-07T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/hera.jpg"],
+      "caption": "#Hera #Doberman\nHera, 2 yaşlarında, kısır ve dişi. Müthiş iyi huylu ve sevgi dolu bir kız. İnsanlarla da, diğer köpeklerle de harika anlaşıyor. Tuvalet eğitimi var, sosyal, oyun oynamayı çok seviyor. Ev hayatına kolayca uyum sağlayabilecek, insanıyla çok hızlı bağ kurabilecek, gözünün içine bakacak, eğitime çok açık bir çocuk.\nHera'nın ömürlük yuvasını arıyoruz. 🧡"
+    },
+    {
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-petit",
+      "timestamp": "2026-08-06T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/petit.jpg"],
+      "caption": "#Petit #küçükırk\nPetit 1 yaşlarında, kısır erkek, minnak boylu, sevgi dolu bir çocuk.\nGenel olarak uysal ve sevecen. Kendini sevdirmeye bayılıyor, oyun oynamayı çok seviyor, tasmayla uyumlu. Diğer köpeklerle arası da oldukça iyi.\nPetit'in mümkün olduğunca uzun süre yalnız kalmayacağı, sevgisini ve neşesini paylaşabileceği bir yuvası olsun istiyoruz. Kedisiz bir ev onun için daha uygun olacaktır."
+    },
+    {
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-pofik",
+      "timestamp": "2026-08-05T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/pofik.jpg"],
+      "caption": "#Pofik #ortaırk\nPofik, 1 yaş civarında, iyi huylu ve hareketli bir kız. İnsanlarla iletişimi güzel, enerjisi ve neşesiyle bulunduğu ortama hemen renk katıyor. Yaşının da verdiği hareketlilikle oyun oynamayı ve hayatın içinde olmayı çok seviyor.\nPofik'in onu ömür boyu sevecek kalıcı yuvasını arıyoruz. 🏡"
+    },
+    {
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-manti",
+      "timestamp": "2026-08-04T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/manti.jpg"],
+      "caption": "#Mantı #küçükırk\nGönüllü geçici yuvamızdaki Mantı 3 yaşlarında, kısır dişi, ev hayatına alışık, tuvalet eğitimi olan bir kız. Arka ayağından operasyon geçirdi, iyileşme sürecinde. Kulak mimikleriyle çok şey anlatan, karakteristik bir çocuk 🥰 Gerektiğinde evde yalnız kalabiliyor. Mantı'nın ömürlük yuvasını arıyoruz."
+    },
+    {
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-george",
+      "timestamp": "2026-08-03T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/george.jpg"],
+      "caption": "#George #ortaırk\nGeorge 3-4 yaşlarında, kısır, erkek, sakin ve uyumlu bir çocuk. Karakteri gereği ev yaşamına çok hızlı adapte olacağını düşünüyoruz. Evde yalnız kalabilecek olgunlukta ve huzurlu yapısıyla, yanında biri olmadığında da sakinliğini koruyabilecek bir çocuk. İnsanlarla güzel bağ kuran, sessiz ve dengeli karakteri sayesinde yeni ailesinin hayatına kolayca uyum sağlayacaktır."
+    },
+
+    {
+      "_not": "Bu bir sahiplendirme ilanı değil, Koruyucu Melek çağrısı. Ayrıştırıcının 'ilan mı?' kontrolünü doğrulamak için bilerek bırakıldı — içe aktarılmamalı.",
+      "hesap": "kurtaranev_kopekleri",
+      "id": "ke-arya",
+      "timestamp": "2026-08-02T13:00:00+00:00",
+      "fotograflar": ["assets/img/animals/arya.jpg"],
+      "caption": "Arya 10 yaşında. Ve göremiyor 😔\nHayatının bu döneminde dünyayı gözleriyle değil; seslerle, kokularla ve ona güven veren insanların varlığıyla tanıyor.\nArya'nın geçmişini değiştiremeyiz. Görmesini de geri getiremeyiz. Ama bundan sonraki günlerinin nasıl geçeceğini değiştirebiliriz.\nYaşlı, kör ve uzun süredir yaşam alanımızda olan köpeklerimiz çoğu zaman fark edilmeden yıllarca bekliyor. Arya da onlardan biri.\nOnun Koruyucu Meleği olarak mama, bakım ve sağlık giderlerinin karşılanmasına katkı sağlayabilir; Arya'nın hayatında düzenli olarak var olabilirsiniz."
+    }
+  ]
+}

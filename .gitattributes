@@ -1,0 +1,9 @@
+# Satır sonlarını normalleştir
+* text=auto eol=lf
+
+# İkili dosyalar
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.pdf  binary
+*.webp binary
