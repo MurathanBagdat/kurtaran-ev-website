@@ -25,6 +25,13 @@ duvarına düşüyor, herkese açık JSON uçları kapalı).
       `export IG_ACCESS_TOKEN="..."` ya da `python3 tools/instagram_sync.py --ornek-config`
       ile oluşan `tools/instagram_config.json` dosyasına yazın.
 - [ ] **Jeton yenileme** için 60 günde bir çalışan bir hatırlatma/otomasyon kurun.
+      Komut hazır: `python3 tools/instagram_sync.py --jeton-yenile`
+      (config'e `app_id` + `app_secret` yazılmalı; sync sırasında jeton 50 günü
+      geçmişse uyarı da basılıyor). Örnek cron — ayda bir yenile, günde bir çek:
+      ```
+      0 6 1 * * cd /yol/kurtaran-ev-website && python3 tools/instagram_sync.py --jeton-yenile
+      0 7 * * * cd /yol/kurtaran-ev-website && python3 tools/instagram_sync.py --limit 10
+      ```
 - [ ] Çalıştığını doğrulayın: `python3 tools/instagram_sync.py --limit 5 --kuru`
 - [ ] **Düzenli çalıştırma** ayarlayın (cron ya da hosting'in zamanlanmış görevi),
       örn. günde bir kez.
@@ -32,16 +39,50 @@ duvarına düşüyor, herkese açık JSON uçları kapalı).
 
 > Jeton gelene kadar sistem elle içe aktarma ile çalışır:
 > `python3 tools/instagram_sync.py --dosya tools/gonderiler.json`
+>
+> Ayrıca gönderi bağlantısıyla yarı otomatik çekim var (RapidAPI, jeton gerekmez):
+> `python3 tools/instagram_sync.py --link "<gönderi-url>"` — caption + HD
+> fotoğrafları indirir; denendi ve doğrulandı (Köfte gönderisi, 5 fotoğraf).
+>
+> **Köprü otomasyon (16 Ağustos 2026):** `--rapid` kipi, RapidAPI'daki
+> "Instagram API - Fast & Reliable Data Scraper" servisiyle her iki hesabın
+> son N gönderisini kendiliğinden çekiyor:
+> `python3 tools/instagram_sync.py --rapid --limit 5`
+> Denendi: 10 gönderi işlendi, mevcut ilanlar güncellendi, yeniler taslak düştü.
+> Uyarılar: resmî API değil (ToS dışı, her an kırılabilir), ücretsiz katmanda
+> sert hız limiti var (betik bekleyip yeniden dener). Uydurma gönderi
+> kimlikleri gerçek kısa kodlarla eşlendi; yalnızca `ke-george` akışın ilk
+> sayfasında olmadığı için eski kimliğinde kaldı — derin sayfalama eklenirse
+> önce onun kimliği düzeltilmeli, yoksa mükerrer kayıt oluşur.
+> Günlük köprü otomasyon için örnek cron:
+> `0 7 * * * cd /yol/kurtaran-ev-website && python3 tools/instagram_sync.py --rapid --limit 5`
+>
+> **Onaysız yayın (16 Ağustos 2026, istek üzerine):** içe aktarılan ilanlar
+> artık varsayılan olarak DOĞRUDAN "yuva-ariyor" durumuyla yayınlanıyor;
+> panel onayı beklenmiyor. İhtiyatlı kip için `--taslak` bayrağı eklendi.
+> Zaten kayıtlı gönderiler yeniden işlenmiyor (`--guncelle` ile zorlanabilir),
+> bu sayede cron'da AI isteği yalnızca gerçekten yeni gönderiler için gidiyor.
+>
+> **AI ayrıştırma (16 Ağustos 2026):** Caption ayrıştırması artık varsayılan
+> olarak OpenRouter/Gemini Flash ile yapılıyor (`tools/ai_parser.py`).
+> Kural tabanlı ayrıştırıcı yedek olarak duruyor (`--klasik` ya da model
+> hatasında otomatik). Kayıt hangi yöntemle üretildiyse `kaynak.ayristirici`
+> alanında yazıyor ("ai" / "kural"). Fotoğraflar modele henüz gönderilmiyor —
+> ileride görselden renk/boyut çıkarımı eklenebilir.
 
 **Ayrıştırıcı iyileştirmeleri** (gerçek gönderilerde görülen eksikler):
 
-- [ ] Çoklu hayvan ilanları. "Kutu kardeşler" tek kayıt olarak duruyor ama aslında
-      3 yavru (2 erkek, 1 dişi). Tek gönderiden çok kayıt üretmek gerekebilir.
-- [ ] Koruyucu Melek gönderileri (örn. Arya) ayrı bir içerik türü. Şu an doğru şekilde
-      eleniyor ama sitede hiç görünmüyorlar — bunlara ayrı bir bölüm düşünülebilir.
-- [ ] Sağlık notu ayrıştırması. Şu an ilan metninin içinde kalıyor, ayrı alana çıkmıyor.
-- [ ] Bulunduğu yer (yaşam alanı / geçici yuva) metinden çıkarılabilir.
-- [ ] Yeni gönderi kalıpları çıktıkça `tools/test_parser.py` içine vaka ekleyin.
+- [x] Çoklu hayvan ilanları. `parse_all()` "ikisi erkek, biri dişi" gibi sayıları okuyup
+      hayvan başına bir kayıt üretiyor; "Kutu kardeşler" 3 kayda açıldı (2 erkek, 1 dişi).
+      Kayıtlar gönderi + sıra ikilisiyle eşleniyor, tekrar çekimde çoğalmıyor.
+- [ ] Koruyucu Melek gönderileri: ayrıştırıcı artık bunları `icerik_turu() ==
+      "koruyucu-melek"` olarak tanıyor ve sync net bir mesajla atlıyor. **Açık kalan:**
+      sitede bunlara ayrı bir bölüm açılacaksa tasarlanması gerekiyor.
+- [x] Sağlık notu ayrıştırması → `saglikNotu` alanına çıkıyor; ağır durumlar
+      (kör, engelli, FIV vb.) `ozelBakim`'i de işaretliyor.
+- [x] Bulunduğu yer → `konum` alanı (geçici yuva / yaşam alanı, Hadımköy/Beşiktaş tanınıyor).
+- [ ] Yeni gönderi kalıpları çıktıkça `tools/test_parser.py` içine vaka ekleyin
+      (çoklu hayvan, sağlık notu, konum ve içerik türü vakaları eklendi).
 
 ---
 

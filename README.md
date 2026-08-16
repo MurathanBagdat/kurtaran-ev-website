@@ -122,20 +122,43 @@ python3 tools/instagram_sync.py --limit 5
 # 2) Elle içe aktarma — jeton olmadan bugün çalışır
 python3 tools/instagram_sync.py --dosya tools/gonderiler.json
 
+# 2b) Gönderi bağlantısıyla — jeton olmadan, RapidAPI anahtarıyla çalışır
+#     Caption + HD fotoğrafları çeker; bağlantıyı Instagram'dan "Bağlantıyı
+#     kopyala" ile alın. Anahtar: instagram_config.json > rapidapi_key.
+python3 tools/instagram_sync.py --link "https://www.instagram.com/kurtaranev_kopekleri/p/XXXX/"
+
+# 2c) Son gönderileri OTOMATİK çek — jeton olmadan, RapidAPI scraper ile.
+#     Her iki hesabın en yeni N gönderisini listeler ve işler. Resmî API
+#     değildir (Instagram kullanım koşulları dışı, her an kırılabilir);
+#     Graph API kurulana kadar köprü çözümdür.
+python3 tools/instagram_sync.py --rapid --limit 5
+
 # ne olacağını görmek için (hiçbir şey yazmaz)
 python3 tools/instagram_sync.py --dosya tools/gonderiler.json --kuru
+
+# uzun ömürlü jetonu tazele (60 günlük ömrü sıfırlar; app_id + app_secret ister)
+python3 tools/instagram_sync.py --jeton-yenile
 ```
 
 Pipeline ne yapıyor?
 
 1. Gönderiyi çeker, **sahiplendirme ilanı mı** diye bakar. Koruyucu Melek çağrıları,
    teşekkür ve kampanya gönderileri elenir.
-2. Metinden isim, yaş, cinsiyet, kilo, cins, boyut, kısırlaştırma, aşı ve
-   çocuk/köpek/kedi uyumunu çıkarır. Hashtag'ler de okunur: `#küçükırk` → boyut,
-   `#Doberman` → cins.
+2. Metinden isim, yaş, cinsiyet, kilo, cins, boyut, kısırlaştırma, aşı,
+   çocuk/köpek/kedi uyumu, sağlık notu ve bulunduğu yeri (geçici yuva /
+   yaşam alanı) çıkarır. Kardeş gönderileri ("ikisi erkek, biri dişi")
+   hayvan başına ayrı kayda açılır.
+   Ayrıştırmayı varsayılan olarak **yapay zekâ** yapar (`tools/ai_parser.py`,
+   OpenRouter üzerinden `google/gemini-3.6-flash`; yalnızca metin gönderilir,
+   fotoğraflar gönderilmez). Modele "metinde yazmayanı doldurma" talimatı
+   verilir; bilinmeyen alanlar boş kalır. Anahtar yoksa ya da `--klasik`
+   verilirse `caption_parser.py`'deki kural tabanlı ayrıştırıcı devreye girer;
+   model hata verirse de aynı yedeğe düşülür. Anahtar:
+   `instagram_config.json > openrouter_key`.
 3. Fotoğrafları indirir.
-4. Kaydı **taslak** olarak yazar. Yönetici panelden onaylayana kadar sitede görünmez —
-   böylece hatalı ayrıştırma canlıya yansımaz.
+4. Kaydı yazar. Varsayılan olarak ilan **doğrudan yayınlanır** ("Yuva arıyor");
+   `--taslak` bayrağıyla çalıştırılırsa kayıt taslak düşer ve yönetici panelden
+   onaylayana kadar sitede görünmez (hatalı ayrıştırmaya karşı ihtiyatlı kip).
 5. Aynı gönderi tekrar çekilirse yöneticinin elle düzelttiği alanların üzerine yazmaz;
    yalnızca boş kalan alanları doldurur.
 

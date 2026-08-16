@@ -62,6 +62,12 @@ HASHTAG_CINS = {
 HASHTAG_ATLA = {"sahiplendirme", "yuvaariyor", "kurtaranev", "yavrukedi", "yavrukopek",
                 "kedi", "kopek", "adopt", "sahiplen", "acil"}
 
+# Bu parçaları içeren hiçbir hashtag hayvan ismi olamaz (kampanya etiketleri:
+# #köpeksahiplendirme, #satinalmasahiplen, #cinsmisin, #adoptdontshop ...)
+HASHTAG_ISIM_DEGIL_PARCA = ("sahiplen", "kurtaran", "yuva", "adopt", "kedi", "kopek",
+                            "acil", "istanbul", "cinsmisin", "hayvan", "petshop",
+                            "pets", "cat", "dog", "insta", "love", "rescue")
+
 KARAKTER = {
     "oyuncu": ["oyuncu", "oyun sever", "enerjik", "hareketli"],
     "sakin": ["sakin", "uysal", "sessiz", "durgun", "efendi"],
@@ -90,6 +96,9 @@ ISIM_DEGIL = {
     "kurtaran", "ev", "dikkat", "önemli", "onemli", "paylaşım", "paylasim", "lütfen",
     "lutfen", "kedi", "köpek", "kopek", "yavru", "dostumuz", "canımız", "canimiz",
     "merhaba", "arkadaşlar", "arkadaslar", "güncelleme", "guncelleme",
+    "yuvalandı", "yuvalandi", "rezerve", "sahiplenildi", "sahiplendirildi",
+    "geçici", "gecici", "kalıcı", "kalici", "ömürlük", "omurluk", "yeni",
+    "burası", "burasi", "bugün", "bugun", "video",
 }
 
 
@@ -171,6 +180,8 @@ def hashtag_isim(caption: str) -> str | None:
         sade_h = _sade(h)
         if sade_h in HASHTAG_ATLA or sade_h in HASHTAG_BOYUT or sade_h in HASHTAG_CINS:
             continue
+        if any(parca in sade_h for parca in HASHTAG_ISIM_DEGIL_PARCA):
+            continue
         if len(h) < 2 or len(h) > 20 or any(ch.isdigit() for ch in h):
             continue
         return _tr_capitalize(h)
@@ -247,6 +258,10 @@ def yas_bul(caption: str) -> tuple[int | None, bool]:
     if m:
         ay = int(m.group(1))
         return (ay, tahmini) if ay <= 240 else (None, False)
+
+    m = re.search(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s*(?:haftalik|hafta\b)", d)
+    if m:  # "4-5 haftalık" → ortalama, tahmini
+        return max(1, round((int(m.group(1)) + int(m.group(2))) / 2 / 4.3)), True
 
     m = re.search(r"(\d{1,2})\s*(?:haftalik|hafta\b)", d)
     if m:
@@ -344,6 +359,85 @@ def karakter_bul(caption: str) -> list[str]:
     return bulunan[:6]
 
 
+# Sağlık notu kalıpları. İkinci eleman: özel bakım gerektirir mi?
+# Aşı/kısırlaştırma bilgisi ayrı alanlarda tutulduğu için burada aranmıyor.
+SAGLIK_KALIP = (
+    (r"ozel\s+bakim", True),
+    (r"engelli", True),
+    (r"gor(?:e|u)?m[iu]yor", True),          # göremiyor / görmüyor
+    (r"\bkor\b", True),                       # kör
+    (r"sagir", True), (r"duym[iu]yor", True),
+    (r"felc", True), (r"epilepsi", True),
+    (r"protez", True), (r"ilac\s+kullan", True),
+    (r"\bfiv\b", True), (r"\bfip\b", True), (r"losemi", True),
+    (r"kanser", True), (r"tumor", True),
+    (r"tek\s+goz", True), (r"uc\s+ayak", True),
+    (r"ameliyat", None), (r"tedavi", None), (r"displazi", None),
+)
+
+SAGLIK_CUMLE_SINIRI = re.compile(r"(?<=[.!?])\s+|\n+")
+
+
+def saglik_bul(caption: str) -> tuple[str | None, bool | None]:
+    """Sağlık bilgisi içeren cümleleri ayrı bir nota toplar.
+
+    (saglikNotu, ozelBakim) döner. Cümleler ilan metninden silinmez; not,
+    yöneticinin panelde düzenleyeceği bir başlangıç değeridir.
+    """
+    notlar: list[str] = []
+    ozel: bool | None = None
+    for cumle in SAGLIK_CUMLE_SINIRI.split(caption or ""):
+        s = cumle.strip()
+        if not s or s.startswith("#"):
+            continue
+        sade_c = _sade(s)
+        for kalip, agir in SAGLIK_KALIP:
+            if re.search(kalip, sade_c):
+                temiz = re.sub(r"#\w+", "", s).strip(" -•·")
+                if temiz and temiz not in notlar:
+                    notlar.append(temiz)
+                if agir:
+                    ozel = True
+                break
+    return (" ".join(notlar)[:400] or None), ozel
+
+
+def konum_bul(caption: str) -> str | None:
+    """Bulunduğu yeri (geçici yuva / yaşam alanı) metinden çıkarır."""
+    d = _sade(caption)
+    semt = next((ad for anahtar, ad in (("hadimkoy", "Hadımköy"), ("besiktas", "Beşiktaş"))
+                 if anahtar in d), None)
+    # Yalın "geçici yuva" çağrı cümlesi de olabilir ("geçici yuva olabilirsiniz");
+    # konum ancak iyelik/bulunma ekiyle anılıyorsa ("geçici yuvamızdaki") güvenilir.
+    if re.search(r"gecici\s+yuva(?:m|s?[iu]nda|daki)", d):
+        return "Gönüllü geçici yuva"
+    if re.search(r"yasam\s+alan(?:im|lar)?[iu]", d):
+        return f"{semt} yaşam alanı" if semt else "Yaşam alanı"
+    return semt
+
+
+SAYI_SOZLUK = {
+    "bir": 1, "biri": 1, "birisi": 1, "iki": 2, "ikisi": 2,
+    "uc": 3, "ucu": 3, "dort": 4, "dordu": 4, "bes": 5, "besi": 5,
+}
+
+
+def coklu_cinsiyet(caption: str) -> list[str]:
+    """"ikisi erkek, biri dişi" → ["erkek", "erkek", "disi"].
+
+    Tek eşleşme ("sevgi dolu bir erkek") çoklu ilan sayılmaz; kardeş
+    gönderilerinde sayılar her cinsiyet için ayrı verildiğinden toplamın
+    2'ye ulaşması gerekir.
+    """
+    d = _sade(caption)
+    sonuc: list[str] = []
+    for m in re.finditer(r"\b(bir|biri|birisi|iki|ikisi|uc|ucu|dort|dordu|bes|besi|[1-5])\s+"
+                         r"(?:tanesi\s+)?(erkek|disi)\b", d):
+        n = SAYI_SOZLUK.get(m.group(1)) or int(m.group(1))
+        sonuc += [m.group(2)] * n
+    return sonuc if len(sonuc) >= 2 else []
+
+
 def tur_bul(caption: str, varsayilan: str) -> str:
     d = _sade(caption)
     # Türkçe ekleri de yakala: "kedimiz", "kediciğimiz", "kopekler" ...
@@ -407,6 +501,23 @@ def yuvalandi_mi(caption: str) -> bool:
     return any(k in d for k in ("yuvasina kavustu", "sahiplendirildi", "yuvalandi", "yuvasini buldu"))
 
 
+def icerik_turu(caption: str) -> str:
+    """Gönderiyi sınıflandırır: ilan | koruyucu-melek | yuvalandi | diger.
+
+    Koruyucu Melek çağrıları (örn. Arya) sahiplendirme ilanı değildir ama
+    ayrı bir içerik türü olarak tanınır — ileride siteye ayrı bir bölüm
+    eklenirse pipeline bunları ayrıştırabilsin diye.
+    """
+    if ilan_mi(caption):
+        return "ilan"
+    d = _sade(caption)
+    if re.search(r"koruyucu\s+mele", d):
+        return "koruyucu-melek"
+    if yuvalandi_mi(caption):
+        return "yuvalandi"
+    return "diger"
+
+
 def temiz_aciklama(caption: str, limit: int = 600) -> str:
     """Hashtag ve çağrı satırlarını temizleyip okunur bir ilan metni bırakır."""
     satirlar = []
@@ -449,6 +560,7 @@ def parse(caption: str, varsayilan_tur: str = "kopek") -> dict:
     kilo, kilo_tahmini = kilo_bul(caption)
     cins = hashtag_cins(caption) or cins_bul(caption, tur)
     boyut = hashtag_boyut(caption)
+    saglik_notu, ozel_bakim = saglik_bul(caption)
 
     tahmini = []
     if yas is not None and yas_tahmini:
@@ -477,10 +589,37 @@ def parse(caption: str, varsayilan_tur: str = "kopek") -> dict:
                                ("kedilerle", "kedilere", "diğer kediler", "diger kediler")),
         "karakter": karakter_bul(caption),
         "aciklama": temiz_aciklama(caption),
+        "saglikNotu": saglik_notu,
+        "ozelBakim": ozel_bakim,
+        "konum": konum_bul(caption),
         "durum": "taslak",
         "tahmini": tahmini,
     }
     return kayit
+
+
+def parse_all(caption: str, varsayilan_tur: str = "kopek") -> list[dict]:
+    """Tek gönderiden bir ya da birden çok kayıt üretir.
+
+    "Kutu kardeşler … ikisi erkek, biri dişi" gibi kardeş gönderileri
+    hayvan başına bir kayda açılır; cinsiyetler metindeki sayılara göre
+    dağıtılır, isimler numaralanır ("Kutu 1", "Kutu 2", …).
+    """
+    taban = parse(caption, varsayilan_tur)
+    cinsiyetler = coklu_cinsiyet(caption)
+    if not cinsiyetler:
+        return [taban]
+
+    kayitlar = []
+    for i, cinsiyet in enumerate(cinsiyetler, 1):
+        kayit = dict(taban)
+        kayit["karakter"] = list(taban["karakter"])
+        kayit["tahmini"] = list(taban["tahmini"])
+        kayit["cinsiyet"] = cinsiyet
+        if taban.get("isim"):
+            kayit["isim"] = f"{taban['isim']} {i}"
+        kayitlar.append(kayit)
+    return kayitlar
 
 
 def ozet(kayit: dict) -> str:

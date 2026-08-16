@@ -53,12 +53,29 @@ class Handler(SimpleHTTPRequestHandler):
         super().__init__(*a, directory=str(SITE_DIR), **kw)
 
     # --- yardımcılar ------------------------------------------------------
+    def end_headers(self):
+        """Geliştirme sunucusu: hiçbir yanıt önbelleğe alınmasın.
+
+        SimpleHTTPRequestHandler statik dosyalara Cache-Control göndermez;
+        yalnızca Last-Modified koyar. Tarayıcı da bu durumda sezgisel
+        önbellekleme yapar (kabaca dosyanın yaşının %10'u kadar süreyle
+        sunucuya hiç sormaz). Sonuç: CSS/JS değişince sayfaya girdiğinizde
+        eski sürüm gelir, ancak yenileyince yenisi görünür.
+        """
+        self.send_header("Cache-Control", "no-store, must-revalidate")
+        super().end_headers()
+
+    def send_head(self):
+        """Koşullu istekleri yok say — 304 dönüp eski dosyayı bırakmayalım."""
+        del self.headers["If-Modified-Since"]
+        del self.headers["If-None-Match"]
+        return super().send_head()
+
     def _json(self, govde, kod: int = 200):
         ham = json.dumps(govde, ensure_ascii=False).encode("utf-8")
         self.send_response(kod)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(ham)))
-        self.send_header("Cache-Control", "no-store")
         self.end_headers()
         self.wfile.write(ham)
 

@@ -169,6 +169,35 @@
   });
 
   /* ---------------------------------------------------------------------
+     İlan sayfasından gelen ziyaretçi: konu ve mesaj alanını hazırla
+     (iletisim.html?ilan=...&ad=...&konu=...)
+     --------------------------------------------------------------------- */
+  var konuAlani = document.getElementById('il-konu');
+  var mesajAlani = document.getElementById('il-mesaj');
+  if (konuAlani || mesajAlani) {
+    var sorgu = new URLSearchParams(location.search);
+    var ilanAdi = sorgu.get('ad');
+    var ilanKonu = sorgu.get('konu');
+
+    if (konuAlani && ilanKonu) {
+      var uygun = Array.prototype.slice.call(konuAlani.options).some(function (o) {
+        return o.value === ilanKonu;
+      });
+      if (uygun) konuAlani.value = ilanKonu;
+    }
+
+    if (mesajAlani && ilanAdi && !mesajAlani.value) {
+      var CUMLE = {
+        'sahiplenme': ' için sahiplenme başvurusu yapmak istiyorum.',
+        'gecici-yuva': ' için geçici yuva olmak istiyorum.',
+        'koruyucu-melek': ' için koruyucu melek olmak istiyorum.'
+      };
+      mesajAlani.value = 'Merhaba, ' + ilanAdi +
+        (CUMLE[ilanKonu] || ' ile tanışmak istiyorum.') + ' Bilgi alabilir miyim?';
+    }
+  }
+
+  /* ---------------------------------------------------------------------
      Aktif menü öğesini işaretle
      --------------------------------------------------------------------- */
   var here = location.pathname.split('/').pop() || 'index.html';

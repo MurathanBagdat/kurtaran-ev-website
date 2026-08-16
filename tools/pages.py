@@ -1494,7 +1494,7 @@ ILETISIM = page_hero(
     "en kısa sürede dönüş yapalım.",
     breadcrumb=crumb(("Ana sayfa", "index.html"), ("Hakkımızda", None), ("İletişim", None)),
 ) + """
-<section class="section section--cream section--tight">
+<section class="section section--cream section--tight" id="kanallar">
   <div class="container">
     <div class="tiles tiles--2">
       <div>
@@ -1524,8 +1524,13 @@ ILETISIM = page_hero(
           <div class="field">
             <label for="il-konu">Konu</label>
             <select id="il-konu" name="konu">
-              <option>Sahiplenme</option><option>Geçici yuva</option><option>Bağış</option>
-              <option>Gönüllülük</option><option>Kurumsal iş birliği</option><option>Diğer</option>
+              <option value="sahiplenme">Sahiplenme</option>
+              <option value="gecici-yuva">Geçici yuva</option>
+              <option value="koruyucu-melek">Koruyucu melek</option>
+              <option value="bagis">Bağış</option>
+              <option value="gonulluluk">Gönüllülük</option>
+              <option value="kurumsal">Kurumsal iş birliği</option>
+              <option value="diger">Diğer</option>
             </select>
           </div>
           <div class="field"><label for="il-mesaj">Mesajınız</label><textarea id="il-mesaj" name="mesaj" required></textarea></div>
@@ -1678,13 +1683,61 @@ def katalog(tur: str) -> str:
 
 
 ILAN_DETAY = """
-<section class="section section--cream" style="padding-top:56px">
+<section class="section section--cream" style="padding-top:56px;padding-bottom:56px">
   <div class="container">
-    <p class="breadcrumb">
-      <a href="index.html">Ana sayfa</a><span aria-hidden="true">/</span>
-      <a href="yuva-arayan-kopekler.html" data-back-link>Yuva arayanlar</a>
-    </p>
+    <div class="detail-top">
+      <p class="breadcrumb">
+        <a href="index.html">Ana sayfa</a><span aria-hidden="true">/</span>
+        <a href="yuva-arayan-kopekler.html" data-back-link>Yuva arayanlar</a>
+      </p>
+
+      <nav class="pager" aria-label="İlanlar arası geçiş" data-pager hidden>
+        <a class="pager__link" href="#" data-pager-prev>
+          <span class="pager__arrow" aria-hidden="true">←</span>
+          <span class="pager__text"><span class="pager__label">Önceki</span><span class="pager__name"></span></span>
+        </a>
+        <span class="pager__count" data-pager-count></span>
+        <a class="pager__link pager__link--next" href="#" data-pager-next>
+          <span class="pager__text"><span class="pager__label">Sonraki</span><span class="pager__name"></span></span>
+          <span class="pager__arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </div>
+
     <div class="animal-detail" data-animal-detail></div>
+  </div>
+</section>
+
+<section class="section section--cream meet-band" data-meet-band hidden>
+  <div class="container">
+    <div class="callout meet-cta">
+      <h2 class="callout__title" data-meet-title>Tanışmak ister misiniz?</h2>
+      <p class="callout__text">Önce
+        <a class="meet-cta__process" href="sahiplenme-sureci.html">sahiplenme sürecini</a>
+        okuyun, sonra bize yazın. Ekibimiz sizinle iletişime geçip ön görüşmeyi planlasın.</p>
+
+      <div class="meet-cta__options">
+        <a class="btn btn--white btn--sm" href="sahiplen.html" data-meet-option="sahiplenme">Sahiplen <span aria-hidden="true">→</span></a>
+        <a class="btn btn--white btn--sm" href="gecici-yuva.html" data-meet-option="gecici-yuva">Geçici yuva ol <span aria-hidden="true">→</span></a>
+        <a class="btn btn--white btn--sm" href="koruyucu-melek.html" data-meet-option="koruyucu-melek">Koruyucu melek ol <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <p class="animal-detail__source meet-band__source" data-meet-source hidden></p>
+
+    <div class="meet-band__cta">
+      <a class="btn" href="iletisim.html">Tanışmak istiyorum <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--warm section--tight" data-others hidden>
+  <div class="container">
+    <div class="others__head">
+      <h2 class="others__title" data-others-title>Diğer yuva arayanlar</h2>
+      <a class="link-arrow" href="yuva-arayan-kopekler.html" data-others-all>Tümünü gör <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="animal-grid" data-others-grid></div>
   </div>
 </section>
 """

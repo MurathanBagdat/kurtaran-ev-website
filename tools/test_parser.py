@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from caption_parser import parse, ilan_mi, yuvalandi_mi  # noqa: E402
+from caption_parser import parse, parse_all, ilan_mi, yuvalandi_mi, icerik_turu  # noqa: E402
 
 VAKALAR = [
     (
@@ -47,7 +47,54 @@ VAKALAR = [
         "Bu güzelliğe yuva arıyoruz. Detaylar için mesaj atın.",
         {"yasAy": None, "kiloKg": None, "cinsiyet": None, "cins": None},
     ),
+    (
+        "sağlık notu + özel bakım",
+        "BONCUK yuva arıyor. Tek gözü görmüyor, özel bakım gerekiyor ama sevgisi eksiksiz.",
+        {"isim": "Boncuk", "ozelBakim": True,
+         "saglikNotu": "Tek gözü görmüyor, özel bakım gerekiyor ama sevgisi eksiksiz."},
+    ),
+    (
+        "konum — gönüllü geçici yuva",
+        "#Lily #küçükırk\nGönüllü geçici yuvamızdaki Lily, 3-4 yaşlarında, kısır bir kız.\n"
+        "Lily'nin ömürlük yuvasını arıyoruz.",
+        {"isim": "Lily", "konum": "Gönüllü geçici yuva", "kisir": True},
+    ),
+    (
+        "konum — semtli yaşam alanı",
+        "DUMAN yuva arıyor. Hadımköy yaşam alanımızda kalıyor, 2 yaşında erkek.",
+        {"isim": "Duman", "konum": "Hadımköy yaşam alanı", "yasAy": 24},
+    ),
+    (
+        "sağlık bilgisi yoksa alanlar boş",
+        "PAMUK yuva arıyor, 2 yaşında dişi.",
+        {"saglikNotu": None, "ozelBakim": None, "konum": None},
+    ),
+    (
+        "YUVALANDI / Geçici yuva satırları isim sanılmamalı — isim hashtag'ten gelmeli",
+        "YUVALANDI 🥳\n#Köfte #ortaırk\nDünyanın en uslu köpeği Köfte🥰 2-3 yaşlarında, "
+        "erkek. Köfte'ye yeni yuvasını arıyoruz.\n"
+        "🐾 Sahiplenemiyorsanız geçici yuva olabilirsiniz 🙏\n"
+        "🐾 Geçici yuva olamıyorsanız, ilanı paylaşabilirsiniz 🙏",
+        {"isim": "Köfte", "cinsiyet": "erkek", "yasAy": 30, "boyut": "orta",
+         "konum": None},  # çağrı cümlesindeki "geçici yuva" konum değildir
+    ),
 ]
+
+KUTU_KARDESLER = (
+    "Kutu kardeşler ✨\n"
+    "Küçücük bir kutunun içinde terk edildiler 🥺\n"
+    "Özel olarak beslenip büyütüldüler şimdi ise kalıcı yuvalarını arıyorlar 😻\n\n"
+    "🐾 4-5 haftalık\n"
+    "🐾 ikisi erkek, biri dişi\n"
+    "🐾 kısırlaştırma şartı ile sahiplendirilecektir.\n\n"
+    "Bu miniklerden birini ya da üçünü birden hayatınıza dahil edebilirsiniz."
+)
+
+ARYA = (
+    "Arya 10 yaşında. Ve göremiyor 😔\n"
+    "Onun Koruyucu Meleği olarak mama, bakım ve sağlık giderlerinin "
+    "karşılanmasına katkı sağlayabilirsiniz."
+)
 
 ILAN_MI = [
     ("PAMUK yuva arıyor!", True),
@@ -82,6 +129,46 @@ def main() -> int:
         hata += 1
     else:
         print("  ✓ yuvalandı tespiti")
+
+    # Çoklu hayvan: tek gönderiden üç kayıt, cinsiyetler dağıtılmış
+    kardesler = parse_all(KUTU_KARDESLER, varsayilan_tur="kedi")
+    beklenen_cinsiyet = ["erkek", "erkek", "disi"]
+    if len(kardesler) != 3:
+        print(f"  ✗ kutu kardeşler: 3 kayıt beklenirdi, {len(kardesler)} geldi")
+        hata += 1
+    elif [k["cinsiyet"] for k in kardesler] != beklenen_cinsiyet:
+        print(f"  ✗ kutu kardeşler cinsiyetleri: {[k['cinsiyet'] for k in kardesler]}")
+        hata += 1
+    elif not all(k["kisir"] is False and k["tur"] == "kedi" for k in kardesler):
+        print("  ✗ kutu kardeşler: kisir=False / tur=kedi beklenirdi")
+        hata += 1
+    elif len({k["isim"] for k in kardesler}) != 3:
+        print(f"  ✗ kutu kardeşler isimleri benzersiz değil: {[k['isim'] for k in kardesler]}")
+        hata += 1
+    else:
+        print("  ✓ çoklu hayvan (kardeş) ilanı → 3 kayıt")
+
+    # Tekil ilan "bir erkek" yüzünden çoklaşmamalı
+    tekil = parse_all("POTTER yuva arıyor. Çok iyi huylu bir erkek, 3 yaşında.")
+    if len(tekil) != 1:
+        print(f"  ✗ tekil ilan çoklaştı: {len(tekil)} kayıt")
+        hata += 1
+    else:
+        print("  ✓ tekil ilan tek kayıt kaldı")
+
+    # İçerik türü sınıflandırması
+    for metin, beklenen in ((ARYA, "koruyucu-melek"),
+                            (KUTU_KARDESLER, "ilan"),
+                            ("🎉 Boncuk yuvasına kavuştu! Teşekkürler.", "yuvalandi"),
+                            ("Bağış kampanyamıza destek olun.", "diger")):
+        if icerik_turu(metin) != beklenen:
+            print(f"  ✗ icerik_turu({metin[:30]!r}): beklenen {beklenen!r}, "
+                  f"gelen {icerik_turu(metin)!r}")
+            hata += 1
+    else:
+        if all(icerik_turu(m) == b for m, b in ((ARYA, "koruyucu-melek"),
+                                                (KUTU_KARDESLER, "ilan"))):
+            print("  ✓ içerik türü sınıflandırması")
 
     print()
     print("TÜM TESTLER GEÇTİ" if hata == 0 else f"{hata} TEST BAŞARISIZ")

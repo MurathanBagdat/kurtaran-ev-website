@@ -1,0 +1,78 @@
+# Kurtaran Ev — otomatik Instagram senkronu + GitHub Pages yayını
+#
+# Ne yapar?
+#   1. Her gün TSİ 17:00'de (14:00 UTC) iki Instagram hesabının son
+#      gönderilerini çeker, yeni ilanları AI ile ayrıştırıp siteye ekler
+#      ve değişiklikleri repo'ya commit'ler.
+#   2. site/ klasörünü GitHub Pages'e yayınlar — böylece yeni veri
+#      lokalde hiçbir şey çalıştırmadan canlı sitede görünür.
+#
+# Kota notu: RapidAPI Basic paket ayda 100 istek verir. Hesap kimlikleri
+# koda sabitli olduğundan her çalıştırma yalnızca 2 istek harcar
+# (hesap başına 1 /feed) → günde 1 çalıştırma ≈ ayda ~62 istek.
+#
+# Elle tetikleme: GitHub > Actions > bu workflow > "Run workflow".
+# Lokal düzenlemeler main'e push'lanınca da site yeniden yayınlanır.
+
+name: instagram-sync
+
+on:
+  schedule:
+    - cron: "0 14 * * *" # 17:00 Türkiye saati (UTC+3, yaz/kış değişmez)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: instagram-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    # push tetiklemesinde senkron atlanır; yalnızca site yeniden yayınlanır
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instagram senkronu
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python3 tools/instagram_sync.py --rapid --limit 5
+
+      - name: Değişiklik varsa commit'le
+        run: |
+          git config user.name "kurtaranev-bot"
+          git config user.email "actions@github.com"
+          git add site/assets/data site/assets/img/animals
+          if git diff --cached --quiet; then
+            echo "Yeni ilan yok, commit gerekmedi."
+          else
+            git commit -m "Instagram senkronu: yeni ilanlar ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+  deploy:
+    # sync atlansa da (push tetiklemesi) çalışsın; sync başarısızsa çalışmasın
+    needs: sync
+    if: ${{ !failure() && !cancelled() }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main # sync'in az önce push'ladığı commit dahil en güncel hâl
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        id: deployment

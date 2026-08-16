@@ -1430,7 +1430,8 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
 .animal-gallery__main {
   border: var(--rule) solid var(--navy);
   box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--navy);
-  aspect-ratio: 4 / 3;
+  /* Instagram dikey gönderi oranı (1080×1350); fotoğraflar kırpılmadan otursun */
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   background: var(--cream-warm);
 }
@@ -1483,6 +1484,103 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
   margin-top: 1.4rem;
   border-top: 1px solid var(--navy-15);
   opacity: .8;
+}
+
+/* Sayfa sonundaki yatay çağrı bandı */
+.meet-band { padding-top: 0; padding-bottom: 96px; }
+
+/* Metnin içindeki "sahiplenme sürecini" bağlantısı */
+.meet-cta__process {
+  color: inherit;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .18em;
+}
+
+.meet-cta__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  margin-top: .6rem;
+}
+
+.meet-band__source { max-width: 46rem; }
+
+.meet-band__cta { margin-top: 2.4rem; }
+
+/* --- ilanlar arası geçiş ------------------------------------------------- */
+.detail-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.detail-top .breadcrumb { margin-bottom: 1.5rem; }
+
+.pager {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 1.5rem;
+  border: var(--border) solid var(--navy);
+  background: var(--white);
+}
+
+.pager__link {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  max-width: 15rem;
+  padding: 9px 14px;
+  color: var(--navy);
+  font-size: .82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color .12s ease;
+}
+
+.pager__link:hover { background: var(--yellow); }
+.pager__arrow { font-size: 1rem; line-height: 1; }
+.pager__text { display: flex; flex-direction: column; min-width: 0; }
+.pager__link--next .pager__text { align-items: flex-end; }
+.pager__label { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; opacity: .6; }
+.pager__name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 11rem; }
+
+.pager__count {
+  padding: 0 12px;
+  border-left: 1px solid var(--navy-15);
+  border-right: 1px solid var(--navy-15);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  font-size: .78rem;
+  font-weight: 700;
+  opacity: .6;
+  white-space: nowrap;
+}
+
+/* --- "Diğer yuva arayanlar" şeridi --------------------------------------- */
+.others__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.others__title { font-family: var(--serif); font-size: 2.2rem; line-height: 1.1; }
+
+@media (max-width: 760px) {
+  .pager { width: 100%; justify-content: space-between; }
+  .pager__name { display: none; }
+}
+
+@media (max-width: 760px) {
+  .meet-band { padding-bottom: 72px; }
+  .meet-cta__options { flex-direction: column; align-items: flex-start; }
 }
 
 /* ==========================================================================
