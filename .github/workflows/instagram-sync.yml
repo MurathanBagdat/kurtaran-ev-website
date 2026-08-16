@@ -27,6 +27,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write # senkron raporu issue yorumu olarak gider → e-posta bildirimi
 
 concurrency:
   group: instagram-sync
@@ -44,7 +45,28 @@ jobs:
         env:
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          SYNC_RAPOR: sync_rapor.md
         run: python3 tools/instagram_sync.py --rapid --limit 5
+
+      # Rapor dosyası yalnızca yeni ilan ya da hata olduğunda oluşur.
+      # Issue yorumu GitHub bildirimi olarak e-postanıza düşer; sessiz
+      # çalışmalarda (yeni ilan yok) mail gitmez.
+      - name: Raporu e-postala (issue yorumu)
+        if: ${{ always() && hashFiles('sync_rapor.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          cat sync_rapor.md >> "$GITHUB_STEP_SUMMARY"
+          NUM=$(gh issue list --label sync-rapor --state open --json number --jq '.[0].number')
+          if [ -z "$NUM" ]; then
+            gh label create sync-rapor --color 0e8a16 --description "Otomatik senkron raporları" || true
+            NUM=$(gh issue create --title "📬 Instagram senkron raporları" --label sync-rapor \
+              --body "Otomatik senkron her çalıştığında sonuç bu konuya yorum olarak eklenir; GitHub bildirimi e-posta olarak gelir." \
+              | grep -oE '[0-9]+$')
+          fi
+          gh issue comment "$NUM" --body-file sync_rapor.md
+          rm -f sync_rapor.md
 
       - name: Değişiklik varsa commit'le
         run: |

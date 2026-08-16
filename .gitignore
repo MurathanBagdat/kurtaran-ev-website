@@ -40,3 +40,6 @@ site/assets/data/*.tmp
 #
 # Kaynakları değiştirdikten sonra ilgili betiği çalıştırıp çıktıyı da
 # commit etmeyi unutmayın.
+
+# Senkron raporu (Actions içinde üretilir, commit edilmez)
+sync_rapor.md

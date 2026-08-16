@@ -568,6 +568,7 @@ def kip_rapid(args) -> int:
         return 2
 
     toplam = []
+    hatalar = []
     for kullanici, tur in HESAPLAR.items():
         print(f"\n▸ @{kullanici} ({tur})")
         try:
@@ -576,6 +577,7 @@ def kip_rapid(args) -> int:
             akis = _rapid_get("/feed", {"user_id": pk}, api_key)
         except RuntimeError as e:
             print(f"  ! {e}")
+            hatalar.append(f"@{kullanici}: {e}")
             continue
 
         # Sabitlenmiş gönderiler listenin başında ama eski olabilir;
@@ -608,6 +610,9 @@ def kip_rapid(args) -> int:
         print(f"\n[kuru çalıştırma] {len(toplam)} ilan işlenirdi, hiçbir şey yazılmadı.")
         return 0
     if not toplam:
+        _rapor_yaz([], 0, 0, hatalar)
+        if hatalar:  # hiçbir şey işlenemedi ve hata var → cron kırmızıya düşsün
+            return 1
         # cron için normal bir sonuç: yeni gönderi yoksa iş başarıyla bitmiştir
         print("\nYeni ilan yok.")
         return 0
@@ -616,7 +621,37 @@ def kip_rapid(args) -> int:
     print(f"\n{eklendi} yeni ilan eklendi, {guncellendi} ilan güncellendi.")
     print("Taslaklar admin panelinden onay bekliyor: site/admin.html" if args.taslak
           else "İlanlar doğrudan yayınlandı (yuva arıyor).")
+    _rapor_yaz(toplam, eklendi, guncellendi, hatalar)
     return 0
+
+
+def _rapor_yaz(kayitlar: list[dict], eklendi: int, guncellendi: int,
+               hatalar: list[str]) -> None:
+    """SYNC_RAPOR ortam değişkeni bir dosya yolu gösteriyorsa markdown rapor yazar.
+
+    GitHub Actions bu dosyayı issue yorumu olarak gönderir → e-posta bildirimi.
+    Sessiz çalışmalarda (yeni ilan yok, hata yok) dosya yazılmaz ki mail gitmesin.
+    """
+    yol = os.environ.get("SYNC_RAPOR")
+    if not yol or (not kayitlar and not hatalar):
+        return
+    from datetime import datetime, timezone
+    satirlar = [f"## Instagram senkron raporu — "
+                f"{datetime.now(timezone.utc).strftime('%d.%m.%Y %H:%M')} UTC", ""]
+    if kayitlar:
+        satirlar.append(f"**{eklendi} yeni ilan eklendi, {guncellendi} ilan güncellendi:**")
+        satirlar.append("")
+        for k in kayitlar:
+            baglanti = (k.get("kaynak") or {}).get("baglanti") or ""
+            durum = animals.STATUS.get(k.get("durum"), k.get("durum"))
+            satirlar.append(f"- [{k.get('isim') or 'İsimsiz'}]({baglanti}) — "
+                            f"{_ozet(k)} · {durum}")
+        satirlar.append("")
+        satirlar.append("Canlı site: https://murathanbagdat.github.io/kurtaran-ev-website/")
+    if hatalar:
+        satirlar += ["", "### ⚠️ Hatalar", ""] + [f"- {h}" for h in hatalar]
+    Path(yol).write_text("\n".join(satirlar) + "\n", encoding="utf-8")
+    print(f"Rapor yazıldı: {yol}")
 
 
 LINK_DESENI = re.compile(r"instagram\.com/(?:([A-Za-z0-9_.]+)/)?(?:p|reel)/([A-Za-z0-9_-]+)")
