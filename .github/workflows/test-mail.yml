@@ -1,0 +1,33 @@
+# E-posta zincirini test eder: örnek bir senkron raporu üretip
+# tools/notify_mail.py ile gönderir. Yalnızca elle tetiklenir.
+name: test-mail
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test raporu oluştur ve gönder
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          cat > sync_rapor.md <<'EOF'
+          ## Instagram senkron raporu — TEST
+
+          **1 yeni ilan eklendi, 0 ilan güncellendi:**
+
+          - [Tripod](https://www.instagram.com/p/Da5MopZDDxH/) — Dişi, 1 yaşında · Yuva arıyor
+
+          Canlı site: https://murathanbagdat.github.io/kurtaran-ev-website/
+
+          Bu bir test e-postasıdır — zincir çalışıyorsa gerçek raporlar da böyle gelecek.
+          EOF
+          python3 tools/notify_mail.py sync_rapor.md
