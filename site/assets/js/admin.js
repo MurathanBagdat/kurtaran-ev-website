@@ -1,6 +1,9 @@
 /* Kurtaran Ev — yönetim paneli.
-   Yerel sunucu (tools/server.py) ile konuşur. Sunucu çalışmıyorsa panel
-   salt-okunur uyarı gösterir; kalıcı değişiklik için sunucu şart. */
+   İki kipte çalışır:
+   - yerel:  tools/server.py sunucusuyla konuşur (şifreyle giriş).
+   - github: sunucu yoksa (ör. GitHub Pages) admin-github.js üzerinden
+             doğrudan GitHub API'sine yazar (fine-grained jetonla giriş).
+             Her kayıt bir commit olur; Actions siteyi yeniden yayınlar. */
 (function () {
   'use strict';
 
@@ -8,7 +11,10 @@
   if (!kok) return;
 
   var JETON_ANAHTAR = 'ke_admin_jeton';
+  var GH_ANAHTAR = 'ke_gh_jeton';
   var jeton = sessionStorage.getItem(JETON_ANAHTAR) || '';
+  var mod = 'yerel';         // 'yerel' | 'github'
+  var gh = null;             // KE_GH arka ucu (yalnızca github kipinde)
   var sema = null;
   var hayvanlar = [];
   var suanki = null;         // düzenlenen kayıt
@@ -51,7 +57,8 @@
   function baslat() {
     fetch('/api/durum')
       .then(function (r) { if (!r.ok) throw new Error('yok'); return r.json(); })
-      .then(function () {
+      .then(function (d) {
+        if (!d || !d.calisiyor) throw new Error('yok');
         return api('sema').then(function (s) { sema = s; });
       })
       .then(function () {
@@ -61,6 +68,31 @@
             .catch(function () { jeton = ''; sessionStorage.removeItem(JETON_ANAHTAR); girisCiz(); });
         }
         girisCiz();
+      })
+      .catch(githubBaslat);
+  }
+
+  /* Yerel sunucu yok → GitHub kipi. Şema statik dosyadan gelir. */
+  function githubBaslat() {
+    if (!window.KE_GH) return cevrimdisiCiz();
+    gh = window.KE_GH();
+    fetch('assets/data/sema.json', { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error('yok'); return r.json(); })
+      .then(function (s) {
+        sema = s;
+        mod = 'github';
+        var kayitli = localStorage.getItem(GH_ANAHTAR) || sessionStorage.getItem(GH_ANAHTAR);
+        if (kayitli) {
+          return gh.girisYap(kayitli)
+            .then(function () { return gh.hayvanlarYukle(); })
+            .then(function (liste) { hayvanlar = liste; panelCiz(); })
+            .catch(function () {
+              localStorage.removeItem(GH_ANAHTAR);
+              sessionStorage.removeItem(GH_ANAHTAR);
+              githubGirisCiz();
+            });
+        }
+        githubGirisCiz();
       })
       .catch(cevrimdisiCiz);
   }
@@ -113,6 +145,56 @@
     });
   }
 
+  /* GitHub kipi girişi — şifre yerine fine-grained jeton. */
+  function githubGirisCiz() {
+    kok.innerHTML =
+      '<div class="container">' +
+        '<form class="login" id="giris-form">' +
+          '<h1>Yönetim paneli</h1>' +
+          '<p>Bu panel değişiklikleri doğrudan GitHub\'a kaydeder. ' +
+            'Giriş için GitHub erişim jetonunuzu yapıştırın.</p>' +
+          '<div class="field">' +
+            '<label for="gh-jeton">GitHub jetonu</label>' +
+            '<input id="gh-jeton" type="password" autocomplete="off" required autofocus ' +
+              'placeholder="github_pat_…">' +
+          '</div>' +
+          '<div class="field">' +
+            '<label style="font-weight:normal"><input type="checkbox" id="gh-hatirla" checked> ' +
+              'Bu cihazda hatırla</label>' +
+          '</div>' +
+          '<button class="btn" type="submit">Giriş yap <span aria-hidden="true">→</span></button>' +
+          '<p class="form-status" role="status" id="giris-durum"></p>' +
+          '<details style="margin-top:1rem">' +
+            '<summary>Jeton nasıl alınır?</summary>' +
+            '<ol style="margin:.6rem 0 0 1.2rem;font-size:.9em;line-height:1.6">' +
+              '<li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">' +
+                'github.com/settings/personal-access-tokens/new</a> adresini açın.</li>' +
+              '<li><b>Repository access</b> → Only select repositories → ' +
+                '<code>' + esc(gh.ayar.repo) + '</code> seçin.</li>' +
+              '<li><b>Permissions</b> → Contents: <b>Read and write</b>' +
+                ' · Actions: <b>Read and write</b> (Instagram senkronu için).</li>' +
+              '<li>Jetonu oluşturup buraya yapıştırın.</li>' +
+            '</ol>' +
+          '</details>' +
+        '</form>' +
+      '</div>';
+
+    document.getElementById('giris-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var durum = document.getElementById('giris-durum');
+      durum.textContent = 'Kontrol ediliyor…';
+      var girilen = document.getElementById('gh-jeton').value;
+      gh.girisYap(girilen)
+        .then(function () {
+          var depo = document.getElementById('gh-hatirla').checked ? localStorage : sessionStorage;
+          depo.setItem(GH_ANAHTAR, girilen.trim());
+          return gh.hayvanlarYukle();
+        })
+        .then(function (liste) { hayvanlar = liste; panelCiz(); })
+        .catch(function (err) { durum.textContent = err.message; });
+    });
+  }
+
   /* --------------------------------------------------------------------- */
   /* Panel                                                                  */
   /* --------------------------------------------------------------------- */
@@ -124,7 +206,9 @@
         '<div class="admin__head">' +
           '<div>' +
             '<h1 class="admin__title">İlan yönetimi</h1>' +
-            '<p class="admin__sub">Tüm kayıtlar — taslaklar dahil</p>' +
+            '<p class="admin__sub">Tüm kayıtlar — taslaklar dahil' +
+              (mod === 'github' ? ' · GitHub üzerinden: kayıtlar 1-2 dk içinde yayına girer' : '') +
+            '</p>' +
           '</div>' +
           '<div class="admin__stats">' +
             '<div><b>' + hayvanlar.length + '</b>toplam</div>' +
@@ -373,6 +457,12 @@
         return new Promise(function (coz, red) {
           var okuyucu = new FileReader();
           okuyucu.onload = function () {
+            if (mod === 'github') {
+              /* GitHub kipinde fotoğraf, kayıtla birlikte tek commit'te
+                 yüklenir; o zamana dek data-URL olarak önizlenir. */
+              coz(okuyucu.result);
+              return;
+            }
             api('fotograf', { method: 'POST', body: { veri: okuyucu.result, isim: suanki.isim || 'ilan' } })
               .then(function (d) { coz(d.yol); }).catch(red);
           };
@@ -417,13 +507,17 @@
 
     var durum = document.getElementById('kip-durum');
     durum.textContent = 'Kaydediliyor…';
-    api('hayvanlar', { method: 'POST', body: govde })
-      .then(function () { return api('hayvanlar'); })
-      .then(function (d) {
-        hayvanlar = d.hayvanlar;
+    var islem = (mod === 'github')
+      ? gh.kaydet(govde, sema)
+      : api('hayvanlar', { method: 'POST', body: govde })
+          .then(function () { return api('hayvanlar'); })
+          .then(function (d) { return d.hayvanlar; });
+    islem
+      .then(function (liste) {
+        hayvanlar = liste;
         kipKapat();
         panelCiz();
-        bildir('İlan kaydedildi.');
+        bildir(mod === 'github' ? 'İlan kaydedildi — site 1-2 dk içinde güncellenir.' : 'İlan kaydedildi.');
       })
       .catch(function (err) { durum.textContent = err.message; });
   }
@@ -432,38 +526,51 @@
   function sil(id) {
     var kayit = hayvanlar.filter(function (a) { return a.id === id; })[0];
     if (!confirm('"' + (kayit ? kayit.isim : id) + '" ilanı silinsin mi?\n\nBu işlem geri alınamaz.')) return;
-    fetch('/api/hayvanlar/' + encodeURIComponent(id), {
-      method: 'DELETE', headers: { Authorization: 'Bearer ' + jeton }
-    }).then(function (r) {
-      if (!r.ok) throw new Error('Silinemedi');
-      return api('hayvanlar');
-    }).then(function (d) {
-      hayvanlar = d.hayvanlar; panelCiz(); bildir('İlan silindi.');
+    var islem = (mod === 'github')
+      ? gh.sil(id)
+      : fetch('/api/hayvanlar/' + encodeURIComponent(id), {
+          method: 'DELETE', headers: { Authorization: 'Bearer ' + jeton }
+        }).then(function (r) {
+          if (!r.ok) throw new Error('Silinemedi');
+          return api('hayvanlar');
+        }).then(function (d) { return d.hayvanlar; });
+    islem.then(function (liste) {
+      hayvanlar = liste; panelCiz(); bildir('İlan silindi.');
     }).catch(function (err) { bildir(err.message, true); });
   }
 
   function ornekleriSil() {
     if (!confirm('Tüm örnek kayıtlar silinsin mi?')) return;
-    api('ornekleri-sil', { method: 'POST', body: {} })
-      .then(function (d) { return api('hayvanlar').then(function (h) { return [d, h]; }); })
-      .then(function (r) {
-        hayvanlar = r[1].hayvanlar; panelCiz();
-        bildir(r[0].silinen + ' örnek kayıt silindi.');
-      })
-      .catch(function (err) { bildir(err.message, true); });
+    var islem = (mod === 'github')
+      ? gh.ornekleriSil()
+      : api('ornekleri-sil', { method: 'POST', body: {} })
+          .then(function (d) {
+            return api('hayvanlar').then(function (h) {
+              return { silinen: d.silinen, hayvanlar: h.hayvanlar };
+            });
+          });
+    islem.then(function (r) {
+      hayvanlar = r.hayvanlar; panelCiz();
+      bildir(r.silinen + ' örnek kayıt silindi.');
+    }).catch(function (err) { bildir(err.message, true); });
   }
 
   function instagramCek() {
     var konsol = document.getElementById('konsol');
     konsol.hidden = false;
     konsol.textContent = 'Instagram senkronu başlatıldı…\n';
-    api('instagram-sync', { method: 'POST', body: { limit: 5 } })
+    var islem = (mod === 'github')
+      ? gh.instagramSync(function (mesaj) { konsol.textContent = mesaj + '\n'; })
+      : api('instagram-sync', { method: 'POST', body: { limit: 5 } });
+    islem
       .then(function (d) {
         konsol.textContent = d.cikti || '(çıktı yok)';
-        return api('hayvanlar');
+        return (mod === 'github')
+          ? gh.hayvanlarYukle()
+          : api('hayvanlar').then(function (h) { return h.hayvanlar; });
       })
-      .then(function (d) {
-        hayvanlar = d.hayvanlar;
+      .then(function (liste) {
+        hayvanlar = liste;
         listeCiz();
         bildir('Senkron tamamlandı — çıktıyı kontrol edin.');
       })
@@ -474,6 +581,13 @@
   }
 
   function cikis() {
+    if (mod === 'github') {
+      gh.cikis();
+      localStorage.removeItem(GH_ANAHTAR);
+      sessionStorage.removeItem(GH_ANAHTAR);
+      githubGirisCiz();
+      return;
+    }
     api('cikis', { method: 'POST', body: {} }).catch(function () {});
     jeton = '';
     sessionStorage.removeItem(JETON_ANAHTAR);

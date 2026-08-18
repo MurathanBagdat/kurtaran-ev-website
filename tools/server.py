@@ -149,12 +149,7 @@ class Handler(SimpleHTTPRequestHandler):
                 return
             return self._json({"hayvanlar": animals.load()})
         if yol == "/api/sema":
-            return self._json({
-                "alanlar": animals.FIELDS,
-                "durumlar": animals.STATUS,
-                "yasGruplari": animals.AGE_GROUPS,
-                "tahminEdilebilir": list(animals.ESTIMABLE),
-            })
+            return self._json(animals.sema_govde())
         return self._json({"hata": "Bulunamadı"}, 404)
 
     def _api_post(self, yol: str):

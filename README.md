@@ -36,7 +36,7 @@ Kurtaran Ev Websitesi/
 │   ├── yuva-arayan-kopekler.html  ← ilan kataloğu + arama/filtre
 │   ├── yuva-arayan-kediler.html   ← ilan kataloğu + arama/filtre
 │   ├── ilan.html                  ← tek ilan detayı (?id=...)
-│   ├── admin.html                 ← yönetim paneli (yerel sunucu gerekir)
+│   ├── admin.html                 ← yönetim paneli (yerel sunucu ya da GitHub kipi)
 │   ├── … 16 içerik sayfası daha
 │   └── assets/
 │       ├── css/style.css          ← tasarım sistemi
@@ -44,6 +44,7 @@ Kurtaran Ev Websitesi/
 │       ├── js/catalog.js          ← arama, filtre, sıralama
 │       ├── js/animal.js           ← ilan detayı
 │       ├── js/admin.js            ← yönetim paneli
+│       ├── js/admin-github.js     ← GitHub kipi arka ucu (Pages üzerinde çalışır)
 │       ├── js/counts.js           ← ana sayfadaki canlı ilan sayaçları
 │       ├── data/animals.json      ← TEK DOĞRULUK KAYNAĞI (ilan verisi)
 │       ├── data/animals.js        ← animals.json'dan üretilir (tarayıcı okur)
@@ -94,6 +95,24 @@ python3 tools/server.py
 - Varsayılan şifre: `kurtaranev` — değiştirmek için `export KE_ADMIN_SIFRE="..."`
 
 Sunucu yalnızca `127.0.0.1` adresine bağlanır, dışarıdan erişilemez.
+
+### GitHub Pages üzerinde yönetim paneli (sunucusuz)
+
+Panel, yerel sunucu olmadan da çalışır: `https://<kullanici>.github.io/<repo>/admin.html`
+adresinde açıldığında **GitHub kipine** geçer ve değişiklikleri doğrudan GitHub
+API'siyle repo'ya commit'ler; GitHub Actions siteyi 1-2 dakika içinde yeniden yayınlar.
+
+Giriş için şifre yerine **fine-grained personal access token** gerekir:
+
+1. <https://github.com/settings/personal-access-tokens/new>
+2. Repository access → *Only select repositories* → bu repo
+3. Permissions → **Contents: Read and write** · **Actions: Read and write**
+   (Actions izni yalnızca panelden Instagram senkronu tetiklemek için)
+
+Teknik ayrıntı: GitHub kipi `assets/js/admin-github.js` içindedir —
+`tools/animals.py`'deki normalize/kayıt mantığının JS portu. Şemayı
+`assets/data/sema.json`'dan okur (bu dosyayı `animals.py` üretir). Her kayıt,
+`animals.json` + `animals.js` + yeni fotoğrafları içeren tek bir commit'tir.
 
 Panelden yapılabilenler: ilan ekleme, düzenleme, silme, fotoğraf yükleme,
 Instagram senkronu çalıştırma, örnek kayıtları temizleme. Form alanları

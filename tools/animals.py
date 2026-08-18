@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "site" / "assets" / "data"
 JSON_PATH = DATA_DIR / "animals.json"
 JS_PATH = DATA_DIR / "animals.js"
+SEMA_PATH = DATA_DIR / "sema.json"
 PHOTO_DIR = ROOT / "site" / "assets" / "img" / "animals"
 PHOTO_WEB_PREFIX = "assets/img/animals"
 
@@ -307,6 +308,19 @@ def save(hayvanlar: list[dict]) -> None:
         "window.KE_DATA = " + json.dumps(govde, ensure_ascii=False, indent=2) + ";\n"
     )
     _atomic_write(JS_PATH, js)
+
+    # Şema — GitHub Pages üzerindeki admin paneli sunucusuz çalışabilsin diye
+    _atomic_write(SEMA_PATH, json.dumps(sema_govde(), ensure_ascii=False, indent=2) + "\n")
+
+
+def sema_govde() -> dict:
+    """Admin panelinin (yerel API ya da GitHub kipi) kullandığı şema."""
+    return {
+        "alanlar": FIELDS,
+        "durumlar": STATUS,
+        "yasGruplari": AGE_GROUPS,
+        "tahminEdilebilir": list(ESTIMABLE),
+    }
 
 
 def upsert(kayit: dict) -> dict:

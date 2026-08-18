@@ -101,7 +101,7 @@ Panel şu an **yalnızca yerel** kullanım için güvenli. Canlıda olduğu gibi
 - [ ] **Yedekleme.** Tüm veri tek bir `animals.json` dosyasında. Düzenli yedek alın;
       ilan sayısı büyürse gerçek bir veritabanına (SQLite/Postgres) taşıyın.
 - [ ] **Değişiklik günlüğü** — kim neyi ne zaman değiştirdi?
-- [ ] `admin.html` sayfasını `robots.txt` ile arama motorlarına kapatın.
+- [x] `admin.html` sayfasını `robots.txt` ile arama motorlarına kapatın. (`site/robots.txt`)
 
 ---
 

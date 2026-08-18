@@ -1,0 +1,147 @@
+{
+  "alanlar": {
+    "isim": {
+      "tip": "metin",
+      "etiket": "İsim",
+      "grup": "temel"
+    },
+    "tur": {
+      "tip": "secim",
+      "etiket": "Tür",
+      "grup": "temel",
+      "secenekler": {
+        "kopek": "Köpek",
+        "kedi": "Kedi"
+      }
+    },
+    "cinsiyet": {
+      "tip": "secim",
+      "etiket": "Cinsiyet",
+      "grup": "temel",
+      "secenekler": {
+        "disi": "Dişi",
+        "erkek": "Erkek"
+      }
+    },
+    "durum": {
+      "tip": "secim",
+      "etiket": "Durum",
+      "grup": "temel",
+      "secenekler": {
+        "taslak": "Taslak (yayında değil)",
+        "yuva-ariyor": "Yuva arıyor",
+        "rezerve": "Rezerve",
+        "yuvalandi": "Yuvalandı"
+      }
+    },
+    "konum": {
+      "tip": "metin",
+      "etiket": "Bulunduğu yer",
+      "grup": "temel"
+    },
+    "cins": {
+      "tip": "metin",
+      "etiket": "Cins / ırk",
+      "grup": "fiziksel"
+    },
+    "yasAy": {
+      "tip": "sayi",
+      "etiket": "Yaş (ay)",
+      "grup": "fiziksel",
+      "min": 0,
+      "max": 360,
+      "ipucu": "36 = 3 yaşında. Bilinmiyorsa boş bırakın."
+    },
+    "kiloKg": {
+      "tip": "ondalik",
+      "etiket": "Kilo (kg)",
+      "grup": "fiziksel",
+      "min": 0,
+      "max": 120
+    },
+    "boyut": {
+      "tip": "secim",
+      "etiket": "Boyut",
+      "grup": "fiziksel",
+      "secenekler": {
+        "kucuk": "Küçük",
+        "orta": "Orta",
+        "buyuk": "Büyük"
+      },
+      "ipucu": "Boş bırakılırsa kilodan tahmin edilir."
+    },
+    "renk": {
+      "tip": "metin",
+      "etiket": "Renk / desen",
+      "grup": "fiziksel"
+    },
+    "kisir": {
+      "tip": "uclu",
+      "etiket": "Kısırlaştırıldı",
+      "grup": "saglik"
+    },
+    "asili": {
+      "tip": "uclu",
+      "etiket": "Aşıları tam",
+      "grup": "saglik"
+    },
+    "cipli": {
+      "tip": "uclu",
+      "etiket": "Mikroçipli",
+      "grup": "saglik"
+    },
+    "ozelBakim": {
+      "tip": "uclu",
+      "etiket": "Özel bakım gerekiyor",
+      "grup": "saglik"
+    },
+    "saglikNotu": {
+      "tip": "uzunmetin",
+      "etiket": "Sağlık notu",
+      "grup": "saglik"
+    },
+    "cocuklaUyum": {
+      "tip": "uclu",
+      "etiket": "Çocuklarla uyumlu",
+      "grup": "uyum"
+    },
+    "kopeklerleUyum": {
+      "tip": "uclu",
+      "etiket": "Köpeklerle uyumlu",
+      "grup": "uyum"
+    },
+    "kedilerleUyum": {
+      "tip": "uclu",
+      "etiket": "Kedilerle uyumlu",
+      "grup": "uyum"
+    },
+    "karakter": {
+      "tip": "etiketler",
+      "etiket": "Karakter etiketleri",
+      "grup": "icerik",
+      "ipucu": "Virgülle ayırın: oyuncu, sakin, sevecen"
+    },
+    "aciklama": {
+      "tip": "uzunmetin",
+      "etiket": "İlan metni",
+      "grup": "icerik"
+    }
+  },
+  "durumlar": {
+    "taslak": "Taslak (yayında değil)",
+    "yuva-ariyor": "Yuva arıyor",
+    "rezerve": "Rezerve",
+    "yuvalandi": "Yuvalandı"
+  },
+  "yasGruplari": {
+    "yavru": "Yavru (0–1 yaş)",
+    "yetiskin": "Yetişkin (1–7 yaş)",
+    "kidemli": "Kıdemli (7+ yaş)"
+  },
+  "tahminEdilebilir": [
+    "yasAy",
+    "kiloKg",
+    "boyut",
+    "cins"
+  ]
+}
