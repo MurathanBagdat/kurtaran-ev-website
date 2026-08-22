@@ -43,10 +43,11 @@ INDEX = """
       <p class="eyebrow">İstanbul’da dört yaşam alanı</p>
       <h1 class="display display--hero hero__title">Her can, güvende<br class="lb">
         ve <em>sevildiği</em> bir<br class="lb"> hayatı hak eder.</h1>
-      <p class="lead hero__lead">Kurtarıyor, tedavi ediyor, iyileştiriyor ve yuvalandırıyoruz.
-        Yaklaşık 1.200 köpek ve 600 kedi için her gün buradayız.</p>
+      <p class="lead hero__lead">Kurtarıyor, tedavi ediyor, rehabilite ediyor ve doğru yuvalarla
+        buluşturuyoruz. 4 yaşam alanımızda 1500'den fazla kedi ve köpek için ve daha fazlası için
+        her gün buradayız.</p>
       <div class="hero__actions">
-        <a class="btn" href="yuva-arayan-kopekler.html">Bir hayatı değiştir <span aria-hidden="true">→</span></a>
+        <a class="btn" href="hikayemiz.html">Misyonumuz <span aria-hidden="true">→</span></a>
         <a class="link-arrow" href="#yuva-arayanlar">Yuva arayanları gör <span aria-hidden="true">↘</span></a>
       </div>
     </div>
@@ -125,11 +126,12 @@ INDEX = """
   <div class="container adopt">
     <div>
       <p class="eyebrow">Yuva arayanlar</p>
-      <h2 class="display">Belki de<br class="lb"> birbirinizi<br class="lb"> bekliyorsunuz.</h2>
-      <p class="body-lg" style="margin:1.4rem 0 1.9rem; max-width:29rem;">Güncel ilanlarımızı kedi ve
-        köpek sahiplendirme hesaplarımızda düzenli olarak paylaşıyoruz. Önce süreci okuyun,
-        sonra tanışmak istediğiniz canları görün.</p>
-      <a class="link-arrow" href="sahiplenme-sureci.html">Sahiplenme süreci <span aria-hidden="true">→</span></a>
+      <h2 class="display">Yuva<br class="lb"> İlanlarımız</h2>
+      <p class="body-lg" style="margin:1.4rem 0 1.9rem; max-width:29rem;">Yaşam alanlarımızda yuva
+        bekleyen yüzlerce can var; ne yazık ki her birini tek tek paylaşmaya yetişemiyoruz.
+        Aradığınız dostu burada bulamıyorsanız ya da emin değilseniz sahiplendirme formumuzu
+        doldurun, doğru eşleşmeyi birlikte bulalım.</p>
+      <a class="link-arrow" href="sahiplen.html">Sahiplenme Formu <span aria-hidden="true">→</span></a>
     </div>
 
     <div class="adopt__cards">
@@ -137,18 +139,16 @@ INDEX = """
         <img src="assets/img/kopek-portre.jpg" width="2302" height="1535"
              alt="Kameraya bakan sarı bir köpek yavrusu.">
         <span class="adopt-card__caption">
-          <span class="adopt-card__handle">Yuva arayan köpekler</span>
+          <span class="adopt-card__handle">Yuva arayan köpeklerimiz</span>
           <span class="adopt-card__title">Köpeklerle tanış</span>
-          <span class="adopt-card__sub" data-sayac="kopek">Tüm ilanlara göz at</span>
         </span>
       </a>
       <a class="adopt-card adopt-card--cat" href="yuva-arayan-kediler.html">
         <img src="assets/img/kedi-yasam-alani.jpg" width="2048" height="1152"
              alt="Kedi yaşam alanının koridoru; duvarda tırmanma rafları ve yataklar.">
         <span class="adopt-card__caption">
-          <span class="adopt-card__handle">Yuva arayan kediler</span>
+          <span class="adopt-card__handle">Yuva arayan kedilerimiz</span>
           <span class="adopt-card__title">Kedilerle tanış</span>
-          <span class="adopt-card__sub" data-sayac="kedi">Tüm ilanlara göz at</span>
         </span>
       </a>
     </div>
@@ -214,10 +214,10 @@ INDEX = """
   <div class="container">
     <div class="section__head">
       <div>
-        <p class="eyebrow">Hikâyeler ve sahadan haberler</p>
+        <p class="eyebrow">Hikayeler ve sahadan haberler</p>
         <h2 class="display">Umudu görünür kılanlar.</h2>
       </div>
-      <a class="link-arrow" href="hikayeler.html">Tüm hikâyeler <span aria-hidden="true">→</span></a>
+      <a class="link-arrow" href="hikayeler.html">Tüm hikayeler <span aria-hidden="true">→</span></a>
     </div>
 
     <div class="stories">
@@ -226,11 +226,11 @@ INDEX = """
           <img src="assets/img/hikaye-lucy.jpg" width="460" height="430"
                alt="Sarı koltukta Lucy’yi kucağına almış gülümseyen bir kadın.">
         </figure>
-        <span class="story__tag">Mutluluk hikâyesi</span>
+        <span class="story__tag">Mutluluk hikayesi</span>
         <h3 class="story__title">Lucy’nin yeni hayatı</h3>
         <p class="story__excerpt">Kanser tedavisi devam ederken bir aile ona yalnızca evini değil,
           bütün kalbini açtı.</p>
-        <a class="link-arrow link-arrow--sm" href="hikayeler.html">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="hikayeler.html">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="story">
@@ -242,7 +242,7 @@ INDEX = """
         <h3 class="story__title">Mobil Klinik: Kurtaran Araç</h3>
         <p class="story__excerpt">Anadolu Sigorta’nın desteğiyle tedavi, kısırlaştırma ve kontrolleri
           ihtiyaç olan yere taşıyoruz.</p>
-        <a class="link-arrow link-arrow--sm" href="hikayeler.html">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="hikayeler.html">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="story">
@@ -250,11 +250,11 @@ INDEX = """
           <img src="assets/img/hikaye-kevok.jpg" width="1600" height="1332"
                alt="Sahilde beyaz köpeği Kevok’u kucağında taşıyan bir adam.">
         </figure>
-        <span class="story__tag">Mutluluk hikâyesi</span>
+        <span class="story__tag">Mutluluk hikayesi</span>
         <h3 class="story__title">Kevok sonunda görüldü</h3>
         <p class="story__excerpt">Irkı ve yaşı yüzünden yıllarca gözden kaçan Kevok, onu gerçekten
           gören insanla tanıştı.</p>
-        <a class="link-arrow link-arrow--sm" href="hikayeler.html">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="hikayeler.html">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
     </div>
   </div>
@@ -298,8 +298,8 @@ INDEX = """
 <section class="newsletter">
   <div class="container newsletter__inner">
     <div>
-      <p class="eyebrow">İyilikten haberdar olun</p>
-      <h2 class="display">Sahadan haberler gelen<br class="lb"> kutunuzda.</h2>
+      <p class="eyebrow">Gelişmeleri takip edin</p>
+      <h2 class="display">Bültenimize abone olun.</h2>
     </div>
     <form data-demo-form data-demo-message="Teşekkürler! Bültene kayıt bu yerel prototipte henüz bağlı değil.">
       <label class="newsletter__label" for="bulten-eposta">E-posta adresi</label>
@@ -747,7 +747,7 @@ BAGIS_YAP = page_hero(
         <h3 class="tile__title">Ayni bağış</h3>
         <p class="tile__text">Mama, kum, ilaç, battaniye ve temizlik malzemesi. Öncelikli
           ihtiyaç listesini güncel tutuyoruz.</p>
-        <p class="tile__meta"><a href="guncel-ihtiyaclar.html">Güncel ihtiyaçlar →</a></p>
+        <p class="tile__meta"><a href="https://www.amazon.com.tr/kurtaranev" target="_blank" rel="noopener">Amazon ihtiyaç listesi ↗</a> · <a href="guncel-ihtiyaclar.html">Güncel ihtiyaçlar →</a></p>
       </article>
     </div>
 
@@ -945,7 +945,7 @@ KURTARAN_SHOP = page_hero(
       <article class="tile tile--white">
         <span class="tile__kicker">Ev</span>
         <h3 class="tile__title">Kupa</h3>
-        <p class="tile__text">Sabah kahveniz bir iyilik hikâyesiyle.</p>
+        <p class="tile__text">Sabah kahveniz bir iyilik hikayesiyle.</p>
         <p class="tile__meta">₺400</p>
       </article>
       <article class="tile tile--white">
@@ -1029,10 +1029,12 @@ GUNCEL_IHTIYACLAR = page_hero(
 
     <div class="callout" style="margin-top:3rem;">
       <h2 class="callout__title">Nereye gönderebilirim?</h2>
-      <p class="callout__text">Ayni bağışlarınızı ziyaret saatleri içinde yaşam alanlarımıza
-        bırakabilirsiniz. Kargo göndereceksiniz bize önceden yazın, adres paylaşalım.</p>
+      <p class="callout__text">Amazon ihtiyaç listemizden seçtiğiniz ürünler doğrudan yaşam
+        alanlarımıza gönderilir. Ayni bağışlarınızı ziyaret saatleri içinde kendiniz de
+        bırakabilirsiniz; kargo göndereceksiniz bize önceden yazın, adres paylaşalım.</p>
       <div class="callout__actions">
-        <a class="btn btn--white" href="yasam-alanlari.html">Yaşam alanları ve saatler <span aria-hidden="true">→</span></a>
+        <a class="btn btn--white" href="https://www.amazon.com.tr/kurtaranev" target="_blank" rel="noopener">Amazon ihtiyaç listesi <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow" href="yasam-alanlari.html">Yaşam alanları ve saatler <span aria-hidden="true">→</span></a>
         <a class="link-arrow" href="iletisim.html">İletişime geç <span aria-hidden="true">→</span></a>
       </div>
     </div>
@@ -1206,12 +1208,12 @@ KURUMSAL = page_hero(
 # HAKKIMIZDA
 # ===========================================================================
 HIKAYEMIZ = page_hero(
-    "Hakkımızda · Hikâyemiz ve Misyonumuz",
+    "Hakkımızda · Hikayemiz ve Misyonumuz",
     "Her can, güvende<br class=\"lb\"> ve sevildiği bir<br class=\"lb\"> hayatı hak eder.",
     "Kurtaran Ev; sahipsiz kedi ve köpekleri kurtaran, tedavi eden, rehabilite eden ve "
     "kalıcı yuvalara ulaştıran bir dernektir.",
     figure='<img src="assets/img/hero-kucak.jpg" alt="Bir gönüllü ve kurtarılan bir köpek.">',
-    breadcrumb=crumb(("Ana sayfa", "index.html"), ("Hakkımızda", None), ("Hikâyemiz ve Misyonumuz", None)),
+    breadcrumb=crumb(("Ana sayfa", "index.html"), ("Hakkımızda", None), ("Hikayemiz ve Misyonumuz", None)),
 ) + """
 <section class="section section--cream section--tight">
   <div class="container">
@@ -1356,8 +1358,10 @@ YASAM_ALANLARI = page_hero(
         <p class="tile__text">Köpeklerin bakım ve rehabilitasyonu. Yürüyüş, oyun ve
           sosyalleşme çalışmalarının merkezi.</p>
         <dl class="info-list" style="margin-top:.6rem;">
-          <div class="info-row"><dt>Ziyaret saatleri</dt><dd>12.00–17.00</dd></div>
+          <div class="info-row"><dt>Ziyaret saatleri</dt><dd>11.00–17.00</dd></div>
           <div class="info-row"><dt>Randevu</dt><dd>Gerekli değil, haber vermeniz yeterli</dd></div>
+          <div class="info-row"><dt>Konum</dt>
+            <dd><a href="https://maps.app.goo.gl/R77zL5Gg42f7ZfXY6" target="_blank" rel="noopener">Haritada gör ↗</a></dd></div>
         </dl>
       </article>
       <article class="tile tile--warm">
@@ -1378,6 +1382,8 @@ YASAM_ALANLARI = page_hero(
         <dl class="info-list" style="margin-top:.6rem;">
           <div class="info-row"><dt>Ziyaret saatleri</dt><dd>10.00–16.00</dd></div>
           <div class="info-row"><dt>Randevu</dt><dd>Hafta sonu için önerilir</dd></div>
+          <div class="info-row"><dt>Konum</dt>
+            <dd><a href="https://maps.app.goo.gl/PutVz4WqqHoSv1bNA" target="_blank" rel="noopener">Haritada gör ↗</a></dd></div>
         </dl>
       </article>
       <article class="tile tile--warm">
@@ -1407,10 +1413,10 @@ YASAM_ALANLARI = page_hero(
 
 
 HIKAYELER = page_hero(
-    "Blog Merkezi · Haberler ve Hikâyeler",
+    "Blog Merkezi · Haberler ve Hikayeler",
     "Umudu görünür<br class=\"lb\"> kılanlar.",
-    "Mutluluk hikâyeleri, saha notları ve projelerimizden haberler.",
-    breadcrumb=crumb(("Ana sayfa", "index.html"), ("Hakkımızda", None), ("Haberler ve Hikâyeler", None)),
+    "Mutluluk hikayeleri, saha notları ve projelerimizden haberler.",
+    breadcrumb=crumb(("Ana sayfa", "index.html"), ("Hakkımızda", None), ("Haberler ve Hikayeler", None)),
 ) + """
 <section class="section section--cream section--tight">
   <div class="container">
@@ -1419,11 +1425,11 @@ HIKAYELER = page_hero(
         <figure class="story__figure">
           <img src="assets/img/hikaye-lucy.jpg" alt="Sarı koltukta Lucy’yi kucaklayan bir kadın.">
         </figure>
-        <span class="story__tag">Mutluluk hikâyesi</span>
+        <span class="story__tag">Mutluluk hikayesi</span>
         <h2 class="story__title">Lucy’nin yeni hayatı</h2>
         <p class="story__excerpt">Kanser tedavisi devam ederken bir aile ona yalnızca evini değil,
           bütün kalbini açtı. Lucy artık tedavisini kendi evinde sürdürüyor.</p>
-        <a class="link-arrow link-arrow--sm" href="#">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="#">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="story">
@@ -1434,18 +1440,18 @@ HIKAYELER = page_hero(
         <h2 class="story__title">Mobil Klinik: Kurtaran Araç</h2>
         <p class="story__excerpt">Anadolu Sigorta’nın desteğiyle tedavi, kısırlaştırma ve kontrolleri
           ihtiyaç olan yere taşıyoruz. Özellikle afet bölgelerinde büyük fark yaratıyor.</p>
-        <a class="link-arrow link-arrow--sm" href="#">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="#">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="story">
         <figure class="story__figure">
           <img src="assets/img/hikaye-kevok.jpg" alt="Sahilde Kevok’u kucaklayan bir adam.">
         </figure>
-        <span class="story__tag">Mutluluk hikâyesi</span>
+        <span class="story__tag">Mutluluk hikayesi</span>
         <h2 class="story__title">Kevok sonunda görüldü</h2>
         <p class="story__excerpt">Irkı ve yaşı yüzünden yıllarca gözden kaçan Kevok, onu gerçekten
           gören insanla tanıştı. Artık her sabah sahilde yürüyor.</p>
-        <a class="link-arrow link-arrow--sm" href="#">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="#">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="story">
@@ -1456,7 +1462,7 @@ HIKAYELER = page_hero(
         <h2 class="story__title">Kış hazırlığı tamamlandı</h2>
         <p class="story__excerpt">Hadımköy’deki kulübelerin yalıtımı yenilendi, bahçe zemini
           düzenlendi. Gönüllülerimize teşekkürler.</p>
-        <a class="link-arrow link-arrow--sm" href="#">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="#">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="story">
@@ -1467,7 +1473,7 @@ HIKAYELER = page_hero(
         <h2 class="story__title">Kedi yaşam alanında yeni bölüm</h2>
         <p class="story__excerpt">Yavru kediler için ayrı bir sosyalleşme odası açtık.
           İlk misafirler çoktan yerleşti.</p>
-        <a class="link-arrow link-arrow--sm" href="#">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="#">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="story">
@@ -1478,7 +1484,7 @@ HIKAYELER = page_hero(
         <h2 class="story__title">İlk hafta rehberi</h2>
         <p class="story__excerpt">Sahiplendiğiniz canla geçireceğiniz ilk yedi gün için pratik
           öneriler: beslenme, tuvalet alışkanlığı ve güven kurma.</p>
-        <a class="link-arrow link-arrow--sm" href="#">Hikâyeyi oku <span aria-hidden="true">↗</span></a>
+        <a class="link-arrow link-arrow--sm" href="#">Hikayeyi oku <span aria-hidden="true">↗</span></a>
       </article>
     </div>
     <p class="form-note">Yazı detay sayfaları içerik girildikçe eklenecektir.</p>
@@ -1509,8 +1515,10 @@ ILETISIM = page_hero(
             <dd><a href="__IG_KOPEK__" target="_blank" rel="noopener">@kurtaranev_kopekleri</a></dd></div>
           <div class="info-row"><dt>Yuva arayan kediler</dt>
             <dd><a href="__IG_KEDI__" target="_blank" rel="noopener">@kurtaranev_kedileri</a></dd></div>
-          <div class="info-row"><dt>Hadımköy ziyaret</dt><dd>12.00–17.00</dd></div>
-          <div class="info-row"><dt>Beşiktaş ziyaret</dt><dd>10.00–16.00</dd></div>
+          <div class="info-row"><dt>Hadımköy ziyaret</dt>
+            <dd>11.00–17.00 · <a href="https://maps.app.goo.gl/R77zL5Gg42f7ZfXY6" target="_blank" rel="noopener">Haritada gör ↗</a></dd></div>
+          <div class="info-row"><dt>Beşiktaş ziyaret</dt>
+            <dd>10.00–16.00 · <a href="https://maps.app.goo.gl/PutVz4WqqHoSv1bNA" target="_blank" rel="noopener">Haritada gör ↗</a></dd></div>
         </dl>
       </div>
 
@@ -1816,7 +1824,7 @@ PAGES = {
         "body": KURUMSAL,
     },
     "hikayemiz.html": {
-        "title": "Hikâyemiz ve Misyonumuz | Kurtaran Ev",
+        "title": "Hikayemiz ve Misyonumuz | Kurtaran Ev",
         "description": "Kurtaran Ev nasıl başladı, neye inanıyor, ne yapıyor?",
         "body": HIKAYEMIZ,
     },
@@ -1831,8 +1839,8 @@ PAGES = {
         "body": YASAM_ALANLARI,
     },
     "hikayeler.html": {
-        "title": "Haberler ve Hikâyeler | Kurtaran Ev",
-        "description": "Mutluluk hikâyeleri, saha notları ve projelerimizden haberler.",
+        "title": "Haberler ve Hikayeler | Kurtaran Ev",
+        "description": "Mutluluk hikayeleri, saha notları ve projelerimizden haberler.",
         "body": HIKAYELER,
     },
     "iletisim.html": {

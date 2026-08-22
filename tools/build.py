@@ -80,7 +80,7 @@ NAV = [
             {
                 "label": None,
                 "items": [
-                    ("Hikâyemiz ve Misyonumuz", "hikayemiz.html", None, False),
+                    ("Hikayemiz ve Misyonumuz", "hikayemiz.html", None, False),
                     ("Etkimiz ve Çalışmalarımız", "etkimiz.html", None, False),
                     ("Yaşam Alanlarımızı Ziyaret", "yasam-alanlari.html", None, False),
                 ],
@@ -88,7 +88,7 @@ NAV = [
             {
                 "label": "Blog Merkezi",
                 "items": [
-                    ("Haberler ve Hikâyeler", "hikayeler.html", None, False),
+                    ("Haberler ve Hikayeler", "hikayeler.html", None, False),
                 ],
             },
             {
@@ -140,16 +140,16 @@ def render_nav() -> str:
 
 
 HEADER = """  <div class="announce">
-    <span>Hadımköy ziyaret: <b>12.00–17.00</b></span>
+    <span><a href="https://maps.app.goo.gl/R77zL5Gg42f7ZfXY6" target="_blank" rel="noopener">Hadımköy ziyaret</a>: <b>11.00–17.00</b></span>
     <span class="sep" aria-hidden="true">·</span>
-    <span>Beşiktaş ziyaret: <b>10.00–16.00</b></span>
+    <span><a href="https://maps.app.goo.gl/PutVz4WqqHoSv1bNA" target="_blank" rel="noopener">Beşiktaş ziyaret</a>: <b>10.00–16.00</b></span>
   </div>
 
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">
         <img src="assets/img/logo.png" alt="" width="56" height="56">
-        <span class="brand__name">Kurtaran Ev</span>
+        <span class="brand__name">Kurtaran Ev Derneği</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="ana-menu">
@@ -185,8 +185,8 @@ FOOTER = """  <footer class="site-footer">
       <div class="site-footer__brand">
         <img src="assets/img/logo.png" alt="" width="80" height="80">
         <div>
-          <div class="site-footer__name">Kurtaran Ev</div>
-          <p class="site-footer__tagline">Her can için güvenli bir hayat.</p>
+          <div class="site-footer__name">Kurtaran Ev Derneği</div>
+          <p class="site-footer__tagline">Satın Alma Sahiplen</p>
         </div>
       </div>
 
@@ -206,7 +206,7 @@ FOOTER = """  <footer class="site-footer">
           <h2 class="site-footer__heading">Kurtaran Ev</h2>
           <ul>
             <li><a href="hikayemiz.html">Hakkımızda</a></li>
-            <li><a href="hikayeler.html">Hikâyeler</a></li>
+            <li><a href="hikayeler.html">Hikayeler</a></li>
             <li><a href="yasam-alanlari.html">Yaşam alanlarımız</a></li>
             <li><a href="iletisim.html">İletişim</a></li>
           </ul>
@@ -217,6 +217,14 @@ FOOTER = """  <footer class="site-footer">
             <li><a href="https://www.instagram.com/kurtaranev/" target="_blank" rel="noopener">Instagram</a></li>
             <li><a href="https://www.instagram.com/kurtaranev_kopekleri/" target="_blank" rel="noopener">Instagram · Köpekler</a></li>
             <li><a href="https://www.instagram.com/kurtaranev_kedileri/" target="_blank" rel="noopener">Instagram · Kediler</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">İletişim</h2>
+          <ul>
+            <li><a href="mailto:iletisim@kurtaranev.org">iletisim@kurtaranev.org</a></li>
+            <li><a href="https://maps.app.goo.gl/R77zL5Gg42f7ZfXY6" target="_blank" rel="noopener">Hadımköy ziyaret: 11.00–17.00</a></li>
+            <li><a href="https://maps.app.goo.gl/PutVz4WqqHoSv1bNA" target="_blank" rel="noopener">Beşiktaş ziyaret: 10.00–16.00</a></li>
           </ul>
         </div>
       </div>

@@ -137,7 +137,7 @@
 
   var cta = h.durum === 'yuvalandi'
     ? '<div class="callout callout--sky"><h2 class="callout__title">' + esc(h.isim) +
-      ' yuvasına kavuştu 🎉</h2><p class="callout__text">Başka canlar hâlâ bekliyor.</p>' +
+      ' yuvasına kavuştu 🎉</h2><p class="callout__text">Başka canlar hala bekliyor.</p>' +
       '<div class="callout__actions"><a class="btn btn--white" href="' + listeSayfasi + '">' +
       esc(listeAdi) + ' <span aria-hidden="true">→</span></a></div></div>'
     : '';
