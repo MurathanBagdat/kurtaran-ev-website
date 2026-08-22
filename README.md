@@ -27,12 +27,31 @@ Ardından `http://127.0.0.1:8000` — yönetim paneli için `/admin.html`.
 
 ---
 
+## İngilizce sürüm
+
+Site iki dilde üretilir: Türkçe sayfalar `site/` köküne, İngilizce sayfalar aynı dosya
+adlarıyla `site/en/` altına yazılır (ör. `site/en/sahiplen.html`). Başlıktaki dil menüsü
+her sayfayı diğer dildeki karşılığına bağlar; `<link rel="alternate" hreflang>` etiketleri
+de üretilir.
+
+- İngilizce sayfa gövdeleri: `tools/en/part1.py` … `part4.py`, `tools/pages_en.py` birleştirir.
+- Başlık/altbilgi/menü metinleri: `tools/build.py` içindeki `LOCALES` ve `NAV_EN`.
+- Katalog, ilan detayı ve form metinleri: `site/assets/js/i18n.js` (`<html lang>` okunur).
+- İlan verisi Türkçe kalır; yaş ve karakter etiketleri İngilizceye JS'te çevrilir,
+  açıklama metni Türkçe gösterilip kısa bir not eklenir.
+- Yönetim paneli yalnızca Türkçedir (`site/en/admin.html` yoktur).
+
+**Türkçe bir metni değiştirirken `tools/en/` altındaki karşılığını da güncelleyin.**
+
+---
+
 ## Klasör yapısı
 
 ```
 Kurtaran Ev Websitesi/
 ├── site/                          ← yayına çıkacak klasör (statik)
 │   ├── index.html                 ← ana sayfa (PDF prototipinin birebir karşılığı)
+│   ├── en/                        ← İngilizce sayfalar (aynı dosya adları)
 │   ├── yuva-arayan-kopekler.html  ← ilan kataloğu + arama/filtre
 │   ├── yuva-arayan-kediler.html   ← ilan kataloğu + arama/filtre
 │   ├── ilan.html                  ← tek ilan detayı (?id=...)
@@ -41,6 +60,7 @@ Kurtaran Ev Websitesi/
 │   └── assets/
 │       ├── css/style.css          ← tasarım sistemi
 │       ├── css/admin.css          ← yalnızca yönetim paneli
+│       ├── js/i18n.js             ← TR/EN arayüz sözlüğü
 │       ├── js/catalog.js          ← arama, filtre, sıralama
 │       ├── js/animal.js           ← ilan detayı
 │       ├── js/admin.js            ← yönetim paneli
@@ -51,9 +71,12 @@ Kurtaran Ev Websitesi/
 │       └── img/animals/           ← ilan fotoğrafları
 ├── tools/
 │   ├── build.py                   ← sayfaları üretir
-│   ├── pages.py                   ← sayfa içerikleri
+│   ├── pages.py                   ← sayfa içerikleri (TR)
+│   ├── pages_en.py + en/          ← sayfa içerikleri (EN)
 │   ├── animals.py                 ← veri modeli + depo
 │   ├── caption_parser.py          ← Instagram metni → yapılandırılmış veri
+│   ├── ai_parser.py               ← yapay zekâ ayrıştırıcı (TR + EN çıktı)
+│   ├── translate_en.py            ← eski kayıtların İngilizce alanlarını tamamlar
 │   ├── instagram_sync.py          ← Instagram çekme pipeline'ı
 │   ├── server.py                  ← yerel sunucu + admin API
 │   ├── seed.py                    ← örnek kayıt üretici/temizleyici
@@ -174,6 +197,13 @@ Pipeline ne yapıyor?
    verilirse `caption_parser.py`'deki kural tabanlı ayrıştırıcı devreye girer;
    model hata verirse de aynı yedeğe düşülür. Anahtar:
    `instagram_config.json > openrouter_key`.
+   Model her ilanı **iki dilde** döndürür: serbest metin alanlarının İngilizcesi
+   `cinsEn`, `renkEn`, `konumEn`, `saglikNotuEn`, `karakterEn`, `aciklamaEn`
+   alanlarına yazılır (tür, cinsiyet, boyut gibi seçimlik alanlar dilden bağımsız
+   anahtarlar olduğu için çevrilmez — onları arayüz kendi diline göre gösterir).
+   Kural tabanlı yedek ayrıştırıcı yalnızca Türkçe üretir; o durumda İngilizce
+   alanlar boş kalır ve arayüz Türkçesine düşer. Türkçesi olup İngilizcesi eksik
+   kalan kayıtlar için: `python3 tools/translate_en.py`.
 3. Fotoğrafları indirir.
 4. Kaydı yazar. Varsayılan olarak ilan **doğrudan yayınlanır** ("Yuva arıyor");
    `--taslak` bayrağıyla çalıştırılırsa kayıt taslak düşer ve yönetici panelden

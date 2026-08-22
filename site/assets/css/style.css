@@ -370,7 +370,9 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: .7rem 1rem;
   border: 0; background: none; text-align: left;
   font-size: .9rem; font-weight: 700; cursor: pointer;
+  text-decoration: none;
 }
+.lang__option[aria-current="true"] { color: var(--green); }
 
 .lang__option + .lang__option { border-top: 1px solid var(--navy-15); }
 .lang__option:hover { background: var(--cream-warm); }
@@ -1200,6 +1202,8 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
 
 /* .notice display:flex, tarayıcının [hidden] kuralını eziyordu */
 .notice[hidden] { display: none; }
+.notice--lang { margin-bottom: 1.4rem; background: var(--sky); }
+.animal-detail__note { font-size: .86rem; opacity: .8; margin: -.6rem 0 1.4rem; }
 
 .notice__icon { flex: none; font-size: 1.2rem; line-height: 1.3; }
 .notice b { display: block; margin-bottom: .15rem; }

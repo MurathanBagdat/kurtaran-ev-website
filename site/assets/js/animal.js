@@ -6,6 +6,10 @@
   if (!kok) return;
 
   var veri = (window.KE_DATA && window.KE_DATA.hayvanlar) || [];
+  var EN = document.documentElement.lang === 'en';
+  var I18N = window.KE_I18N;                             // assets/js/i18n.js
+  var T = I18N.t;
+  var BASE = window.KE_BASE || '';                       // site/en/ altında "../"
   var id = new URLSearchParams(location.search).get('id');
   var h = veri.filter(function (a) { return a.id === id; })[0];
 
@@ -16,12 +20,9 @@
     '<path d="M34 30c8 0 15 6 15 13 0 6-5 9-11 9-3 0-5-1-8-1s-5 1-8 1c-6 0-11-3-11-9 0-7 7-13 15-13z"/>' +
     '</svg>';
 
-  var CINSIYET = { disi: 'Dişi', erkek: 'Erkek' };
-  var BOYUT = { kucuk: 'Küçük', orta: 'Orta', buyuk: 'Büyük' };
-  var DURUM = {
-    'yuva-ariyor': 'Yuva arıyor', 'rezerve': 'Rezerve',
-    'yuvalandi': 'Yuvalandı', 'taslak': 'Taslak'
-  };
+  var CINSIYET = I18N.cinsiyet;
+  var BOYUT = I18N.boyut;
+  var DURUM = I18N.durum;
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -33,28 +34,28 @@
   if (!h || h.durum === 'taslak') {
     kok.innerHTML =
       '<div class="empty-state">' +
-        '<h1 class="animal-detail__name" style="font-size:2.2rem">İlan bulunamadı</h1>' +
-        '<p>Bu ilan kaldırılmış, yuvasına kavuşmuş ya da bağlantı hatalı olabilir.</p>' +
+        '<h1 class="animal-detail__name" style="font-size:2.2rem">' + T.ilanYok + '</h1>' +
+        '<p>' + T.ilanYokMetin + '</p>' +
         '<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">' +
-        '<a class="btn" href="yuva-arayan-kopekler.html">Yuva arayan köpekler <span aria-hidden="true">→</span></a>' +
-        '<a class="btn btn--sky" href="yuva-arayan-kediler.html">Yuva arayan kediler <span aria-hidden="true">→</span></a></div>' +
+        '<a class="btn" href="yuva-arayan-kopekler.html">' + T.kopekListesi + ' <span aria-hidden="true">→</span></a>' +
+        '<a class="btn btn--sky" href="yuva-arayan-kediler.html">' + T.kediListesi + ' <span aria-hidden="true">→</span></a></div>' +
       '</div>';
-    document.title = 'İlan bulunamadı | Kurtaran Ev';
+    document.title = T.ilanYok + ' | Kurtaran Ev';
     return;
   }
 
-  document.title = h.isim + ' — yuva arıyor | Kurtaran Ev';
-  var aciklama = document.querySelector('meta[name="description"]');
-  if (aciklama) aciklama.setAttribute('content', (h.aciklama || '').slice(0, 155));
+  document.title = h.isim + T.basliEki + ' | Kurtaran Ev';
+  var metaAciklama = document.querySelector('meta[name="description"]');
+  if (metaAciklama) metaAciklama.setAttribute('content', (I18N.alan(h, 'aciklama') || '').slice(0, 155));
 
   function tahmin(alan) {
     return (h.tahmini || []).indexOf(alan) !== -1
-      ? ' <span class="spec__est">(tahmini)</span>' : '';
+      ? ' <span class="spec__est">' + T.tahmini + '</span>' : '';
   }
 
   function uclu(v) {
-    if (v === true) return 'Evet';
-    if (v === false) return 'Hayır';
+    if (v === true) return T.evet;
+    if (v === false) return T.hayir;
     return null;
   }
 
@@ -63,7 +64,7 @@
     return '<div class="spec">' +
       '<span class="spec__label">' + esc(etiket) + '</span>' +
       '<span class="spec__value' + (bos ? ' unknown' : '') + '">' +
-        (bos ? 'Bilinmiyor' : esc(deger) + (ekBilgi || '')) +
+        (bos ? T.bilinmiyor : esc(deger) + (ekBilgi || '')) +
       '</span></div>';
   }
 
@@ -72,56 +73,61 @@
   var galeri;
   if (fotograflar.length) {
     galeri =
-      '<div class="animal-gallery__main"><img id="ana-foto" src="' + esc(fotograflar[0]) +
+      '<div class="animal-gallery__main"><img id="ana-foto" src="' + esc(BASE + fotograflar[0]) +
         '" alt="' + esc(h.isim) + '"></div>' +
       (fotograflar.length > 1
         ? '<div class="animal-gallery__thumbs">' + fotograflar.map(function (f, i) {
-            return '<button type="button" data-foto="' + esc(f) + '"' +
+            return '<button type="button" data-foto="' + esc(BASE + f) + '"' +
               (i === 0 ? ' class="is-active"' : '') +
-              ' aria-label="Fotoğraf ' + (i + 1) + '"><img src="' + esc(f) + '" alt=""></button>';
+              ' aria-label="' + T.fotograf + ' ' + (i + 1) + '"><img src="' + esc(BASE + f) + '" alt=""></button>';
           }).join('') + '</div>'
         : '');
   } else {
     galeri =
       '<div class="animal-gallery__main"><div class="animal-card__placeholder">' +
-      PATI_SVG + '<span>Fotoğraf yakında</span></div></div>';
+      PATI_SVG + '<span>' + T.fotoYakinda + '</span></div></div>';
   }
 
   /* --- künye ------------------------------------------------------------- */
-  var kilo = h.kiloKg == null ? null : String(h.kiloKg).replace('.', ',') + ' kg';
+  var kilo = h.kiloKg == null ? null : String(h.kiloKg).replace('.', EN ? '.' : ',') + ' kg';
   var specler = [
-    spec('Cinsiyet', h.cinsiyet ? CINSIYET[h.cinsiyet] : null),
-    spec('Yaş', h.yasMetni, tahmin('yasAy')),
-    spec('Cins / ırk', h.cins, tahmin('cins')),
-    spec('Kilo', kilo, tahmin('kiloKg')),
-    spec('Boyut', h.boyut ? BOYUT[h.boyut] : null, tahmin('boyut')),
-    spec('Renk / desen', h.renk),
-    spec('Kısırlaştırıldı', uclu(h.kisir)),
-    spec('Aşıları tam', uclu(h.asili)),
-    spec('Çocuklarla uyumlu', uclu(h.cocuklaUyum)),
-    spec('Köpeklerle uyumlu', uclu(h.kopeklerleUyum)),
-    spec('Kedilerle uyumlu', uclu(h.kedilerleUyum)),
-    spec('Özel bakım', uclu(h.ozelBakim))
+    spec(T.sCinsiyet, h.cinsiyet ? CINSIYET[h.cinsiyet] : null),
+    spec(T.sYas, I18N.yasMetni(h), tahmin('yasAy')),
+    spec(T.sCins, I18N.alan(h, 'cins'), tahmin('cins')),
+    spec(T.sKilo, kilo, tahmin('kiloKg')),
+    spec(T.sBoyut, h.boyut ? BOYUT[h.boyut] : null, tahmin('boyut')),
+    spec(T.sRenk, I18N.alan(h, 'renk')),
+    spec(T.sKisir, uclu(h.kisir)),
+    spec(T.sAsili, uclu(h.asili)),
+    spec(T.sCocuk, uclu(h.cocuklaUyum)),
+    spec(T.sKopek, uclu(h.kopeklerleUyum)),
+    spec(T.sKedi, uclu(h.kedilerleUyum)),
+    spec(T.sOzelBakim, uclu(h.ozelBakim))
   ].join('');
 
   var rozetler = ['<span class="badge badge--' + h.durum + '">' + esc(DURUM[h.durum]) + '</span>'];
-  if (h.ornek) rozetler.push('<span class="badge badge--ornek">Örnek kayıt</span>');
+  if (h.ornek) rozetler.push('<span class="badge badge--ornek">' + T.ornekKayit + '</span>');
 
-  var etiketler = (h.karakter || []).map(function (k) {
-    return '<span class="tag">' + esc(k) + '</span>';
+  var karakterler = I18N.alan(h, 'karakter') || [];
+  var etiketler = karakterler.map(function (k) {
+    return '<span class="tag">' + esc(h.karakterEn && EN ? k : I18N.karakter(k)) + '</span>';
   }).join('');
+
+  /* Açıklama: İngilizce alan varsa o; yoksa Türkçesi + kısa not. */
+  var aciklama = I18N.alan(h, 'aciklama');
+  var aciklamaTr = EN && !!aciklama && !h.aciklamaEn;
 
   var kaynakIc = '';
   if (h.kaynak && h.kaynak.tip === 'instagram' && h.kaynak.baglanti) {
     /* Yalnızca hesap adı bağlantı olsun; "gönderisinden" altı çizili görünmesin. */
-    kaynakIc = 'Bu ilan <a href="' + esc(h.kaynak.baglanti) +
-      '" target="_blank" rel="noopener">@' + esc(h.kaynak.hesap) + '</a> Instagram gönderisinden alındı.';
+    kaynakIc = T.kaynakInstagram('<a href="' + esc(h.kaynak.baglanti) +
+      '" target="_blank" rel="noopener">@' + esc(h.kaynak.hesap) + '</a>');
   } else if (h.ornek) {
-    kaynakIc = 'Bu bir örnek kayıttır; gerçek bir ilan değildir.';
+    kaynakIc = T.kaynakOrnek;
   }
 
   var listeSayfasi = h.tur === 'kedi' ? 'yuva-arayan-kediler.html' : 'yuva-arayan-kopekler.html';
-  var listeAdi = h.tur === 'kedi' ? 'Yuva arayan kediler' : 'Yuva arayan köpekler';
+  var listeAdi = h.tur === 'kedi' ? T.kediListesi : T.kopekListesi;
 
   /* İletişim sayfasına ilan bilgisini ve niyeti taşıyan bağlantı */
   function iletisimBaglantisi(konu) {
@@ -137,7 +143,7 @@
 
   var cta = h.durum === 'yuvalandi'
     ? '<div class="callout callout--sky"><h2 class="callout__title">' + esc(h.isim) +
-      ' yuvasına kavuştu 🎉</h2><p class="callout__text">Başka canlar hala bekliyor.</p>' +
+      T.yuvalandiBaslik + '</h2><p class="callout__text">' + T.yuvalandiMetin + '</p>' +
       '<div class="callout__actions"><a class="btn btn--white" href="' + listeSayfasi + '">' +
       esc(listeAdi) + ' <span aria-hidden="true">→</span></a></div></div>'
     : '';
@@ -147,13 +153,14 @@
     '<div>' +
       '<div class="animal-detail__badges">' + rozetler.join('') + '</div>' +
       '<h1 class="animal-detail__name">' + esc(h.isim) + '</h1>' +
-      (h.aciklama ? '<p class="animal-detail__lead">' + esc(h.aciklama) + '</p>' : '') +
+      (aciklama ? '<p class="animal-detail__lead"' + (aciklamaTr ? ' lang="tr"' : '') + '>' + esc(aciklama) + '</p>' +
+        (aciklamaTr ? '<p class="animal-detail__note">' + T.aciklamaTurkce + '</p>' : '') : '') +
       (etiketler ? '<div class="animal-card__tags" style="margin-bottom:1.6rem">' + etiketler + '</div>' : '') +
       '<div class="spec-grid">' + specler + '</div>' +
       (h.saglikNotu
         ? '<div class="callout callout--cream" style="box-shadow:none;margin-bottom:1.6rem">' +
-          '<h2 class="callout__title" style="font-size:1.3rem">Sağlık notu</h2>' +
-          '<p class="callout__text">' + esc(h.saglikNotu) + '</p></div>'
+          '<h2 class="callout__title" style="font-size:1.3rem">' + T.saglikNotu + '</h2>' +
+          '<p class="callout__text"' + (EN && !h.saglikNotuEn ? ' lang="tr"' : '') + '>' + esc(I18N.alan(h, 'saglikNotu')) + '</p></div>'
         : '') +
       cta +
       (!bantAktif && kaynakIc ? '<p class="animal-detail__source">' + kaynakIc + '</p>' : '') +
@@ -166,7 +173,7 @@
   /* Sayfanın altındaki yatay çağrı bandı — yuvalanmış canlarda gösterilmez */
   if (bantAktif) {
     var bantBaslik = bant.querySelector('[data-meet-title]');
-    if (bantBaslik) bantBaslik.textContent = h.isim + ' ile tanışmak ister misiniz?';
+    if (bantBaslik) bantBaslik.textContent = T.tanismak(h.isim);
 
     /* Seçenekler ilanı iletişim formuna taşısın */
     bant.querySelectorAll('[data-meet-option]').forEach(function (baglanti) {
@@ -228,14 +235,15 @@
 
     digerIzgara.innerHTML = digerleri.map(function (a) {
       var gorsel = (a.fotograflar && a.fotograflar[0])
-        ? '<img src="' + esc(a.fotograflar[0]) + '" alt="' + esc(a.isim) + '" loading="lazy">'
-        : '<div class="animal-card__placeholder">' + PATI_SVG + '<span>Fotoğraf yakında</span></div>';
+        ? '<img src="' + esc(BASE + a.fotograflar[0]) + '" alt="' + esc(a.isim) + '" loading="lazy">'
+        : '<div class="animal-card__placeholder">' + PATI_SVG + '<span>' + T.fotoYakinda + '</span></div>';
 
+      var yasA = I18N.yasMetni(a);
       var bilgiler = [
         a.cinsiyet ? '<li>' + esc(CINSIYET[a.cinsiyet]) + '</li>'
-          : '<li class="unknown">Cinsiyet bilinmiyor</li>',
-        a.yasMetni ? '<li>' + esc(a.yasMetni) + '</li>'
-          : '<li class="unknown">Yaş bilinmiyor</li>'
+          : '<li class="unknown">' + T.cinsiyetBilinmiyor + '</li>',
+        yasA ? '<li>' + esc(yasA) + '</li>'
+          : '<li class="unknown">' + T.yasBilinmiyor + '</li>'
       ].join('');
 
       return '<a class="animal-card" href="' + ilanBaglantisi(a) + '">' +
@@ -246,13 +254,13 @@
         '<div class="animal-card__body">' +
           '<h3 class="animal-card__name">' + esc(a.isim) + '</h3>' +
           '<ul class="animal-card__facts">' + bilgiler + '</ul>' +
-          '<span class="animal-card__cta">İlanı gör <span aria-hidden="true">→</span></span>' +
+          '<span class="animal-card__cta">' + T.ilaniGor + ' <span aria-hidden="true">→</span></span>' +
         '</div></a>';
     }).join('');
 
     var digerBaslik = digerBolum.querySelector('[data-others-title]');
     if (digerBaslik) {
-      digerBaslik.textContent = h.tur === 'kedi' ? 'Diğer yuva arayan kediler' : 'Diğer yuva arayan köpekler';
+      digerBaslik.textContent = h.tur === 'kedi' ? T.digerKediler : T.digerKopekler;
     }
     var digerTumu = digerBolum.querySelector('[data-others-all]');
     if (digerTumu) digerTumu.setAttribute('href', listeSayfasi);
