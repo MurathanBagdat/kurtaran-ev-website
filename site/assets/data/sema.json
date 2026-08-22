@@ -125,7 +125,46 @@
       "tip": "uzunmetin",
       "etiket": "İlan metni",
       "grup": "icerik"
+    },
+    "cinsEn": {
+      "tip": "metin",
+      "etiket": "Breed",
+      "grup": "ceviri"
+    },
+    "renkEn": {
+      "tip": "metin",
+      "etiket": "Colour / markings",
+      "grup": "ceviri"
+    },
+    "konumEn": {
+      "tip": "metin",
+      "etiket": "Location",
+      "grup": "ceviri"
+    },
+    "saglikNotuEn": {
+      "tip": "uzunmetin",
+      "etiket": "Health note",
+      "grup": "ceviri"
+    },
+    "karakterEn": {
+      "tip": "etiketler",
+      "etiket": "Character tags",
+      "grup": "ceviri",
+      "ipucu": "Virgülle ayırın: playful, calm, affectionate"
+    },
+    "aciklamaEn": {
+      "tip": "uzunmetin",
+      "etiket": "Listing text",
+      "grup": "ceviri"
     }
+  },
+  "gruplar": {
+    "temel": "Temel bilgiler",
+    "fiziksel": "Fiziksel özellikler",
+    "saglik": "Sağlık",
+    "uyum": "Uyum",
+    "icerik": "İlan içeriği",
+    "ceviri": "İngilizce (site EN kipi)"
   },
   "durumlar": {
     "taslak": "Taslak (yayında değil)",
@@ -137,6 +176,19 @@
     "yavru": "Yavru (0–1 yaş)",
     "yetiskin": "Yetişkin (1–7 yaş)",
     "kidemli": "Kıdemli (7+ yaş)"
+  },
+  "yasGruplariEn": {
+    "yavru": "Puppy / kitten (0–1)",
+    "yetiskin": "Adult (1–7)",
+    "kidemli": "Senior (7+)"
+  },
+  "enEslesme": {
+    "cins": "cinsEn",
+    "renk": "renkEn",
+    "konum": "konumEn",
+    "saglikNotu": "saglikNotuEn",
+    "karakter": "karakterEn",
+    "aciklama": "aciklamaEn"
   },
   "tahminEdilebilir": [
     "yasAy",

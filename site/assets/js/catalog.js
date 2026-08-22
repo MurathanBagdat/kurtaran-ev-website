@@ -98,7 +98,9 @@
 
     if (durum.q) {
       var q = sade(durum.q);
-      var hedef = sade(h.arama || (h.isim + ' ' + (h.cins || '')));
+      /* EN sayfada İngilizce arama dizini kullanılır; çevirisi olmayan
+         alanlarda o dizin zaten Türkçesine düşüyor (animals.py > aramaEn). */
+      var hedef = sade((EN && h.aramaEn) || h.arama || (h.isim + ' ' + (h.cins || '')));
       if (hedef.indexOf(q) === -1) return false;
     }
     return true;

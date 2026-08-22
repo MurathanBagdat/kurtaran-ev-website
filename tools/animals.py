@@ -53,6 +53,7 @@ GRUPLAR = {
     "saglik":    "Sağlık",
     "uyum":      "Uyum",
     "icerik":    "İlan içeriği",
+    "ceviri":    "İngilizce (site EN kipi)",
 }
 
 # Alan şeması: admin formunu, doğrulamayı ve filtreleri bu tablo besler.
@@ -86,6 +87,28 @@ FIELDS = {
     "karakter":    {"tip": "etiketler", "etiket": "Karakter etiketleri", "grup": "icerik",
                     "ipucu": "Virgülle ayırın: oyuncu, sakin, sevecen"},
     "aciklama":    {"tip": "uzunmetin", "etiket": "İlan metni", "grup": "icerik"},
+
+    # Serbest metin alanlarının İngilizcesi. Seçimlik/sayısal alanlar (tur, cinsiyet,
+    # boyut, yasAy...) dilden bağımsız anahtarlar olduğu için çevrilmez; arayüz
+    # onları kendi diline göre gösterir. Boş bırakılırsa EN sayfada Türkçesi görünür.
+    "cinsEn":      {"tip": "metin",  "etiket": "Breed", "grup": "ceviri"},
+    "renkEn":      {"tip": "metin",  "etiket": "Colour / markings", "grup": "ceviri"},
+    "konumEn":     {"tip": "metin",  "etiket": "Location", "grup": "ceviri"},
+    "saglikNotuEn":{"tip": "uzunmetin", "etiket": "Health note", "grup": "ceviri"},
+    "karakterEn":  {"tip": "etiketler", "etiket": "Character tags", "grup": "ceviri",
+                    "ipucu": "Virgülle ayırın: playful, calm, affectionate"},
+    "aciklamaEn":  {"tip": "uzunmetin", "etiket": "Listing text", "grup": "ceviri"},
+}
+
+# Türkçe alan → İngilizce karşılığı. Arayüz EN kipinde önce sağdakine bakar,
+# boşsa soldakine düşer.
+EN_ESLESME = {
+    "cins": "cinsEn",
+    "renk": "renkEn",
+    "konum": "konumEn",
+    "saglikNotu": "saglikNotuEn",
+    "karakter": "karakterEn",
+    "aciklama": "aciklamaEn",
 }
 
 TEXT_FIELDS = {k for k, v in FIELDS.items() if v["tip"] in ("metin", "uzunmetin")}
@@ -132,6 +155,21 @@ def yas_metni(ay: int | None) -> str | None:
     return f"{yil} yaşında"
 
 
+def yas_metni_en(ay: int | None) -> str | None:
+    """Ay cinsinden yaşı okunur İngilizceye çevirir (yas_metni'nin EN karşılığı)."""
+    if ay is None:
+        return None
+    if ay < 1:
+        return "Newborn"
+    if ay < 12:
+        return "1 month old" if ay == 1 else f"{ay} months old"
+    yil = ay // 12
+    kalan = ay % 12
+    if kalan >= 6:
+        return f"{yil}.5 years old"
+    return "1 year old" if yil == 1 else f"{yil} years old"
+
+
 def yas_grubu(tur: str, ay: int | None) -> str | None:
     """Filtreleme için yaş grubu."""
     if ay is None:
@@ -144,6 +182,7 @@ def yas_grubu(tur: str, ay: int | None) -> str | None:
 
 
 AGE_GROUPS = {"yavru": "Yavru (0–1 yaş)", "yetiskin": "Yetişkin (1–7 yaş)", "kidemli": "Kıdemli (7+ yaş)"}
+AGE_GROUPS_EN = {"yavru": "Puppy / kitten (0–1)", "yetiskin": "Adult (1–7)", "kidemli": "Senior (7+)"}
 
 
 def boyut_tahmini(tur: str, kilo: float | None) -> str | None:
@@ -156,6 +195,19 @@ def boyut_tahmini(tur: str, kilo: float | None) -> str | None:
     if kilo < 25:
         return "orta"
     return "buyuk"
+
+
+def en_gorunum(kayit: dict) -> dict:
+    """Kaydın İngilizce serbest metin alanlarını, boş olanlar Türkçesine düşerek döner.
+
+    Anahtarlar Türkçe alan adlarıdır ({"cins": ..., "aciklama": ...}), böylece
+    arayüz aynı isimlerle iki dilde de çalışabilir.
+    """
+    gorunum = {}
+    for tr_alan, en_alan in EN_ESLESME.items():
+        gorunum[tr_alan] = kayit.get(en_alan) or kayit.get(tr_alan) or (
+            [] if FIELDS[tr_alan]["tip"] == "etiketler" else None)
+    return gorunum
 
 
 # ---------------------------------------------------------------------------
@@ -258,13 +310,26 @@ def normalize(ham: dict) -> tuple[dict, list[str]]:
             if "boyut" not in kayit["tahmini"]:
                 kayit["tahmini"].append("boyut")
 
+    # karakterEn Türkçesiyle aynı sayıda değilse eşleşmeyi garanti edemeyiz;
+    # arayüz bu durumda Türkçe etiketleri gösterir (bkz. en_gorunum)
+    if len(kayit["karakterEn"]) != len(kayit["karakter"]):
+        kayit["karakterEn"] = []
+
     # arayüzün hazır kullanacağı türetilmiş alanlar
     kayit["yasMetni"] = yas_metni(kayit["yasAy"])
+    kayit["yasMetniEn"] = yas_metni_en(kayit["yasAy"])
     kayit["yasGrubu"] = yas_grubu(tur, kayit["yasAy"])
     kayit["arama"] = " ".join(filter(None, [
         kayit.get("isim"), kayit.get("cins"), kayit.get("renk"),
         kayit.get("konum"), kayit.get("aciklama"), kayit.get("saglikNotu"),
         " ".join(kayit.get("karakter") or []),
+    ])).lower()
+    # EN sayfadaki arama kutusu bunu kullanır; çevirisi olmayan alanda Türkçesine düşer
+    en = en_gorunum(kayit)
+    kayit["aramaEn"] = " ".join(filter(None, [
+        kayit.get("isim"), en["cins"], en["renk"],
+        en["konum"], en["aciklama"], en["saglikNotu"],
+        " ".join(en["karakter"]),
     ])).lower()
 
     return kayit, hatalar
@@ -317,8 +382,11 @@ def sema_govde() -> dict:
     """Admin panelinin (yerel API ya da GitHub kipi) kullandığı şema."""
     return {
         "alanlar": FIELDS,
+        "gruplar": GRUPLAR,
         "durumlar": STATUS,
         "yasGruplari": AGE_GROUPS,
+        "yasGruplariEn": AGE_GROUPS_EN,
+        "enEslesme": EN_ESLESME,
         "tahminEdilebilir": list(ESTIMABLE),
     }
 
