@@ -68,6 +68,19 @@
         event.preventDefault();
       });
     });
+
+    /* Sorgu dizesini ve çıpayı diğer dile taşı. Dil bağlantıları sayfa üretilirken
+       yazıldığı için sabittir; /en/ilan.html?id=... üzerinden TR'ye geçince ?id
+       düşüyor ve "İlan bulunamadı" çıkıyordu. Katalog filtreleri de böylece korunur
+       (filtre değerleri dilden bağımsız anahtarlar). */
+    var ek = window.location.search + window.location.hash;
+    if (ek) {
+      lang.querySelectorAll('.lang__option[href]').forEach(function (option) {
+        var href = option.getAttribute('href');
+        if (!href || href.charAt(0) === '#') return;      // EN sayfası yoksa href="#"
+        option.setAttribute('href', href.replace(/[?#].*$/, '') + ek);
+      });
+    }
   }
 
   /* ---------------------------------------------------------------------
