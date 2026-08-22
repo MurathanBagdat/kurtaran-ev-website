@@ -181,7 +181,15 @@ Beş form var; hepsi şu an ekranda "gönderildi sayılmaz" uyarısı veriyor, h
 - [ ] Dil seçici arayüzü hazır, EN şu an **"yakında"** olarak pasif.
       → `tools/build.py` içinde `HEADER`, `.lang__menu` bloğu
 - [ ] Karar verilecek: `/en/` klasörü mü, ayrı dosya adları mı?
-- [ ] 21 sayfanın metinleri çevrilecek (ilan verisi dahil: karakter etiketleri, ilan metinleri).
+- [ ] 21 sayfanın metinleri çevrilecek.
+- [x] **İlan verisi iki dilli.** `tools/ai_parser.py` her ilanı Türkçe alanlarla
+      birlikte İngilizce karşılıklarıyla (`cinsEn`, `renkEn`, `konumEn`,
+      `saglikNotuEn`, `karakterEn`, `aciklamaEn`) döndürüyor; `animals.py` bunları
+      saklıyor, `yasMetniEn` / `aramaEn` alanlarını türetiyor ve admin panelinde
+      "İngilizce (site EN kipi)" bölümü olarak gösteriyor. Eski kayıtlar için:
+      `python3 tools/translate_en.py`.
+- [ ] EN sayfalardaki katalog/ilan arayüzü bu alanları okuyacak
+      (`aciklamaEn || aciklama` gibi Türkçeye düşen yedekle) → `catalog.js`, `animal.js`.
 - [ ] `<html lang="tr">` çevrilen sayfalarda `en` olacak, sayfalar arası `hreflang`
       bağlantıları eklenecek.
 

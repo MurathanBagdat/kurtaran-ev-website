@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-08-22T14:13:13+00:00",
+  "guncelleme": "2026-08-22T15:49:45+00:00",
   "sayi": 17,
   "hayvanlar": [
     {
@@ -29,6 +29,15 @@ window.KE_DATA = {
         "sosyal"
       ],
       "aciklama": "Tart, 2 yaşlarında, kısır erkek iyi huylu ve sosyal bir çocuk. Ömürlük yuvasını arıyoruz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "social"
+      ],
+      "aciklamaEn": "Tart is a good-natured and social neutered male around 2 years old. We are looking for his forever home.",
       "fotograflar": [
         "assets/img/animals/ig-DcVnfaSjs0i-0.jpg",
         "assets/img/animals/ig-DcVnfaSjs0i-1.jpg",
@@ -51,10 +60,12 @@ window.KE_DATA = {
         "tarih": "2026-08-22T09:42:51+00:00"
       },
       "olusturma": "2026-08-22T09:42:51+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "2 yaşında",
+      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "tart tart, 2 yaşlarında, kısır erkek iyi huylu ve sosyal bir çocuk. ömürlük yuvasını arıyoruz. sevecen sosyal"
+      "arama": "tart tart, 2 yaşlarında, kısır erkek iyi huylu ve sosyal bir çocuk. ömürlük yuvasını arıyoruz. sevecen sosyal",
+      "aramaEn": "tart tart is a good-natured and social neutered male around 2 years old. we are looking for his forever home. affectionate social"
     },
     {
       "id": "kedi-isik-b51e5a",
@@ -81,6 +92,15 @@ window.KE_DATA = {
         "sakin"
       ],
       "aciklama": "Işık, adı gibi olduğu yere güzellik ve huzur getiriyor. Çok sevgi dolu, sakin ve insanın yanında kendini iyi hissettiği muhteşem bir kız.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "calm"
+      ],
+      "aciklamaEn": "Just like her name, Işık brings beauty and peace wherever she goes. She is a wonderful girl, very loving and calm, who makes you feel good to be around her.",
       "fotograflar": [
         "assets/img/animals/ig-DcVeiovjIqv-0.jpg",
         "assets/img/animals/ig-DcVeiovjIqv-1.jpg",
@@ -103,10 +123,12 @@ window.KE_DATA = {
         "tarih": "2026-08-22T08:24:39+00:00"
       },
       "olusturma": "2026-08-22T08:24:39+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "2 yaşında",
+      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "işık işık, adı gibi olduğu yere güzellik ve huzur getiriyor. çok sevgi dolu, sakin ve insanın yanında kendini iyi hissettiği muhteşem bir kız. sevecen sakin"
+      "arama": "işık işık, adı gibi olduğu yere güzellik ve huzur getiriyor. çok sevgi dolu, sakin ve insanın yanında kendini iyi hissettiği muhteşem bir kız. sevecen sakin",
+      "aramaEn": "işık just like her name, işık brings beauty and peace wherever she goes. she is a wonderful girl, very loving and calm, who makes you feel good to be around her. affectionate calm"
     },
     {
       "id": "kopek-prenses-a4f606",
@@ -133,6 +155,15 @@ window.KE_DATA = {
         "çekingen"
       ],
       "aciklama": "Prenses, 1-2 yaşlarında, 5 kilo, kısır dişi sevimli bir kız. İnsana sarılmaya bayılan, sevilmeyi çok seven bir çocuk. Ev hayatına alışık ve tuvalet eğitimi var. Çocuklarla, kediyle ve başka köpeklerle iyi geçiniyor. Şimdilik dışarıda, özellikle de kalabalık ortamlarda biraz tedirgin olsa da hızla alışıyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "shy"
+      ],
+      "aciklamaEn": "Prenses is a cute, spayed female around 1-2 years old and weighing 5 kg. She loves hugging people and adores being petted. She is accustomed to home life and is house-trained. She gets along well with children, cats, and other dogs. Although she is currently a little nervous outdoors, especially in crowded environments, she adapts quickly.",
       "fotograflar": [
         "assets/img/animals/ig-DcVJnhqDNhp-0.jpg",
         "assets/img/animals/ig-DcVJnhqDNhp-1.jpg",
@@ -155,10 +186,12 @@ window.KE_DATA = {
         "tarih": "2026-08-22T05:21:49+00:00"
       },
       "olusturma": "2026-08-22T05:21:49+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "1,5 yaşında",
+      "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "prenses prenses, 1-2 yaşlarında, 5 kilo, kısır dişi sevimli bir kız. i̇nsana sarılmaya bayılan, sevilmeyi çok seven bir çocuk. ev hayatına alışık ve tuvalet eğitimi var. çocuklarla, kediyle ve başka köpeklerle iyi geçiniyor. şimdilik dışarıda, özellikle de kalabalık ortamlarda biraz tedirgin olsa da hızla alışıyor. sevecen çekingen"
+      "arama": "prenses prenses, 1-2 yaşlarında, 5 kilo, kısır dişi sevimli bir kız. i̇nsana sarılmaya bayılan, sevilmeyi çok seven bir çocuk. ev hayatına alışık ve tuvalet eğitimi var. çocuklarla, kediyle ve başka köpeklerle iyi geçiniyor. şimdilik dışarıda, özellikle de kalabalık ortamlarda biraz tedirgin olsa da hızla alışıyor. sevecen çekingen",
+      "aramaEn": "prenses prenses is a cute, spayed female around 1-2 years old and weighing 5 kg. she loves hugging people and adores being petted. she is accustomed to home life and is house-trained. she gets along well with children, cats, and other dogs. although she is currently a little nervous outdoors, especially in crowded environments, she adapts quickly. affectionate shy"
     },
     {
       "id": "kopek-ron-b681a1",
@@ -185,6 +218,15 @@ window.KE_DATA = {
         "sakin"
       ],
       "aciklama": "Ron, 1-2 yaşlarında, kısır erkek, çok sevimli ve yumuşak huylu bir çocuk. Başka köpeklerle sosyal. Sevgi görmeye bayılıyor. Ömürlük yuvasını arıyoruz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "calm"
+      ],
+      "aciklamaEn": "Ron is a neutered male around 1-2 years old, a very adorable and sweet-tempered boy. He is social with other dogs. He loves receiving affection. We are looking for his forever home.",
       "fotograflar": [
         "assets/img/animals/ig-DcSx-PqDocF-0.jpg",
         "assets/img/animals/ig-DcSx-PqDocF-1.jpg",
@@ -207,10 +249,12 @@ window.KE_DATA = {
         "tarih": "2026-08-21T07:16:44+00:00"
       },
       "olusturma": "2026-08-21T07:16:44+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "1,5 yaşında",
+      "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "ron ron, 1-2 yaşlarında, kısır erkek, çok sevimli ve yumuşak huylu bir çocuk. başka köpeklerle sosyal. sevgi görmeye bayılıyor. ömürlük yuvasını arıyoruz. sevecen sakin"
+      "arama": "ron ron, 1-2 yaşlarında, kısır erkek, çok sevimli ve yumuşak huylu bir çocuk. başka köpeklerle sosyal. sevgi görmeye bayılıyor. ömürlük yuvasını arıyoruz. sevecen sakin",
+      "aramaEn": "ron ron is a neutered male around 1-2 years old, a very adorable and sweet-tempered boy. he is social with other dogs. he loves receiving affection. we are looking for his forever home. affectionate calm"
     },
     {
       "id": "kopek-lupin-bf8f8e",
@@ -239,6 +283,17 @@ window.KE_DATA = {
         "sevecen"
       ],
       "aciklama": "Lupin 2 yaşlarında, iyi huylu, enerjik ve insanlarla iletişimi çok güzel bir oğlan. Hareketli, neşeli ve sevgi dolu karakteriyle hayatınıza bolca mutluluk katacak. Diğer köpeklerle arası iyi. İnsanlarla vakit geçirmeyi ve ilgi görmeyi seviyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "energetic",
+        "active",
+        "cheerful",
+        "affectionate"
+      ],
+      "aciklamaEn": "Lupin is a good-natured, energetic boy around 2 years old who communicates wonderfully with people. With his active, cheerful, and loving nature, he will bring plenty of happiness to your life. He gets along well with other dogs. He loves spending time with people and receiving attention.",
       "fotograflar": [
         "assets/img/animals/ig-DcQlgcLjqzg-0.jpg",
         "assets/img/animals/ig-DcQlgcLjqzg-1.jpg",
@@ -261,10 +316,12 @@ window.KE_DATA = {
         "tarih": "2026-08-20T10:49:19+00:00"
       },
       "olusturma": "2026-08-20T10:49:19+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "2 yaşında",
+      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "lupin lupin 2 yaşlarında, iyi huylu, enerjik ve insanlarla iletişimi çok güzel bir oğlan. hareketli, neşeli ve sevgi dolu karakteriyle hayatınıza bolca mutluluk katacak. diğer köpeklerle arası iyi. i̇nsanlarla vakit geçirmeyi ve ilgi görmeyi seviyor. enerjik hareketli neşeli sevecen"
+      "arama": "lupin lupin 2 yaşlarında, iyi huylu, enerjik ve insanlarla iletişimi çok güzel bir oğlan. hareketli, neşeli ve sevgi dolu karakteriyle hayatınıza bolca mutluluk katacak. diğer köpeklerle arası iyi. i̇nsanlarla vakit geçirmeyi ve ilgi görmeyi seviyor. enerjik hareketli neşeli sevecen",
+      "aramaEn": "lupin lupin is a good-natured, energetic boy around 2 years old who communicates wonderfully with people. with his active, cheerful, and loving nature, he will bring plenty of happiness to your life. he gets along well with other dogs. he loves spending time with people and receiving attention. energetic active cheerful affectionate"
     },
     {
       "id": "kedi-miu-668362",
@@ -290,6 +347,14 @@ window.KE_DATA = {
         "sevecen"
       ],
       "aciklama": "Miu, sokakta bulunup güvenli bir hayata adım atan, insan sevgisine doyamayan dünya tatlısı bir kız çocuğu. En sevdiği şey ise uyumak ve ilgi görmek. 3.5 aylık, dişi. Kısırlaştırma şartı ile sahiplendirilecektir.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Miu is a sweet little girl who was found on the street and stepped into a safe life, unable to get enough of human love. Her favorite things are sleeping and receiving attention. She is 3.5 months old, female. She will be adopted on the condition of spaying.",
       "fotograflar": [
         "assets/img/animals/ig-DcQDUzEjNBo-0.jpg",
         "assets/img/animals/ig-DcQDUzEjNBo-1.jpg",
@@ -312,10 +377,12 @@ window.KE_DATA = {
         "tarih": "2026-08-20T05:50:38+00:00"
       },
       "olusturma": "2026-08-20T05:50:38+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "4 aylık",
+      "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
-      "arama": "miu miu, sokakta bulunup güvenli bir hayata adım atan, insan sevgisine doyamayan dünya tatlısı bir kız çocuğu. en sevdiği şey ise uyumak ve ilgi görmek. 3.5 aylık, dişi. kısırlaştırma şartı ile sahiplendirilecektir. sevecen"
+      "arama": "miu miu, sokakta bulunup güvenli bir hayata adım atan, insan sevgisine doyamayan dünya tatlısı bir kız çocuğu. en sevdiği şey ise uyumak ve ilgi görmek. 3.5 aylık, dişi. kısırlaştırma şartı ile sahiplendirilecektir. sevecen",
+      "aramaEn": "miu miu is a sweet little girl who was found on the street and stepped into a safe life, unable to get enough of human love. her favorite things are sleeping and receiving attention. she is 3.5 months old, female. she will be adopted on the condition of spaying. affectionate"
     },
     {
       "id": "kopek-pamuk-277c79",
@@ -343,6 +410,16 @@ window.KE_DATA = {
         "merakli"
       ],
       "aciklama": "Mezarlıkta tek başına bulunan Pamuk 4 aylık dişi bir yavru. Tedavisi kafeste devam ediyor. Yavru enerjisiyle koşmak, oynamak, keşfetmek ve insanla temas etmek istiyor. Günlerini kafeste geçirmek onun için her geçen gün biraz daha zorlaşıyor. Ona evinizi geçici olarak açabilir ya da ömürlük yuvası olabilirsiniz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": "Her treatment continues in a cage.",
+      "karakterEn": [
+        "playful",
+        "affectionate",
+        "curious"
+      ],
+      "aciklamaEn": "Found all alone in a cemetery, Pamuk is a 4-month-old female baby. Her treatment continues in a cage. With her baby energy, she wants to run, play, explore, and interact with humans. Spending her days in a cage is becoming harder for her with each passing day. You can open your home to her temporarily as a foster home or become her forever home.",
       "fotograflar": [
         "assets/img/animals/ig-DcJJwv4DC6D-0.jpg",
         "assets/img/animals/ig-DcJJwv4DC6D-1.jpg",
@@ -363,10 +440,12 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:32:12+00:00"
       },
       "olusturma": "2026-08-17T13:32:12+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "4 aylık",
+      "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
-      "arama": "pamuk mezarlıkta tek başına bulunan pamuk 4 aylık dişi bir yavru. tedavisi kafeste devam ediyor. yavru enerjisiyle koşmak, oynamak, keşfetmek ve insanla temas etmek istiyor. günlerini kafeste geçirmek onun için her geçen gün biraz daha zorlaşıyor. ona evinizi geçici olarak açabilir ya da ömürlük yuvası olabilirsiniz. tedavisi kafeste devam etmektedir. oyuncu sevecen merakli"
+      "arama": "pamuk mezarlıkta tek başına bulunan pamuk 4 aylık dişi bir yavru. tedavisi kafeste devam ediyor. yavru enerjisiyle koşmak, oynamak, keşfetmek ve insanla temas etmek istiyor. günlerini kafeste geçirmek onun için her geçen gün biraz daha zorlaşıyor. ona evinizi geçici olarak açabilir ya da ömürlük yuvası olabilirsiniz. tedavisi kafeste devam etmektedir. oyuncu sevecen merakli",
+      "aramaEn": "pamuk found all alone in a cemetery, pamuk is a 4-month-old female baby. her treatment continues in a cage. with her baby energy, she wants to run, play, explore, and interact with humans. spending her days in a cage is becoming harder for her with each passing day. you can open your home to her temporarily as a foster home or become her forever home. her treatment continues in a cage. playful affectionate curious"
     },
     {
       "id": "kopek-angel-6c1db3",
@@ -394,6 +473,16 @@ window.KE_DATA = {
         "sosyal"
       ],
       "aciklama": "Angel 3 yaşlarında, uyumlu, sevilmeye bayılan ve ev hayatına alışık bir kız. Sosyal ve kalabalık ortamlara uyum sağlayabiliyor. Başka köpeklerle sosyal. İkinci köpek olmaya da uygun bir karakteri var.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "adaptable",
+        "affectionate",
+        "social"
+      ],
+      "aciklamaEn": "Angel is a 3-year-old girl who is adaptable, loves being petted, and is accustomed to home life. She can adapt to social and crowded environments. She is social with other dogs and has a personality well-suited to being a second dog.",
       "fotograflar": [
         "assets/img/animals/ig-DcJH3fuDoqu-0.jpg",
         "assets/img/animals/ig-DcJH3fuDoqu-1.jpg",
@@ -416,10 +505,12 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:15:38+00:00"
       },
       "olusturma": "2026-08-17T13:15:38+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "3 yaşında",
+      "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
-      "arama": "angel angel 3 yaşlarında, uyumlu, sevilmeye bayılan ve ev hayatına alışık bir kız. sosyal ve kalabalık ortamlara uyum sağlayabiliyor. başka köpeklerle sosyal. i̇kinci köpek olmaya da uygun bir karakteri var. uyumlu sevecen sosyal"
+      "arama": "angel angel 3 yaşlarında, uyumlu, sevilmeye bayılan ve ev hayatına alışık bir kız. sosyal ve kalabalık ortamlara uyum sağlayabiliyor. başka köpeklerle sosyal. i̇kinci köpek olmaya da uygun bir karakteri var. uyumlu sevecen sosyal",
+      "aramaEn": "angel angel is a 3-year-old girl who is adaptable, loves being petted, and is accustomed to home life. she can adapt to social and crowded environments. she is social with other dogs and has a personality well-suited to being a second dog. adaptable affectionate social"
     },
     {
       "id": "kedi-pasa-1656b0",
@@ -446,6 +537,15 @@ window.KE_DATA = {
         "uyumlu"
       ],
       "aciklama": "Paşa tam bir sevgi delisi! Onu görüp de hayran olmamak mümkün değil. Çok alımlı ve asil bir beyefendi olmasının yanında, son derece uyumlu ve sevgi dolu.",
+      "cinsEn": "Turkish Angora",
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "adaptable"
+      ],
+      "aciklamaEn": "Paşa is a total lovebug! It's impossible not to admire him once you see him. Besides being a very charming and noble gentleman, he is extremely adaptable and affectionate.",
       "fotograflar": [
         "assets/img/animals/ig-DcIUBMaDB7q-0.jpg",
         "assets/img/animals/ig-DcIUBMaDB7q-1.jpg",
@@ -468,10 +568,12 @@ window.KE_DATA = {
         "tarih": "2026-08-17T05:42:35+00:00"
       },
       "olusturma": "2026-08-17T05:42:35+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "1,5 yaşında",
+      "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "paşa ankara kedisi paşa tam bir sevgi delisi! onu görüp de hayran olmamak mümkün değil. çok alımlı ve asil bir beyefendi olmasının yanında, son derece uyumlu ve sevgi dolu. sevecen uyumlu"
+      "arama": "paşa ankara kedisi paşa tam bir sevgi delisi! onu görüp de hayran olmamak mümkün değil. çok alımlı ve asil bir beyefendi olmasının yanında, son derece uyumlu ve sevgi dolu. sevecen uyumlu",
+      "aramaEn": "paşa turkish angora paşa is a total lovebug! it's impossible not to admire him once you see him. besides being a very charming and noble gentleman, he is extremely adaptable and affectionate. affectionate adaptable"
     },
     {
       "id": "kedi-tripod-e14378",
@@ -498,6 +600,15 @@ window.KE_DATA = {
         "enerjik"
       ],
       "aciklama": "Aşırı insan odaklı, sürekli sevilmek isteyen bir prenses. 3 bacaklı olması enerjisinden hiçbir şey kaybettirmedi, rahatlıkla merdiven çıkıp inebiliyor. 1 yaşlarında, dişi ve kısır.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": "3-legged",
+      "karakterEn": [
+        "affectionate",
+        "energetic"
+      ],
+      "aciklamaEn": "An extremely people-oriented princess who constantly wants to be petted. Being 3-legged hasn't taken away any of her energy; she can easily go up and down stairs. She is around 1 year old, female, and spayed.",
       "fotograflar": [
         "assets/img/animals/ig-Da5MopZDDxH-0.jpg",
         "assets/img/animals/ig-Da5MopZDDxH-1.jpg",
@@ -519,10 +630,12 @@ window.KE_DATA = {
         "tarih": null
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "1 yaşında",
+      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "tripod aşırı insan odaklı, sürekli sevilmek isteyen bir prenses. 3 bacaklı olması enerjisinden hiçbir şey kaybettirmedi, rahatlıkla merdiven çıkıp inebiliyor. 1 yaşlarında, dişi ve kısır. 3 bacaklı sevecen enerjik"
+      "arama": "tripod aşırı insan odaklı, sürekli sevilmek isteyen bir prenses. 3 bacaklı olması enerjisinden hiçbir şey kaybettirmedi, rahatlıkla merdiven çıkıp inebiliyor. 1 yaşlarında, dişi ve kısır. 3 bacaklı sevecen enerjik",
+      "aramaEn": "tripod an extremely people-oriented princess who constantly wants to be petted. being 3-legged hasn't taken away any of her energy; she can easily go up and down stairs. she is around 1 year old, female, and spayed. 3-legged affectionate energetic"
     },
     {
       "id": "kedi-cizi-813a28",
@@ -548,6 +661,14 @@ window.KE_DATA = {
         "sevecen"
       ],
       "aciklama": "Tam kıtlamalık tatlılıkta bir prenses. Kendini sevdirmeye bayılır, kedi ve köpeklerle çok iyi anlaşır. En sevdiği şeylerden bir tanesi ise sürekli esneyerek yatmak.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "An irresistibly sweet princess. She loves getting affection and gets along very well with cats and dogs. One of her favorite things to do is lie down while constantly yawning.",
       "fotograflar": [
         "assets/img/animals/ig-DcGIC2hDOHE-0.jpg",
         "assets/img/animals/ig-DcGIC2hDOHE-1.jpg",
@@ -568,10 +689,12 @@ window.KE_DATA = {
         "tarih": "2026-08-16T09:19:28+00:00"
       },
       "olusturma": "2026-08-16T09:19:28+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "1 yaşında",
+      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "çizi tam kıtlamalık tatlılıkta bir prenses. kendini sevdirmeye bayılır, kedi ve köpeklerle çok iyi anlaşır. en sevdiği şeylerden bir tanesi ise sürekli esneyerek yatmak. sevecen"
+      "arama": "çizi tam kıtlamalık tatlılıkta bir prenses. kendini sevdirmeye bayılır, kedi ve köpeklerle çok iyi anlaşır. en sevdiği şeylerden bir tanesi ise sürekli esneyerek yatmak. sevecen",
+      "aramaEn": "çizi an irresistibly sweet princess. she loves getting affection and gets along very well with cats and dogs. one of her favorite things to do is lie down while constantly yawning. affectionate"
     },
     {
       "id": "kopek-dombili-afec22",
@@ -598,6 +721,15 @@ window.KE_DATA = {
         "sevecen"
       ],
       "aciklama": "Dombili, 5 yaşlarında, kısır erkek, şişkocuk, düşük enerjili, insan aşığı bir çocuk. Şöyle sakin sakin evde oturup evde kafa dinleyecek bir köşesi olsa, dünyalar onun olur. Biri onunla ilgilenince, heyecanlanıp gülücükler saçan Dombili’mizin geçici / kalıcı yuvasını arıyoruz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "calm",
+        "affectionate"
+      ],
+      "aciklamaEn": "Dombili is a 5-year-old, neutered male, chubby, low-energy boy who loves people. If he had a quiet corner at home to sit peacefully and relax, it would mean the world to him. We are looking for a foster / forever home for our Dombili, who gets excited and beams with smiles whenever someone pays attention to him.",
       "fotograflar": [
         "assets/img/animals/ig-DcFvYv7jI67-0.jpg",
         "assets/img/animals/ig-DcFvYv7jI67-1.jpg",
@@ -620,10 +752,12 @@ window.KE_DATA = {
         "tarih": "2026-08-16T05:44:00+00:00"
       },
       "olusturma": "2026-08-16T05:44:00+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "5 yaşında",
+      "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "dombili dombili, 5 yaşlarında, kısır erkek, şişkocuk, düşük enerjili, insan aşığı bir çocuk. şöyle sakin sakin evde oturup evde kafa dinleyecek bir köşesi olsa, dünyalar onun olur. biri onunla ilgilenince, heyecanlanıp gülücükler saçan dombili’mizin geçici / kalıcı yuvasını arıyoruz. sakin sevecen"
+      "arama": "dombili dombili, 5 yaşlarında, kısır erkek, şişkocuk, düşük enerjili, insan aşığı bir çocuk. şöyle sakin sakin evde oturup evde kafa dinleyecek bir köşesi olsa, dünyalar onun olur. biri onunla ilgilenince, heyecanlanıp gülücükler saçan dombili’mizin geçici / kalıcı yuvasını arıyoruz. sakin sevecen",
+      "aramaEn": "dombili dombili is a 5-year-old, neutered male, chubby, low-energy boy who loves people. if he had a quiet corner at home to sit peacefully and relax, it would mean the world to him. we are looking for a foster / forever home for our dombili, who gets excited and beams with smiles whenever someone pays attention to him. calm affectionate"
     },
     {
       "id": "kedi-minnos-8546cc",
@@ -651,6 +785,16 @@ window.KE_DATA = {
         "oyuncu"
       ],
       "aciklama": "Çok sakin ve aşırı sevimli biri kendisi, görüp ona hayran olmamak mümkün değil. Herkesle dost olabilen, çok uyumlu ve çok az oyuncu bir prenses. 5 aylık, dişi ve kısır.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "calm",
+        "affectionate",
+        "playful"
+      ],
+      "aciklamaEn": "She is very calm and extremely cute, it is impossible not to fall in love with her when you see her. She is a princess who gets along with everyone, is very adaptable, and just a little bit playful. She is 5 months old, female, and spayed.",
       "fotograflar": [
         "assets/img/animals/ig-DcD2q79jMmE-0.jpg",
         "assets/img/animals/ig-DcD2q79jMmE-1.jpg",
@@ -671,10 +815,12 @@ window.KE_DATA = {
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "5 aylık",
+      "yasMetniEn": "5 months old",
       "yasGrubu": "yavru",
-      "arama": "minnoş çok sakin ve aşırı sevimli biri kendisi, görüp ona hayran olmamak mümkün değil. herkesle dost olabilen, çok uyumlu ve çok az oyuncu bir prenses. 5 aylık, dişi ve kısır. sakin sevecen oyuncu"
+      "arama": "minnoş çok sakin ve aşırı sevimli biri kendisi, görüp ona hayran olmamak mümkün değil. herkesle dost olabilen, çok uyumlu ve çok az oyuncu bir prenses. 5 aylık, dişi ve kısır. sakin sevecen oyuncu",
+      "aramaEn": "minnoş she is very calm and extremely cute, it is impossible not to fall in love with her when you see her. she is a princess who gets along with everyone, is very adaptable, and just a little bit playful. she is 5 months old, female, and spayed. calm affectionate playful"
     },
     {
       "id": "kopek-lily-f0abbe",
@@ -703,6 +849,17 @@ window.KE_DATA = {
         "uyumlu"
       ],
       "aciklama": "Gönüllü geçici yuvamızdaki Lily, 3-4 yaşlarında kısır bir kız. Başlangıçta biraz ürkek ve temkinli; yüksek seslerden korkuyor ama size bir kez güvendiğinde bambaşka bir köpek oluyor. İnsanına çok düşkün, sevilmeye ve temas etmeye bayılıyor. Sakin, uyumlu ve ev hayatına alışkın. Tasmayla yürüyüşü iyi, çok uzun süre olmadığı sürece evde yalnız kalabiliyor. Çocuklarla arası iyi; dışarıda köpeklerle de sorunsuz. Kedisiz bir ev ona daha uygun olacaktır. Lily’nin ihtiyacı sadece sabırlı, sakin ve kendini güvende hissedeceği bir yuva. Size güvendiğinde kocaman bir sevgi yumağı olacak. Lily’nin ömürlük yuvasını arıyoruz.",
+      "cinsEn": "Border Terrier",
+      "renkEn": null,
+      "konumEn": "Volunteer foster home",
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "timid",
+        "calm",
+        "affectionate",
+        "adaptable"
+      ],
+      "aciklamaEn": "Lily, currently in our volunteer foster home, is a spayed female around 3-4 years old. Initially, she is a bit timid and cautious; she is afraid of loud noises, but once she trusts you, she becomes a completely different dog. She is very devoted to her human and adores being petted and receiving physical affection. She is calm, adaptable, and accustomed to home life. She walks well on a leash and can stay home alone as long as it is not for too long. She gets along well with children and has no issues with other dogs outside. A cat-free home would be more suitable for her. All Lily needs is a patient, calm home where she can feel safe. Once she trusts you, she will turn into a huge bundle of love. We are looking for Lily's forever home.",
       "fotograflar": [
         "assets/img/animals/ig-DcBtuaZDOAE-0.jpg",
         "assets/img/animals/ig-DcBtuaZDOAE-1.jpg",
@@ -725,10 +882,12 @@ window.KE_DATA = {
         "tarih": "2026-08-14T16:12:31+00:00"
       },
       "olusturma": "2026-08-14T16:12:31+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "3,5 yaşında",
+      "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "lily border terrier gönüllü geçici yuva gönüllü geçici yuvamızdaki lily, 3-4 yaşlarında kısır bir kız. başlangıçta biraz ürkek ve temkinli; yüksek seslerden korkuyor ama size bir kez güvendiğinde bambaşka bir köpek oluyor. i̇nsanına çok düşkün, sevilmeye ve temas etmeye bayılıyor. sakin, uyumlu ve ev hayatına alışkın. tasmayla yürüyüşü iyi, çok uzun süre olmadığı sürece evde yalnız kalabiliyor. çocuklarla arası iyi; dışarıda köpeklerle de sorunsuz. kedisiz bir ev ona daha uygun olacaktır. lily’nin ihtiyacı sadece sabırlı, sakin ve kendini güvende hissedeceği bir yuva. size güvendiğinde kocaman bir sevgi yumağı olacak. lily’nin ömürlük yuvasını arıyoruz. ürkek sakin sevecen uyumlu"
+      "arama": "lily border terrier gönüllü geçici yuva gönüllü geçici yuvamızdaki lily, 3-4 yaşlarında kısır bir kız. başlangıçta biraz ürkek ve temkinli; yüksek seslerden korkuyor ama size bir kez güvendiğinde bambaşka bir köpek oluyor. i̇nsanına çok düşkün, sevilmeye ve temas etmeye bayılıyor. sakin, uyumlu ve ev hayatına alışkın. tasmayla yürüyüşü iyi, çok uzun süre olmadığı sürece evde yalnız kalabiliyor. çocuklarla arası iyi; dışarıda köpeklerle de sorunsuz. kedisiz bir ev ona daha uygun olacaktır. lily’nin ihtiyacı sadece sabırlı, sakin ve kendini güvende hissedeceği bir yuva. size güvendiğinde kocaman bir sevgi yumağı olacak. lily’nin ömürlük yuvasını arıyoruz. ürkek sakin sevecen uyumlu",
+      "aramaEn": "lily border terrier volunteer foster home lily, currently in our volunteer foster home, is a spayed female around 3-4 years old. initially, she is a bit timid and cautious; she is afraid of loud noises, but once she trusts you, she becomes a completely different dog. she is very devoted to her human and adores being petted and receiving physical affection. she is calm, adaptable, and accustomed to home life. she walks well on a leash and can stay home alone as long as it is not for too long. she gets along well with children and has no issues with other dogs outside. a cat-free home would be more suitable for her. all lily needs is a patient, calm home where she can feel safe. once she trusts you, she will turn into a huge bundle of love. we are looking for lily's forever home. timid calm affectionate adaptable"
     },
     {
       "id": "kopek-coconut-582c08",
@@ -757,6 +916,17 @@ window.KE_DATA = {
         "sosyal"
       ],
       "aciklama": "Coconut 1 yaşlarında, kısır dişi, süper tatlı, kıpır kıpır ve maskot gibi bir kız. Müthiş karakteristik bir tipi var. Çok neşeli ve meraklı, sevgi dolu ve sosyal bir tip. Ev hayatına hızlı uyum sağlayabilecek uyumlu bir karakteri olan bir çocuk. Köpeğe alışık, oyuncu bir kedi olursa, kediyle de yaşamaya güzel uyum sağlayabileceğini düşünüyoruz. İkinci köpek olmaya da uygun bir karakteri var. Henüz çok genç olduğu için, evde çok uzun süre yalnız kalmayacağı bir yuva daha uygun olacaktır. Coconut'ın ömürlük yuvasını arıyoruz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "curious",
+        "playful",
+        "social"
+      ],
+      "aciklamaEn": "Coconut is a spayed female around 1 year old, a super sweet, lively, and mascot-like girl. She has a wonderfully unique look. She is a very joyful, curious, affectionate, and social girl. With her adaptable personality, she can quickly adjust to home life. We think she could adapt well to living with a cat too, provided the cat is playful and used to dogs. She also has a temperament suitable for being a second dog. Since she is still very young, a home where she won't be left alone for long periods would be best. We are looking for Coconut's forever home.",
       "fotograflar": [
         "assets/img/animals/ig-DcBfsLHDpaS-0.jpg",
         "assets/img/animals/ig-DcBfsLHDpaS-1.jpg",
@@ -779,10 +949,12 @@ window.KE_DATA = {
         "tarih": "2026-08-14T14:09:53+00:00"
       },
       "olusturma": "2026-08-14T14:09:53+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "1 yaşında",
+      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "coconut coconut 1 yaşlarında, kısır dişi, süper tatlı, kıpır kıpır ve maskot gibi bir kız. müthiş karakteristik bir tipi var. çok neşeli ve meraklı, sevgi dolu ve sosyal bir tip. ev hayatına hızlı uyum sağlayabilecek uyumlu bir karakteri olan bir çocuk. köpeğe alışık, oyuncu bir kedi olursa, kediyle de yaşamaya güzel uyum sağlayabileceğini düşünüyoruz. i̇kinci köpek olmaya da uygun bir karakteri var. henüz çok genç olduğu için, evde çok uzun süre yalnız kalmayacağı bir yuva daha uygun olacaktır. coconut'ın ömürlük yuvasını arıyoruz. sevecen meraklı oyuncu sosyal"
+      "arama": "coconut coconut 1 yaşlarında, kısır dişi, süper tatlı, kıpır kıpır ve maskot gibi bir kız. müthiş karakteristik bir tipi var. çok neşeli ve meraklı, sevgi dolu ve sosyal bir tip. ev hayatına hızlı uyum sağlayabilecek uyumlu bir karakteri olan bir çocuk. köpeğe alışık, oyuncu bir kedi olursa, kediyle de yaşamaya güzel uyum sağlayabileceğini düşünüyoruz. i̇kinci köpek olmaya da uygun bir karakteri var. henüz çok genç olduğu için, evde çok uzun süre yalnız kalmayacağı bir yuva daha uygun olacaktır. coconut'ın ömürlük yuvasını arıyoruz. sevecen meraklı oyuncu sosyal",
+      "aramaEn": "coconut coconut is a spayed female around 1 year old, a super sweet, lively, and mascot-like girl. she has a wonderfully unique look. she is a very joyful, curious, affectionate, and social girl. with her adaptable personality, she can quickly adjust to home life. we think she could adapt well to living with a cat too, provided the cat is playful and used to dogs. she also has a temperament suitable for being a second dog. since she is still very young, a home where she won't be left alone for long periods would be best. we are looking for coconut's forever home. affectionate curious playful social"
     },
     {
       "id": "kedi-peru-7c155c",
@@ -809,6 +981,15 @@ window.KE_DATA = {
         "sakin"
       ],
       "aciklama": "Özgür ruhlu kızımız Peru, çok sevgi dolu ve aşırı sempatik bir prenses. Çok hareketli olmayan ve biraz nazlı biri ama sevilmelere doyamaz. 1 yaşında, dişi ve kısır.",
+      "cinsEn": "Turkish Angora",
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "calm"
+      ],
+      "aciklamaEn": "Our free-spirited girl Peru is a very loving and extremely charming princess. She is not very active and a bit coy, but she can never get enough affection. She is 1 year old, female, and spayed.",
       "fotograflar": [
         "assets/img/animals/ig-Db-ksfzDHMf-0.jpg",
         "assets/img/animals/ig-Db-ksfzDHMf-1.jpg",
@@ -829,10 +1010,12 @@ window.KE_DATA = {
         "tarih": "2026-08-13T10:55:54+00:00"
       },
       "olusturma": "2026-08-13T10:55:54+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "1 yaşında",
+      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "peru ankara kedisi özgür ruhlu kızımız peru, çok sevgi dolu ve aşırı sempatik bir prenses. çok hareketli olmayan ve biraz nazlı biri ama sevilmelere doyamaz. 1 yaşında, dişi ve kısır. sevecen sakin"
+      "arama": "peru ankara kedisi özgür ruhlu kızımız peru, çok sevgi dolu ve aşırı sempatik bir prenses. çok hareketli olmayan ve biraz nazlı biri ama sevilmelere doyamaz. 1 yaşında, dişi ve kısır. sevecen sakin",
+      "aramaEn": "peru turkish angora our free-spirited girl peru is a very loving and extremely charming princess. she is not very active and a bit coy, but she can never get enough affection. she is 1 year old, female, and spayed. affectionate calm"
     },
     {
       "id": "kopek-potter-28aa6c",
@@ -858,6 +1041,14 @@ window.KE_DATA = {
         "sevecen"
       ],
       "aciklama": "Potter, 3 yaşlarında, kısır, erkek, çok iyi huylu ve insan canlısı bir çocuk. Sevilmeye ve ilgi görmeye bayılıyor; tanıştığı herkese kısa sürede güvenip kendini sevdiriyor. Diğer köpeklerle arası iyi, kedilere tepkisiz. Minik çarpık ön bacaklarıyla kendine özgü bir görünümü var; bu durum onun hareketlerini kısıtlamıyor. Sıcacık karakteriyle, ona hak ettiği sevgi dolu ömürlük yuvayı arıyoruz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": "He has slightly crooked front legs, but this does not restrict his movements.",
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Potter is around 3 years old, neutered, male, a very good-natured and friendly boy. He loves being petted and receiving attention; he quickly trusts everyone he meets and endears himself to them. He gets along well with other dogs and is indifferent to cats. He has a unique appearance with his slightly crooked front legs, but this condition does not restrict his movements. With his warm personality, we are looking for the loving forever home he deserves.",
       "fotograflar": [
         "assets/img/animals/ig-Db8GcsxDqnI-0.jpg",
         "assets/img/animals/ig-Db8GcsxDqnI-1.jpg",
@@ -880,10 +1071,12 @@ window.KE_DATA = {
         "tarih": "2026-08-12T11:53:07+00:00"
       },
       "olusturma": "2026-08-12T11:53:07+00:00",
-      "guncelleme": "2026-08-22T14:13:13+00:00",
+      "guncelleme": "2026-08-22T15:49:45+00:00",
       "yasMetni": "3 yaşında",
+      "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
-      "arama": "potter potter, 3 yaşlarında, kısır, erkek, çok iyi huylu ve insan canlısı bir çocuk. sevilmeye ve ilgi görmeye bayılıyor; tanıştığı herkese kısa sürede güvenip kendini sevdiriyor. diğer köpeklerle arası iyi, kedilere tepkisiz. minik çarpık ön bacaklarıyla kendine özgü bir görünümü var; bu durum onun hareketlerini kısıtlamıyor. sıcacık karakteriyle, ona hak ettiği sevgi dolu ömürlük yuvayı arıyoruz. minik çarpık ön bacakları bulunuyor ancak hareketlerini kısıtlamıyor. sevecen"
+      "arama": "potter potter, 3 yaşlarında, kısır, erkek, çok iyi huylu ve insan canlısı bir çocuk. sevilmeye ve ilgi görmeye bayılıyor; tanıştığı herkese kısa sürede güvenip kendini sevdiriyor. diğer köpeklerle arası iyi, kedilere tepkisiz. minik çarpık ön bacaklarıyla kendine özgü bir görünümü var; bu durum onun hareketlerini kısıtlamıyor. sıcacık karakteriyle, ona hak ettiği sevgi dolu ömürlük yuvayı arıyoruz. minik çarpık ön bacakları bulunuyor ancak hareketlerini kısıtlamıyor. sevecen",
+      "aramaEn": "potter potter is around 3 years old, neutered, male, a very good-natured and friendly boy. he loves being petted and receiving attention; he quickly trusts everyone he meets and endears himself to them. he gets along well with other dogs and is indifferent to cats. he has a unique appearance with his slightly crooked front legs, but this condition does not restrict his movements. with his warm personality, we are looking for the loving forever home he deserves. he has slightly crooked front legs, but this does not restrict his movements. affectionate"
     }
   ]
 };

@@ -281,7 +281,10 @@ ATLAMA_NEDENI = {
 AI_ALANLAR = ("isim", "tur", "cinsiyet", "yasAy", "kiloKg", "cins", "boyut", "renk",
               "kisir", "asili", "cipli", "cocuklaUyum", "kopeklerleUyum",
               "kedilerleUyum", "ozelBakim", "saglikNotu", "konum", "karakter",
-              "aciklama", "tahmini")
+              "aciklama", "tahmini",
+              # İngilizce karşılıklar — yalnızca AI ayrıştırmasında dolar;
+              # kural tabanlı yolda boş kalır, arayüz Türkçesine düşer.
+              "cinsEn", "renkEn", "saglikNotuEn", "konumEn", "karakterEn", "aciklamaEn")
 
 
 def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool = True,

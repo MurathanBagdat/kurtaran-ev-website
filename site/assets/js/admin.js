@@ -386,9 +386,11 @@
       (gruplar[t.grup] = gruplar[t.grup] || []).push(ad);
     });
 
-    var GRUP_ADI = {
+    /* Başlıklar şemadan gelir; şema eski ise aşağıdaki yedek tabloya düşülür. */
+    var GRUP_ADI = sema.gruplar || {
       temel: 'Temel bilgiler', fiziksel: 'Fiziksel özellikler',
-      saglik: 'Sağlık', uyum: 'Uyum', icerik: 'İlan içeriği'
+      saglik: 'Sağlık', uyum: 'Uyum', icerik: 'İlan içeriği',
+      ceviri: 'İngilizce (site EN kipi)'
     };
 
     var html = Object.keys(gruplar).map(function (g) {
