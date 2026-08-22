@@ -1,6 +1,7 @@
 /* Kurtaran Ev — arayüz etkileşimleri */
 (function () {
   'use strict';
+  var T = window.KE_I18N.t;                               // assets/js/i18n.js
 
   var isTouchLayout = function () {
     return window.matchMedia('(max-width: 980px)').matches;
@@ -110,7 +111,7 @@
     var custom = group.querySelector('.amount-custom');
 
     function format(value) {
-      return '₺' + Number(value).toLocaleString('tr-TR');
+      return '₺' + Number(value).toLocaleString(window.KE_I18N.sayi);
     }
 
     buttons.forEach(function (button) {
@@ -128,8 +129,8 @@
 
         if (label) {
           label.textContent = value === 'custom'
-            ? 'Seçtiğiniz tutarla başla'
-            : format(value) + ' ile başla';
+            ? T.tutarSec
+            : T.ileBasla(format(value));
         }
       });
     });
@@ -137,7 +138,7 @@
     if (custom && label) {
       custom.addEventListener('input', function () {
         var value = parseInt(custom.value, 10);
-        label.textContent = value > 0 ? format(value) + ' ile başla' : 'Seçtiğiniz tutarla başla';
+        label.textContent = value > 0 ? T.ileBasla(format(value)) : T.tutarSec;
       });
     }
   });
@@ -162,7 +163,7 @@
       var status = form.querySelector('.form-status');
       if (status) {
         status.textContent = form.getAttribute('data-demo-message') ||
-          'Teşekkürler! Bu yerel prototipte form gönderimi henüz bağlı değil.';
+          T.formVarsayilan;
       }
       form.reset();
     });
@@ -188,12 +189,12 @@
 
     if (mesajAlani && ilanAdi && !mesajAlani.value) {
       var CUMLE = {
-        'sahiplenme': ' için sahiplenme başvurusu yapmak istiyorum.',
-        'gecici-yuva': ' için geçici yuva olmak istiyorum.',
-        'koruyucu-melek': ' için koruyucu melek olmak istiyorum.'
+        'sahiplenme': T.cumleSahiplenme,
+        'gecici-yuva': T.cumleGeciciYuva,
+        'koruyucu-melek': T.cumleKoruyucuMelek
       };
-      mesajAlani.value = 'Merhaba, ' + ilanAdi +
-        (CUMLE[ilanKonu] || ' ile tanışmak istiyorum.') + ' Bilgi alabilir miyim?';
+      mesajAlani.value = T.cumleSelam + ilanAdi +
+        (CUMLE[ilanKonu] || T.cumleTanisma) + T.cumleSon;
     }
   }
 

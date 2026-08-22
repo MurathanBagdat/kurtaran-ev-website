@@ -13,6 +13,6 @@
     var tur = el.getAttribute('data-sayac');
     var n = say(tur);
     if (!n) return;                       // ilan yoksa varsayılan metin kalsın
-    el.textContent = n + (tur === 'kedi' ? ' kedi' : ' köpek') + ' yuva arıyor';
+    el.textContent = window.KE_I18N.t.sayac(n, tur);
   });
 })();

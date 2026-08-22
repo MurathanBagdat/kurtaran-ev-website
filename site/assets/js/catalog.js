@@ -10,23 +10,16 @@
 
   var TUR = kok.getAttribute('data-catalog');           // "kopek" | "kedi"
   var veri = (window.KE_DATA && window.KE_DATA.hayvanlar) || [];
+  var EN = document.documentElement.lang === 'en';
+  var I18N = window.KE_I18N;                             // assets/js/i18n.js
+  var BASE = window.KE_BASE || '';                       // site/en/ altında "../"
 
   /* ---------------------------------------------------------------------
      Sözlükler
      --------------------------------------------------------------------- */
-  var CINSIYET = { disi: 'Dişi', erkek: 'Erkek' };
-  var BOYUT = { kucuk: 'Küçük', orta: 'Orta', buyuk: 'Büyük' };
-  var DURUM = {
-    'yuva-ariyor': 'Yuva arıyor',
-    'rezerve': 'Rezerve',
-    'yuvalandi': 'Yuvalandı',
-    'taslak': 'Taslak'
-  };
-  var YAS_GRUBU = {
-    yavru: 'Yavru (0–1 yaş)',
-    yetiskin: 'Yetişkin (1–7 yaş)',
-    kidemli: 'Kıdemli (7+ yaş)'
-  };
+  var CINSIYET = I18N.cinsiyet;
+  var DURUM = I18N.durum;
+  var T = I18N.t;
 
   var PATI_SVG =
     '<svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">' +
@@ -77,7 +70,7 @@
 
   function kiloMetni(hayvan) {
     if (hayvan.kiloKg == null) return null;
-    return String(hayvan.kiloKg).replace('.', ',') + ' kg';
+    return String(hayvan.kiloKg).replace('.', EN ? '.' : ',') + ' kg';
   }
 
   /* ---------------------------------------------------------------------
@@ -114,7 +107,7 @@
   function sirala(liste) {
     var kopya = liste.slice();
     if (durum.sirala === 'isim') {
-      kopya.sort(function (a, b) { return (a.isim || '').localeCompare(b.isim || '', 'tr'); });
+      kopya.sort(function (a, b) { return (a.isim || '').localeCompare(b.isim || '', EN ? 'en' : 'tr'); });
     } else if (durum.sirala === 'yas-artan') {
       kopya.sort(function (a, b) {
         if (a.yasAy == null) return 1;               // bilinmeyen yaş sona
@@ -142,31 +135,33 @@
      --------------------------------------------------------------------- */
   function kartHTML(h) {
     var rozetler = ['<span class="badge badge--' + h.durum + '">' + esc(DURUM[h.durum] || h.durum) + '</span>'];
-    if (h.ornek) rozetler.push('<span class="badge badge--ornek">Örnek kayıt</span>');
+    if (h.ornek) rozetler.push('<span class="badge badge--ornek">' + T.ornekKayit + '</span>');
 
     var gorsel = (h.fotograflar && h.fotograflar[0])
-      ? '<img src="' + esc(h.fotograflar[0]) + '" alt="' + esc(h.isim) + '" loading="lazy">'
-      : '<div class="animal-card__placeholder">' + PATI_SVG + '<span>Fotoğraf yakında</span></div>';
+      ? '<img src="' + esc(BASE + h.fotograflar[0]) + '" alt="' + esc(h.isim) + '" loading="lazy">'
+      : '<div class="animal-card__placeholder">' + PATI_SVG + '<span>' + T.fotoYakinda + '</span></div>';
 
     var bilgiler = [];
     bilgiler.push(h.cinsiyet
       ? '<li>' + esc(CINSIYET[h.cinsiyet]) + '</li>'
-      : '<li class="unknown">Cinsiyet bilinmiyor</li>');
-    if (h.yasMetni) {
-      bilgiler.push('<li>' + esc(h.yasMetni) + (tahminMi(h, 'yasAy') ? ' <em>(tahmini)</em>' : '') + '</li>');
+      : '<li class="unknown">' + T.cinsiyetBilinmiyor + '</li>');
+    var yas = I18N.yasMetni(h);
+    if (yas) {
+      bilgiler.push('<li>' + esc(yas) + (tahminMi(h, 'yasAy') ? ' <em>' + T.tahmini + '</em>' : '') + '</li>');
     } else {
-      bilgiler.push('<li class="unknown">Yaş bilinmiyor</li>');
+      bilgiler.push('<li class="unknown">' + T.yasBilinmiyor + '</li>');
     }
     var kilo = kiloMetni(h);
-    if (kilo) bilgiler.push('<li>' + esc(kilo) + (tahminMi(h, 'kiloKg') ? ' <em>(tahmini)</em>' : '') + '</li>');
+    if (kilo) bilgiler.push('<li>' + esc(kilo) + (tahminMi(h, 'kiloKg') ? ' <em>' + T.tahmini + '</em>' : '') + '</li>');
 
     var etiketler = [];
-    if (h.cins) etiketler.push('<span class="tag">' + esc(h.cins) + '</span>');
-    (h.karakter || []).slice(0, 3).forEach(function (k) {
-      etiketler.push('<span class="tag">' + esc(k) + '</span>');
+    var cins = I18N.alan(h, 'cins');
+    if (cins) etiketler.push('<span class="tag">' + esc(cins) + '</span>');
+    (I18N.alan(h, 'karakter') || []).slice(0, 3).forEach(function (k) {
+      etiketler.push('<span class="tag">' + esc(h.karakterEn && EN ? k : I18N.karakter(k)) + '</span>');
     });
-    if (h.kisir === true) etiketler.push('<span class="tag">kısırlaştırıldı</span>');
-    if (h.ozelBakim === true) etiketler.push('<span class="tag">özel bakım</span>');
+    if (h.kisir === true) etiketler.push('<span class="tag">' + T.kisirEtiket + '</span>');
+    if (h.ozelBakim === true) etiketler.push('<span class="tag">' + T.ozelBakimEtiket + '</span>');
 
     return '' +
       '<a class="animal-card" href="ilan.html?id=' + encodeURIComponent(h.id) + '">' +
@@ -177,7 +172,7 @@
           '<h3 class="animal-card__name">' + esc(h.isim) + '</h3>' +
           '<ul class="animal-card__facts">' + bilgiler.join('') + '</ul>' +
           (etiketler.length ? '<div class="animal-card__tags">' + etiketler.join('') + '</div>' : '') +
-          '<span class="animal-card__cta">İlanı gör <span aria-hidden="true">→</span></span>' +
+          '<span class="animal-card__cta">' + T.ilaniGor + ' <span aria-hidden="true">→</span></span>' +
         '</div>' +
       '</a>';
   }
@@ -193,18 +188,17 @@
     var sonuc = sirala(veri.filter(uygunMu));
 
     if (sayac) {
-      var tur = TUR === 'kedi' ? 'kedi' : 'köpek';
       sayac.innerHTML = sonuc.length
-        ? '<span>' + sonuc.length + '</span> ' + tur + ' listeleniyor'
-        : 'Sonuç bulunamadı';
+        ? T.listeleniyor(sonuc.length, TUR)
+        : T.sonucYok;
     }
 
     izgara.innerHTML = sonuc.length
       ? sonuc.map(kartHTML).join('')
       : '<div class="empty-state">' +
-          '<h3>Bu filtrelerle eşleşen ilan yok</h3>' +
-          '<p>Filtreleri gevşetmeyi deneyin ya da tüm ilanlara göz atın.</p>' +
-          '<button class="btn" type="button" data-reset>Filtreleri temizle</button>' +
+          '<h3>' + T.bosBaslik + '</h3>' +
+          '<p>' + T.bosMetin + '</p>' +
+          '<button class="btn" type="button" data-reset>' + T.filtreleriTemizle + '</button>' +
         '</div>';
 
     var sifirla = izgara.querySelector('[data-reset]');
@@ -297,6 +291,12 @@
   /* Örnek kayıt uyarısı — yalnızca örnek kayıt varsa göster */
   var uyari = document.querySelector('[data-ornek-uyari]');
   if (uyari) uyari.hidden = !veri.some(function (h) { return h.ornek && h.tur === TUR; });
+
+  /* İngilizce sayfada "açıklamalar Türkçe" notu — yalnızca çevirisi olmayan ilan varsa */
+  var dilUyari = document.querySelector('[data-lang-uyari]');
+  if (dilUyari) dilUyari.hidden = !veri.some(function (h) {
+    return h.tur === TUR && h.durum !== 'taslak' && h.aciklama && !h.aciklamaEn;
+  });
 
   adrestenOku();
   formuYaz();
