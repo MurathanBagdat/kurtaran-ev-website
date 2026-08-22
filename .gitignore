@@ -43,3 +43,11 @@ site/assets/data/*.tmp
 
 # Senkron raporu (Actions içinde üretilir, commit edilmez)
 sync_rapor.md
+
+# ── Müşteri geri bildirim dosyaları ─────────────────────────────────────
+# Canva/PDF/PNG ihracatları ve tasarım sayfaları depoya ASLA gönderilmez;
+# yalnızca lokalde tutulur. Takip feedback.md üzerinden yapılır.
+feedback/
+pages/
+feedback.md
+CLAUDE.md
