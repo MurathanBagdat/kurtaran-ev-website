@@ -1,9 +1,134 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-08-22T15:49:45+00:00",
-  "sayi": 17,
+  "guncelleme": "2026-08-23T14:15:10+00:00",
+  "sayi": 19,
   "hayvanlar": [
+    {
+      "id": "kedi-milki-a96925",
+      "tur": "kedi",
+      "isim": "Milki",
+      "cinsiyet": "erkek",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": 2,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": false,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "çekingen",
+        "sevecen",
+        "sakin"
+      ],
+      "aciklama": "Milki biraz korkak ama bir o kadar da sevgi dolu, asla yaramazlık yapmayı bilmeyen sessiz ve dünyalar tatlısı 1.5 aylık bir erkek yavru kedi. Kısırlaştırma şartı ile sahiplendirilecektir.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "shy",
+        "affectionate",
+        "calm"
+      ],
+      "aciklamaEn": "Milki is a 1.5-month-old male kitten who is a bit shy but equally affectionate, quiet, sweet, and well-behaved. He is available for adoption on the condition of neutering.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcYLDodDIur-0.jpg",
+        "assets/img/animals/ig-DcYLDodDIur-1.jpg",
+        "assets/img/animals/ig-DcYLDodDIur-2.jpg",
+        "assets/img/animals/ig-DcYLDodDIur-3.jpg",
+        "assets/img/animals/ig-DcYLDodDIur-4.jpg",
+        "assets/img/animals/ig-DcYLDodDIur-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DcYLDodDIur",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcYLDodDIur/",
+        "tarih": "2026-08-23T09:32:07+00:00"
+      },
+      "olusturma": "2026-08-23T09:32:07+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "yasMetni": "2 aylık",
+      "yasMetniEn": "2 months old",
+      "yasGrubu": "yavru",
+      "arama": "milki milki biraz korkak ama bir o kadar da sevgi dolu, asla yaramazlık yapmayı bilmeyen sessiz ve dünyalar tatlısı 1.5 aylık bir erkek yavru kedi. kısırlaştırma şartı ile sahiplendirilecektir. çekingen sevecen sakin",
+      "aramaEn": "milki milki is a 1.5-month-old male kitten who is a bit shy but equally affectionate, quiet, sweet, and well-behaved. he is available for adoption on the condition of neutering. shy affectionate calm"
+    },
+    {
+      "id": "kopek-bal-f2c75b",
+      "tur": "kopek",
+      "isim": "Bal",
+      "cinsiyet": "disi",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": 2,
+      "kiloKg": null,
+      "boyut": "orta",
+      "renk": null,
+      "kisir": false,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": "Bağışıklık sistemi henüz gelişmediği için toplu alanlar risk taşımaktadır.",
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "çekingen"
+      ],
+      "aciklama": "Bal, yaklaşık 2 aylık dişi bir bebek. Sokakta tek başına bulundu ve çekingen bir hali var. Bağışıklık sistemi henüz gelişmediği için toplu alanlar onun için riskli. Büyüdüğünde orta boy olacağı tahmin ediliyor. Yavru bakımının sorumluluğunu alabilecek ve onu uzun saatler yalnız bırakmayacak bir yuva aranıyor. Zamanı geldiğinde kısırlaştırma şartıyla sahiplendirilecektir.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": "Group living environments are risky for her as her immune system is not yet fully developed.",
+      "karakterEn": [
+        "shy"
+      ],
+      "aciklamaEn": "Bal is a female puppy around 2 months old. She was found all alone on the street and is quite shy. Group environments are risky for her since her immune system is not yet fully developed. She is expected to be medium-sized when fully grown. She needs a home that understands puppy care and won't leave her alone for long hours. She will be adopted out on the condition of spaying when she reaches the appropriate age.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcX87aojugJ-0.jpg",
+        "assets/img/animals/ig-DcX87aojugJ-1.jpg",
+        "assets/img/animals/ig-DcX87aojugJ-2.jpg",
+        "assets/img/animals/ig-DcX87aojugJ-3.jpg",
+        "assets/img/animals/ig-DcX87aojugJ-4.jpg",
+        "assets/img/animals/ig-DcX87aojugJ-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy",
+        "boyut"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "DcX87aojugJ",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcX87aojugJ/",
+        "tarih": "2026-08-23T07:28:40+00:00"
+      },
+      "olusturma": "2026-08-23T07:28:40+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "yasMetni": "2 aylık",
+      "yasMetniEn": "2 months old",
+      "yasGrubu": "yavru",
+      "arama": "bal bal, yaklaşık 2 aylık dişi bir bebek. sokakta tek başına bulundu ve çekingen bir hali var. bağışıklık sistemi henüz gelişmediği için toplu alanlar onun için riskli. büyüdüğünde orta boy olacağı tahmin ediliyor. yavru bakımının sorumluluğunu alabilecek ve onu uzun saatler yalnız bırakmayacak bir yuva aranıyor. zamanı geldiğinde kısırlaştırma şartıyla sahiplendirilecektir. bağışıklık sistemi henüz gelişmediği için toplu alanlar risk taşımaktadır. çekingen",
+      "aramaEn": "bal bal is a female puppy around 2 months old. she was found all alone on the street and is quite shy. group environments are risky for her since her immune system is not yet fully developed. she is expected to be medium-sized when fully grown. she needs a home that understands puppy care and won't leave her alone for long hours. she will be adopted out on the condition of spaying when she reaches the appropriate age. group living environments are risky for her as her immune system is not yet fully developed. shy"
+    },
     {
       "id": "kopek-tart-c08935",
       "tur": "kopek",
@@ -60,7 +185,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T09:42:51+00:00"
       },
       "olusturma": "2026-08-22T09:42:51+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -123,7 +248,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T08:24:39+00:00"
       },
       "olusturma": "2026-08-22T08:24:39+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -186,7 +311,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T05:21:49+00:00"
       },
       "olusturma": "2026-08-22T05:21:49+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -249,7 +374,7 @@ window.KE_DATA = {
         "tarih": "2026-08-21T07:16:44+00:00"
       },
       "olusturma": "2026-08-21T07:16:44+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -316,7 +441,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T10:49:19+00:00"
       },
       "olusturma": "2026-08-20T10:49:19+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -377,7 +502,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T05:50:38+00:00"
       },
       "olusturma": "2026-08-20T05:50:38+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -440,7 +565,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:32:12+00:00"
       },
       "olusturma": "2026-08-17T13:32:12+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -505,7 +630,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:15:38+00:00"
       },
       "olusturma": "2026-08-17T13:15:38+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -568,7 +693,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T05:42:35+00:00"
       },
       "olusturma": "2026-08-17T05:42:35+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -630,7 +755,7 @@ window.KE_DATA = {
         "tarih": null
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -689,7 +814,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T09:19:28+00:00"
       },
       "olusturma": "2026-08-16T09:19:28+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -752,7 +877,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T05:44:00+00:00"
       },
       "olusturma": "2026-08-16T05:44:00+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -815,7 +940,7 @@ window.KE_DATA = {
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "5 aylık",
       "yasMetniEn": "5 months old",
       "yasGrubu": "yavru",
@@ -882,7 +1007,7 @@ window.KE_DATA = {
         "tarih": "2026-08-14T16:12:31+00:00"
       },
       "olusturma": "2026-08-14T16:12:31+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -949,7 +1074,7 @@ window.KE_DATA = {
         "tarih": "2026-08-14T14:09:53+00:00"
       },
       "olusturma": "2026-08-14T14:09:53+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1010,7 +1135,7 @@ window.KE_DATA = {
         "tarih": "2026-08-13T10:55:54+00:00"
       },
       "olusturma": "2026-08-13T10:55:54+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1071,7 +1196,7 @@ window.KE_DATA = {
         "tarih": "2026-08-12T11:53:07+00:00"
       },
       "olusturma": "2026-08-12T11:53:07+00:00",
-      "guncelleme": "2026-08-22T15:49:45+00:00",
+      "guncelleme": "2026-08-23T14:15:10+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
