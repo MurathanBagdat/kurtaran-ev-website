@@ -1,9 +1,202 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-08-23T14:15:10+00:00",
-  "sayi": 19,
+  "guncelleme": "2026-08-24T14:33:44+00:00",
+  "sayi": 22,
   "hayvanlar": [
+    {
+      "id": "kopek-alice-8cc16f",
+      "tur": "kopek",
+      "isim": "Alice",
+      "cinsiyet": "disi",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": 90,
+      "kiloKg": null,
+      "boyut": "orta",
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": false,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sakin",
+        "uyumlu"
+      ],
+      "aciklama": "Alice, 7-8 yaşlarında, kısır dişi, çok sakin ve uyumlu bir kız. Bu yaştan sonra toplu alana alışmakta zorluk çekiyor, çok mutsuz. Yanına insan geldikçe yüzü gülüyor çocuğun ama burada ihtiyacı olan sevgiyi ve sakinliği bulabilmesine imkan yok. Evde yalnız kalabilecek, akşam işten dönen insanını sabırla bekleyebilecek bir kız. Ona sıcacık bir ev hayatı sunabilecek yuvasını arıyoruz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "calm",
+        "adaptable"
+      ],
+      "aciklamaEn": "Alice is a spayed female, around 7-8 years old, who is very calm and adaptable. At her age, she is having a hard time adjusting to a communal shelter environment and is very unhappy. Her face lights up whenever someone approaches her, but it is impossible for her to find the love and tranquility she needs here. She can stay home alone and patiently wait for her human returning from work in the evening. We are looking for a forever home that can offer her a warm family life.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcbFzggDueC-0.jpg",
+        "assets/img/animals/ig-DcbFzggDueC-1.jpg",
+        "assets/img/animals/ig-DcbFzggDueC-2.jpg",
+        "assets/img/animals/ig-DcbFzggDueC-3.jpg",
+        "assets/img/animals/ig-DcbFzggDueC-4.jpg",
+        "assets/img/animals/ig-DcbFzggDueC-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "DcbFzggDueC",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcbFzggDueC/",
+        "tarih": "2026-08-24T12:43:57+00:00"
+      },
+      "olusturma": "2026-08-24T12:43:57+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "yasMetni": "7,5 yaşında",
+      "yasMetniEn": "7.5 years old",
+      "yasGrubu": "kidemli",
+      "arama": "alice alice, 7-8 yaşlarında, kısır dişi, çok sakin ve uyumlu bir kız. bu yaştan sonra toplu alana alışmakta zorluk çekiyor, çok mutsuz. yanına insan geldikçe yüzü gülüyor çocuğun ama burada ihtiyacı olan sevgiyi ve sakinliği bulabilmesine imkan yok. evde yalnız kalabilecek, akşam işten dönen insanını sabırla bekleyebilecek bir kız. ona sıcacık bir ev hayatı sunabilecek yuvasını arıyoruz. sakin uyumlu",
+      "aramaEn": "alice alice is a spayed female, around 7-8 years old, who is very calm and adaptable. at her age, she is having a hard time adjusting to a communal shelter environment and is very unhappy. her face lights up whenever someone approaches her, but it is impossible for her to find the love and tranquility she needs here. she can stay home alone and patiently wait for her human returning from work in the evening. we are looking for a forever home that can offer her a warm family life. calm adaptable"
+    },
+    {
+      "id": "kedi-miso-c338bd",
+      "tur": "kedi",
+      "isim": "Mişo",
+      "cinsiyet": "erkek",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": 24,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": false,
+      "saglikNotu": "Heterokromi (iki farklı göz rengi) var, ancak görmesinde hiç problem yok.",
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sakin",
+        "sevecen"
+      ],
+      "aciklama": "İki göz rengi birbirinden farklı, heterokromi sahibi bir prens. Görmesinde hiç problem yok. Aşırı sakin, kendini sevdirmeye bayılan ve yanınıza gelip oturan çok tatlı bir çocuk. 2 yaşlarında, erkek ve kısırlaştırılmış.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": "Has heterochromia (two different eye colors), but has no vision problems at all.",
+      "karakterEn": [
+        "calm",
+        "affectionate"
+      ],
+      "aciklamaEn": "A prince with heterochromia (two different eye colors). He has no vision problems at all. He is an extremely calm boy who loves being petted and sitting next to you. Around 2 years old, male, and neutered.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcazFW4DMm_-0.jpg",
+        "assets/img/animals/ig-DcazFW4DMm_-1.jpg",
+        "assets/img/animals/ig-DcazFW4DMm_-2.jpg",
+        "assets/img/animals/ig-DcazFW4DMm_-3.jpg",
+        "assets/img/animals/ig-DcazFW4DMm_-4.jpg",
+        "assets/img/animals/ig-DcazFW4DMm_-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DcazFW4DMm_",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcazFW4DMm_/",
+        "tarih": "2026-08-24T10:00:22+00:00"
+      },
+      "olusturma": "2026-08-24T10:00:22+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "yasMetni": "2 yaşında",
+      "yasMetniEn": "2 years old",
+      "yasGrubu": "yetiskin",
+      "arama": "mişo i̇ki göz rengi birbirinden farklı, heterokromi sahibi bir prens. görmesinde hiç problem yok. aşırı sakin, kendini sevdirmeye bayılan ve yanınıza gelip oturan çok tatlı bir çocuk. 2 yaşlarında, erkek ve kısırlaştırılmış. heterokromi (iki farklı göz rengi) var, ancak görmesinde hiç problem yok. sakin sevecen",
+      "aramaEn": "mişo a prince with heterochromia (two different eye colors). he has no vision problems at all. he is an extremely calm boy who loves being petted and sitting next to you. around 2 years old, male, and neutered. has heterochromia (two different eye colors), but has no vision problems at all. calm affectionate"
+    },
+    {
+      "id": "kopek-atlas-5c61b1",
+      "tur": "kopek",
+      "isim": "Atlas",
+      "cinsiyet": "erkek",
+      "durum": "yuva-ariyor",
+      "konum": "Gönüllü geçici yuva",
+      "cins": null,
+      "yasAy": 12,
+      "kiloKg": null,
+      "boyut": "buyuk",
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": false,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": true,
+      "kedilerleUyum": true,
+      "karakter": [
+        "sevecen",
+        "oyuncu",
+        "hareketli",
+        "eğitimli",
+        "neşeli"
+      ],
+      "aciklama": "Atlas 1 yaşında, kısır erkek müthiş güzel bir çocuk. Ev hayatına alışık, inanılmaz sevgi dolu, oyuncu ve tabii hareketli biri. Tuvalet eğitimi var. Tasmada çok güzel yürüyor. Arabada uyumlu. Başka köpeklerle çok iyi geçiniyor. Köpeğe alışık bir kediyle de beraber yaşayabilir. Çok neşeli bir çocuk olduğu için, uygun bir yuvanın hayatına mutluluk getireceğine eminiz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": "Volunteer foster home",
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "playful",
+        "active",
+        "trained",
+        "cheerful"
+      ],
+      "aciklamaEn": "Atlas is a 1-year-old, neutered male dog. He is accustomed to house life, incredibly affectionate, playful, and lively. He is house-trained, walks very well on a leash, and is well-behaved in the car. He gets along very well with other dogs and can live with a dog-friendly cat. As he is a very cheerful boy, we are sure he will bring happiness to a suitable home.",
+      "fotograflar": [
+        "assets/img/animals/ig-Dcat0nsjtGO-0.jpg",
+        "assets/img/animals/ig-Dcat0nsjtGO-1.jpg",
+        "assets/img/animals/ig-Dcat0nsjtGO-2.jpg",
+        "assets/img/animals/ig-Dcat0nsjtGO-3.jpg",
+        "assets/img/animals/ig-Dcat0nsjtGO-4.jpg",
+        "assets/img/animals/ig-Dcat0nsjtGO-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "Dcat0nsjtGO",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/Dcat0nsjtGO/",
+        "tarih": "2026-08-24T09:14:23+00:00"
+      },
+      "olusturma": "2026-08-24T09:14:23+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "yasMetni": "1 yaşında",
+      "yasMetniEn": "1 year old",
+      "yasGrubu": "yetiskin",
+      "arama": "atlas gönüllü geçici yuva atlas 1 yaşında, kısır erkek müthiş güzel bir çocuk. ev hayatına alışık, inanılmaz sevgi dolu, oyuncu ve tabii hareketli biri. tuvalet eğitimi var. tasmada çok güzel yürüyor. arabada uyumlu. başka köpeklerle çok iyi geçiniyor. köpeğe alışık bir kediyle de beraber yaşayabilir. çok neşeli bir çocuk olduğu için, uygun bir yuvanın hayatına mutluluk getireceğine eminiz. sevecen oyuncu hareketli eğitimli neşeli",
+      "aramaEn": "atlas volunteer foster home atlas is a 1-year-old, neutered male dog. he is accustomed to house life, incredibly affectionate, playful, and lively. he is house-trained, walks very well on a leash, and is well-behaved in the car. he gets along very well with other dogs and can live with a dog-friendly cat. as he is a very cheerful boy, we are sure he will bring happiness to a suitable home. affectionate playful active trained cheerful"
+    },
     {
       "id": "kedi-milki-a96925",
       "tur": "kedi",
@@ -60,7 +253,7 @@ window.KE_DATA = {
         "tarih": "2026-08-23T09:32:07+00:00"
       },
       "olusturma": "2026-08-23T09:32:07+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -122,7 +315,7 @@ window.KE_DATA = {
         "tarih": "2026-08-23T07:28:40+00:00"
       },
       "olusturma": "2026-08-23T07:28:40+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -185,7 +378,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T09:42:51+00:00"
       },
       "olusturma": "2026-08-22T09:42:51+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -248,7 +441,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T08:24:39+00:00"
       },
       "olusturma": "2026-08-22T08:24:39+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -311,7 +504,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T05:21:49+00:00"
       },
       "olusturma": "2026-08-22T05:21:49+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -374,7 +567,7 @@ window.KE_DATA = {
         "tarih": "2026-08-21T07:16:44+00:00"
       },
       "olusturma": "2026-08-21T07:16:44+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -441,7 +634,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T10:49:19+00:00"
       },
       "olusturma": "2026-08-20T10:49:19+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -502,7 +695,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T05:50:38+00:00"
       },
       "olusturma": "2026-08-20T05:50:38+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -565,7 +758,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:32:12+00:00"
       },
       "olusturma": "2026-08-17T13:32:12+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -630,7 +823,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:15:38+00:00"
       },
       "olusturma": "2026-08-17T13:15:38+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -693,7 +886,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T05:42:35+00:00"
       },
       "olusturma": "2026-08-17T05:42:35+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -755,7 +948,7 @@ window.KE_DATA = {
         "tarih": null
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -814,7 +1007,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T09:19:28+00:00"
       },
       "olusturma": "2026-08-16T09:19:28+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -877,7 +1070,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T05:44:00+00:00"
       },
       "olusturma": "2026-08-16T05:44:00+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -940,7 +1133,7 @@ window.KE_DATA = {
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "5 aylık",
       "yasMetniEn": "5 months old",
       "yasGrubu": "yavru",
@@ -1007,7 +1200,7 @@ window.KE_DATA = {
         "tarih": "2026-08-14T16:12:31+00:00"
       },
       "olusturma": "2026-08-14T16:12:31+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -1074,7 +1267,7 @@ window.KE_DATA = {
         "tarih": "2026-08-14T14:09:53+00:00"
       },
       "olusturma": "2026-08-14T14:09:53+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1135,7 +1328,7 @@ window.KE_DATA = {
         "tarih": "2026-08-13T10:55:54+00:00"
       },
       "olusturma": "2026-08-13T10:55:54+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1196,7 +1389,7 @@ window.KE_DATA = {
         "tarih": "2026-08-12T11:53:07+00:00"
       },
       "olusturma": "2026-08-12T11:53:07+00:00",
-      "guncelleme": "2026-08-23T14:15:10+00:00",
+      "guncelleme": "2026-08-24T14:33:44+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
