@@ -1,9 +1,70 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-08-24T14:33:44+00:00",
-  "sayi": 22,
+  "guncelleme": "2026-08-26T14:36:38+00:00",
+  "sayi": 23,
   "hayvanlar": [
+    {
+      "id": "kopek-pamuk-d83115",
+      "tur": "kopek",
+      "isim": "Pamuk",
+      "cinsiyet": "disi",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": 4,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": false,
+      "asili": false,
+      "cipli": null,
+      "ozelBakim": false,
+      "saglikNotu": "Geldiğinde bakımsızlıktan deri sorunları vardı, tedavisi tamamlandı.",
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sakin",
+        "sevecen"
+      ],
+      "aciklama": "Pamuk 4 aylık dişi bir yavru. Mezarlıkta tek başına bulundu. Geldiğinde bakımsızlıktan deri sorunları vardı, tedavisi tamamlandı ve aşılarına başlandı. Çok yumuşak huylu ve tatlı bir köpek. Büyüyünce orta-büyük boy olacağı tahmin ediliyor. Yavru bakımının zorluklarını bilen, uzun saatler yalnız kalmayacağı geçici veya kalıcı bir yuva aranıyor. Zamanı geldiğinde kısırlaştırma şartı bulunmaktadır.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": "When she arrived, she had skin issues due to neglect, but her treatment has been completed.",
+      "karakterEn": [
+        "calm",
+        "affectionate"
+      ],
+      "aciklamaEn": "Pamuk is a 4-month-old female puppy. She was found all alone in a cemetery. When she arrived, she had skin problems due to neglect, but her treatment has been completed and her vaccinations have started. She is very gentle and sweet. She is expected to be medium-to-large size when fully grown. We are looking for a temporary or permanent home with someone who understands the challenges of caring for a puppy and won't leave her alone for long hours. Adoption requires a spaying agreement when the time comes.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcgSPkPDuQV-0.jpg",
+        "assets/img/animals/ig-DcgSPkPDuQV-1.jpg",
+        "assets/img/animals/ig-DcgSPkPDuQV-2.jpg",
+        "assets/img/animals/ig-DcgSPkPDuQV-3.jpg",
+        "assets/img/animals/ig-DcgSPkPDuQV-4.jpg",
+        "assets/img/animals/ig-DcgSPkPDuQV-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "DcgSPkPDuQV",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcgSPkPDuQV/",
+        "tarih": "2026-08-26T13:08:50+00:00"
+      },
+      "olusturma": "2026-08-26T13:08:50+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "yasMetni": "4 aylık",
+      "yasMetniEn": "4 months old",
+      "yasGrubu": "yavru",
+      "arama": "pamuk pamuk 4 aylık dişi bir yavru. mezarlıkta tek başına bulundu. geldiğinde bakımsızlıktan deri sorunları vardı, tedavisi tamamlandı ve aşılarına başlandı. çok yumuşak huylu ve tatlı bir köpek. büyüyünce orta-büyük boy olacağı tahmin ediliyor. yavru bakımının zorluklarını bilen, uzun saatler yalnız kalmayacağı geçici veya kalıcı bir yuva aranıyor. zamanı geldiğinde kısırlaştırma şartı bulunmaktadır. geldiğinde bakımsızlıktan deri sorunları vardı, tedavisi tamamlandı. sakin sevecen",
+      "aramaEn": "pamuk pamuk is a 4-month-old female puppy. she was found all alone in a cemetery. when she arrived, she had skin problems due to neglect, but her treatment has been completed and her vaccinations have started. she is very gentle and sweet. she is expected to be medium-to-large size when fully grown. we are looking for a temporary or permanent home with someone who understands the challenges of caring for a puppy and won't leave her alone for long hours. adoption requires a spaying agreement when the time comes. when she arrived, she had skin issues due to neglect, but her treatment has been completed. calm affectionate"
+    },
     {
       "id": "kopek-alice-8cc16f",
       "tur": "kopek",
@@ -60,7 +121,7 @@ window.KE_DATA = {
         "tarih": "2026-08-24T12:43:57+00:00"
       },
       "olusturma": "2026-08-24T12:43:57+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -123,7 +184,7 @@ window.KE_DATA = {
         "tarih": "2026-08-24T10:00:22+00:00"
       },
       "olusturma": "2026-08-24T10:00:22+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -190,7 +251,7 @@ window.KE_DATA = {
         "tarih": "2026-08-24T09:14:23+00:00"
       },
       "olusturma": "2026-08-24T09:14:23+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -253,7 +314,7 @@ window.KE_DATA = {
         "tarih": "2026-08-23T09:32:07+00:00"
       },
       "olusturma": "2026-08-23T09:32:07+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -315,7 +376,7 @@ window.KE_DATA = {
         "tarih": "2026-08-23T07:28:40+00:00"
       },
       "olusturma": "2026-08-23T07:28:40+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -378,7 +439,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T09:42:51+00:00"
       },
       "olusturma": "2026-08-22T09:42:51+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -441,7 +502,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T08:24:39+00:00"
       },
       "olusturma": "2026-08-22T08:24:39+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -504,7 +565,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T05:21:49+00:00"
       },
       "olusturma": "2026-08-22T05:21:49+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -567,7 +628,7 @@ window.KE_DATA = {
         "tarih": "2026-08-21T07:16:44+00:00"
       },
       "olusturma": "2026-08-21T07:16:44+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -634,7 +695,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T10:49:19+00:00"
       },
       "olusturma": "2026-08-20T10:49:19+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -695,7 +756,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T05:50:38+00:00"
       },
       "olusturma": "2026-08-20T05:50:38+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -758,7 +819,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:32:12+00:00"
       },
       "olusturma": "2026-08-17T13:32:12+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -823,7 +884,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:15:38+00:00"
       },
       "olusturma": "2026-08-17T13:15:38+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -886,7 +947,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T05:42:35+00:00"
       },
       "olusturma": "2026-08-17T05:42:35+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -948,7 +1009,7 @@ window.KE_DATA = {
         "tarih": null
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1007,7 +1068,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T09:19:28+00:00"
       },
       "olusturma": "2026-08-16T09:19:28+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1070,7 +1131,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T05:44:00+00:00"
       },
       "olusturma": "2026-08-16T05:44:00+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -1133,7 +1194,7 @@ window.KE_DATA = {
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "5 aylık",
       "yasMetniEn": "5 months old",
       "yasGrubu": "yavru",
@@ -1200,7 +1261,7 @@ window.KE_DATA = {
         "tarih": "2026-08-14T16:12:31+00:00"
       },
       "olusturma": "2026-08-14T16:12:31+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -1267,7 +1328,7 @@ window.KE_DATA = {
         "tarih": "2026-08-14T14:09:53+00:00"
       },
       "olusturma": "2026-08-14T14:09:53+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1328,7 +1389,7 @@ window.KE_DATA = {
         "tarih": "2026-08-13T10:55:54+00:00"
       },
       "olusturma": "2026-08-13T10:55:54+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1389,7 +1450,7 @@ window.KE_DATA = {
         "tarih": "2026-08-12T11:53:07+00:00"
       },
       "olusturma": "2026-08-12T11:53:07+00:00",
-      "guncelleme": "2026-08-24T14:33:44+00:00",
+      "guncelleme": "2026-08-26T14:36:38+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
