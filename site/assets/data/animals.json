@@ -1,7 +1,196 @@
 {
-  "guncelleme": "2026-08-26T14:36:38+00:00",
-  "sayi": 23,
+  "guncelleme": "2026-08-27T23:24:02+00:00",
+  "sayi": 27,
   "hayvanlar": [
+    {
+      "id": "kopek-yaz-7a4b48",
+      "tur": "kopek",
+      "isim": "Yaz",
+      "cinsiyet": "disi",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": "Terrier",
+      "yasAy": 24,
+      "kiloKg": null,
+      "boyut": "kucuk",
+      "renk": null,
+      "kisir": null,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": true,
+      "kopeklerleUyum": true,
+      "kedilerleUyum": true,
+      "karakter": [
+        "neşeli",
+        "sevecen",
+        "sosyal",
+        "eğitimli"
+      ],
+      "aciklama": "Yaz, 2 yaşlarında dişi, neşeli ve mutlu bir kız. İnsan canlısı bir çocuk, sevilmeye bayılıyor. Çocuklarla arası çok iyi. Kedilere karşı tepkisiz, beraber uyumla yaşayabiliyor. Başka köpeklerle de sosyal. Tuvalet eğitimi var, apartman hayatına uyumlu. Arabaya alışık. Sizinle her yere eşlik edebilecek sosyallikte bir kız.",
+      "cinsEn": "Terrier",
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "joyful",
+        "affectionate",
+        "social",
+        "trained"
+      ],
+      "aciklamaEn": "Yaz is a cheerful and happy female dog around 2 years old. She is very friendly with people and loves affection. She gets along great with children, lives harmoniously with cats, and is social with other dogs. She is potty trained, well-suited for apartment life, and accustomed to car rides. She is social enough to accompany you anywhere.",
+      "fotograflar": [
+        "assets/img/animals/ig-Dci6Ub4DnBb-0.jpg",
+        "assets/img/animals/ig-Dci6Ub4DnBb-1.jpg",
+        "assets/img/animals/ig-Dci6Ub4DnBb-2.jpg",
+        "assets/img/animals/ig-Dci6Ub4DnBb-3.jpg",
+        "assets/img/animals/ig-Dci6Ub4DnBb-4.jpg",
+        "assets/img/animals/ig-Dci6Ub4DnBb-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "Dci6Ub4DnBb",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/Dci6Ub4DnBb/",
+        "tarih": "2026-08-27T13:37:31+00:00"
+      },
+      "olusturma": "2026-08-27T13:37:31+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
+      "yasMetni": "2 yaşında",
+      "yasMetniEn": "2 years old",
+      "yasGrubu": "yetiskin",
+      "arama": "yaz terrier yaz, 2 yaşlarında dişi, neşeli ve mutlu bir kız. i̇nsan canlısı bir çocuk, sevilmeye bayılıyor. çocuklarla arası çok iyi. kedilere karşı tepkisiz, beraber uyumla yaşayabiliyor. başka köpeklerle de sosyal. tuvalet eğitimi var, apartman hayatına uyumlu. arabaya alışık. sizinle her yere eşlik edebilecek sosyallikte bir kız. neşeli sevecen sosyal eğitimli",
+      "aramaEn": "yaz terrier yaz is a cheerful and happy female dog around 2 years old. she is very friendly with people and loves affection. she gets along great with children, lives harmoniously with cats, and is social with other dogs. she is potty trained, well-suited for apartment life, and accustomed to car rides. she is social enough to accompany you anywhere. joyful affectionate social trained"
+    },
+    {
+      "id": "kedi-chichi-75e15a",
+      "tur": "kedi",
+      "isim": "Chichi",
+      "cinsiyet": "disi",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": "British Shorthair",
+      "yasAy": 4,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": false,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "ChiChi’yi karton bir kutuyu streçle sarıp birkaç delik açarak hastane önüne bırakmışlar. Oysa o; boncuk gözleri, hokka burnu ve yumuşacık tüyleriyle oyuncak gibi, sevgi dolu minicik bir kız. 3.5 aylık dişi kedi, kısırlaştırma şartı ile sahiplendirilecektir.",
+      "cinsEn": "British Shorthair",
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "ChiChi was abandoned in front of a hospital inside a cardboard box wrapped in cling film with just a few air holes. Yet she is a tiny, loving girl with button eyes, a button nose, and soft fur. She is a 3.5-month-old female kitten, available for adoption on the condition of spaying.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcipKcfjKvK-0.jpg",
+        "assets/img/animals/ig-DcipKcfjKvK-1.jpg",
+        "assets/img/animals/ig-DcipKcfjKvK-2.jpg",
+        "assets/img/animals/ig-DcipKcfjKvK-3.jpg",
+        "assets/img/animals/ig-DcipKcfjKvK-4.jpg",
+        "assets/img/animals/ig-DcipKcfjKvK-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DcipKcfjKvK",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcipKcfjKvK/",
+        "tarih": "2026-08-27T11:07:36+00:00"
+      },
+      "olusturma": "2026-08-27T11:07:36+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
+      "yasMetni": "4 aylık",
+      "yasMetniEn": "4 months old",
+      "yasGrubu": "yavru",
+      "arama": "chichi british shorthair chichi’yi karton bir kutuyu streçle sarıp birkaç delik açarak hastane önüne bırakmışlar. oysa o; boncuk gözleri, hokka burnu ve yumuşacık tüyleriyle oyuncak gibi, sevgi dolu minicik bir kız. 3.5 aylık dişi kedi, kısırlaştırma şartı ile sahiplendirilecektir. sevecen",
+      "aramaEn": "chichi british shorthair chichi was abandoned in front of a hospital inside a cardboard box wrapped in cling film with just a few air holes. yet she is a tiny, loving girl with button eyes, a button nose, and soft fur. she is a 3.5-month-old female kitten, available for adoption on the condition of spaying. affectionate"
+    },
+    {
+      "id": "kopek-bati-f3fbb8",
+      "tur": "kopek",
+      "isim": "Batı",
+      "cinsiyet": "erkek",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": "West Highland White Terrier",
+      "yasAy": 24,
+      "kiloKg": null,
+      "boyut": "kucuk",
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": true,
+      "saglikNotu": "Bir gözü görmüyor ama mutluluğu ve enerjisini engelleyen bir durumu yok.",
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "oyuncu",
+        "sevecen"
+      ],
+      "aciklama": "Batı 2 yaşlarında, kısır erkek bir Westie. Bir gözü görmüyor ama mutluluğu ve enerjisini engelleyen bir durumu yok. Hareketli ve sosyal bir çocuk. Batı’nın ömürlük yuvasını arıyoruz.",
+      "cinsEn": "West Highland White Terrier",
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": "He is blind in one eye, but it does not affect his happiness or energy.",
+      "karakterEn": [
+        "playful",
+        "affectionate"
+      ],
+      "aciklamaEn": "Batı is a neutered male Westie around 2 years old. He is blind in one eye, but this doesn't hinder his happiness and energy. He is an active and social boy. We are looking for a forever home for Batı.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcgzKdVjmJc-0.jpg",
+        "assets/img/animals/ig-DcgzKdVjmJc-1.jpg",
+        "assets/img/animals/ig-DcgzKdVjmJc-2.jpg",
+        "assets/img/animals/ig-DcgzKdVjmJc-3.jpg",
+        "assets/img/animals/ig-DcgzKdVjmJc-4.jpg",
+        "assets/img/animals/ig-DcgzKdVjmJc-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "DcgzKdVjmJc",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcgzKdVjmJc/",
+        "tarih": "2026-08-26T17:56:30+00:00"
+      },
+      "olusturma": "2026-08-26T17:56:30+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
+      "yasMetni": "2 yaşında",
+      "yasMetniEn": "2 years old",
+      "yasGrubu": "yetiskin",
+      "arama": "batı west highland white terrier batı 2 yaşlarında, kısır erkek bir westie. bir gözü görmüyor ama mutluluğu ve enerjisini engelleyen bir durumu yok. hareketli ve sosyal bir çocuk. batı’nın ömürlük yuvasını arıyoruz. bir gözü görmüyor ama mutluluğu ve enerjisini engelleyen bir durumu yok. oyuncu sevecen",
+      "aramaEn": "batı west highland white terrier batı is a neutered male westie around 2 years old. he is blind in one eye, but this doesn't hinder his happiness and energy. he is an active and social boy. we are looking for a forever home for batı. he is blind in one eye, but it does not affect his happiness or energy. playful affectionate"
+    },
     {
       "id": "kopek-pamuk-d83115",
       "tur": "kopek",
@@ -56,12 +245,73 @@
         "tarih": "2026-08-26T13:08:50+00:00"
       },
       "olusturma": "2026-08-26T13:08:50+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
       "arama": "pamuk pamuk 4 aylık dişi bir yavru. mezarlıkta tek başına bulundu. geldiğinde bakımsızlıktan deri sorunları vardı, tedavisi tamamlandı ve aşılarına başlandı. çok yumuşak huylu ve tatlı bir köpek. büyüyünce orta-büyük boy olacağı tahmin ediliyor. yavru bakımının zorluklarını bilen, uzun saatler yalnız kalmayacağı geçici veya kalıcı bir yuva aranıyor. zamanı geldiğinde kısırlaştırma şartı bulunmaktadır. geldiğinde bakımsızlıktan deri sorunları vardı, tedavisi tamamlandı. sakin sevecen",
       "aramaEn": "pamuk pamuk is a 4-month-old female puppy. she was found all alone in a cemetery. when she arrived, she had skin problems due to neglect, but her treatment has been completed and her vaccinations have started. she is very gentle and sweet. she is expected to be medium-to-large size when fully grown. we are looking for a temporary or permanent home with someone who understands the challenges of caring for a puppy and won't leave her alone for long hours. adoption requires a spaying agreement when the time comes. when she arrived, she had skin issues due to neglect, but her treatment has been completed. calm affectionate"
+    },
+    {
+      "id": "kedi-moshi-5f710c",
+      "tur": "kedi",
+      "isim": "Moshi",
+      "cinsiyet": "disi",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": "British Longhair",
+      "yasAy": 12,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "Moshi güzeller güzeli bir kedi. Sürekli konuşur, size bir şeyler anlatır. Kendini sevdirmeye bayılır, yüksek yerlerde oturmayı çok sever.",
+      "cinsEn": "British Longhair",
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Moshi is a gorgeous cat. She is very vocal and loves chatting with you. She adores affection and loves sitting in high places.",
+      "fotograflar": [
+        "assets/img/animals/ig-DcfpoenjFpX-0.jpg",
+        "assets/img/animals/ig-DcfpoenjFpX-1.jpg",
+        "assets/img/animals/ig-DcfpoenjFpX-2.jpg",
+        "assets/img/animals/ig-DcfpoenjFpX-3.jpg",
+        "assets/img/animals/ig-DcfpoenjFpX-4.jpg",
+        "assets/img/animals/ig-DcfpoenjFpX-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DcfpoenjFpX",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DcfpoenjFpX/",
+        "tarih": "2026-08-26T07:13:59+00:00"
+      },
+      "olusturma": "2026-08-26T07:13:59+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
+      "yasMetni": "1 yaşında",
+      "yasMetniEn": "1 year old",
+      "yasGrubu": "yetiskin",
+      "arama": "moshi british longhair moshi güzeller güzeli bir kedi. sürekli konuşur, size bir şeyler anlatır. kendini sevdirmeye bayılır, yüksek yerlerde oturmayı çok sever. sevecen",
+      "aramaEn": "moshi british longhair moshi is a gorgeous cat. she is very vocal and loves chatting with you. she adores affection and loves sitting in high places. affectionate"
     },
     {
       "id": "kopek-alice-8cc16f",
@@ -119,7 +369,7 @@
         "tarih": "2026-08-24T12:43:57+00:00"
       },
       "olusturma": "2026-08-24T12:43:57+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -182,7 +432,7 @@
         "tarih": "2026-08-24T10:00:22+00:00"
       },
       "olusturma": "2026-08-24T10:00:22+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -249,7 +499,7 @@
         "tarih": "2026-08-24T09:14:23+00:00"
       },
       "olusturma": "2026-08-24T09:14:23+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -312,7 +562,7 @@
         "tarih": "2026-08-23T09:32:07+00:00"
       },
       "olusturma": "2026-08-23T09:32:07+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -374,7 +624,7 @@
         "tarih": "2026-08-23T07:28:40+00:00"
       },
       "olusturma": "2026-08-23T07:28:40+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -437,7 +687,7 @@
         "tarih": "2026-08-22T09:42:51+00:00"
       },
       "olusturma": "2026-08-22T09:42:51+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -500,7 +750,7 @@
         "tarih": "2026-08-22T08:24:39+00:00"
       },
       "olusturma": "2026-08-22T08:24:39+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -563,7 +813,7 @@
         "tarih": "2026-08-22T05:21:49+00:00"
       },
       "olusturma": "2026-08-22T05:21:49+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -626,7 +876,7 @@
         "tarih": "2026-08-21T07:16:44+00:00"
       },
       "olusturma": "2026-08-21T07:16:44+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -693,7 +943,7 @@
         "tarih": "2026-08-20T10:49:19+00:00"
       },
       "olusturma": "2026-08-20T10:49:19+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -754,7 +1004,7 @@
         "tarih": "2026-08-20T05:50:38+00:00"
       },
       "olusturma": "2026-08-20T05:50:38+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -817,7 +1067,7 @@
         "tarih": "2026-08-17T13:32:12+00:00"
       },
       "olusturma": "2026-08-17T13:32:12+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -882,7 +1132,7 @@
         "tarih": "2026-08-17T13:15:38+00:00"
       },
       "olusturma": "2026-08-17T13:15:38+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -945,7 +1195,7 @@
         "tarih": "2026-08-17T05:42:35+00:00"
       },
       "olusturma": "2026-08-17T05:42:35+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -1007,7 +1257,7 @@
         "tarih": null
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1066,7 +1316,7 @@
         "tarih": "2026-08-16T09:19:28+00:00"
       },
       "olusturma": "2026-08-16T09:19:28+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1129,7 +1379,7 @@
         "tarih": "2026-08-16T05:44:00+00:00"
       },
       "olusturma": "2026-08-16T05:44:00+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -1192,7 +1442,7 @@
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "5 aylık",
       "yasMetniEn": "5 months old",
       "yasGrubu": "yavru",
@@ -1259,7 +1509,7 @@
         "tarih": "2026-08-14T16:12:31+00:00"
       },
       "olusturma": "2026-08-14T16:12:31+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -1326,7 +1576,7 @@
         "tarih": "2026-08-14T14:09:53+00:00"
       },
       "olusturma": "2026-08-14T14:09:53+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1387,7 +1637,7 @@
         "tarih": "2026-08-13T10:55:54+00:00"
       },
       "olusturma": "2026-08-13T10:55:54+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1448,7 +1698,7 @@
         "tarih": "2026-08-12T11:53:07+00:00"
       },
       "olusturma": "2026-08-12T11:53:07+00:00",
-      "guncelleme": "2026-08-26T14:36:38+00:00",
+      "guncelleme": "2026-08-27T23:24:02+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
