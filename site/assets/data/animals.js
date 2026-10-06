@@ -1,9 +1,132 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-05T21:18:42+00:00",
-  "sayi": 99,
+  "guncelleme": "2026-10-06T19:14:55+00:00",
+  "sayi": 101,
   "hayvanlar": [
+    {
+      "id": "kopek-tokyo-3bdfe7",
+      "tur": "kopek",
+      "isim": "Tokyo",
+      "cinsiyet": null,
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": null,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": null,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sosyal",
+        "sevecen"
+      ],
+      "aciklama": "4 Ekim Hayvanları Koruma Günü şenliğinde harika vakit geçiren, arkadaşlarıyla ve insanlarla sosyalleşen Tokyo henüz aradığı yuvayı bulamadı. Tokyo ömürlük ailesini arıyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "social",
+        "affectionate"
+      ],
+      "aciklamaEn": "Tokyo, who had a wonderful time socializing with friends and people at the Animal Protection Day event, has not found his home yet. Tokyo is looking for his forever family.",
+      "fotograflar": [
+        "assets/img/animals/ig-DeKFB4KqfMi-0.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "DeKFB4KqfMi",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DeKFB4KqfMi/",
+        "tarih": "2026-10-06T15:14:19+00:00"
+      },
+      "olusturma": "2026-10-06T15:14:19+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
+      "yasMetni": null,
+      "yasMetniEn": null,
+      "yasGrubu": null,
+      "arama": "tokyo 4 ekim hayvanları koruma günü şenliğinde harika vakit geçiren, arkadaşlarıyla ve insanlarla sosyalleşen tokyo henüz aradığı yuvayı bulamadı. tokyo ömürlük ailesini arıyor. sosyal sevecen",
+      "aramaEn": "tokyo tokyo, who had a wonderful time socializing with friends and people at the animal protection day event, has not found his home yet. tokyo is looking for his forever family. social affectionate"
+    },
+    {
+      "id": "kopek-tarcin-4caf0f",
+      "tur": "kopek",
+      "isim": "Tarçın",
+      "cinsiyet": "erkek",
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": 24,
+      "kiloKg": null,
+      "boyut": "orta",
+      "renk": null,
+      "kisir": true,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen",
+        "oyuncu",
+        "hareketli",
+        "uyumlu"
+      ],
+      "aciklama": "Tarçın, yaklaşık 2 yaşında, erkek ve kısır. İnsanlarla iletişim kurmayı çok seven, sevgi dolu ve iyi huylu bir çocuk. Enerjisi yüksek; oyun oynamaktan, yürüyüşe çıkmaktan ve hayatın içinde olmaktan büyük keyif alıyor. Hareketli tarafının yanında uyumlu ve iletişimi kolay bir karakteri var. Birlikte yürüyüşler yapabileceği, oyun oynayabileceği, sevileceği ve en önemlisi kendini ait hissedeceği bir ailesi olsun istiyoruz.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate",
+        "playful",
+        "active",
+        "adaptable"
+      ],
+      "aciklamaEn": "Tarçın is a male, neutered dog around 2 years old. He is a loving and good-natured boy who loves interacting with people. He has high energy; he truly enjoys playing games, going on walks, and being part of daily life. Alongside his active nature, he has an adaptable and easy-to-connect personality. We hope to find him a family with whom he can go on walks, play games, be loved, and most importantly, feel a true sense of belonging.",
+      "fotograflar": [
+        "assets/img/animals/ig-DeJdp6pDtce-0.jpg",
+        "assets/img/animals/ig-DeJdp6pDtce-1.jpg",
+        "assets/img/animals/ig-DeJdp6pDtce-2.jpg",
+        "assets/img/animals/ig-DeJdp6pDtce-3.jpg",
+        "assets/img/animals/ig-DeJdp6pDtce-4.jpg",
+        "assets/img/animals/ig-DeJdp6pDtce-5.jpg"
+      ],
+      "tahmini": [
+        "yasAy"
+      ],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kopekleri",
+        "gonderiId": "DeJdp6pDtce",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DeJdp6pDtce/",
+        "tarih": "2026-10-06T09:28:49+00:00"
+      },
+      "olusturma": "2026-10-06T09:28:49+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
+      "yasMetni": "2 yaşında",
+      "yasMetniEn": "2 years old",
+      "yasGrubu": "yetiskin",
+      "arama": "tarçın tarçın, yaklaşık 2 yaşında, erkek ve kısır. i̇nsanlarla iletişim kurmayı çok seven, sevgi dolu ve iyi huylu bir çocuk. enerjisi yüksek; oyun oynamaktan, yürüyüşe çıkmaktan ve hayatın içinde olmaktan büyük keyif alıyor. hareketli tarafının yanında uyumlu ve iletişimi kolay bir karakteri var. birlikte yürüyüşler yapabileceği, oyun oynayabileceği, sevileceği ve en önemlisi kendini ait hissedeceği bir ailesi olsun istiyoruz. sevecen oyuncu hareketli uyumlu",
+      "aramaEn": "tarçın tarçın is a male, neutered dog around 2 years old. he is a loving and good-natured boy who loves interacting with people. he has high energy; he truly enjoys playing games, going on walks, and being part of daily life. alongside his active nature, he has an adaptable and easy-to-connect personality. we hope to find him a family with whom he can go on walks, play games, be loved, and most importantly, feel a true sense of belonging. affectionate playful active adaptable"
+    },
     {
       "id": "kedi-miki-2d7390",
       "tur": "kedi",
@@ -60,7 +183,7 @@ window.KE_DATA = {
         "tarih": "2026-10-05T14:45:40+00:00"
       },
       "olusturma": "2026-10-05T14:45:40+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -121,7 +244,7 @@ window.KE_DATA = {
         "tarih": "2026-10-05T08:14:43+00:00"
       },
       "olusturma": "2026-10-05T08:14:43+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -184,7 +307,7 @@ window.KE_DATA = {
         "tarih": "2026-10-03T11:48:05+00:00"
       },
       "olusturma": "2026-10-03T11:48:05+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2,5 yaşında",
       "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
@@ -242,7 +365,7 @@ window.KE_DATA = {
         "tarih": "2026-10-02T12:43:25+00:00"
       },
       "olusturma": "2026-10-02T12:43:25+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -305,7 +428,7 @@ window.KE_DATA = {
         "tarih": "2026-10-02T12:05:32+00:00"
       },
       "olusturma": "2026-10-02T12:05:32+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -372,7 +495,7 @@ window.KE_DATA = {
         "tarih": "2026-10-01T16:58:30+00:00"
       },
       "olusturma": "2026-10-01T16:58:30+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "4 yaşında",
       "yasMetniEn": "4 years old",
       "yasGrubu": "yetiskin",
@@ -435,7 +558,7 @@ window.KE_DATA = {
         "tarih": "2026-10-01T12:10:27+00:00"
       },
       "olusturma": "2026-10-01T12:10:27+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -496,7 +619,7 @@ window.KE_DATA = {
         "tarih": "2026-09-30T12:36:23+00:00"
       },
       "olusturma": "2026-09-30T12:36:23+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -559,7 +682,7 @@ window.KE_DATA = {
         "tarih": "2026-09-29T09:50:45+00:00"
       },
       "olusturma": "2026-09-29T09:50:45+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "4 yaşında",
       "yasMetniEn": "4 years old",
       "yasGrubu": "yetiskin",
@@ -620,7 +743,7 @@ window.KE_DATA = {
         "tarih": "2026-09-28T16:15:49+00:00"
       },
       "olusturma": "2026-09-28T16:15:49+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -683,7 +806,7 @@ window.KE_DATA = {
         "tarih": "2026-09-28T10:46:52+00:00"
       },
       "olusturma": "2026-09-28T10:46:52+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "5,5 yaşında",
       "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
@@ -746,7 +869,7 @@ window.KE_DATA = {
         "tarih": "2026-09-27T16:16:27+00:00"
       },
       "olusturma": "2026-09-27T16:16:27+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -807,7 +930,7 @@ window.KE_DATA = {
         "tarih": "2026-09-27T05:42:20+00:00"
       },
       "olusturma": "2026-09-27T05:42:20+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "4,5 yaşında",
       "yasMetniEn": "4.5 years old",
       "yasGrubu": "yetiskin",
@@ -868,7 +991,7 @@ window.KE_DATA = {
         "tarih": "2026-09-27T05:42:20+00:00"
       },
       "olusturma": "2026-09-27T05:42:20+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -931,7 +1054,7 @@ window.KE_DATA = {
         "tarih": "2026-09-26T06:10:17+00:00"
       },
       "olusturma": "2026-09-26T06:10:17+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -992,7 +1115,7 @@ window.KE_DATA = {
         "tarih": "2026-09-25T10:04:06+00:00"
       },
       "olusturma": "2026-09-25T10:04:06+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -1055,7 +1178,7 @@ window.KE_DATA = {
         "tarih": "2026-09-24T10:49:34+00:00"
       },
       "olusturma": "2026-09-24T10:49:34+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1118,7 +1241,7 @@ window.KE_DATA = {
         "tarih": "2026-09-23T16:05:13+00:00"
       },
       "olusturma": "2026-09-23T16:05:13+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2,5 yaşında",
       "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
@@ -1181,7 +1304,7 @@ window.KE_DATA = {
         "tarih": "2026-09-23T08:28:29+00:00"
       },
       "olusturma": "2026-09-23T08:28:29+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1242,7 +1365,7 @@ window.KE_DATA = {
         "tarih": "2026-09-22T11:40:06+00:00"
       },
       "olusturma": "2026-09-22T11:40:06+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -1303,7 +1426,7 @@ window.KE_DATA = {
         "tarih": "2026-09-21T09:40:52+00:00"
       },
       "olusturma": "2026-09-21T09:40:52+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "4,5 yaşında",
       "yasMetniEn": "4.5 years old",
       "yasGrubu": "yetiskin",
@@ -1360,7 +1483,7 @@ window.KE_DATA = {
         "tarih": "2026-09-19T12:42:33+00:00"
       },
       "olusturma": "2026-09-19T12:42:33+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 aylık",
       "yasMetniEn": "1 month old",
       "yasGrubu": "yavru",
@@ -1423,7 +1546,7 @@ window.KE_DATA = {
         "tarih": "2026-09-18T08:49:40+00:00"
       },
       "olusturma": "2026-09-18T08:49:40+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -1486,7 +1609,7 @@ window.KE_DATA = {
         "tarih": "2026-09-17T06:57:53+00:00"
       },
       "olusturma": "2026-09-17T06:57:53+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -1549,7 +1672,7 @@ window.KE_DATA = {
         "tarih": "2026-09-17T06:57:53+00:00"
       },
       "olusturma": "2026-09-17T06:57:53+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -1616,7 +1739,7 @@ window.KE_DATA = {
         "tarih": "2026-09-16T14:09:23+00:00"
       },
       "olusturma": "2026-09-16T14:09:23+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -1679,7 +1802,7 @@ window.KE_DATA = {
         "tarih": "2026-09-16T04:19:09+00:00"
       },
       "olusturma": "2026-09-16T04:19:09+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "5,5 yaşında",
       "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
@@ -1740,7 +1863,7 @@ window.KE_DATA = {
         "tarih": "2026-09-15T12:28:43+00:00"
       },
       "olusturma": "2026-09-15T12:28:43+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3 aylık",
       "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
@@ -1803,7 +1926,7 @@ window.KE_DATA = {
         "tarih": "2026-09-14T08:37:39+00:00"
       },
       "olusturma": "2026-09-14T08:37:39+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1866,7 +1989,7 @@ window.KE_DATA = {
         "tarih": "2026-09-13T11:36:13+00:00"
       },
       "olusturma": "2026-09-13T11:36:13+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -1929,7 +2052,7 @@ window.KE_DATA = {
         "tarih": "2026-09-13T07:59:27+00:00"
       },
       "olusturma": "2026-09-13T07:59:27+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1994,7 +2117,7 @@ window.KE_DATA = {
         "tarih": "2026-09-12T08:36:07+00:00"
       },
       "olusturma": "2026-09-12T08:36:07+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2,5 yaşında",
       "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
@@ -2053,7 +2176,7 @@ window.KE_DATA = {
         "tarih": "2026-09-12T08:30:30+00:00"
       },
       "olusturma": "2026-09-12T08:30:30+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2118,7 +2241,7 @@ window.KE_DATA = {
         "tarih": "2026-09-11T09:55:18+00:00"
       },
       "olusturma": "2026-09-11T09:55:18+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -2178,7 +2301,7 @@ window.KE_DATA = {
         "tarih": "2026-09-11T08:16:16+00:00"
       },
       "olusturma": "2026-09-11T08:16:16+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2240,7 +2363,7 @@ window.KE_DATA = {
         "tarih": "2026-09-11T06:47:31+00:00"
       },
       "olusturma": "2026-09-11T06:47:31+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2305,7 +2428,7 @@ window.KE_DATA = {
         "tarih": "2026-09-10T13:45:13+00:00"
       },
       "olusturma": "2026-09-10T13:45:13+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "6 yaşında",
       "yasMetniEn": "6 years old",
       "yasGrubu": "yetiskin",
@@ -2368,7 +2491,7 @@ window.KE_DATA = {
         "tarih": "2026-09-10T12:32:17+00:00"
       },
       "olusturma": "2026-09-10T12:32:17+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -2432,7 +2555,7 @@ window.KE_DATA = {
         "tarih": "2026-09-10T11:21:22+00:00"
       },
       "olusturma": "2026-09-10T11:21:22+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "8 aylık",
       "yasMetniEn": "8 months old",
       "yasGrubu": "yavru",
@@ -2497,7 +2620,7 @@ window.KE_DATA = {
         "tarih": "2026-09-10T08:13:01+00:00"
       },
       "olusturma": "2026-09-10T08:13:01+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "5,5 yaşında",
       "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
@@ -2560,7 +2683,7 @@ window.KE_DATA = {
         "tarih": "2026-09-09T14:47:11+00:00"
       },
       "olusturma": "2026-09-09T14:47:11+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2621,7 +2744,7 @@ window.KE_DATA = {
         "tarih": "2026-09-09T09:22:46+00:00"
       },
       "olusturma": "2026-09-09T09:22:46+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -2682,7 +2805,7 @@ window.KE_DATA = {
         "tarih": "2026-09-09T09:22:46+00:00"
       },
       "olusturma": "2026-09-09T09:22:46+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -2743,7 +2866,7 @@ window.KE_DATA = {
         "tarih": "2026-09-09T09:22:46+00:00"
       },
       "olusturma": "2026-09-09T09:22:46+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -2806,7 +2929,7 @@ window.KE_DATA = {
         "tarih": "2026-09-08T14:07:15+00:00"
       },
       "olusturma": "2026-09-08T14:07:15+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -2873,7 +2996,7 @@ window.KE_DATA = {
         "tarih": "2026-09-08T08:01:37+00:00"
       },
       "olusturma": "2026-09-08T08:01:37+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2938,7 +3061,7 @@ window.KE_DATA = {
         "tarih": "2026-09-07T17:23:23+00:00"
       },
       "olusturma": "2026-09-07T17:23:23+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -2998,7 +3121,7 @@ window.KE_DATA = {
         "tarih": "2026-09-07T08:54:49+00:00"
       },
       "olusturma": "2026-09-07T08:54:49+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -3059,7 +3182,7 @@ window.KE_DATA = {
         "tarih": "2026-09-06T11:24:09+00:00"
       },
       "olusturma": "2026-09-06T11:24:09+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -3114,7 +3237,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3169,7 +3292,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3224,7 +3347,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3279,7 +3402,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3342,7 +3465,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T04:41:35+00:00"
       },
       "olusturma": "2026-09-05T04:41:35+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -3405,7 +3528,7 @@ window.KE_DATA = {
         "tarih": "2026-09-04T14:02:22+00:00"
       },
       "olusturma": "2026-09-04T14:02:22+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "6,5 yaşında",
       "yasMetniEn": "6.5 years old",
       "yasGrubu": "yetiskin",
@@ -3468,7 +3591,7 @@ window.KE_DATA = {
         "tarih": "2026-09-04T11:05:28+00:00"
       },
       "olusturma": "2026-09-04T11:05:28+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2,5 yaşında",
       "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
@@ -3531,7 +3654,7 @@ window.KE_DATA = {
         "tarih": "2026-09-03T11:44:27+00:00"
       },
       "olusturma": "2026-09-03T11:44:27+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -3594,7 +3717,7 @@ window.KE_DATA = {
         "tarih": "2026-09-03T09:54:40+00:00"
       },
       "olusturma": "2026-09-03T09:54:40+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -3655,7 +3778,7 @@ window.KE_DATA = {
         "tarih": "2026-09-03T08:56:03+00:00"
       },
       "olusturma": "2026-09-03T08:56:03+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3 aylık",
       "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
@@ -3709,7 +3832,7 @@ window.KE_DATA = {
         "tarih": "2026-09-02T15:52:17+00:00"
       },
       "olusturma": "2026-09-02T15:52:17+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -3766,7 +3889,7 @@ window.KE_DATA = {
         "tarih": "2026-09-02T09:37:23+00:00"
       },
       "olusturma": "2026-09-02T09:37:23+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -3823,7 +3946,7 @@ window.KE_DATA = {
         "tarih": "2026-09-02T08:41:53+00:00"
       },
       "olusturma": "2026-09-02T08:41:53+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -3880,7 +4003,7 @@ window.KE_DATA = {
         "tarih": "2026-09-01T08:35:17+00:00"
       },
       "olusturma": "2026-09-01T08:35:17+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "9 yaşında",
       "yasMetniEn": "9 years old",
       "yasGrubu": "kidemli",
@@ -3937,7 +4060,7 @@ window.KE_DATA = {
         "tarih": "2026-09-01T07:23:49+00:00"
       },
       "olusturma": "2026-09-01T07:23:49+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -3992,7 +4115,7 @@ window.KE_DATA = {
         "tarih": "2026-08-31T13:33:54+00:00"
       },
       "olusturma": "2026-08-31T13:33:54+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4052,7 +4175,7 @@ window.KE_DATA = {
         "tarih": "2026-08-31T10:12:06+00:00"
       },
       "olusturma": "2026-08-31T10:12:06+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "5,5 yaşında",
       "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
@@ -4104,7 +4227,7 @@ window.KE_DATA = {
         "tarih": "2026-08-31T06:48:49+00:00"
       },
       "olusturma": "2026-08-31T06:48:49+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -4161,7 +4284,7 @@ window.KE_DATA = {
         "tarih": "2026-08-30T12:22:06+00:00"
       },
       "olusturma": "2026-08-30T12:22:06+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -4216,7 +4339,7 @@ window.KE_DATA = {
         "tarih": "2026-08-30T10:59:27+00:00"
       },
       "olusturma": "2026-08-30T10:59:27+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -4281,7 +4404,7 @@ window.KE_DATA = {
         "tarih": "2026-08-29T09:21:40+00:00"
       },
       "olusturma": "2026-08-29T09:21:40+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -4344,7 +4467,7 @@ window.KE_DATA = {
         "tarih": "2026-08-28T13:40:42+00:00"
       },
       "olusturma": "2026-08-28T13:40:42+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4405,7 +4528,7 @@ window.KE_DATA = {
         "tarih": "2026-08-28T09:06:37+00:00"
       },
       "olusturma": "2026-08-28T09:06:37+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "6 aylık",
       "yasMetniEn": "6 months old",
       "yasGrubu": "yavru",
@@ -4472,7 +4595,7 @@ window.KE_DATA = {
         "tarih": "2026-08-27T13:37:31+00:00"
       },
       "olusturma": "2026-08-27T13:37:31+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4531,7 +4654,7 @@ window.KE_DATA = {
         "tarih": "2026-08-27T11:07:36+00:00"
       },
       "olusturma": "2026-08-27T11:07:36+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -4594,7 +4717,7 @@ window.KE_DATA = {
         "tarih": "2026-08-26T17:56:30+00:00"
       },
       "olusturma": "2026-08-26T17:56:30+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4655,7 +4778,7 @@ window.KE_DATA = {
         "tarih": "2026-08-26T13:08:50+00:00"
       },
       "olusturma": "2026-08-26T13:08:50+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -4716,7 +4839,7 @@ window.KE_DATA = {
         "tarih": "2026-08-26T07:13:59+00:00"
       },
       "olusturma": "2026-08-26T07:13:59+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -4779,7 +4902,7 @@ window.KE_DATA = {
         "tarih": "2026-08-24T12:43:57+00:00"
       },
       "olusturma": "2026-08-24T12:43:57+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -4842,7 +4965,7 @@ window.KE_DATA = {
         "tarih": "2026-08-24T10:00:22+00:00"
       },
       "olusturma": "2026-08-24T10:00:22+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4909,7 +5032,7 @@ window.KE_DATA = {
         "tarih": "2026-08-24T09:14:23+00:00"
       },
       "olusturma": "2026-08-24T09:14:23+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -4972,7 +5095,7 @@ window.KE_DATA = {
         "tarih": "2026-08-23T09:32:07+00:00"
       },
       "olusturma": "2026-08-23T09:32:07+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -5034,7 +5157,7 @@ window.KE_DATA = {
         "tarih": "2026-08-23T07:28:40+00:00"
       },
       "olusturma": "2026-08-23T07:28:40+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -5097,7 +5220,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T09:42:51+00:00"
       },
       "olusturma": "2026-08-22T09:42:51+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5160,7 +5283,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T08:24:39+00:00"
       },
       "olusturma": "2026-08-22T08:24:39+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5223,7 +5346,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T05:21:49+00:00"
       },
       "olusturma": "2026-08-22T05:21:49+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -5286,7 +5409,7 @@ window.KE_DATA = {
         "tarih": "2026-08-21T07:16:44+00:00"
       },
       "olusturma": "2026-08-21T07:16:44+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -5353,7 +5476,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T10:49:19+00:00"
       },
       "olusturma": "2026-08-20T10:49:19+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5414,7 +5537,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T05:50:38+00:00"
       },
       "olusturma": "2026-08-20T05:50:38+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -5477,7 +5600,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:32:12+00:00"
       },
       "olusturma": "2026-08-17T13:32:12+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -5542,7 +5665,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:15:38+00:00"
       },
       "olusturma": "2026-08-17T13:15:38+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -5605,7 +5728,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T05:42:35+00:00"
       },
       "olusturma": "2026-08-17T05:42:35+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -5667,7 +5790,7 @@ window.KE_DATA = {
         "tarih": null
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -5726,7 +5849,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T09:19:28+00:00"
       },
       "olusturma": "2026-08-16T09:19:28+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -5789,7 +5912,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T05:44:00+00:00"
       },
       "olusturma": "2026-08-16T05:44:00+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -5852,7 +5975,7 @@ window.KE_DATA = {
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "5 aylık",
       "yasMetniEn": "5 months old",
       "yasGrubu": "yavru",
@@ -5919,7 +6042,7 @@ window.KE_DATA = {
         "tarih": "2026-08-14T16:12:31+00:00"
       },
       "olusturma": "2026-08-14T16:12:31+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -5986,7 +6109,7 @@ window.KE_DATA = {
         "tarih": "2026-08-14T14:09:53+00:00"
       },
       "olusturma": "2026-08-14T14:09:53+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -6047,7 +6170,7 @@ window.KE_DATA = {
         "tarih": "2026-08-13T10:55:54+00:00"
       },
       "olusturma": "2026-08-13T10:55:54+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -6108,7 +6231,7 @@ window.KE_DATA = {
         "tarih": "2026-08-12T11:53:07+00:00"
       },
       "olusturma": "2026-08-12T11:53:07+00:00",
-      "guncelleme": "2026-10-05T21:18:42+00:00",
+      "guncelleme": "2026-10-06T19:14:55+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
