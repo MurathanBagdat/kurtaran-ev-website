@@ -224,7 +224,8 @@ Beş form var; hepsi şu an ekranda "gönderildi sayılmaz" uyarısı veriyor, h
 **Şimdi — Wix erişimi bekleniyor:**
 
 - [x] Wix DNS'e CNAME: `ilanlar` → `kurtaranev-ilanlar.pages.dev` (10.10.2026, doğrulandı, SSL aktif).
-- [ ] Wix `/kopek` ve `/kedi` sayfalarına "İlanları gör" butonu (aynı sekmede):
+- [x] Wix `/kopek` ve `/kedi` sayfalarına butonlar eklendi (10.10.2026, TR + EN, aynı sekmede):
+      "Yuva Arayan Köpeklerimiz / Kedilerimiz" · "Dogs / Cats Looking for a Home". Adresler:
       `https://ilanlar.kurtaranev.org/kopekler` · `/kediler`
       (EN sitede `/en/kopekler` · `/en/kediler`). Uzantısız adresler; `.html`'li eskiler 301 ile yönlenir.
 - [ ] İlk 1–2 hafta Cloudflare panelinden günlük istek sayısını izle. Ücretsiz plan hesap
