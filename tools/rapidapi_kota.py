@@ -52,6 +52,7 @@ def _pencereyi_tazele(durum: dict, simdi: float) -> dict:
         durum["pencereBitis"] = int(simdi + _GUN)
         durum["bizimSayac"] = 0
         durum["kalan"] = None
+        durum["kategoriler"] = {}
     return durum
 
 
@@ -64,16 +65,27 @@ def kullanilan(durum: dict) -> int:
     return bizim
 
 
-def izin_al() -> None:
+def izin_al(kategori: str | None = None) -> None:
     """Her istekten hemen önce çağrılır. Sınıra ulaşıldıysa KotaAsildi fırlatır;
-    değilse isteği sayaca yazar (istek başarısız olsa bile harcanmış sayılır)."""
+    değilse isteği sayaca yazar (istek başarısız olsa bile harcanmış sayılır).
+    `kategori` verilirse istek o kategorinin günlük sayacına da yazılır
+    (ör. "yuvalanma" — kendi alt bütçesi olan işler için)."""
     durum = _pencereyi_tazele(_yukle(), time.time())
     if kullanilan(durum) >= GUNLUK_SINIR:
         _kaydet(durum)
         raise KotaAsildi(f"RapidAPI günlük sınırı doldu ({kullanilan(durum)}/{GUNLUK_SINIR}); "
                          f"istek gönderilmedi. Sıfırlanma: {_saat(durum['pencereBitis'])}")
     durum["bizimSayac"] = durum.get("bizimSayac", 0) + 1
+    if kategori:
+        kat = durum.setdefault("kategoriler", {})
+        kat[kategori] = kat.get(kategori, 0) + 1
     _kaydet(durum)
+
+
+def kategori_kullanim(kategori: str) -> int:
+    """Bu penceredeki (günlük) o kategoriye ait istek sayısı."""
+    durum = _pencereyi_tazele(_yukle(), time.time())
+    return (durum.get("kategoriler") or {}).get(kategori, 0)
 
 
 def yanit_isle(basliklar) -> None:

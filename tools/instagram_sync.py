@@ -37,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import animals  # noqa: E402
 import ai_parser  # noqa: E402
 import rapidapi_kota  # noqa: E402
+import yuvalanma_kontrol  # noqa: E402
 from caption_parser import parse_all, icerik_turu, yuvalandi_mi  # noqa: E402
 
 GRAPH = "https://graph.facebook.com/v21.0"
@@ -498,7 +499,7 @@ def _autolink_cek(gonderi_url: str, api_key: str) -> dict:
     return veri
 
 
-def _rapid_get(path: str, params: dict, api_key: str) -> dict:
+def _rapid_get(path: str, params: dict, api_key: str, kategori: str | None = None) -> dict:
     """Scraper API'sine GET atar; hız limitine takılırsa bekleyip yeniden dener.
 
     Her deneme günlük kotadan düşer: rapidapi_kota.izin_al() sınır dolduysa
@@ -512,7 +513,7 @@ def _rapid_get(path: str, params: dict, api_key: str) -> dict:
         "User-Agent": "KurtaranEv-Sync/1.0",
     })
     for deneme in range(4):
-        rapidapi_kota.izin_al()
+        rapidapi_kota.izin_al(kategori)
         try:
             with urllib.request.urlopen(istek, timeout=60) as r:
                 rapidapi_kota.yanit_isle(r.headers)
@@ -583,6 +584,10 @@ def _rapid_gonderi(item: dict) -> dict:
     return gonderi
 
 
+# Bu çalıştırmada çekilen /feed sayfaları (hesap pk → sayfa yanıtları, sırayla)
+SAYFA_ONBELLEGI: dict[str, list[dict]] = {}
+
+
 def _rapid_feed(pk: str, limit: int, api_key: str) -> list[dict]:
     """Hesabın en yeni `limit` gönderisini toplar. Bir sayfa 12 öğe döner ve
     sabitlenmiş (eski) gönderiler de buna dahildir; yeterli sabitlenmemiş
@@ -591,18 +596,22 @@ def _rapid_feed(pk: str, limit: int, api_key: str) -> list[dict]:
     import time
     items: dict[str, dict] = {}
     params = {"user_id": pk}
+    SAYFA_ONBELLEGI[pk] = []
     for sayfa in range(5):  # güvenlik sınırı
         if sayfa:
             time.sleep(2)
         akis = _rapid_get("/feed", params, api_key)
+        # Yuvalanma kontrolü bu sayfaları yeniden çekmeden kullanır.
+        SAYFA_ONBELLEGI[pk].append(akis)
         for it in akis.get("items") or []:
             items.setdefault(it.get("code") or str(it.get("pk")), it)
         sabitsiz = sum(1 for it in items.values() if not it.get("timeline_pinned_user_ids"))
-        if (sabitsiz >= limit or not akis.get("more_available")
-                or not akis.get("next_max_id")):
+        sonraki = yuvalanma_kontrol.sonraki_imlec(akis, pk)
+        if sabitsiz >= limit or not sonraki:
             break
         # Not: API "max_id"yi yok sayar; imleç parametresinin adı next_max_id.
-        params = {"user_id": pk, "next_max_id": akis["next_max_id"]}
+        # İmleci kendimiz kuruyoruz (collab gönderisinde API'ninki atlıyor).
+        params = {"user_id": pk, "next_max_id": sonraki}
     return list(items.values())
 
 
@@ -661,27 +670,60 @@ def kip_rapid(args) -> int:
             toplam.extend(kayitlar)
         time.sleep(2)
 
-    print(f"\n{rapidapi_kota.ozet()}")
+    eklendi = guncellendi = 0
     if args.kuru:
         print(f"\n[kuru çalıştırma] {len(toplam)} ilan işlenirdi, hiçbir şey yazılmadı.")
-        return 0
-    if not toplam:
-        _rapor_yaz([], 0, 0, hatalar)
-        if hatalar:  # hiçbir şey işlenemedi ve hata var → cron kırmızıya düşsün
-            return 1
-        # cron için normal bir sonuç: yeni gönderi yoksa iş başarıyla bitmiştir
+    elif toplam:
+        eklendi, guncellendi = kaydet(toplam)
+        print(f"\n{eklendi} yeni ilan eklendi, {guncellendi} ilan güncellendi.")
+        print("İlanlar doğrudan yayınlandı (yuva arıyor).")
+    else:
         print("\nYeni ilan yok.")
-        return 0
 
-    eklendi, guncellendi = kaydet(toplam)
-    print(f"\n{eklendi} yeni ilan eklendi, {guncellendi} ilan güncellendi.")
-    print("İlanlar doğrudan yayınlandı (yuva arıyor).")
-    _rapor_yaz(toplam, eklendi, guncellendi, hatalar)
-    return 0
+    # Yeni ilanlar kaydedildikten SONRA: yuva arayanların caption'larında
+    # "YUVALANDI" var mı? Senkronun çektiği sayfalar yeniden kullanılır.
+    kontrol = None
+    if not args.yuvalanma_yok:
+        kontrol = _yuvalanma_calistir(api_key, kuru=args.kuru)
+        if kontrol["hata"]:
+            hatalar.append(f"Yuvalanma kontrolü: {kontrol['hata']}")
+
+    print(f"\n{rapidapi_kota.ozet()}")
+    if args.kuru:
+        return 0
+    _rapor_yaz(toplam, eklendi, guncellendi, hatalar, kontrol)
+    # hiçbir şey işlenemedi ve hata var → cron kırmızıya düşsün
+    return 1 if hatalar and not toplam and not (kontrol and kontrol["isaretlenen"]) else 0
+
+
+def _yuvalanma_calistir(api_key: str, kuru: bool = False) -> dict:
+    print("\n▸ Yuvalanma kontrolü (caption başında YUVALANDI)")
+    kontrol = yuvalanma_kontrol.calistir(_rapid_get, RAPID_PK, api_key,
+                                         onbellek=SAYFA_ONBELLEGI, kuru=kuru)
+    for k in kontrol["isaretlenen"]:
+        print(f"  🏡 {k.get('isim')} — yuvalandı olarak işaretlendi"
+              + (" (kuru: yazılmadı)" if kuru else ""))
+    for k in kontrol["bulunamayan"]:
+        print(f"  ? {k.get('isim')} — gönderi akışta bulunamadı: {k['kaynak'].get('baglanti')}")
+    if kontrol["hata"]:
+        print(f"  ! {kontrol['hata']}")
+    print(f"  {yuvalanma_kontrol.ozet_satiri(kontrol)}")
+    return kontrol
+
+
+def kip_yuvalanma(args) -> int:
+    """Yalnızca yuvalanma kontrolü (yeni gönderi çekmeden)."""
+    api_key = config_yukle().get("rapidapi_key")
+    if not api_key:
+        print("! RapidAPI anahtarı yok.")
+        return 2
+    kontrol = _yuvalanma_calistir(api_key, kuru=args.kuru)
+    print(f"\n{rapidapi_kota.ozet()}")
+    return 1 if kontrol["hata"] else 0
 
 
 def _rapor_yaz(kayitlar: list[dict], eklendi: int, guncellendi: int,
-               hatalar: list[str]) -> None:
+               hatalar: list[str], kontrol: dict | None = None) -> None:
     """SYNC_RAPOR ortam değişkeni bir dosya yolu gösteriyorsa markdown rapor yazar.
 
     GitHub Actions bu dosyayı e-postalar. Rapor her çalıştırmada yazılır —
@@ -705,9 +747,21 @@ def _rapor_yaz(kayitlar: list[dict], eklendi: int, guncellendi: int,
         satirlar.append("Canlı site: https://murathanbagdat.github.io/kurtaran-ev-website/")
     if not kayitlar and not hatalar:
         satirlar.append("Bugün yeni ilan yok.")
+    if kontrol and kontrol["isaretlenen"]:
+        satirlar += ["", f"### 🏡 {len(kontrol['isaretlenen'])} ilan yuvalandı olarak işaretlendi", ""]
+        satirlar += [f"- [{k.get('isim') or 'İsimsiz'}]({k['kaynak'].get('baglanti', '')}) — "
+                     f"{'Köpek' if k.get('tur') == 'kopek' else 'Kedi'}"
+                     for k in kontrol["isaretlenen"]]
+    if kontrol and kontrol["bulunamayan"]:
+        satirlar += ["", "### Instagram'da bulunamayan ilanlar (silinmiş/arşivlenmiş olabilir — kontrol edin)", ""]
+        satirlar += [f"- [{k.get('isim') or 'İsimsiz'}]({k['kaynak'].get('baglanti', '')}) — "
+                     "sitede hâlâ Yuva arıyor" for k in kontrol["bulunamayan"]]
     if hatalar:
         satirlar += ["", "### ⚠️ Hatalar", ""] + [f"- {h}" for h in hatalar]
-    satirlar += ["", rapidapi_kota.ozet()]
+    satirlar += [""]
+    if kontrol:
+        satirlar += [yuvalanma_kontrol.ozet_satiri(kontrol), ""]
+    satirlar += [rapidapi_kota.ozet()]
     Path(yol).write_text("\n".join(satirlar) + "\n", encoding="utf-8")
     print(f"Rapor yazıldı: {yol}")
 
@@ -851,6 +905,10 @@ def main() -> int:
                     help="Uzun ömürlü jetonu tazele ve config dosyasına yaz")
     ap.add_argument("--klasik", action="store_true",
                     help="AI yerine kural tabanlı ayrıştırıcıyı kullan")
+    ap.add_argument("--yuvalanma", action="store_true",
+                    help="Yalnızca yuva arayan ilanların yuvalanma kontrolünü çalıştır")
+    ap.add_argument("--yuvalanma-yok", action="store_true",
+                    help="--rapid: yuvalanma kontrolünü atla")
     ap.add_argument("--guncelle", action="store_true",
                     help="--rapid: zaten kayıtlı gönderileri de yeniden işle")
     args = ap.parse_args()
@@ -869,6 +927,8 @@ def main() -> int:
         return 0
     if args.jeton_yenile:
         return kip_jeton_yenile(args)
+    if args.yuvalanma:
+        return kip_yuvalanma(args)
     if args.rapid:
         return kip_rapid(args)
     if args.link:

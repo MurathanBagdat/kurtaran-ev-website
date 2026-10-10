@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-09T19:10:38+00:00",
+  "guncelleme": "2026-10-10T14:59:23+00:00",
   "sayi": 108,
   "hayvanlar": [
     {
@@ -6204,7 +6204,7 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Da5MopZDDxH/",
-        "tarih": null
+        "tarih": "2026-07-17T12:18:04+00:00"
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
       "guncelleme": "2026-10-09T19:10:38+00:00",

@@ -213,6 +213,14 @@ Pipeline ne yapıyor?
    gönderileri "Yuvalandı" olarak gelir.
 5. Aynı gönderi tekrar çekilirse yöneticinin elle düzelttiği alanların üzerine yazmaz;
    yalnızca boş kalan alanları doldurur.
+6. **Yuvalanma kontrolü** (`tools/yuvalanma_kontrol.py`, her `--rapid` çalıştırmasının
+   sonunda): "Yuva arıyor" ilanların Instagram gönderilerinin GÜNCEL caption'ına bakar.
+   Dernek yuvalanınca caption'ın başına "YUVALANDI" yazıyor; ilk iki satırda bu ibare
+   varsa ilan "Yuvalandı" olur. AI kullanılmaz. Gönderi başına istek yerine hesap akışı
+   (12 gönderi/istek) gezilir; senkronun çektiği ilk sayfalar ücretsizdir. Günlük alt
+   bütçe 200 istek; yetmezse kalınan yer kaydedilir, ertesi gün devam edilir. Akışta
+   bulunamayan gönderiler değiştirilmez, raporda listelenir. Tek başına:
+   `python3 tools/instagram_sync.py --yuvalanma [--kuru]`
 
 Ayrıştırıcıyı tek başına deneyebilirsiniz:
 
