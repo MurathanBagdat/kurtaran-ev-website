@@ -587,6 +587,29 @@ def _rapid_gonderi(item: dict) -> dict:
     return gonderi
 
 
+def _rapid_feed(pk: str, limit: int, api_key: str) -> list[dict]:
+    """Hesabın en yeni `limit` gönderisini toplar. Bir sayfa 12 öğe döner ve
+    sabitlenmiş (eski) gönderiler de buna dahildir; yeterli sabitlenmemiş
+    gönderi toplanana kadar next_max_id ile sonraki sayfalara geçilir.
+    Her sayfa 1 RapidAPI isteğidir (limit 20 → hesap başına genelde 2)."""
+    import time
+    items: dict[str, dict] = {}
+    params = {"user_id": pk}
+    for sayfa in range(5):  # güvenlik sınırı
+        if sayfa:
+            time.sleep(2)
+        akis = _rapid_get("/feed", params, api_key)
+        for it in akis.get("items") or []:
+            items.setdefault(it.get("code") or str(it.get("pk")), it)
+        sabitsiz = sum(1 for it in items.values() if not it.get("timeline_pinned_user_ids"))
+        if (sabitsiz >= limit or not akis.get("more_available")
+                or not akis.get("next_max_id")):
+            break
+        # Not: API "max_id"yi yok sayar; imleç parametresinin adı next_max_id.
+        params = {"user_id": pk, "next_max_id": akis["next_max_id"]}
+    return list(items.values())
+
+
 def kip_rapid(args) -> int:
     """Her iki hesabın son N gönderisini scraper API ile çekip akışa sokar."""
     import time
@@ -603,8 +626,8 @@ def kip_rapid(args) -> int:
         print(f"\n▸ @{kullanici} ({tur})")
         try:
             pk = _rapid_pk(kullanici, api_key, cfg)
-            time.sleep(2)  # ücretsiz katman hız limiti
-            akis = _rapid_get("/feed", {"user_id": pk}, api_key)
+            time.sleep(2)  # hız limiti
+            akis_items = _rapid_feed(pk, args.limit, api_key)
         except RuntimeError as e:
             print(f"  ! {e}")
             hatalar.append(f"@{kullanici}: {e}")
@@ -612,7 +635,7 @@ def kip_rapid(args) -> int:
 
         # Sabitlenmiş gönderiler listenin başında ama eski olabilir;
         # tarihe göre sıralayıp gerçekten en yeni N tanesini al.
-        items = sorted(akis.get("items") or [], key=lambda x: x.get("taken_at") or 0,
+        items = sorted(akis_items, key=lambda x: x.get("taken_at") or 0,
                        reverse=True)[: args.limit]
         print(f"  {len(items)} gönderi alındı (en yeniler)")
         gorulen = gorulenleri_yukle()

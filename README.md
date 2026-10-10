@@ -173,7 +173,7 @@ python3 tools/instagram_sync.py --link "https://www.instagram.com/kurtaranev_kop
 #     Her iki hesabın en yeni N gönderisini listeler ve işler. Resmî API
 #     değildir (Instagram kullanım koşulları dışı, her an kırılabilir);
 #     Graph API kurulana kadar köprü çözümdür.
-python3 tools/instagram_sync.py --rapid --limit 5
+python3 tools/instagram_sync.py --rapid --limit 20
 
 # 2c için günlük kota: plan günde 400 istek verir, kod kendini 350'de keser
 # (tools/rapidapi_kota.py). Sınır dolunca istek hiç gönderilmez; kullanım
