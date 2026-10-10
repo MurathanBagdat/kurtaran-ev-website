@@ -272,7 +272,6 @@
             '<option value="">Tüm türler</option><option value="kopek">Köpek</option><option value="kedi">Kedi</option>' +
           '</select>' +
           '<span class="spacer"></span>' +
-          '<a class="btn-mini" href="index.html">Siteye dön</a>' +
           '<button class="btn-mini" type="button" id="cikis">Çıkış</button>' +
         '</div>' +
 
