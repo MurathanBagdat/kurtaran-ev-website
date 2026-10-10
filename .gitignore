@@ -51,3 +51,6 @@ feedback/
 pages/
 feedback.md
 CLAUDE.md
+
+# wrangler yerel test klasörü
+.wrangler/
