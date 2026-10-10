@@ -223,7 +223,7 @@
 
   var sira = kardesler.map(function (a) { return a.id; }).indexOf(h.id);
 
-  function ilanBaglantisi(a) { return 'ilan.html?id=' + encodeURIComponent(a.id); }
+  function ilanBaglantisi(a) { return ((G && G.ilan) || 'ilan.html') + '?id=' + encodeURIComponent(a.id); }
 
   /* --- önceki / sonraki --- */
   var pager = document.querySelector('[data-pager]');

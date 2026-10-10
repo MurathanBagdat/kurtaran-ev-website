@@ -223,17 +223,16 @@ Beş form var; hepsi şu an ekranda "gönderildi sayılmaz" uyarısı veriyor, h
 
 **Şimdi — Wix erişimi bekleniyor:**
 
-- [ ] Wix DNS'e CNAME ekle: `ilanlar` → `kurtaranev-ilanlar.pages.dev`. Cloudflare tarafında
-      alan adı projeye bağlı, doğrulama bekliyor (HTTP doğrulaması + SSL kendiliğinden).
+- [x] Wix DNS'e CNAME: `ilanlar` → `kurtaranev-ilanlar.pages.dev` (10.10.2026, doğrulandı, SSL aktif).
 - [ ] Wix `/kopek` ve `/kedi` sayfalarına "İlanları gör" butonu (aynı sekmede):
-      `https://ilanlar.kurtaranev.org/kopekler.html` · `/kediler.html`
-      (EN sitede `/en/kopekler.html` · `/en/kediler.html`).
+      `https://ilanlar.kurtaranev.org/kopekler` · `/kediler`
+      (EN sitede `/en/kopekler` · `/en/kediler`). Uzantısız adresler; `.html`'li eskiler 301 ile yönlenir.
 - [ ] İlk 1–2 hafta Cloudflare panelinden günlük istek sayısını izle. Ücretsiz plan hesap
       genelinde günde 100.000 istek (diğer Worker'larla ortak); ziyaret başına ~45 istek →
       ~2.000 ziyaret/gün. Günde ~1.000 ziyareti geçerse Workers Paid (5 $/ay).
 
-- [ ] Wix DNS'e ikinci CNAME: `admin` → `kurtaranev-admin.pages.dev` (ekip paneli,
-      Cloudflare'de alan adı bağlı, doğrulama bekliyor).
+- [x] Wix DNS'e CNAME: `admin` → `kurtaranev-admin.pages.dev` (10.10.2026, doğrulandı).
+      Ekip paneli: https://admin.kurtaranev.org
 
 **Ekip paneli (admin.kurtaranev.org) — anahtar bilgisi:**
 
