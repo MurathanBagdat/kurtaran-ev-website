@@ -19,6 +19,8 @@
      --------------------------------------------------------------------- */
   var CINSIYET = I18N.cinsiyet;
   var DURUM = I18N.durum;
+  /* İlan modunda (site/ilanlar/) uzantısız adres: /ilan?id=… */
+  var ILAN_SAYFASI = (window.KE_GOMULU && window.KE_GOMULU.ilan) || 'ilan.html';
   var T = I18N.t;
 
   var PATI_SVG =
@@ -170,7 +172,7 @@
     if (h.ozelBakim === true) etiketler.push('<span class="tag">' + T.ozelBakimEtiket + '</span>');
 
     return '' +
-      '<a class="animal-card" href="ilan.html?id=' + encodeURIComponent(h.id) + '">' +
+      '<a class="animal-card" href="' + ILAN_SAYFASI + '?id=' + encodeURIComponent(h.id) + '">' +
         '<div class="animal-card__media">' + gorsel +
           '<div class="animal-card__badges">' + rozetler.join('') + '</div>' +
         '</div>' +

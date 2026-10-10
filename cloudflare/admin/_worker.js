@@ -25,7 +25,6 @@ const OTURUM_SURE = 12 * 60 * 60;          // sn
 const CEREZ = 'ke_oturum';
 
 const DOSYALAR = new Set([
-  'admin.html',
   'assets/css/admin.css',
   'assets/css/style.css',
   'assets/js/i18n.js',
@@ -187,7 +186,8 @@ export default {
     const url = new URL(request.url);
     const yol = url.pathname.replace(/^\/+/, '');
 
-    if (yol === '' || yol === 'admin') return Response.redirect(`${url.origin}/admin.html`, 302);
+    // Panel adresin kökünde: admin.kurtaranev.org (eski /admin.html → /)
+    if (yol === 'admin.html' || yol === 'admin') return Response.redirect(`${url.origin}/`, 301);
 
     if (yol === 'kapi/durum') {
       return json({ kapi: true, girisli: await oturumGecerli(request, env) });
@@ -206,9 +206,9 @@ export default {
     if (request.method !== 'GET' && request.method !== 'HEAD') {
       return new Response('Method not allowed', { status: 405 });
     }
-    if (DOSYALAR.has(yol) || FOTO.test(yol)) {
+    if (yol === '' || DOSYALAR.has(yol) || FOTO.test(yol)) {
       const foto = FOTO.test(yol);
-      const yanit = await fetch(`${ORIGIN}/${yol}`,
+      const yanit = await fetch(`${ORIGIN}/${yol || 'admin.html'}`,
         foto ? { cf: { cacheEverything: true, cacheTtl: 86400 } } : {});
       const basliklar = new Headers(yanit.headers);
       basliklar.set('cache-control', foto ? 'public, max-age=86400' : 'no-cache');

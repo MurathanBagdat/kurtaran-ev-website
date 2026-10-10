@@ -80,7 +80,10 @@ METIN = {
     },
 }
 
-LISTE = {"kopek": "kopekler.html", "kedi": "kediler.html"}
+# Uzantısız ("temiz") adresler: ilanlar.kurtaranev.org/kopekler, /ilan?id=…
+# Cloudflare kapısı .html'li adresleri bunlara yönlendirir. Dosyadan
+# (file://) açılınca ayar_betigi .html ekler.
+LISTE = {"kopek": "kopekler", "kedi": "kediler"}
 
 
 def _katalog_bolumu(html: str) -> str:
@@ -108,9 +111,11 @@ def ust_serit(lang: str, tur: str | None) -> str:
 
 def ayar_betigi(lang: str) -> str:
     """Sayfadaki JS'e (catalog.js / animal.js) ilan modunu bildirir."""
-    ayar = {"liste": LISTE, "form": WIX[lang]["form"], "kapat": WIX[lang]["kapat"],
+    ayar = {"liste": LISTE, "ilan": "ilan", "form": WIX[lang]["form"], "kapat": WIX[lang]["kapat"],
             "baslik": METIN[lang]["baslik"]}
-    return f"<script>window.KE_GOMULU={json.dumps(ayar, ensure_ascii=False)};</script>\n"
+    return ("<script>window.KE_GOMULU=" + json.dumps(ayar, ensure_ascii=False) + ";"
+            "if(location.protocol==='file:'){var g=window.KE_GOMULU;g.ilan+='.html';"
+            "g.liste.kopek+='.html';g.liste.kedi+='.html';}</script>\n")
 
 
 def katalog_govde(lang: str, tur: str) -> str:
@@ -141,7 +146,7 @@ def detay_govde(lang: str) -> str:
 <section class="section section--cream" style="padding-top:40px;padding-bottom:56px">
   <div class="container">
     <div class="detail-top">
-      <p class="breadcrumb"><a href="kopekler.html" data-back-link>{t['geri']}</a></p>
+      <p class="breadcrumb"><a href="kopekler" data-back-link>{t['geri']}</a></p>
 
       <nav class="pager" aria-label="{t['pager']}" data-pager hidden>
         <a class="pager__link" href="#" data-pager-prev>
@@ -179,7 +184,7 @@ def detay_govde(lang: str) -> str:
   <div class="container">
     <div class="others__head">
       <h2 class="others__title" data-others-title>{t['diger']}</h2>
-      <a class="link-arrow" href="kopekler.html" data-others-all>{t['tumu']} <span aria-hidden="true">→</span></a>
+      <a class="link-arrow" href="kopekler" data-others-all>{t['tumu']} <span aria-hidden="true">→</span></a>
     </div>
     <div class="animal-grid" data-others-grid></div>
   </div>

@@ -114,6 +114,9 @@ Canlı Wix sitesinden (kurtaranev.org) açılan, yalnızca ilanları gösteren s
 doldur" Wix'in kullandığı Google Formunu açar. Wix sayfa ve form adresleri `tools/ilanlar.py`
 içindeki `WIX` sözlüğündedir.
 
+Canlı adresler uzantısızdır: `https://ilanlar.kurtaranev.org/kopekler`, `/kediler`, `/ilan?id=…`,
+`/en/…`; `.html`'li adresler kapı tarafından 301 ile bunlara yönlendirilir.
+
 Yayın: **Cloudflare Pages** projesi `kurtaranev-ilanlar`, `cloudflare/ilanlar/_worker.js` ile
 GitHub Pages'in önünde süzgeçli bir kapıdır: yalnızca ilan sayfalarını, gereken CSS/JS'i, ilan
 verisini ve fotoğrafları geçirir; prototipin diğer sayfaları o adreste 404'tür. İçerik GitHub

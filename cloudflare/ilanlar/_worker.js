@@ -14,7 +14,9 @@
 
 const ORIGIN = 'https://murathanbagdat.github.io/kurtaran-ev-website';
 
-const SAYFALAR = new Set(['kopekler.html', 'kediler.html', 'ilan.html']);
+// Uzantısız adresler: /kopekler, /kediler, /ilan?id=… (ve /en/ altında).
+// .html'li eski adresler kalıcı olarak (301) bunlara yönlendirilir.
+const SAYFALAR = new Set(['kopekler', 'kediler', 'ilan']);
 const VARLIKLAR = new Set([
   'assets/css/style.css',
   'assets/js/i18n.js',
@@ -38,8 +40,8 @@ function bulunamadi(dil) {
 display:grid;place-items:center;min-height:100vh;margin:0;text-align:center;padding:24px}
 a{color:#183653;font-weight:700}</style></head><body><div>
 <h1 style="font-family:Georgia,serif">${en ? 'Page not found' : 'Sayfa bulunamadı'}</h1>
-<p><a href="/${en ? 'en/' : ''}kopekler.html">${en ? 'Dogs looking for a home' : 'Yuva arayan köpekler'}</a> ·
-<a href="/${en ? 'en/' : ''}kediler.html">${en ? 'Cats looking for a home' : 'Yuva arayan kediler'}</a></p>
+<p><a href="/${en ? 'en/' : ''}kopekler">${en ? 'Dogs looking for a home' : 'Yuva arayan köpekler'}</a> ·
+<a href="/${en ? 'en/' : ''}kediler">${en ? 'Cats looking for a home' : 'Yuva arayan kediler'}</a></p>
 <p><a href="${geri}">${en ? 'Back to Kurtaran Ev' : 'Kurtaran Ev sitesine dön'}</a></p>
 </div></body></html>`;
   return new Response(html, { status: 404, headers: { 'content-type': 'text/html; charset=utf-8' } });
@@ -55,15 +57,19 @@ export default {
     const dil = yol.startsWith('en/') || yol === 'en' ? 'en' : 'tr';
 
     if (yol === '' || yol === 'en' || yol === 'en/') {
-      return Response.redirect(`${url.origin}/${dil === 'en' ? 'en/' : ''}kopekler.html`, 302);
+      return Response.redirect(`${url.origin}/${dil === 'en' ? 'en/' : ''}kopekler`, 302);
     }
-    if (/^(en\/)?(kopekler|kediler|ilan)\/?$/.test(yol)) yol = yol.replace(/\/$/, '') + '.html';
+    // Eski .html'li ya da sonu / ile biten adresler → temiz adres (sorgu korunur)
+    const eski = yol.match(/^(en\/)?([a-z]+)(\.html|\/)$/);
+    if (eski && SAYFALAR.has(eski[2])) {
+      return Response.redirect(`${url.origin}/${eski[1] || ''}${eski[2]}${url.search}`, 301);
+    }
 
     let hedef = null;
     let sure = SURE.sayfa;
-    const sayfa = yol.match(/^(en\/)?([a-z]+\.html)$/);
+    const sayfa = yol.match(/^(en\/)?([a-z]+)$/);
     if (sayfa && SAYFALAR.has(sayfa[2])) {
-      hedef = `${ORIGIN}/ilanlar/${sayfa[1] || ''}${sayfa[2]}`;
+      hedef = `${ORIGIN}/ilanlar/${sayfa[1] || ''}${sayfa[2]}.html`;
     } else if (VARLIKLAR.has(yol)) {
       hedef = `${ORIGIN}/${yol}`;
       sure = SURE.veri;
