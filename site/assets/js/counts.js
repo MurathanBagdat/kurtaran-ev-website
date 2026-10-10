@@ -5,7 +5,7 @@
 
   function say(tur) {
     return veri.filter(function (h) {
-      return h.tur === tur && (h.durum === 'yuva-ariyor' || h.durum === 'rezerve');
+      return h.tur === tur && h.durum === 'yuva-ariyor';
     }).length;
   }
 

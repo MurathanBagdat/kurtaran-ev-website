@@ -11,7 +11,7 @@ karar; maliyet ve basitlik).
 
 Temel ilke: modele "bilmediğini boş bırak" talimatı verilir; metinde
 yazmayan hiçbir alan doldurulmaz, tahminî değerler `tahmini` listesinde
-işaretlenir. Kayıtlar yine taslak oluşur, panel onayı olmadan yayına çıkmaz.
+işaretlenir. Kayıtlar doğrudan yayınlanır; yanlışlar panelden düzeltilir.
 
 Anahtar: tools/instagram_config.json içindeki `openrouter_key` alanı ya da
 OPENROUTER_API_KEY ortam değişkeni.

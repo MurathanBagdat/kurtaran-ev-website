@@ -16,9 +16,8 @@ Kurtaran Ev — Instagram ilan çekme pipeline'ı.
      Gönderi metinlerini ve fotoğraf yollarını bir JSON dosyasına koyup
      ayrıştırıcıdan geçirir. Dernek, API kurulumunu beklemeden çalışabilir.
 
-Varsayılan davranış: ilanlar DOĞRUDAN yayınlanır ("yuva-ariyor"); YUVALANDI
-başlıklı gönderiler "yuvalandi" durumuyla gelir. `--taslak` bayrağı verilirse
-kayıtlar taslak oluşur ve admin paneli onayı bekler (ihtiyatlı kip).
+İlanlar doğrudan yayınlanır ("yuva-ariyor"); YUVALANDI başlıklı gönderiler
+"yuvalandi" durumuyla gelir. Başka durum yoktur.
 """
 
 from __future__ import annotations
@@ -289,7 +288,7 @@ AI_ALANLAR = ("isim", "tur", "cinsiyet", "yasAy", "kiloKg", "cins", "boyut", "re
 
 
 def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool = True,
-                   ai: bool = False, yayinla: bool = True) -> tuple[list[dict], str | None]:
+                   ai: bool = False) -> tuple[list[dict], str | None]:
     """Bir gönderiden 0, 1 ya da birden çok (kardeş ilanı) kayıt üretir.
 
     (kayitlar, atlama_nedeni) döner: gönderi ilan değilse kayıtlar boş,
@@ -330,8 +329,7 @@ def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool =
 
     for sira, kayit in enumerate(kayitlar):
         kayit["tur"] = tur or kayit.get("tur") or "kopek"  # hesap türü biliniyorsa o kazanır
-        kayit["durum"] = ("yuvalandi" if yuvalandi
-                          else "yuva-ariyor" if yayinla else "taslak")
+        kayit["durum"] = "yuvalandi" if yuvalandi else "yuva-ariyor"
         kayit["konum"] = kayit.get("konum") or None
         kayit["kaynak"] = {
             "tip": "instagram",
@@ -424,8 +422,7 @@ def kip_api(args) -> int:
         print(f"  {len(gonderiler)} gönderi alındı")
         for g in gonderiler:
             kayitlar, neden = gonderiyi_isle(g, tur, kullanici,
-                                             fotograf_cek=not args.kuru, ai=args._ai,
-                                             yayinla=not args.taslak)
+                                             fotograf_cek=not args.kuru, ai=args._ai)
             if not kayitlar:
                 print(f"  – atlandı ({neden}): {(g.get('caption') or '')[:50]}…")
                 continue
@@ -439,8 +436,7 @@ def kip_api(args) -> int:
 
     eklendi, guncellendi = kaydet(toplam)
     print(f"\n{eklendi} yeni ilan eklendi, {guncellendi} ilan güncellendi.")
-    print("Taslaklar admin panelinden onay bekliyor: site/admin.html" if args.taslak
-          else "İlanlar doğrudan yayınlandı (yuva arıyor).")
+    print("İlanlar doğrudan yayınlandı (yuva arıyor).")
     return 0
 
 
@@ -462,7 +458,7 @@ def kip_dosya(args) -> int:
         kullanici = g.get("hesap") or "kurtaranev_kopekleri"
         tur = HESAPLAR.get(kullanici, g.get("tur", "kopek"))
         kayitlar, neden = gonderiyi_isle(g, tur, kullanici, fotograf_cek=False,
-                                         ai=args._ai, yayinla=not args.taslak)
+                                         ai=args._ai)
         if not kayitlar:
             print(f"  – atlandı ({neden}): {(g.get('caption') or '')[:50]}…")
             continue
@@ -650,8 +646,7 @@ def kip_rapid(args) -> int:
                 print(f"  = daha önce değerlendirildi, atlandı: {gonderi['id']}")
                 continue
             kayitlar, neden = gonderiyi_isle(gonderi, tur, kullanici,
-                                             fotograf_cek=not args.kuru, ai=args._ai,
-                                             yayinla=not args.taslak)
+                                             fotograf_cek=not args.kuru, ai=args._ai)
             if not args.kuru:
                 gorulen[gonderi["id"]] = {"hesap": kullanici,
                                           "karar": neden or "ilan",
@@ -680,8 +675,7 @@ def kip_rapid(args) -> int:
 
     eklendi, guncellendi = kaydet(toplam)
     print(f"\n{eklendi} yeni ilan eklendi, {guncellendi} ilan güncellendi.")
-    print("Taslaklar admin panelinden onay bekliyor: site/admin.html" if args.taslak
-          else "İlanlar doğrudan yayınlandı (yuva arıyor).")
+    print("İlanlar doğrudan yayınlandı (yuva arıyor).")
     _rapor_yaz(toplam, eklendi, guncellendi, hatalar)
     return 0
 
@@ -725,8 +719,8 @@ def kip_link(args) -> int:
     """Gönderi bağlantılarını RapidAPI üzerinden çekip normal akışa sokar.
 
     Graph API jetonu gelene kadarki ara çözüm: hesap sahibi/yönetici gönderinin
-    bağlantısını kopyalar, bu kip caption + fotoğrafları indirir. Kayıtlar yine
-    taslak oluşur ve panel onayı bekler.
+    bağlantısını kopyalar, bu kip caption + fotoğrafları indirir. Kayıtlar
+    doğrudan yayınlanır.
     """
     cfg = config_yukle()
     api_key = cfg.get("rapidapi_key")
@@ -774,8 +768,7 @@ def kip_link(args) -> int:
         }
         tur = HESAPLAR.get(kullanici) or args.tur  # None ise ayrıştırıcı belirler
         kayitlar, neden = gonderiyi_isle(gonderi, tur, kullanici or "instagram",
-                                         fotograf_cek=not args.kuru, ai=args._ai,
-                                             yayinla=not args.taslak)
+                                         fotograf_cek=not args.kuru, ai=args._ai)
         if not kayitlar:
             print(f"  – atlandı ({neden}): {gonderi['caption'][:50]}…")
             continue
@@ -793,8 +786,7 @@ def kip_link(args) -> int:
 
     eklendi, guncellendi = kaydet(toplam)
     print(f"\n{eklendi} yeni ilan eklendi, {guncellendi} ilan güncellendi.")
-    print("Taslaklar admin panelinden onay bekliyor: site/admin.html" if args.taslak
-          else "İlanlar doğrudan yayınlandı (yuva arıyor).")
+    print("İlanlar doğrudan yayınlandı (yuva arıyor).")
     return 0
 
 
@@ -861,8 +853,6 @@ def main() -> int:
                     help="AI yerine kural tabanlı ayrıştırıcıyı kullan")
     ap.add_argument("--guncelle", action="store_true",
                     help="--rapid: zaten kayıtlı gönderileri de yeniden işle")
-    ap.add_argument("--taslak", action="store_true",
-                    help="İlanları yayınlamak yerine taslak olarak ekle (panel onayı iste)")
     args = ap.parse_args()
 
     # OpenRouter anahtarı varsa ayrıştırma varsayılan olarak AI'ya yaptırılır

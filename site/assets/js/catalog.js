@@ -33,7 +33,7 @@
      --------------------------------------------------------------------- */
   var VARSAYILAN = {
     q: '',
-    durum: 'musait',        // müsait = yuva arıyor + rezerve
+    durum: 'yuva-ariyor',   // '' = hepsi
     cinsiyet: '',
     yas: '',
     boyut: '',
@@ -78,10 +78,7 @@
      --------------------------------------------------------------------- */
   function uygunMu(h) {
     if (h.tur !== TUR) return false;
-    if (h.durum === 'taslak') return false;          // taslaklar hiçbir zaman herkese açık değil
-
-    if (durum.durum === 'musait' && h.durum !== 'yuva-ariyor' && h.durum !== 'rezerve') return false;
-    if (durum.durum !== 'musait' && durum.durum !== '' && h.durum !== durum.durum) return false;
+    if (durum.durum && h.durum !== durum.durum) return false;
 
     if (durum.cinsiyet && h.cinsiyet !== durum.cinsiyet) return false;
     if (durum.yas && h.yasGrubu !== durum.yas) return false;
@@ -246,6 +243,7 @@
   function adresiGuncelle() {
     if (!window.history || !window.history.replaceState) return;
     var p = new URLSearchParams();
+    if (durum.durum === '') p.set('durum', 'hepsi');   // varsayılan dışı boş değer
     Object.keys(VARSAYILAN).forEach(function (k) {
       if (durum[k] !== VARSAYILAN[k] && durum[k] !== false && durum[k] !== '') {
         p.set(k, durum[k] === true ? '1' : durum[k]);
@@ -262,6 +260,9 @@
       var v = p.get(k);
       durum[k] = typeof VARSAYILAN[k] === 'boolean' ? (v === '1' || v === 'true') : v;
     });
+    /* "hepsi" = filtre yok; eski paylaşılmış bağlantılardaki müsait/rezerve → yuva arıyor */
+    if (durum.durum === 'hepsi') durum.durum = '';
+    else if (DURUM[durum.durum] === undefined && durum.durum !== '') durum.durum = VARSAYILAN.durum;
   }
 
   /* ---------------------------------------------------------------------
@@ -297,7 +298,7 @@
   /* İngilizce sayfada "açıklamalar Türkçe" notu — yalnızca çevirisi olmayan ilan varsa */
   var dilUyari = document.querySelector('[data-lang-uyari]');
   if (dilUyari) dilUyari.hidden = !veri.some(function (h) {
-    return h.tur === TUR && h.durum !== 'taslak' && h.aciklama && !h.aciklamaEn;
+    return h.tur === TUR && h.aciklama && !h.aciklamaEn;
   });
 
   adrestenOku();
@@ -307,7 +308,7 @@
   /* Ana sayfadaki kartların sayaçları için dışa aç */
   window.KE_SAY = function (tur) {
     return veri.filter(function (h) {
-      return h.tur === tur && (h.durum === 'yuva-ariyor' || h.durum === 'rezerve');
+      return h.tur === tur && h.durum === 'yuva-ariyor';
     }).length;
   };
 })();

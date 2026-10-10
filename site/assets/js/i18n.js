@@ -10,7 +10,7 @@
   var TR = {
     cinsiyet: { disi: 'Dişi', erkek: 'Erkek' },
     boyut: { kucuk: 'Küçük', orta: 'Orta', buyuk: 'Büyük' },
-    durum: { 'yuva-ariyor': 'Yuva arıyor', 'rezerve': 'Rezerve', 'yuvalandi': 'Yuvalandı', 'taslak': 'Taslak' },
+    durum: { 'yuva-ariyor': 'Yuva arıyor', 'yuvalandi': 'Yuvalandı' },
     karakter: {},
     t: {
       ornekKayit: 'Örnek kayıt',
@@ -70,7 +70,7 @@
   var EN_DICT = {
     cinsiyet: { disi: 'Female', erkek: 'Male' },
     boyut: { kucuk: 'Small', orta: 'Medium', buyuk: 'Large' },
-    durum: { 'yuva-ariyor': 'Looking for a home', 'rezerve': 'Reserved', 'yuvalandi': 'Adopted', 'taslak': 'Draft' },
+    durum: { 'yuva-ariyor': 'Looking for a home', 'yuvalandi': 'Adopted' },
     /* Saha ekibinin kullandığı karakter etiketleri; eşleşmeyen etiket olduğu gibi kalır. */
     karakter: {
       'sevecen': 'affectionate', 'sosyal': 'social', 'oyuncu': 'playful', 'sakin': 'calm',

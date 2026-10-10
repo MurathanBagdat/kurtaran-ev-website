@@ -30,8 +30,7 @@
     });
   }
 
-  /* Taslak ilanlar herkese açık değildir; doğrudan bağlantıyla da açılmamalı. */
-  if (!h || h.durum === 'taslak') {
+  if (!h) {
     kok.innerHTML =
       '<div class="empty-state">' +
         '<h1 class="animal-detail__name" style="font-size:2.2rem">' + T.ilanYok + '</h1>' +
@@ -192,7 +191,7 @@
      önce yeni eklenenler, yuvalananlar en sonda.
      --------------------------------------------------------------------- */
   var kardesler = veri
-    .filter(function (a) { return a.tur === h.tur && a.durum !== 'taslak'; })
+    .filter(function (a) { return a.tur === h.tur; })
     .sort(function (a, b) { return (b.olusturma || '').localeCompare(a.olusturma || ''); })
     .sort(function (a, b) {
       return (a.durum === 'yuvalandi' ? 1 : 0) - (b.durum === 'yuvalandi' ? 1 : 0);

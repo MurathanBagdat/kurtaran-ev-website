@@ -102,8 +102,7 @@ kilosu bilinmiyor. Bilinmeyen alanlar `null` kalır ve arayüzde *"Bilinmiyor"* 
 gösterilir. Tahmin edilen değerler `tahmini` listesinde işaretlenir ve
 *"3,5 yaşında (tahmini)"* biçiminde görünür.
 
-Durumlar: `taslak` (yayında değil) · `yuva-ariyor` · `rezerve` · `yuvalandi`.
-Taslak ilanlar herkese açık sayfalarda hiçbir zaman görünmez — doğrudan bağlantıyla bile.
+Durumlar: yalnızca `yuva-ariyor` (varsayılan) ve `yuvalandi`.
 
 ---
 
@@ -210,9 +209,8 @@ Pipeline ne yapıyor?
    alanlar boş kalır ve arayüz Türkçesine düşer. Türkçesi olup İngilizcesi eksik
    kalan kayıtlar için: `python3 tools/translate_en.py`.
 3. Fotoğrafları indirir.
-4. Kaydı yazar. Varsayılan olarak ilan **doğrudan yayınlanır** ("Yuva arıyor");
-   `--taslak` bayrağıyla çalıştırılırsa kayıt taslak düşer ve yönetici panelden
-   onaylayana kadar sitede görünmez (hatalı ayrıştırmaya karşı ihtiyatlı kip).
+4. Kaydı yazar. İlan **doğrudan yayınlanır** ("Yuva arıyor"); YUVALANDI
+   gönderileri "Yuvalandı" olarak gelir.
 5. Aynı gönderi tekrar çekilirse yöneticinin elle düzelttiği alanların üzerine yazmaz;
    yalnızca boş kalan alanları doldurur.
 

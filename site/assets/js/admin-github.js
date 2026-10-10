@@ -132,7 +132,7 @@
     });
 
     if (!kayit.isim) kayit.isim = 'İsimsiz';
-    kayit.durum = kayit.durum || 'taslak';
+    kayit.durum = sema.durumlar[kayit.durum] ? kayit.durum : 'yuva-ariyor';
     kayit.fotograflar = (ham.fotograflar || []).map(String)
       .filter(function (f) { return f.trim(); }).slice(0, 12);
     kayit.tahmini = (ham.tahmini || []).filter(function (f) {

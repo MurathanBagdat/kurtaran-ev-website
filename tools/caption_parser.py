@@ -3,8 +3,8 @@
 Instagram ilan metinlerinden (caption) yapılandırılmış hayvan bilgisi çıkarır.
 
 Sahiplendirme paylaşımları serbest metin olduğu için burada sezgisel (heuristic)
-kurallar var. Çıkarılan her kayıt `taslak` durumunda oluşur; bir yönetici onaylamadan
-sitede yayınlanmaz. Böylece yanlış ayrıştırma canlıya yansımaz.
+kurallar var. Çıkarılan kayıtlar "yuva-ariyor" durumuyla oluşur (sync,
+YUVALANDI gönderilerini "yuvalandi" yapar).
 
 Kendi başına da çalışır:
     python3 tools/caption_parser.py "PAMUK yuva arıyor, 2 yaşında dişi, 18 kg"
@@ -592,7 +592,7 @@ def parse(caption: str, varsayilan_tur: str = "kopek") -> dict:
         "saglikNotu": saglik_notu,
         "ozelBakim": ozel_bakim,
         "konum": konum_bul(caption),
-        "durum": "taslak",
+        "durum": "yuva-ariyor",
         "tahmini": tahmini,
     }
     return kayit

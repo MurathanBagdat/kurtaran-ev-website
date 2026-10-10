@@ -206,14 +206,14 @@
         '<div class="admin__head">' +
           '<div>' +
             '<h1 class="admin__title">İlan yönetimi</h1>' +
-            '<p class="admin__sub">Tüm kayıtlar — taslaklar dahil' +
+            '<p class="admin__sub">Tüm kayıtlar — yuvalananlar dahil' +
               (mod === 'github' ? ' · GitHub üzerinden: kayıtlar 1-2 dk içinde yayına girer' : '') +
             '</p>' +
           '</div>' +
           '<div class="admin__stats">' +
             '<div><b>' + hayvanlar.length + '</b>toplam</div>' +
             '<div><b>' + say(function (a) { return a.durum === 'yuva-ariyor'; }) + '</b>yuva arıyor</div>' +
-            '<div><b>' + say(function (a) { return a.durum === 'taslak'; }) + '</b>taslak</div>' +
+            '<div><b>' + say(function (a) { return a.durum === 'yuvalandi'; }) + '</b>yuvalandı</div>' +
             '<div><b>' + say(function (a) { return a.ornek; }) + '</b>örnek</div>' +
           '</div>' +
         '</div>' +
@@ -377,7 +377,7 @@
   }
 
   function kipAc(kayit) {
-    suanki = kayit ? JSON.parse(JSON.stringify(kayit)) : { tur: 'kopek', durum: 'taslak', fotograflar: [], tahmini: [] };
+    suanki = kayit ? JSON.parse(JSON.stringify(kayit)) : { tur: 'kopek', durum: 'yuva-ariyor', fotograflar: [], tahmini: [] };
     document.getElementById('kip-baslik').textContent = kayit ? ('Düzenle: ' + kayit.isim) : 'Yeni ilan';
 
     var gruplar = {};

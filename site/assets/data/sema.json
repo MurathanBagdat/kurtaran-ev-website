@@ -28,9 +28,7 @@
       "etiket": "Durum",
       "grup": "temel",
       "secenekler": {
-        "taslak": "Taslak (yayında değil)",
         "yuva-ariyor": "Yuva arıyor",
-        "rezerve": "Rezerve",
         "yuvalandi": "Yuvalandı"
       }
     },
@@ -167,9 +165,7 @@
     "ceviri": "İngilizce (site EN kipi)"
   },
   "durumlar": {
-    "taslak": "Taslak (yayında değil)",
     "yuva-ariyor": "Yuva arıyor",
-    "rezerve": "Rezerve",
     "yuvalandi": "Yuvalandı"
   },
   "yasGruplari": {
