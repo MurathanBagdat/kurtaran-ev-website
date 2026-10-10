@@ -34,6 +34,15 @@
     });
   }
 
+  /* Kartlar ve küçük resimler için web kopyası (tools/kucuk_foto.py üretir).
+     Kopya henüz yoksa (ör. panelden yeni yüklenen foto) orijinale düşülür. */
+  function kucukImg(yol, alt, ek) {
+    var kucuk = yol.replace('assets/img/animals/', 'assets/img/animals-k/')
+      .replace(/\.(jpe?g|png|webp)$/i, '.webp');
+    return '<img src="' + esc(BASE + kucuk) + '" alt="' + esc(alt) + '"' + (ek || '') +
+      ' onerror="this.onerror=null;this.src=\'' + esc(BASE + yol) + '\'">';
+  }
+
   if (!h) {
     kok.innerHTML =
       '<div class="empty-state">' +
@@ -82,7 +91,7 @@
         ? '<div class="animal-gallery__thumbs">' + fotograflar.map(function (f, i) {
             return '<button type="button" data-foto="' + esc(BASE + f) + '"' +
               (i === 0 ? ' class="is-active"' : '') +
-              ' aria-label="' + T.fotograf + ' ' + (i + 1) + '"><img src="' + esc(BASE + f) + '" alt=""></button>';
+              ' aria-label="' + T.fotograf + ' ' + (i + 1) + '">' + kucukImg(f, '') + '</button>';
           }).join('') + '</div>'
         : '');
   } else {
@@ -249,7 +258,7 @@
 
     digerIzgara.innerHTML = digerleri.map(function (a) {
       var gorsel = (a.fotograflar && a.fotograflar[0])
-        ? '<img src="' + esc(BASE + a.fotograflar[0]) + '" alt="' + esc(a.isim) + '" loading="lazy">'
+        ? kucukImg(a.fotograflar[0], a.isim, ' loading="lazy"')
         : '<div class="animal-card__placeholder">' + PATI_SVG + '<span>' + T.fotoYakinda + '</span></div>';
 
       var yasA = I18N.yasMetni(a);

@@ -68,6 +68,15 @@
     return (hayvan.tahmini || []).indexOf(alan) !== -1;
   }
 
+  /* Kartlar ve küçük resimler için web kopyası (tools/kucuk_foto.py üretir).
+     Kopya henüz yoksa (ör. panelden yeni yüklenen foto) orijinale düşülür. */
+  function kucukImg(yol, alt, ek) {
+    var kucuk = yol.replace('assets/img/animals/', 'assets/img/animals-k/')
+      .replace(/\.(jpe?g|png|webp)$/i, '.webp');
+    return '<img src="' + esc(BASE + kucuk) + '" alt="' + esc(alt) + '"' + (ek || '') +
+      ' onerror="this.onerror=null;this.src=\'' + esc(BASE + yol) + '\'">';
+  }
+
   function kiloMetni(hayvan) {
     if (hayvan.kiloKg == null) return null;
     return String(hayvan.kiloKg).replace('.', EN ? '.' : ',') + ' kg';
@@ -137,7 +146,7 @@
     if (h.ornek) rozetler.push('<span class="badge badge--ornek">' + T.ornekKayit + '</span>');
 
     var gorsel = (h.fotograflar && h.fotograflar[0])
-      ? '<img src="' + esc(BASE + h.fotograflar[0]) + '" alt="' + esc(h.isim) + '" loading="lazy">'
+      ? kucukImg(h.fotograflar[0], h.isim, ' loading="lazy"')
       : '<div class="animal-card__placeholder">' + PATI_SVG + '<span>' + T.fotoYakinda + '</span></div>';
 
     var bilgiler = [];
