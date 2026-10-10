@@ -379,16 +379,6 @@
         });
       },
 
-      ornekleriSil: function () {
-        return hayvanlarYukle().then(function (hayvanlar) {
-          var kalan = hayvanlar.filter(function (a) { return !a.ornek; });
-          var silinen = hayvanlar.length - kalan.length;
-          if (!silinen) return { silinen: 0, hayvanlar: hayvanlar };
-          return tumKaydet(kalan, [], 'Admin: ' + silinen + ' örnek kayıt silindi')
-            .then(function (h) { return { silinen: silinen, hayvanlar: h }; });
-        });
-      },
-
       /* Instagram senkronu: GitHub Actions workflow'unu tetikler ve bitene
          dek durumu izler. onDurum(mesaj) ilerlemeyi bildirir. */
       instagramSync: function (onDurum) {

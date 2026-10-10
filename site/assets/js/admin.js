@@ -256,14 +256,12 @@
             '<div><b>' + hayvanlar.length + '</b>toplam</div>' +
             '<div><b>' + say(function (a) { return a.durum === 'yuva-ariyor'; }) + '</b>yuva arıyor</div>' +
             '<div><b>' + say(function (a) { return a.durum === 'yuvalandi'; }) + '</b>yuvalandı</div>' +
-            '<div><b>' + say(function (a) { return a.ornek; }) + '</b>örnek</div>' +
           '</div>' +
         '</div>' +
 
         '<div class="admin__tools">' +
           '<button class="btn btn--sm" type="button" id="yeni">+ Yeni ilan</button>' +
           '<button class="btn-mini" type="button" id="ig-sync">Instagram\'dan çek</button>' +
-          '<button class="btn-mini" type="button" id="ornek-sil">Örnek kayıtları sil</button>' +
           '<select class="btn-mini" id="suz-durum" aria-label="Duruma göre süz">' +
             '<option value="">Tüm durumlar</option>' +
             Object.keys(sema.durumlar).map(function (k) {
@@ -287,7 +285,6 @@
     document.getElementById('yeni').addEventListener('click', function () { kipAc(null); });
     document.getElementById('cikis').addEventListener('click', cikis);
     document.getElementById('ig-sync').addEventListener('click', instagramCek);
-    document.getElementById('ornek-sil').addEventListener('click', ornekleriSil);
     document.getElementById('suz-durum').addEventListener('change', listeCiz);
     document.getElementById('suz-tur').addEventListener('change', listeCiz);
     kipBagla();
@@ -580,22 +577,6 @@
         }).then(function (d) { return d.hayvanlar; });
     islem.then(function (liste) {
       hayvanlar = liste; panelCiz(); bildir('İlan silindi.');
-    }).catch(function (err) { bildir(err.message, true); });
-  }
-
-  function ornekleriSil() {
-    if (!confirm('Tüm örnek kayıtlar silinsin mi?')) return;
-    var islem = (mod === 'github')
-      ? gh.ornekleriSil()
-      : api('ornekleri-sil', { method: 'POST', body: {} })
-          .then(function (d) {
-            return api('hayvanlar').then(function (h) {
-              return { silinen: d.silinen, hayvanlar: h.hayvanlar };
-            });
-          });
-    islem.then(function (r) {
-      hayvanlar = r.hayvanlar; panelCiz();
-      bildir(r.silinen + ' örnek kayıt silindi.');
     }).catch(function (err) { bildir(err.message, true); });
   }
 
