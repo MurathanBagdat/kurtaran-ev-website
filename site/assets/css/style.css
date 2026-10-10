@@ -1475,6 +1475,8 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
   border-bottom: var(--border) solid var(--navy);
 }
 
+.spec:last-child:nth-child(odd) { grid-column: 1 / -1; }   /* tek kalan hücre tam satır */
+
 .spec__label {
   display: block;
   font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;

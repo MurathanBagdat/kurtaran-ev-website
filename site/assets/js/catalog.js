@@ -154,8 +154,6 @@
     if (kilo) bilgiler.push('<li>' + esc(kilo) + (tahminMi(h, 'kiloKg') ? ' <em>' + T.tahmini + '</em>' : '') + '</li>');
 
     var etiketler = [];
-    var cins = I18N.alan(h, 'cins');
-    if (cins) etiketler.push('<span class="tag">' + esc(cins) + '</span>');
     (I18N.alan(h, 'karakter') || []).slice(0, 3).forEach(function (k) {
       etiketler.push('<span class="tag">' + esc(h.karakterEn && EN ? k : I18N.karakter(k)) + '</span>');
     });

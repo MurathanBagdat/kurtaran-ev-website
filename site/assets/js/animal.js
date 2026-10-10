@@ -92,7 +92,7 @@
   var specler = [
     spec(T.sCinsiyet, h.cinsiyet ? CINSIYET[h.cinsiyet] : null),
     spec(T.sYas, I18N.yasMetni(h), tahmin('yasAy')),
-    spec(T.sCins, I18N.alan(h, 'cins'), tahmin('cins')),
+    // Cins / ırk veride ve aramada duruyor ama arayüzde gösterilmiyor (AD-03).
     spec(T.sKilo, kilo, tahmin('kiloKg')),
     spec(T.sBoyut, h.boyut ? BOYUT[h.boyut] : null, tahmin('boyut')),
     spec(T.sRenk, I18N.alan(h, 'renk')),
