@@ -401,6 +401,7 @@ SHELL = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{description}">
+<meta name="robots" content="noindex">
 {alternates}<link rel="icon" href="{base}assets/img/logo.png" type="image/png">
 <link rel="stylesheet" href="{base}assets/css/style.css">
 {extra_css}</head>
@@ -510,10 +511,39 @@ def render_nav_from(nav_items) -> str:
         NAV = saved
 
 
+def build_ilanlar(lang: str) -> int:
+    """Wix sitesinden açılan yalın ilan sayfaları (bkz. tools/ilanlar.py)."""
+    import ilanlar
+    out_dir = OUT / "ilanlar" / ("en" if lang == "en" else "")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    base = "../../" if lang == "en" else "../"
+    for filename, page in ilanlar.sayfalar(lang).items():
+        html = SHELL.format(
+            lang=lang,
+            base=base,
+            skip=LOCALES[lang]["skip"],
+            title=page["title"],
+            description=page["description"],
+            alternates="",
+            header=rebase_assets(ilanlar.ust_serit(lang, page["tur"]), base),
+            footer="",
+            body=rebase_assets(page["body"].strip("\n"), base),
+            extra_css="",
+            extra_js=f'<script src="{base}{page["js"]}"></script>\n',
+            data=(ilanlar.ayar_betigi(lang)
+                  + f'<script>window.KE_BASE="{base}";</script>\n'
+                  + f'<script src="{base}assets/data/animals.js"></script>\n'),
+        )
+        (out_dir / filename).write_text(html, encoding="utf-8")
+        print(f"  ✓ site/{out_dir.relative_to(OUT)}/{filename}")
+    return 3
+
+
 def build() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     n = build_locale("tr", PAGES)
     n += build_locale("en", PAGES_EN)
+    n += build_ilanlar("tr") + build_ilanlar("en")
     print(f"\n{n} sayfa üretildi → {OUT}")
 
 
