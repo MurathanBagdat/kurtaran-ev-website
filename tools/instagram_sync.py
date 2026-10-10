@@ -37,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import animals  # noqa: E402
 import ai_parser  # noqa: E402
+import rapidapi_kota  # noqa: E402
 from caption_parser import parse_all, icerik_turu, yuvalandi_mi  # noqa: E402
 
 GRAPH = "https://graph.facebook.com/v21.0"
@@ -61,8 +62,8 @@ HESAPLAR = {
 }
 
 # Hesapların Instagram sayısal kimlikleri (değişmez, herkese açık bilgi).
-# Koda sabitlendi ki her çalıştırmada /profile isteği harcanmasın —
-# RapidAPI Basic paketinde ayda yalnızca 100 istek hakkı var.
+# Koda sabitlendi ki her çalıştırmada /profile isteği harcanmasın.
+# Günlük kota (plan 400, kendi sınırımız 350) rapidapi_kota.py'de izlenir.
 RAPID_PK = {
     "kurtaranev_kopekleri": "42022514534",
     "kurtaranev_kedileri": "23565664304",
@@ -502,7 +503,11 @@ def _autolink_cek(gonderi_url: str, api_key: str) -> dict:
 
 
 def _rapid_get(path: str, params: dict, api_key: str) -> dict:
-    """Scraper API'sine GET atar; hız limitine takılırsa bekleyip yeniden dener."""
+    """Scraper API'sine GET atar; hız limitine takılırsa bekleyip yeniden dener.
+
+    Her deneme günlük kotadan düşer: rapidapi_kota.izin_al() sınır dolduysa
+    isteği göndermeden KotaAsildi (RuntimeError) fırlatır.
+    """
     import time
     url = f"https://{RAPID_SCRAPER_HOST}{path}?{urllib.parse.urlencode(params)}"
     istek = urllib.request.Request(url, headers={
@@ -511,10 +516,13 @@ def _rapid_get(path: str, params: dict, api_key: str) -> dict:
         "User-Agent": "KurtaranEv-Sync/1.0",
     })
     for deneme in range(4):
+        rapidapi_kota.izin_al()
         try:
             with urllib.request.urlopen(istek, timeout=60) as r:
+                rapidapi_kota.yanit_isle(r.headers)
                 veri = json.loads(r.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
+            rapidapi_kota.yanit_isle(e.headers)
             if e.code == 429 and deneme < 3:
                 time.sleep(5)
                 continue
@@ -635,6 +643,7 @@ def kip_rapid(args) -> int:
             toplam.extend(kayitlar)
         time.sleep(2)
 
+    print(f"\n{rapidapi_kota.ozet()}")
     if args.kuru:
         print(f"\n[kuru çalıştırma] {len(toplam)} ilan işlenirdi, hiçbir şey yazılmadı.")
         return 0
@@ -658,11 +667,11 @@ def _rapor_yaz(kayitlar: list[dict], eklendi: int, guncellendi: int,
                hatalar: list[str]) -> None:
     """SYNC_RAPOR ortam değişkeni bir dosya yolu gösteriyorsa markdown rapor yazar.
 
-    GitHub Actions bu dosyayı issue yorumu olarak gönderir → e-posta bildirimi.
-    Sessiz çalışmalarda (yeni ilan yok, hata yok) dosya yazılmaz ki mail gitmesin.
+    GitHub Actions bu dosyayı e-postalar. Rapor her çalıştırmada yazılır —
+    yeni ilan olmasa da günlük RapidAPI kota kullanımı mailde görünsün diye.
     """
     yol = os.environ.get("SYNC_RAPOR")
-    if not yol or (not kayitlar and not hatalar):
+    if not yol:
         return
     from datetime import datetime, timezone
     satirlar = [f"## Instagram senkron raporu — "
@@ -677,8 +686,11 @@ def _rapor_yaz(kayitlar: list[dict], eklendi: int, guncellendi: int,
                             f"{_ozet(k)} · {durum}")
         satirlar.append("")
         satirlar.append("Canlı site: https://murathanbagdat.github.io/kurtaran-ev-website/")
+    if not kayitlar and not hatalar:
+        satirlar.append("Bugün yeni ilan yok.")
     if hatalar:
         satirlar += ["", "### ⚠️ Hatalar", ""] + [f"- {h}" for h in hatalar]
+    satirlar += ["", rapidapi_kota.ozet()]
     Path(yol).write_text("\n".join(satirlar) + "\n", encoding="utf-8")
     print(f"Rapor yazıldı: {yol}")
 

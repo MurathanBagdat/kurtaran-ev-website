@@ -56,8 +56,12 @@ def main() -> int:
         return 0
     rapor = Path(sys.argv[1]).read_text(encoding="utf-8")
     hata_var = "Hatalar" in rapor
-    konu = ("⚠️ Kurtaran Ev senkron HATASI" if hata_var
-            else "🐾 Kurtaran Ev — yeni ilanlar sitede")
+    if hata_var:
+        konu = "⚠️ Kurtaran Ev senkron HATASI"
+    elif "yeni ilan eklendi" in rapor:
+        konu = "🐾 Kurtaran Ev — yeni ilanlar sitede"
+    else:
+        konu = "Kurtaran Ev — günlük rapor (yeni ilan yok)"
     return 0 if send_email(konu, _duz_metin(rapor)) else 1
 
 
