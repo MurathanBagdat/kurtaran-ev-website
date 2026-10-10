@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dogs looking for a home | Kurtaran Ev</title>
+<meta name="description" content="Dogs waiting for adoption at Kurtaran Ev.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../assets/img/logo.png" type="image/png">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<a class="visually-hidden" href="#icerik">Skip to content</a>
+
+  <header class="embed-bar">
+    <div class="container embed-bar__inner">
+      <span class="embed-bar__brand"><img src="../../assets/img/logo.png" alt="Kurtaran Ev" width="44" height="44">
+        <span class="embed-bar__title" data-embed-title>Dogs looking for a home</span></span>
+      <a class="embed-bar__close" href="https://en.kurtaranev.org/kopek" data-kapat aria-label="Close and return to the Kurtaran Ev website">
+        <span class="embed-bar__close-text">Back to site</span><span class="embed-bar__x" aria-hidden="true">✕</span></a>
+    </div>
+  </header>
+<main id="icerik">
+<section class="page-hero page-hero--embed">
+  <div class="container page-hero__inner page-hero__inner--single">
+    <div>
+      <p class="eyebrow">Kurtaran Ev · Dogs</p>
+      <h1 class="display">Dogs looking for a home</h1>
+      <p class="page-hero__lead">These are our current listings from Instagram. Many more animals are waiting at our shelters; if you can't find what you're looking for, fill in the adoption form and we'll try to match you with the right one.</p>
+      <div class="page-hero__actions">
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdUIcBuv3YeGyWFCpXXa6RkgcGrL06tz0GxlFnyQGwluMHXcQ/viewform?usp=pp_url" target="_blank" rel="noopener">Fill in the adoption form <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream section--tight">
+  <div class="container" data-catalog="kopek">
+
+    <div class="notice" data-ornek-uyari hidden>
+      <span class="notice__icon" aria-hidden="true">⚠</span>
+      <span><b>This page contains sample records.</b>
+        Listings with a “SAMPLE” badge are not real; they were added to try out the interface.
+        They can be removed with one click from the admin panel.</span>
+    </div>
+
+    <div class="notice notice--lang" data-lang-uyari hidden>
+      <span class="notice__icon" aria-hidden="true">ⓘ</span>
+      <span>Listing descriptions are written in Turkish by our field team; the details,
+        filters and labels below are in English.</span>
+    </div>
+
+    <form class="filters" role="search" aria-label="Listing filters" onsubmit="return false">
+      <div class="filter filters__search">
+        <label for="f-q">Search</label>
+        <input id="f-q" type="search" data-filter="q" placeholder="Name, breed, colour, character…">
+      </div>
+
+      <div class="filters__row">
+        <div class="filter">
+          <label for="f-durum">Status</label>
+          <select id="f-durum" data-filter="durum">
+            <option value="yuva-ariyor">Looking for a home</option>
+            <option value="yuvalandi">Adopted</option>
+            <option value="">All</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="f-cinsiyet">Sex</label>
+          <select id="f-cinsiyet" data-filter="cinsiyet">
+            <option value="">All</option>
+            <option value="disi">Female</option>
+            <option value="erkek">Male</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="f-yas">Age</label>
+          <select id="f-yas" data-filter="yas">
+            <option value="">All</option>
+            <option value="yavru">Young (0–1 yr)</option>
+            <option value="yetiskin">Adult (1–7 yrs)</option>
+            <option value="kidemli">Senior (7+ yrs)</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="f-boyut">Size</label>
+          <select id="f-boyut" data-filter="boyut">
+            <option value="">All</option>
+            <option value="kucuk">Small</option>
+            <option value="orta">Medium</option>
+            <option value="buyuk">Large</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="f-sirala">Sort</label>
+          <select id="f-sirala" data-filter="sirala">
+            <option value="yeni">Newest first</option>
+            <option value="isim">By name</option>
+            <option value="yas-artan">Age: youngest first</option>
+            <option value="yas-azalan">Age: oldest first</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filters__toggles">
+        <label class="chip"><input type="checkbox" data-filter="kisir"> Neutered</label>
+        <label class="chip"><input type="checkbox" data-filter="asili"> Fully vaccinated</label>
+        <label class="chip"><input type="checkbox" data-filter="cocuk"> Good with children</label>
+        <label class="chip"><input type="checkbox" data-filter="kopek"> Good with dogs</label>
+        <label class="chip"><input type="checkbox" data-filter="kedi"> Good with cats</label>
+        <button class="filters__clear" type="button" data-clear hidden>Clear filters</button>
+      </div>
+    </form>
+
+    <div class="results-bar">
+      <p class="results-bar__count" data-count role="status"></p>
+      <p class="body-sm">Fields we don't have information for are shown as “unknown”.</p>
+    </div>
+
+    <div class="animal-grid" data-grid></div>
+  </div>
+</section>
+</main>
+
+
+<script>window.KE_GOMULU={"liste": {"kopek": "kopekler.html", "kedi": "kediler.html"}, "form": {"kopek": "https://docs.google.com/forms/d/e/1FAIpQLSdUIcBuv3YeGyWFCpXXa6RkgcGrL06tz0GxlFnyQGwluMHXcQ/viewform?usp=pp_url", "kedi": "https://forms.gle/UzDyB6KMUQooRy4X7"}, "kapat": {"kopek": "https://en.kurtaranev.org/kopek", "kedi": "https://en.kurtaranev.org/kedi"}, "baslik": {"kopek": "Dogs looking for a home", "kedi": "Cats looking for a home"}};</script>
+<script>window.KE_BASE="../../";</script>
+<script src="../../assets/data/animals.js"></script>
+<script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/catalog.js"></script>
+</body>
+</html>

@@ -1611,3 +1611,36 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
   .notice { flex-direction: column; gap: .5rem; }
   .results-bar { margin-bottom: 16px; }
 }
+
+/* ---------------------------------------------------------------------------
+   İlan modu (site/ilanlar/) — Wix sitesinden açılan yalın ilan sayfaları
+   --------------------------------------------------------------------------- */
+.embed-bar {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--cream);
+  border-bottom: var(--border) solid var(--navy);
+}
+.embed-bar__inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 68px;
+}
+.embed-bar__brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.embed-bar__brand img { width: 44px; height: 44px; flex-shrink: 0; }
+.embed-bar__title {
+  font-family: var(--serif); font-size: 1.25rem; color: var(--navy);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.embed-bar__close {
+  display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0;
+  padding: 8px 14px;
+  border: var(--border) solid var(--navy); background: var(--white);
+  color: var(--navy); font-weight: 700; font-size: .9rem; text-decoration: none;
+}
+.embed-bar__close:hover { background: var(--navy); color: var(--white); }
+.embed-bar__x { font-size: 1.1rem; line-height: 1; }
+@media (max-width: 560px) {
+  .embed-bar__close-text { display: none; }
+  .embed-bar__title { font-size: 1.05rem; }
+}
+
+.page-hero--embed { padding: 48px 0 52px; }

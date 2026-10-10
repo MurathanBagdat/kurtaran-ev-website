@@ -10,6 +10,10 @@
   var I18N = window.KE_I18N;                             // assets/js/i18n.js
   var T = I18N.t;
   var BASE = window.KE_BASE || '';                       // site/en/ altında "../"
+  /* İlan modu (site/ilanlar/): Wix'ten açılan yalın sayfalar — liste, form ve
+     ✕ bağlantıları tools/ilanlar.py'deki ayardan gelir. */
+  var G = window.KE_GOMULU || null;
+  var LISTE = G ? G.liste : { kopek: 'yuva-arayan-kopekler.html', kedi: 'yuva-arayan-kediler.html' };
   var id = new URLSearchParams(location.search).get('id');
   var h = veri.filter(function (a) { return a.id === id; })[0];
 
@@ -36,8 +40,8 @@
         '<h1 class="animal-detail__name" style="font-size:2.2rem">' + T.ilanYok + '</h1>' +
         '<p>' + T.ilanYokMetin + '</p>' +
         '<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">' +
-        '<a class="btn" href="yuva-arayan-kopekler.html">' + T.kopekListesi + ' <span aria-hidden="true">→</span></a>' +
-        '<a class="btn btn--sky" href="yuva-arayan-kediler.html">' + T.kediListesi + ' <span aria-hidden="true">→</span></a></div>' +
+        '<a class="btn" href="' + LISTE.kopek + '">' + T.kopekListesi + ' <span aria-hidden="true">→</span></a>' +
+        '<a class="btn btn--sky" href="' + LISTE.kedi + '">' + T.kediListesi + ' <span aria-hidden="true">→</span></a></div>' +
       '</div>';
     document.title = T.ilanYok + ' | Kurtaran Ev';
     return;
@@ -125,7 +129,18 @@
     kaynakIc = T.kaynakOrnek;
   }
 
-  var listeSayfasi = h.tur === 'kedi' ? 'yuva-arayan-kediler.html' : 'yuva-arayan-kopekler.html';
+  var listeSayfasi = LISTE[h.tur] || LISTE.kopek;
+
+  /* İlan modu: ✕ ilgili Wix sayfasına, form düğmesi türün Google Formuna */
+  if (G) {
+    var kapat = document.querySelector('[data-kapat]');
+    if (kapat && G.kapat[h.tur]) kapat.setAttribute('href', G.kapat[h.tur]);
+    var serit = document.querySelector('[data-embed-title]');
+    if (serit && G.baslik) serit.textContent = G.baslik[h.tur] || '';
+    document.querySelectorAll('[data-form-link]').forEach(function (a) {
+      if (G.form[h.tur]) a.setAttribute('href', G.form[h.tur]);
+    });
+  }
   var listeAdi = h.tur === 'kedi' ? T.kediListesi : T.kopekListesi;
 
   /* İletişim sayfasına ilan bilgisini ve niyeti taşıyan bağlantı */

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuva arayan kediler | Kurtaran Ev</title>
+<meta name="description" content="Sahiplendirilmeyi bekleyen kedilerimiz.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/img/logo.png" type="image/png">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<a class="visually-hidden" href="#icerik">İçeriğe geç</a>
+
+  <header class="embed-bar">
+    <div class="container embed-bar__inner">
+      <span class="embed-bar__brand"><img src="../assets/img/logo.png" alt="Kurtaran Ev" width="44" height="44">
+        <span class="embed-bar__title" data-embed-title>Yuva arayan kediler</span></span>
+      <a class="embed-bar__close" href="https://www.kurtaranev.org/kedi" data-kapat aria-label="Kapat ve Kurtaran Ev sitesine dön">
+        <span class="embed-bar__close-text">Siteye dön</span><span class="embed-bar__x" aria-hidden="true">✕</span></a>
+    </div>
+  </header>
+<main id="icerik">
+<section class="page-hero page-hero--embed page-hero--sky">
+  <div class="container page-hero__inner page-hero__inner--single">
+    <div>
+      <p class="eyebrow">Kurtaran Ev · Kediler</p>
+      <h1 class="display">Yuva arayan kediler</h1>
+      <p class="page-hero__lead">Instagram'da paylaştığımız güncel ilanlar burada. Yaşam alanlarımızda çok daha fazla can yuva bekliyor; aradığınızı bulamazsanız sahiplenme formunu doldurun, sizi uygun bir canla eşleştirmeye çalışalım.</p>
+      <div class="page-hero__actions">
+        <a class="btn" href="https://forms.gle/UzDyB6KMUQooRy4X7" target="_blank" rel="noopener">Sahiplenme formunu doldur <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream section--tight">
+  <div class="container" data-catalog="kedi">
+
+    <div class="notice" data-ornek-uyari hidden>
+      <span class="notice__icon" aria-hidden="true">⚠</span>
+      <span><b>Bu sayfada örnek kayıtlar var.</b>
+        “ÖRNEK KAYIT” rozetli ilanlar gerçek değildir; arayüzü denemek için eklenmiştir.
+        Yönetim panelinden tek tıkla temizlenebilirler.</span>
+    </div>
+
+    <form class="filters" role="search" aria-label="İlan filtreleri" onsubmit="return false">
+      <div class="filter filters__search">
+        <label for="f-q">Ara</label>
+        <input id="f-q" type="search" data-filter="q" placeholder="İsim, cins, renk, karakter…">
+      </div>
+
+      <div class="filters__row">
+        <div class="filter">
+          <label for="f-durum">Durum</label>
+          <select id="f-durum" data-filter="durum">
+            <option value="yuva-ariyor">Yuva arıyor</option>
+            <option value="yuvalandi">Yuvalandı</option>
+            <option value="">Hepsi</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="f-cinsiyet">Cinsiyet</label>
+          <select id="f-cinsiyet" data-filter="cinsiyet">
+            <option value="">Hepsi</option>
+            <option value="disi">Dişi</option>
+            <option value="erkek">Erkek</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="f-yas">Yaş</label>
+          <select id="f-yas" data-filter="yas">
+            <option value="">Hepsi</option>
+            <option value="yavru">Yavru (0–1 yaş)</option>
+            <option value="yetiskin">Yetişkin (1–7 yaş)</option>
+            <option value="kidemli">Kıdemli (7+ yaş)</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="f-sirala">Sırala</label>
+          <select id="f-sirala" data-filter="sirala">
+            <option value="yeni">Önce yeni eklenen</option>
+            <option value="isim">İsme göre</option>
+            <option value="yas-artan">Yaş: küçükten büyüğe</option>
+            <option value="yas-azalan">Yaş: büyükten küçüğe</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filters__toggles">
+        <label class="chip"><input type="checkbox" data-filter="kisir"> Kısırlaştırıldı</label>
+        <label class="chip"><input type="checkbox" data-filter="asili"> Aşıları tam</label>
+        <label class="chip"><input type="checkbox" data-filter="cocuk"> Çocuklarla uyumlu</label>
+        <label class="chip"><input type="checkbox" data-filter="kopek"> Köpeklerle uyumlu</label>
+        <label class="chip"><input type="checkbox" data-filter="kedi"> Kedilerle uyumlu</label>
+        <button class="filters__clear" type="button" data-clear hidden>Filtreleri temizle</button>
+      </div>
+    </form>
+
+    <div class="results-bar">
+      <p class="results-bar__count" data-count role="status"></p>
+      <p class="body-sm">Bilgisi olmayan alanlar “bilinmiyor” olarak gösterilir.</p>
+    </div>
+
+    <div class="animal-grid" data-grid></div>
+  </div>
+</section>
+</main>
+
+
+<script>window.KE_GOMULU={"liste": {"kopek": "kopekler.html", "kedi": "kediler.html"}, "form": {"kopek": "https://docs.google.com/forms/d/e/1FAIpQLSe0hUSZhEDcGFTGW6aIloQLaK3-xoV6OHq0TkETuLF_aRsZkA/viewform?usp=pp_url", "kedi": "https://forms.gle/UzDyB6KMUQooRy4X7"}, "kapat": {"kopek": "https://www.kurtaranev.org/kopek", "kedi": "https://www.kurtaranev.org/kedi"}, "baslik": {"kopek": "Yuva arayan köpekler", "kedi": "Yuva arayan kediler"}};</script>
+<script>window.KE_BASE="../";</script>
+<script src="../assets/data/animals.js"></script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/catalog.js"></script>
+</body>
+</html>
