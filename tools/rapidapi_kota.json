@@ -1,7 +1,10 @@
 {
-  "bizimSayac": 1,
-  "kalan": 398,
+  "bizimSayac": 5,
+  "kalan": 240,
+  "kategoriler": {
+    "yuvalanma": 2
+  },
   "pencereBitis": 1791727673,
   "planLimiti": 400,
-  "sonGuncelleme": "2026-10-10T14:11:52+00:00"
+  "sonGuncelleme": "2026-10-10T15:05:05+00:00"
 }
