@@ -1875,7 +1875,7 @@ PAGES = {
         "description": "Kurtaran Ev ilan yönetimi.",
         "body": ADMIN,
         "css": ["assets/css/admin.css"],
-        "js": ["assets/js/admin.js"],
+        "js": ["assets/js/admin-github.js", "assets/js/admin.js"],
         "yalin": True,
     },
 }

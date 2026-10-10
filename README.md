@@ -141,6 +141,19 @@ python3 tools/server.py
 
 Sunucu yalnızca `127.0.0.1` adresine bağlanır, dışarıdan erişilemez.
 
+### Ekip paneli — admin.kurtaranev.org (ortak şifre)
+
+Kurtaran Ev ekibi paneli **https://admin.kurtaranev.org** adresinden ortak şifreyle açar.
+Cloudflare Pages projesi `kurtaranev-admin`, `cloudflare/admin/_worker.js`:
+
+- Panel sayfası GitHub Pages'ten aynı adresten sunulur; giriş `/kapi/giris` (12 saatlik imzalı çerez).
+- GitHub jetonu yalnızca Cloudflare'de gizli değişkendir; istekler `/kapi/gh/…` vekiliyle iletilir.
+- Vekil yalnızca panelin kullandığı uçlara izin verir; her commit yalnızca
+  `animals.json` / `animals.js` ve ilan fotoğraflarına dokunabilir.
+- Gizli değişkenler: `GITHUB_TOKEN`, `ADMIN_SIFRE`, `OTURUM_ANAHTARI`
+  (`wrangler pages secret put <AD> --project-name kurtaranev-admin`). Şifre değişince tüm oturumlar düşer.
+- Yalnızca `_worker.js` değişirse: `wrangler pages deploy cloudflare/admin --project-name kurtaranev-admin --branch main`
+
 ### GitHub Pages üzerinde yönetim paneli (sunucusuz)
 
 Panel, yerel sunucu olmadan da çalışır: `https://<kullanici>.github.io/<repo>/admin.html`
