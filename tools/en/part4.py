@@ -118,7 +118,6 @@ def katalog(tur: str) -> str:
 
     <div class="results-bar">
       <p class="results-bar__count" data-count role="status"></p>
-      <p class="body-sm">Fields we don't have information for are shown as “unknown”.</p>
     </div>
 
     <div class="animal-grid" data-grid></div>
