@@ -219,6 +219,43 @@ Beş form var; hepsi şu an ekranda "gönderildi sayılmaz" uyarısı veriyor, h
 
 ---
 
+## 7b. İlan modu (Wix entegrasyonu) ve fotoğraf depolama
+
+**Şimdi — Wix erişimi bekleniyor:**
+
+- [ ] Wix DNS'e CNAME ekle: `ilanlar` → `kurtaranev-ilanlar.pages.dev`. Cloudflare tarafında
+      alan adı projeye bağlı, doğrulama bekliyor (HTTP doğrulaması + SSL kendiliğinden).
+- [ ] Wix `/kopek` ve `/kedi` sayfalarına "İlanları gör" butonu (aynı sekmede):
+      `https://ilanlar.kurtaranev.org/kopekler.html` · `/kediler.html`
+      (EN sitede `/en/kopekler.html` · `/en/kediler.html`).
+- [ ] İlk 1–2 hafta Cloudflare panelinden günlük istek sayısını izle. Ücretsiz plan hesap
+      genelinde günde 100.000 istek (diğer Worker'larla ortak); ziyaret başına ~45 istek →
+      ~2.000 ziyaret/gün. Günde ~1.000 ziyareti geçerse Workers Paid (5 $/ay).
+
+**Gelecek plan (beklemede, 10.10.2026'da kararlaştırıldı) — fotoğrafları Cloudflare R2'ye taşı:**
+
+Neden: fotoğraflar repoda ayda ~70 MB büyüyor (orijinal + küçük kopya); GitHub Pages en fazla
+1 GB yayınlıyor → bugünkü hızla ~10–12 ay sonra sınır. **3–6 ay içinde** yapılmalı.
+
+Kısıt: `kurtaranev.org` DNS'i Wix'te olduğu için R2'ye doğrudan özel alan adı bağlanamaz
+(`r2.dev` yalnızca deneme amaçlı). Bu yüzden **Yol A**: fotoğraflar mevcut süzgeçten
+(`cloudflare/ilanlar/_worker.js`) R2 bağlamasıyla okunur. (Yol B — DNS'i Cloudflare'e taşımak —
+fotoğrafları istek kotasından da çıkarır ama Wix sitesi ve iletisim@kurtaranev.org e-posta
+kayıtları riskli; dernek onayı gerekir.)
+
+- [ ] Cloudflare panelinde R2'yi etkinleştir; senkron için R2 erişim anahtarı oluştur
+      (wrangler OAuth oturumunda R2 yetkisi yok) → GitHub secret.
+- [ ] `kurtaranev-foto` bucket'ı; mevcut ~1.226 dosyayı aynı yollarla yükle
+      (`assets/img/animals/…`, `animals-k/…`) — `animals.json` değişmez.
+- [ ] `_worker.js`: fotoğraf yolları GitHub yerine R2'den (önbellek aynen).
+- [ ] Günlük senkron: indir → küçük kopya → R2'ye yükle → repodan sil. Admin panelinden
+      repoya yüklenen fotoğraflar da ilk senkronda taşınır (panel değişmez).
+- [ ] Prototip (GitHub Pages) fotoğrafları `ilanlar.kurtaranev.org` üzerinden yüklesin.
+- [ ] Fotoğrafları repodan sil (yayın ~140 MB → ~5 MB); canlıda tüm ilanlar kontrol.
+- Maliyet: R2 ücretsiz (10 GB, indirme ücretsiz) — bugünkü hızla ~10 yıl. Süre ~1 gün.
+- Not: fotoğrafları süzgeçsiz doğrudan GitHub Pages'ten sunmak çözüm DEĞİL — GitHub'ın
+  100 GB/ay bant sınırı ~1.700 ziyaret/gün ediyor ve prototip adresi görünür oluyor.
+
 ## 8. Küçük notlar
 
 - [ ] Menüde ↗ ile işaretli maddeler (Sahiplen, Geçici Yuva, Bağış Yap, Koruyucu Melek,
