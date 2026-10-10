@@ -7,9 +7,10 @@
 #   2. site/ klasörünü GitHub Pages'e yayınlar — böylece yeni veri
 #      lokalde hiçbir şey çalıştırmadan canlı sitede görünür.
 #
-# Kota notu: RapidAPI Basic paket ayda 100 istek verir. Hesap kimlikleri
-# koda sabitli olduğundan her çalıştırma yalnızca 2 istek harcar
-# (hesap başına 1 /feed) → günde 1 çalıştırma ≈ ayda ~62 istek.
+# Kota notu: RapidAPI planı günde 400 istek verir; tools/rapidapi_kota.py
+# kendi sınırımızı (günde 350) uygular ve sınır dolunca istek göndermez.
+# Kullanım tools/rapidapi_kota.json'da tutulur ve her çalıştırmada
+# commit'lenir. Hesap kimlikleri koda sabitli → çalıştırma başına 2 istek.
 #
 # Elle tetikleme: GitHub > Actions > bu workflow > "Run workflow".
 # Lokal düzenlemeler main'e push'lanınca da site yeniden yayınlanır.
@@ -48,8 +49,8 @@ jobs:
           SYNC_RAPOR: sync_rapor.md
         run: python3 tools/instagram_sync.py --rapid --limit 5
 
-      # Rapor dosyası yalnızca yeni ilan ya da hata olduğunda oluşur;
-      # sessiz çalışmalarda (yeni ilan yok) mail gitmez.
+      # Rapor her çalıştırmada oluşur (yeni ilan yoksa da): günlük RapidAPI
+      # kota kullanımı her gün mailde görünür.
       - name: Raporu e-postala (Gmail SMTP)
         if: ${{ always() && hashFiles('sync_rapor.md') != '' }}
         env:
@@ -60,15 +61,22 @@ jobs:
           python3 tools/notify_mail.py sync_rapor.md
           rm -f sync_rapor.md
 
+      # always(): senkron hata verse de kota sayacı kaybolmasın
       - name: Değişiklik varsa commit'le
+        if: ${{ always() }}
         run: |
           git config user.name "kurtaranev-bot"
           git config user.email "actions@github.com"
           git add site/assets/data site/assets/img/animals tools/gorulen_gonderiler.json
+          git add tools/rapidapi_kota.json 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "Yeni ilan yok, commit gerekmedi."
+            echo "Değişiklik yok, commit gerekmedi."
           else
-            git commit -m "Instagram senkronu: yeni ilanlar ($(date -u +%Y-%m-%d))"
+            if git diff --cached --quiet -- site tools/gorulen_gonderiler.json; then
+              git commit -m "RapidAPI kota kaydı ($(date -u +%Y-%m-%d))"
+            else
+              git commit -m "Instagram senkronu: yeni ilanlar ($(date -u +%Y-%m-%d))"
+            fi
             git push
           fi
 

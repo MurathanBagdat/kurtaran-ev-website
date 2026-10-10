@@ -175,6 +175,11 @@ python3 tools/instagram_sync.py --link "https://www.instagram.com/kurtaranev_kop
 #     Graph API kurulana kadar köprü çözümdür.
 python3 tools/instagram_sync.py --rapid --limit 5
 
+# 2c için günlük kota: plan günde 400 istek verir, kod kendini 350'de keser
+# (tools/rapidapi_kota.py). Sınır dolunca istek hiç gönderilmez; kullanım
+# tools/rapidapi_kota.json'da tutulur ve senkron raporuna yazılır.
+python3 tools/rapidapi_kota.py        # bugünkü kullanımı göster
+
 # ne olacağını görmek için (hiçbir şey yazmaz)
 python3 tools/instagram_sync.py --dosya tools/gonderiler.json --kuru
 
