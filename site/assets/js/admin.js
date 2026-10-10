@@ -356,10 +356,6 @@
         '<div class="modal__panel">' +
           '<div class="modal__head">' +
             '<h2 class="modal__title" id="kip-baslik">İlan</h2>' +
-            '<div class="dil-sekme" role="group" aria-label="Metinlerin dili">' +
-              '<button type="button" data-dil-sec="tr" aria-pressed="true">Türkçe</button>' +
-              '<button type="button" data-dil-sec="en" aria-pressed="false">İngilizce</button>' +
-            '</div>' +
             '<button class="modal__close" type="button" id="kip-kapat" aria-label="Kapat">×</button>' +
           '</div>' +
           '<form id="kip-form"><div class="modal__body" id="kip-govde"></div>' +
@@ -376,8 +372,7 @@
   function alanHTML(ad, tanim, deger, tahminiMi, ek) {
     ek = ek || {};
     var id = 'f-' + ad;
-    var ipucu = (tanim.ipucu ? '<small>' + esc(tanim.ipucu) + '</small>' : '') +
-      (ek.referans ? '<small class="field-ref"><b>Türkçesi:</b> ' + esc(ek.referans) + '</small>' : '');
+    var ipucu = tanim.ipucu ? '<small>' + esc(tanim.ipucu) + '</small>' : '';
     var genislik = (tanim.tip === 'uzunmetin') ? ' span-3'
                  : (tanim.tip === 'etiketler') ? ' span-3' : '';
     var ic;
@@ -439,7 +434,6 @@
       (gruplar[g] = gruplar[g] || []).push(ad);
     });
     function tahminli(ad) { return (suanki.tahmini || []).indexOf(ad) !== -1; }
-    function metinGoster(v) { return Array.isArray(v) ? v.join(', ') : (v == null ? '' : String(v)); }
 
     var html = '<p class="kip-not">Bu bölümdeki bilgiler iki dilde ortaktır.</p>' +
       Object.keys(GRUP_ADI).filter(function (g) { return gruplar[g]; }).map(function (g) {
@@ -451,24 +445,19 @@
           '</div></fieldset>';
       }).join('');
 
+    /* İlan metinleri: her satırda solda Türkçesi, sağda İngilizcesi */
     html += '<fieldset class="fieldset fieldset--metin"><legend>İlan metinleri</legend>' +
-      '<div class="fieldset__grid" data-dil="tr">' +
-        METIN_SIRA.map(function (ad) {
-          return alanHTML(ad, sema.alanlar[ad], suanki[ad], tahminli(ad));
-        }).join('') +
-      '</div>' +
-      '<div class="fieldset__grid" data-dil="en" hidden>' +
-        '<p class="kip-not span-3">İngilizce sitede görünen metinler. Türkçesini değiştirdiğiniz ' +
-          've burada dokunmadığınız alanlar kaydettikten sonra 1–2 dakika içinde otomatik çevrilir; ' +
-          'buraya kendi yazdığınız İngilizce korunur.</p>' +
-        METIN_SIRA.map(function (ad) {
-          var en = EN[ad];
-          return alanHTML(en, sema.alanlar[en], suanki[en], false, {
-            etiket: sema.alanlar[ad].etiket + ' (İngilizce)',
-            referans: metinGoster(suanki[ad]) || '—'
-          });
-        }).join('') +
-      '</div></fieldset>';
+      '<p class="kip-not">Solda Türkçe, sağda İngilizce sitede görünen metin. Türkçesini ' +
+        'değiştirip İngilizcesine dokunmadığınız alanlar kaydettikten sonra 1–2 dakika içinde ' +
+        'otomatik çevrilir; kendi yazdığınız İngilizce korunur.</p>' +
+      METIN_SIRA.map(function (ad) {
+        var en = EN[ad];
+        return '<div class="metin-cift">' +
+          alanHTML(ad, sema.alanlar[ad], suanki[ad], tahminli(ad), { etiket: sema.alanlar[ad].etiket + ' — Türkçe' }) +
+          alanHTML(en, sema.alanlar[en], suanki[en], false, { etiket: sema.alanlar[ad].etiket + ' — İngilizce' }) +
+        '</div>';
+      }).join('') +
+      '</fieldset>';
 
     html += '<fieldset class="fieldset"><legend>Fotoğraflar</legend>' +
       '<div class="photos" id="fotolar"></div>' +
@@ -476,20 +465,10 @@
       '</fieldset>';
 
     document.getElementById('kip-govde').innerHTML = html;
-    dilSec('tr');
     fotoCiz();
     document.getElementById('kip').hidden = false;
     document.getElementById('kip-durum').textContent = '';
     document.body.style.overflow = 'hidden';
-  }
-
-  function dilSec(dil) {
-    document.querySelectorAll('[data-dil-sec]').forEach(function (b) {
-      b.setAttribute('aria-pressed', String(b.getAttribute('data-dil-sec') === dil));
-    });
-    document.querySelectorAll('#kip-govde [data-dil]').forEach(function (bolum) {
-      bolum.hidden = bolum.getAttribute('data-dil') !== dil;
-    });
   }
 
   function kipKapat() {
@@ -520,9 +499,6 @@
   function kipBagla() {
     document.getElementById('kip-kapat').addEventListener('click', kipKapat);
     document.getElementById('kip-iptal').addEventListener('click', kipKapat);
-    document.querySelectorAll('[data-dil-sec]').forEach(function (b) {
-      b.addEventListener('click', function () { dilSec(b.getAttribute('data-dil-sec')); });
-    });
     document.getElementById('kip').addEventListener('click', function (e) {
       if (e.target.id === 'kip') kipKapat();
     });
