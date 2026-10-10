@@ -1620,9 +1620,7 @@ def katalog(tur: str) -> str:
         <div class="filter">
           <label for="f-durum">Durum</label>
           <select id="f-durum" data-filter="durum">
-            <option value="musait">Müsait olanlar</option>
             <option value="yuva-ariyor">Yuva arıyor</option>
-            <option value="rezerve">Rezerve</option>
             <option value="yuvalandi">Yuvalandı</option>
             <option value="">Hepsi</option>
           </select>

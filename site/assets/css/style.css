@@ -1372,9 +1372,7 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
 }
 
 .badge--yuva-ariyor { background: var(--green); color: var(--white); border-color: var(--green); }
-.badge--rezerve     { background: var(--yellow); }
 .badge--yuvalandi   { background: var(--sky); }
-.badge--taslak      { background: var(--white); color: rgba(24,54,83,.7); border-style: dashed; }
 .badge--ornek       { background: var(--orange); }
 
 .animal-card__badges {

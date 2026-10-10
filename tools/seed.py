@@ -110,7 +110,7 @@ ORNEKLER = [
         "kisir": True, "asili": True, "cipli": True,
         "cocuklaUyum": True, "kopeklerleUyum": True, "kedilerleUyum": True,
         "karakter": ["oyuncu", "sevecen", "eğitimli"],
-        "konum": "Hadımköy Yaşam Alanı", "durum": "rezerve",
+        "konum": "Hadımköy Yaşam Alanı", "durum": "yuva-ariyor",
         "aciklama": "Temel komutları biliyor, tasmada güzel yürüyor. Ön görüşmesi tamamlandı, "
                     "ev ziyareti bekleniyor.",
         "fotograflar": [],
@@ -166,7 +166,7 @@ ORNEKLER = [
     },
     {
         "tur": "kedi", "isim": "İsimsiz", "cinsiyet": None,
-        "durum": "taslak",
+        "durum": "yuva-ariyor",
         "konum": "Kedi Yaşam Alanı",
         "aciklama": "Yeni geldi, henüz muayene edilmedi. Bilgiler tamamlanınca yayınlanacak.",
         "fotograflar": [],

@@ -31,14 +31,12 @@ PHOTO_WEB_PREFIX = "assets/img/animals"
 
 SPECIES = ("kopek", "kedi")
 
-# İlan durumları
+# İlan durumları — yalnızca iki tane; varsayılan "yuva-ariyor".
 STATUS = {
-    "taslak": "Taslak (yayında değil)",
     "yuva-ariyor": "Yuva arıyor",
-    "rezerve": "Rezerve",
     "yuvalandi": "Yuvalandı",
 }
-PUBLIC_STATUS = ("yuva-ariyor", "rezerve", "yuvalandi")
+VARSAYILAN_DURUM = "yuva-ariyor"
 
 SEX = {"disi": "Dişi", "erkek": "Erkek"}
 SIZE = {"kucuk": "Küçük", "orta": "Orta", "buyuk": "Büyük"}
@@ -220,7 +218,7 @@ def bos_kayit(tur: str = "kopek") -> dict:
             continue
         kayit[alan] = [] if tanim["tip"] == "etiketler" else None
     kayit.update({
-        "durum": "taslak",
+        "durum": VARSAYILAN_DURUM,
         "fotograflar": [],
         "tahmini": [],
         "ornek": False,
@@ -293,7 +291,8 @@ def normalize(ham: dict) -> tuple[dict, list[str]]:
     if not kayit.get("isim"):
         kayit["isim"] = "İsimsiz"
 
-    kayit["durum"] = kayit.get("durum") or "taslak"
+    # Eski "taslak"/"rezerve" kayıtları ya da tanımsız değerler yuva-ariyor'a düşer.
+    kayit["durum"] = kayit.get("durum") if kayit.get("durum") in STATUS else VARSAYILAN_DURUM
     kayit["fotograflar"] = [str(f) for f in (ham.get("fotograflar") or []) if str(f).strip()][:12]
     kayit["tahmini"] = [f for f in (ham.get("tahmini") or []) if f in ESTIMABLE]
     kayit["ornek"] = bool(ham.get("ornek"))
