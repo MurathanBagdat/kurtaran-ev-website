@@ -232,6 +232,19 @@ Beş form var; hepsi şu an ekranda "gönderildi sayılmaz" uyarısı veriyor, h
       genelinde günde 100.000 istek (diğer Worker'larla ortak); ziyaret başına ~45 istek →
       ~2.000 ziyaret/gün. Günde ~1.000 ziyareti geçerse Workers Paid (5 $/ay).
 
+- [ ] Wix DNS'e ikinci CNAME: `admin` → `kurtaranev-admin.pages.dev` (ekip paneli,
+      Cloudflare'de alan adı bağlı, doğrulama bekliyor).
+
+**Ekip paneli (admin.kurtaranev.org) — anahtar bilgisi:**
+
+- GitHub anahtarı `kurtaranev-admin-panel` (fine-grained, yalnızca bu repo, Contents + Actions
+  RW) **süresiz** (10.10.2026). Hatırlatma gerekmez; ama sızdığından şüphelenilirse ya da
+  ekipten ayrılan biri olursa: GitHub'da anahtarı sil → yenisini aynı izinlerle oluştur →
+  `wrangler pages secret put GITHUB_TOKEN --project-name kurtaranev-admin` → paneli yeniden yayınla
+  (`wrangler pages deploy cloudflare/admin --project-name kurtaranev-admin --branch main`).
+- Ortak şifreyi değiştirmek: `wrangler pages secret put ADMIN_SIFRE …` + yeniden yayın;
+  tüm açık oturumlar düşer. Cloudflare Pages gizli değişkenleri ancak yeni yayında devreye alır.
+
 **Gelecek plan (beklemede, 10.10.2026'da kararlaştırıldı) — fotoğrafları Cloudflare R2'ye taşı:**
 
 Neden: fotoğraflar repoda ayda ~70 MB büyüyor (orijinal + küçük kopya); GitHub Pages en fazla
