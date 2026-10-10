@@ -1,9 +1,363 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-10T14:59:23+00:00",
-  "sayi": 108,
+  "guncelleme": "2026-10-10T15:34:59+00:00",
+  "sayi": 114,
   "hayvanlar": [
+    {
+      "id": "kedi-boncuk-1-cccaa5",
+      "tur": "kedi",
+      "isim": "Boncuk 1",
+      "cinsiyet": null,
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": null,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": null,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "Anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. Ömürlük yuvasını arıyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. Looking for a forever home.",
+      "fotograflar": [
+        "assets/img/animals/ig-DeUBlSfDM8b-0.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-1.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-2.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-3.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-4.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DeUBlSfDM8b",
+        "sira": 0,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DeUBlSfDM8b/",
+        "tarih": "2026-10-10T11:55:09+00:00"
+      },
+      "olusturma": "2026-10-10T11:55:09+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
+      "yasMetni": null,
+      "yasMetniEn": null,
+      "yasGrubu": null,
+      "arama": "boncuk 1 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
+      "aramaEn": "boncuk 1 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
+    },
+    {
+      "id": "kedi-boncuk-2-d18370",
+      "tur": "kedi",
+      "isim": "Boncuk 2",
+      "cinsiyet": null,
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": null,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": null,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "Anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. Ömürlük yuvasını arıyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. Looking for a forever home.",
+      "fotograflar": [
+        "assets/img/animals/ig-DeUBlSfDM8b-0.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-1.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-2.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-3.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-4.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DeUBlSfDM8b",
+        "sira": 1,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DeUBlSfDM8b/",
+        "tarih": "2026-10-10T11:55:09+00:00"
+      },
+      "olusturma": "2026-10-10T11:55:09+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
+      "yasMetni": null,
+      "yasMetniEn": null,
+      "yasGrubu": null,
+      "arama": "boncuk 2 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
+      "aramaEn": "boncuk 2 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
+    },
+    {
+      "id": "kedi-boncuk-3-0db7ff",
+      "tur": "kedi",
+      "isim": "Boncuk 3",
+      "cinsiyet": null,
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": null,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": null,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "Anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. Ömürlük yuvasını arıyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. Looking for a forever home.",
+      "fotograflar": [
+        "assets/img/animals/ig-DeUBlSfDM8b-0.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-1.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-2.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-3.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-4.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DeUBlSfDM8b",
+        "sira": 2,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DeUBlSfDM8b/",
+        "tarih": "2026-10-10T11:55:09+00:00"
+      },
+      "olusturma": "2026-10-10T11:55:09+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
+      "yasMetni": null,
+      "yasMetniEn": null,
+      "yasGrubu": null,
+      "arama": "boncuk 3 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
+      "aramaEn": "boncuk 3 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
+    },
+    {
+      "id": "kedi-boncuk-4-90f11a",
+      "tur": "kedi",
+      "isim": "Boncuk 4",
+      "cinsiyet": null,
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": null,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": null,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "Anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. Ömürlük yuvasını arıyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. Looking for a forever home.",
+      "fotograflar": [
+        "assets/img/animals/ig-DeUBlSfDM8b-0.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-1.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-2.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-3.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-4.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DeUBlSfDM8b",
+        "sira": 3,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DeUBlSfDM8b/",
+        "tarih": "2026-10-10T11:55:09+00:00"
+      },
+      "olusturma": "2026-10-10T11:55:09+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
+      "yasMetni": null,
+      "yasMetniEn": null,
+      "yasGrubu": null,
+      "arama": "boncuk 4 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
+      "aramaEn": "boncuk 4 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
+    },
+    {
+      "id": "kedi-boncuk-5-5fedf0",
+      "tur": "kedi",
+      "isim": "Boncuk 5",
+      "cinsiyet": null,
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": null,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": null,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "Anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. Ömürlük yuvasını arıyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. Looking for a forever home.",
+      "fotograflar": [
+        "assets/img/animals/ig-DeUBlSfDM8b-0.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-1.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-2.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-3.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-4.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DeUBlSfDM8b",
+        "sira": 4,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DeUBlSfDM8b/",
+        "tarih": "2026-10-10T11:55:09+00:00"
+      },
+      "olusturma": "2026-10-10T11:55:09+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
+      "yasMetni": null,
+      "yasMetniEn": null,
+      "yasGrubu": null,
+      "arama": "boncuk 5 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
+      "aramaEn": "boncuk 5 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
+    },
+    {
+      "id": "kedi-boncuk-6-dd140d",
+      "tur": "kedi",
+      "isim": "Boncuk 6",
+      "cinsiyet": null,
+      "durum": "yuva-ariyor",
+      "konum": null,
+      "cins": null,
+      "yasAy": null,
+      "kiloKg": null,
+      "boyut": null,
+      "renk": null,
+      "kisir": null,
+      "asili": null,
+      "cipli": null,
+      "ozelBakim": null,
+      "saglikNotu": null,
+      "cocuklaUyum": null,
+      "kopeklerleUyum": null,
+      "kedilerleUyum": null,
+      "karakter": [
+        "sevecen"
+      ],
+      "aciklama": "Anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. Ömürlük yuvasını arıyor.",
+      "cinsEn": null,
+      "renkEn": null,
+      "konumEn": null,
+      "saglikNotuEn": null,
+      "karakterEn": [
+        "affectionate"
+      ],
+      "aciklamaEn": "Abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. Looking for a forever home.",
+      "fotograflar": [
+        "assets/img/animals/ig-DeUBlSfDM8b-0.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-1.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-2.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-3.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-4.jpg",
+        "assets/img/animals/ig-DeUBlSfDM8b-5.jpg"
+      ],
+      "tahmini": [],
+      "ornek": false,
+      "kaynak": {
+        "tip": "instagram",
+        "hesap": "kurtaranev_kedileri",
+        "gonderiId": "DeUBlSfDM8b",
+        "sira": 5,
+        "ayristirici": "ai",
+        "baglanti": "https://www.instagram.com/p/DeUBlSfDM8b/",
+        "tarih": "2026-10-10T11:55:09+00:00"
+      },
+      "olusturma": "2026-10-10T11:55:09+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
+      "yasMetni": null,
+      "yasMetniEn": null,
+      "yasGrubu": null,
+      "arama": "boncuk 6 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
+      "aramaEn": "boncuk 6 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
+    },
     {
       "id": "kopek-zorro-4d390b",
       "tur": "kopek",
@@ -56,7 +410,7 @@ window.KE_DATA = {
         "tarih": "2026-10-09T16:58:58+00:00"
       },
       "olusturma": "2026-10-09T16:58:58+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -115,7 +469,7 @@ window.KE_DATA = {
         "tarih": "2026-10-09T16:15:19+00:00"
       },
       "olusturma": "2026-10-09T16:15:19+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -170,7 +524,7 @@ window.KE_DATA = {
         "tarih": "2026-10-09T14:09:54+00:00"
       },
       "olusturma": "2026-10-09T14:09:54+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -229,7 +583,7 @@ window.KE_DATA = {
         "tarih": "2026-10-09T12:07:41+00:00"
       },
       "olusturma": "2026-10-09T12:07:41+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -288,7 +642,7 @@ window.KE_DATA = {
         "tarih": "2026-10-09T10:05:13+00:00"
       },
       "olusturma": "2026-10-09T10:05:13+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -351,7 +705,7 @@ window.KE_DATA = {
         "tarih": "2026-10-08T08:40:44+00:00"
       },
       "olusturma": "2026-10-08T08:40:44+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -414,7 +768,7 @@ window.KE_DATA = {
         "tarih": "2026-10-07T08:15:15+00:00"
       },
       "olusturma": "2026-10-07T08:15:15+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -470,7 +824,7 @@ window.KE_DATA = {
         "tarih": "2026-10-06T15:14:19+00:00"
       },
       "olusturma": "2026-10-06T15:14:19+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -537,7 +891,7 @@ window.KE_DATA = {
         "tarih": "2026-10-06T09:28:49+00:00"
       },
       "olusturma": "2026-10-06T09:28:49+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -600,7 +954,7 @@ window.KE_DATA = {
         "tarih": "2026-10-05T14:45:40+00:00"
       },
       "olusturma": "2026-10-05T14:45:40+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -661,7 +1015,7 @@ window.KE_DATA = {
         "tarih": "2026-10-05T08:14:43+00:00"
       },
       "olusturma": "2026-10-05T08:14:43+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -724,7 +1078,7 @@ window.KE_DATA = {
         "tarih": "2026-10-03T11:48:05+00:00"
       },
       "olusturma": "2026-10-03T11:48:05+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2,5 yaşında",
       "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
@@ -782,7 +1136,7 @@ window.KE_DATA = {
         "tarih": "2026-10-02T12:43:25+00:00"
       },
       "olusturma": "2026-10-02T12:43:25+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -845,7 +1199,7 @@ window.KE_DATA = {
         "tarih": "2026-10-02T12:05:32+00:00"
       },
       "olusturma": "2026-10-02T12:05:32+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -857,7 +1211,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Çakıl",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Gönüllü geçici yuva",
       "cins": "Schnauzer Melezi",
       "yasAy": 48,
@@ -909,10 +1263,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Dd9ZJNjjthi/",
-        "tarih": "2026-10-01T16:58:30+00:00"
+        "tarih": "2026-10-01T16:58:30+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:04+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-10-01T16:58:30+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "4 yaşında",
       "yasMetniEn": "4 years old",
       "yasGrubu": "yetiskin",
@@ -975,7 +1333,7 @@ window.KE_DATA = {
         "tarih": "2026-10-01T12:10:27+00:00"
       },
       "olusturma": "2026-10-01T12:10:27+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -987,7 +1345,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "İrmik",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -1033,10 +1391,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Dd6WWhXjHTK/",
-        "tarih": "2026-09-30T12:36:23+00:00"
+        "tarih": "2026-09-30T12:36:23+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:33+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-30T12:36:23+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:33+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -1099,7 +1461,7 @@ window.KE_DATA = {
         "tarih": "2026-09-29T09:50:45+00:00"
       },
       "olusturma": "2026-09-29T09:50:45+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "4 yaşında",
       "yasMetniEn": "4 years old",
       "yasGrubu": "yetiskin",
@@ -1160,7 +1522,7 @@ window.KE_DATA = {
         "tarih": "2026-09-28T16:15:49+00:00"
       },
       "olusturma": "2026-09-28T16:15:49+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1223,7 +1585,7 @@ window.KE_DATA = {
         "tarih": "2026-09-28T10:46:52+00:00"
       },
       "olusturma": "2026-09-28T10:46:52+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "5,5 yaşında",
       "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
@@ -1286,7 +1648,7 @@ window.KE_DATA = {
         "tarih": "2026-09-27T16:16:27+00:00"
       },
       "olusturma": "2026-09-27T16:16:27+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1347,7 +1709,7 @@ window.KE_DATA = {
         "tarih": "2026-09-27T05:42:20+00:00"
       },
       "olusturma": "2026-09-27T05:42:20+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "4,5 yaşında",
       "yasMetniEn": "4.5 years old",
       "yasGrubu": "yetiskin",
@@ -1408,7 +1770,7 @@ window.KE_DATA = {
         "tarih": "2026-09-27T05:42:20+00:00"
       },
       "olusturma": "2026-09-27T05:42:20+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -1471,7 +1833,7 @@ window.KE_DATA = {
         "tarih": "2026-09-26T06:10:17+00:00"
       },
       "olusturma": "2026-09-26T06:10:17+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1532,7 +1894,7 @@ window.KE_DATA = {
         "tarih": "2026-09-25T10:04:06+00:00"
       },
       "olusturma": "2026-09-25T10:04:06+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -1595,7 +1957,7 @@ window.KE_DATA = {
         "tarih": "2026-09-24T10:49:34+00:00"
       },
       "olusturma": "2026-09-24T10:49:34+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1658,7 +2020,7 @@ window.KE_DATA = {
         "tarih": "2026-09-23T16:05:13+00:00"
       },
       "olusturma": "2026-09-23T16:05:13+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2,5 yaşında",
       "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
@@ -1721,7 +2083,7 @@ window.KE_DATA = {
         "tarih": "2026-09-23T08:28:29+00:00"
       },
       "olusturma": "2026-09-23T08:28:29+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -1782,7 +2144,7 @@ window.KE_DATA = {
         "tarih": "2026-09-22T11:40:06+00:00"
       },
       "olusturma": "2026-09-22T11:40:06+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -1843,7 +2205,7 @@ window.KE_DATA = {
         "tarih": "2026-09-21T09:40:52+00:00"
       },
       "olusturma": "2026-09-21T09:40:52+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "4,5 yaşında",
       "yasMetniEn": "4.5 years old",
       "yasGrubu": "yetiskin",
@@ -1900,7 +2262,7 @@ window.KE_DATA = {
         "tarih": "2026-09-19T12:42:33+00:00"
       },
       "olusturma": "2026-09-19T12:42:33+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 aylık",
       "yasMetniEn": "1 month old",
       "yasGrubu": "yavru",
@@ -1963,7 +2325,7 @@ window.KE_DATA = {
         "tarih": "2026-09-18T08:49:40+00:00"
       },
       "olusturma": "2026-09-18T08:49:40+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -2026,7 +2388,7 @@ window.KE_DATA = {
         "tarih": "2026-09-17T06:57:53+00:00"
       },
       "olusturma": "2026-09-17T06:57:53+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -2089,7 +2451,7 @@ window.KE_DATA = {
         "tarih": "2026-09-17T06:57:53+00:00"
       },
       "olusturma": "2026-09-17T06:57:53+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -2156,7 +2518,7 @@ window.KE_DATA = {
         "tarih": "2026-09-16T14:09:23+00:00"
       },
       "olusturma": "2026-09-16T14:09:23+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2168,7 +2530,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Sushi",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Terrier",
       "yasAy": 66,
@@ -2216,10 +2578,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DdVaUXJF86F/",
-        "tarih": "2026-09-16T04:19:09+00:00"
+        "tarih": "2026-09-16T04:19:09+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:10+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-16T04:19:09+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:10+00:00",
       "yasMetni": "5,5 yaşında",
       "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
@@ -2280,7 +2646,7 @@ window.KE_DATA = {
         "tarih": "2026-09-15T12:28:43+00:00"
       },
       "olusturma": "2026-09-15T12:28:43+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 aylık",
       "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
@@ -2292,7 +2658,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Hugo",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Birman Kedisi",
       "yasAy": 12,
@@ -2340,10 +2706,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DdQuT-MjGjf/",
-        "tarih": "2026-09-14T08:37:39+00:00"
+        "tarih": "2026-09-14T08:37:39+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:33+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-14T08:37:39+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:33+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -2406,7 +2776,7 @@ window.KE_DATA = {
         "tarih": "2026-09-13T11:36:13+00:00"
       },
       "olusturma": "2026-09-13T11:36:13+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -2469,7 +2839,7 @@ window.KE_DATA = {
         "tarih": "2026-09-13T07:59:27+00:00"
       },
       "olusturma": "2026-09-13T07:59:27+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -2534,7 +2904,7 @@ window.KE_DATA = {
         "tarih": "2026-09-12T08:36:07+00:00"
       },
       "olusturma": "2026-09-12T08:36:07+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2,5 yaşında",
       "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
@@ -2546,7 +2916,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Kıvanç",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "British Shorthair",
       "yasAy": 18,
@@ -2590,10 +2960,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DdLj53mjNes/",
-        "tarih": "2026-09-12T08:30:30+00:00"
+        "tarih": "2026-09-12T08:30:30+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:38+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-12T08:30:30+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:38+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2658,7 +3032,7 @@ window.KE_DATA = {
         "tarih": "2026-09-11T09:55:18+00:00"
       },
       "olusturma": "2026-09-11T09:55:18+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -2718,7 +3092,7 @@ window.KE_DATA = {
         "tarih": "2026-09-11T08:16:16+00:00"
       },
       "olusturma": "2026-09-11T08:16:16+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2730,7 +3104,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Sütlaç",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 21,
@@ -2777,10 +3151,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DdIzUubjqgW/",
-        "tarih": "2026-09-11T06:47:31+00:00"
+        "tarih": "2026-09-11T06:47:31+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:10+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-11T06:47:31+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:10+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -2845,7 +3223,7 @@ window.KE_DATA = {
         "tarih": "2026-09-10T13:45:13+00:00"
       },
       "olusturma": "2026-09-10T13:45:13+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "6 yaşında",
       "yasMetniEn": "6 years old",
       "yasGrubu": "yetiskin",
@@ -2908,7 +3286,7 @@ window.KE_DATA = {
         "tarih": "2026-09-10T12:32:17+00:00"
       },
       "olusturma": "2026-09-10T12:32:17+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -2972,7 +3350,7 @@ window.KE_DATA = {
         "tarih": "2026-09-10T11:21:22+00:00"
       },
       "olusturma": "2026-09-10T11:21:22+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "8 aylık",
       "yasMetniEn": "8 months old",
       "yasGrubu": "yavru",
@@ -2984,7 +3362,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Oreo",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Gönüllü geçici yuva",
       "cins": "Pug",
       "yasAy": 66,
@@ -3034,10 +3412,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DdGYUC6DjFr/",
-        "tarih": "2026-09-10T08:13:01+00:00"
+        "tarih": "2026-09-10T08:13:01+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:15+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-10T08:13:01+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:15+00:00",
       "yasMetni": "5,5 yaşında",
       "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
@@ -3100,7 +3482,7 @@ window.KE_DATA = {
         "tarih": "2026-09-09T14:47:11+00:00"
       },
       "olusturma": "2026-09-09T14:47:11+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -3161,7 +3543,7 @@ window.KE_DATA = {
         "tarih": "2026-09-09T09:22:46+00:00"
       },
       "olusturma": "2026-09-09T09:22:46+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3222,7 +3604,7 @@ window.KE_DATA = {
         "tarih": "2026-09-09T09:22:46+00:00"
       },
       "olusturma": "2026-09-09T09:22:46+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3283,7 +3665,7 @@ window.KE_DATA = {
         "tarih": "2026-09-09T09:22:46+00:00"
       },
       "olusturma": "2026-09-09T09:22:46+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3346,7 +3728,7 @@ window.KE_DATA = {
         "tarih": "2026-09-08T14:07:15+00:00"
       },
       "olusturma": "2026-09-08T14:07:15+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -3413,7 +3795,7 @@ window.KE_DATA = {
         "tarih": "2026-09-08T08:01:37+00:00"
       },
       "olusturma": "2026-09-08T08:01:37+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -3478,7 +3860,7 @@ window.KE_DATA = {
         "tarih": "2026-09-07T17:23:23+00:00"
       },
       "olusturma": "2026-09-07T17:23:23+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -3538,7 +3920,7 @@ window.KE_DATA = {
         "tarih": "2026-09-07T08:54:49+00:00"
       },
       "olusturma": "2026-09-07T08:54:49+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -3599,7 +3981,7 @@ window.KE_DATA = {
         "tarih": "2026-09-06T11:24:09+00:00"
       },
       "olusturma": "2026-09-06T11:24:09+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -3654,7 +4036,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3709,7 +4091,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3764,7 +4146,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3819,7 +4201,7 @@ window.KE_DATA = {
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -3831,7 +4213,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Erik",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Terrier",
       "yasAy": 24,
@@ -3879,10 +4261,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Dc5IJFfjF2A/",
-        "tarih": "2026-09-05T04:41:35+00:00"
+        "tarih": "2026-09-05T04:41:35+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:15+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-05T04:41:35+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:15+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -3945,7 +4331,7 @@ window.KE_DATA = {
         "tarih": "2026-09-04T14:02:22+00:00"
       },
       "olusturma": "2026-09-04T14:02:22+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "6,5 yaşında",
       "yasMetniEn": "6.5 years old",
       "yasGrubu": "yetiskin",
@@ -3957,7 +4343,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Teddy",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Catalan Sheepdog",
       "yasAy": 30,
@@ -4005,10 +4391,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Dc3PRyaDotZ/",
-        "tarih": "2026-09-04T11:05:28+00:00"
+        "tarih": "2026-09-04T11:05:28+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:15+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-04T11:05:28+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:15+00:00",
       "yasMetni": "2,5 yaşında",
       "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
@@ -4020,7 +4410,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Pırpır",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Maltipoo",
       "yasAy": 90,
@@ -4068,10 +4458,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Dc0u8eCjufp/",
-        "tarih": "2026-09-03T11:44:27+00:00"
+        "tarih": "2026-09-03T11:44:27+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:15+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-03T11:44:27+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:15+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -4134,7 +4528,7 @@ window.KE_DATA = {
         "tarih": "2026-09-03T09:54:40+00:00"
       },
       "olusturma": "2026-09-03T09:54:40+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -4195,7 +4589,7 @@ window.KE_DATA = {
         "tarih": "2026-09-03T08:56:03+00:00"
       },
       "olusturma": "2026-09-03T08:56:03+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 aylık",
       "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
@@ -4249,7 +4643,7 @@ window.KE_DATA = {
         "tarih": "2026-09-02T15:52:17+00:00"
       },
       "olusturma": "2026-09-02T15:52:17+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -4306,7 +4700,7 @@ window.KE_DATA = {
         "tarih": "2026-09-02T09:37:23+00:00"
       },
       "olusturma": "2026-09-02T09:37:23+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4318,7 +4712,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Bu",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": null,
@@ -4360,10 +4754,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "kural",
         "baglanti": "https://www.instagram.com/p/Dcx1QeMjIBC/",
-        "tarih": "2026-09-02T08:41:53+00:00"
+        "tarih": "2026-09-02T08:41:53+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:38+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-02T08:41:53+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:38+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -4420,7 +4818,7 @@ window.KE_DATA = {
         "tarih": "2026-09-01T08:35:17+00:00"
       },
       "olusturma": "2026-09-01T08:35:17+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "9 yaşında",
       "yasMetniEn": "9 years old",
       "yasGrubu": "kidemli",
@@ -4477,7 +4875,7 @@ window.KE_DATA = {
         "tarih": "2026-09-01T07:23:49+00:00"
       },
       "olusturma": "2026-09-01T07:23:49+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4532,7 +4930,7 @@ window.KE_DATA = {
         "tarih": "2026-08-31T13:33:54+00:00"
       },
       "olusturma": "2026-08-31T13:33:54+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4592,7 +4990,7 @@ window.KE_DATA = {
         "tarih": "2026-08-31T10:12:06+00:00"
       },
       "olusturma": "2026-08-31T10:12:06+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "5,5 yaşında",
       "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
@@ -4604,7 +5002,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Juno",
       "cinsiyet": null,
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": null,
@@ -4641,10 +5039,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "kural",
         "baglanti": "https://www.instagram.com/p/DcseWmasVJq/",
-        "tarih": "2026-08-31T06:48:49+00:00"
+        "tarih": "2026-08-31T06:48:49+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:44+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-31T06:48:49+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:44+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -4701,7 +5103,7 @@ window.KE_DATA = {
         "tarih": "2026-08-30T12:22:06+00:00"
       },
       "olusturma": "2026-08-30T12:22:06+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -4756,7 +5158,7 @@ window.KE_DATA = {
         "tarih": "2026-08-30T10:59:27+00:00"
       },
       "olusturma": "2026-08-30T10:59:27+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": null,
       "yasMetniEn": null,
       "yasGrubu": null,
@@ -4821,7 +5223,7 @@ window.KE_DATA = {
         "tarih": "2026-08-29T09:21:40+00:00"
       },
       "olusturma": "2026-08-29T09:21:40+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -4833,7 +5235,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Dorothy",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Kedi Evi",
       "cins": "Sfenks",
       "yasAy": 24,
@@ -4881,10 +5283,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DclfetWDNPr/",
-        "tarih": "2026-08-28T13:40:42+00:00"
+        "tarih": "2026-08-28T13:40:42+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:44+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-28T13:40:42+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:44+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -4945,7 +5351,7 @@ window.KE_DATA = {
         "tarih": "2026-08-28T09:06:37+00:00"
       },
       "olusturma": "2026-08-28T09:06:37+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "6 aylık",
       "yasMetniEn": "6 months old",
       "yasGrubu": "yavru",
@@ -4957,7 +5363,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Yaz",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Terrier",
       "yasAy": 24,
@@ -5009,10 +5415,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Dci6Ub4DnBb/",
-        "tarih": "2026-08-27T13:37:31+00:00"
+        "tarih": "2026-08-27T13:37:31+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:22+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-27T13:37:31+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:22+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5024,7 +5434,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Chichi",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "British Shorthair",
       "yasAy": 4,
@@ -5068,10 +5478,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcipKcfjKvK/",
-        "tarih": "2026-08-27T11:07:36+00:00"
+        "tarih": "2026-08-27T11:07:36+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:44+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-27T11:07:36+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:44+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -5134,7 +5548,7 @@ window.KE_DATA = {
         "tarih": "2026-08-26T17:56:30+00:00"
       },
       "olusturma": "2026-08-26T17:56:30+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5146,7 +5560,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Pamuk",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 4,
@@ -5192,10 +5606,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcgSPkPDuQV/",
-        "tarih": "2026-08-26T13:08:50+00:00"
+        "tarih": "2026-08-26T13:08:50+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:28+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-26T13:08:50+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:28+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -5207,7 +5625,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Moshi",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "British Longhair",
       "yasAy": 12,
@@ -5253,10 +5671,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcfpoenjFpX/",
-        "tarih": "2026-08-26T07:13:59+00:00"
+        "tarih": "2026-08-26T07:13:59+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:44+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-26T07:13:59+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:44+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -5319,7 +5741,7 @@ window.KE_DATA = {
         "tarih": "2026-08-24T12:43:57+00:00"
       },
       "olusturma": "2026-08-24T12:43:57+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "7,5 yaşında",
       "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
@@ -5382,7 +5804,7 @@ window.KE_DATA = {
         "tarih": "2026-08-24T10:00:22+00:00"
       },
       "olusturma": "2026-08-24T10:00:22+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5394,7 +5816,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Atlas",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Gönüllü geçici yuva",
       "cins": null,
       "yasAy": 12,
@@ -5446,10 +5868,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Dcat0nsjtGO/",
-        "tarih": "2026-08-24T09:14:23+00:00"
+        "tarih": "2026-08-24T09:14:23+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:28+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-24T09:14:23+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:28+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -5461,7 +5887,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Milki",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -5509,10 +5935,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcYLDodDIur/",
-        "tarih": "2026-08-23T09:32:07+00:00"
+        "tarih": "2026-08-23T09:32:07+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:44+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-23T09:32:07+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:44+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -5524,7 +5954,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Bal",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -5571,10 +6001,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcX87aojugJ/",
-        "tarih": "2026-08-23T07:28:40+00:00"
+        "tarih": "2026-08-23T07:28:40+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:28+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-23T07:28:40+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:28+00:00",
       "yasMetni": "2 aylık",
       "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
@@ -5586,7 +6020,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Tart",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 24,
@@ -5634,10 +6068,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcVnfaSjs0i/",
-        "tarih": "2026-08-22T09:42:51+00:00"
+        "tarih": "2026-08-22T09:42:51+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:28+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-22T09:42:51+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:28+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5700,7 +6138,7 @@ window.KE_DATA = {
         "tarih": "2026-08-22T08:24:39+00:00"
       },
       "olusturma": "2026-08-22T08:24:39+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5712,7 +6150,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Prenses",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 18,
@@ -5760,10 +6198,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcVJnhqDNhp/",
-        "tarih": "2026-08-22T05:21:49+00:00"
+        "tarih": "2026-08-22T05:21:49+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:28+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-22T05:21:49+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:28+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -5826,7 +6268,7 @@ window.KE_DATA = {
         "tarih": "2026-08-21T07:16:44+00:00"
       },
       "olusturma": "2026-08-21T07:16:44+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -5893,7 +6335,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T10:49:19+00:00"
       },
       "olusturma": "2026-08-20T10:49:19+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
@@ -5954,7 +6396,7 @@ window.KE_DATA = {
         "tarih": "2026-08-20T05:50:38+00:00"
       },
       "olusturma": "2026-08-20T05:50:38+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -6017,7 +6459,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:32:12+00:00"
       },
       "olusturma": "2026-08-17T13:32:12+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "4 aylık",
       "yasMetniEn": "4 months old",
       "yasGrubu": "yavru",
@@ -6082,7 +6524,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T13:15:38+00:00"
       },
       "olusturma": "2026-08-17T13:15:38+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
@@ -6145,7 +6587,7 @@ window.KE_DATA = {
         "tarih": "2026-08-17T05:42:35+00:00"
       },
       "olusturma": "2026-08-17T05:42:35+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1,5 yaşında",
       "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
@@ -6157,7 +6599,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Tripod",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 12,
@@ -6204,10 +6646,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/Da5MopZDDxH/",
-        "tarih": "2026-07-17T12:18:04+00:00"
+        "tarih": "2026-07-17T12:18:04+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:55+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-16T19:49:12+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:55+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -6266,7 +6712,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T09:19:28+00:00"
       },
       "olusturma": "2026-08-16T09:19:28+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -6329,7 +6775,7 @@ window.KE_DATA = {
         "tarih": "2026-08-16T05:44:00+00:00"
       },
       "olusturma": "2026-08-16T05:44:00+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "5 yaşında",
       "yasMetniEn": "5 years old",
       "yasGrubu": "yetiskin",
@@ -6392,7 +6838,7 @@ window.KE_DATA = {
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "5 aylık",
       "yasMetniEn": "5 months old",
       "yasGrubu": "yavru",
@@ -6404,7 +6850,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Lily",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Gönüllü geçici yuva",
       "cins": "Border Terrier",
       "yasAy": 42,
@@ -6456,10 +6902,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcBtuaZDOAE/",
-        "tarih": "2026-08-14T16:12:31+00:00"
+        "tarih": "2026-08-14T16:12:31+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:33+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-14T16:12:31+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:33+00:00",
       "yasMetni": "3,5 yaşında",
       "yasMetniEn": "3.5 years old",
       "yasGrubu": "yetiskin",
@@ -6471,7 +6921,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Coconut",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 12,
@@ -6523,10 +6973,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DcBfsLHDpaS/",
-        "tarih": "2026-08-14T14:09:53+00:00"
+        "tarih": "2026-08-14T14:09:53+00:00",
+        "yuvalanma": {
+          "tarih": "2026-10-10T15:34:33+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-08-14T14:09:53+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:33+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -6587,7 +7041,7 @@ window.KE_DATA = {
         "tarih": "2026-08-13T10:55:54+00:00"
       },
       "olusturma": "2026-08-13T10:55:54+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "1 yaşında",
       "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
@@ -6648,7 +7102,7 @@ window.KE_DATA = {
         "tarih": "2026-08-12T11:53:07+00:00"
       },
       "olusturma": "2026-08-12T11:53:07+00:00",
-      "guncelleme": "2026-10-09T19:10:38+00:00",
+      "guncelleme": "2026-10-10T15:34:04+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
