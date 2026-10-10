@@ -24,6 +24,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 GUNLUK_SINIR = 350
+# Sağlayıcı, planda yazmayan kayan 1 saatlik bir limit uyguluyor (10.10.2026'da
+# ~160 istekte 403 "reached requests limit"; pencereden çıkınca kendiliğinden
+# açıldı). Altında kalmak için saatte en fazla SAATLIK_SINIR istek; dolarsa
+# en eski istek pencereden çıkana kadar beklenir (en fazla BEKLEME_UST sn).
+SAATLIK_SINIR = 120
+BEKLEME_UST = 75 * 60
+_SAAT = 60 * 60
 KOTA_PATH = Path(__file__).resolve().parent / "rapidapi_kota.json"
 _GUN = 24 * 60 * 60
 
@@ -80,6 +87,17 @@ def izin_al(kategori: str | None = None) -> None:
         _kaydet(durum)
         raise KotaAsildi(f"RapidAPI günlük sınırı doldu ({kullanilan(durum)}/{GUNLUK_SINIR}); "
                          f"istek gönderilmedi. Sıfırlanma: {_saat(durum['pencereBitis'])}")
+    simdi = time.time()
+    son_saat = [t for t in durum.get("sonSaat", []) if t > simdi - _SAAT]
+    if len(son_saat) >= SAATLIK_SINIR:
+        bekle = min(son_saat) + _SAAT - simdi + 1
+        if bekle > BEKLEME_UST:
+            raise KotaAsildi(f"Saatlik sınır ({SAATLIK_SINIR}) dolu; {int(bekle)} sn beklemek gerekirdi.")
+        print(f"  … saatlik sınır ({SAATLIK_SINIR}) dolu, {int(bekle)} sn bekleniyor")
+        time.sleep(bekle)
+        simdi = time.time()
+        son_saat = [t for t in son_saat if t > simdi - _SAAT]
+    durum["sonSaat"] = son_saat + [int(simdi)]
     durum["bizimSayac"] = durum.get("bizimSayac", 0) + 1
     if kategori:
         kat = durum.setdefault("kategoriler", {})
