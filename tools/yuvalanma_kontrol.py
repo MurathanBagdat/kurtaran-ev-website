@@ -115,8 +115,12 @@ def calistir(rapid_get, hesap_pk: dict[str, str], api_key: str,
     sonuc = {"isaretlenen": [], "bulunamayan": [], "sayfa": {}, "ucretsiz": {},
              "tamamlandi": {}, "hata": None}
 
+    # Daha önce otomatik "yuvalandı" yapılıp panelden geri "yuva arıyor"a
+    # alınmış ilanlar (kaynak.yuvalanma dolu) yeniden işaretlenmez: ekibin
+    # elle verdiği karar caption'daki ibareden önce gelir.
     hedefler_tum = [a for a in hayvanlar
-                    if a.get("durum") == "yuva-ariyor" and (a.get("kaynak") or {}).get("gonderiId")]
+                    if a.get("durum") == "yuva-ariyor" and (a.get("kaynak") or {}).get("gonderiId")
+                    and not (a.get("kaynak") or {}).get("yuvalanma")]
     hesaplar = [h for h in hesap_pk if any(a["kaynak"].get("hesap") == h for a in hedefler_tum)]
 
     for sira, hesap in enumerate(hesaplar):

@@ -6,12 +6,15 @@
    Gerekli jeton: fine-grained PAT — yalnızca bu repo, Contents: Read/Write
    (+ Instagram senkronu için Actions: Read/Write).
 
+   Kapı kipi (admin.kurtaranev.org, cloudflare/admin/_worker.js): jeton
+   tarayıcıya hiç gelmez. Ekip ortak şifreyle /kapi/giris'e girer; istekler
+   aynı adresteki /kapi/gh/… vekiline gider, jetonu kapı ekler.
+
    tools/animals.py'deki normalize/save mantığının JS portunu içerir; şema
    assets/data/sema.json'dan gelir (animals.py her kayıtta yeniden üretir). */
 (function () {
   'use strict';
 
-  var API = 'https://api.github.com';
 
   /* ---------------------------------------------------------------------- */
   /* Yardımcılar                                                             */
@@ -174,26 +177,30 @@
       if (parcalar.length > 1) ayar.repo = parcalar[0];
     }
 
+    var KAPI = !!window.KE_KAPI;                  // admin.js /kapi/durum ile belirler
+    var API = KAPI ? location.origin + '/kapi/gh' : 'https://api.github.com';
     var jeton = '';
     var repoYol = '/repos/' + ayar.sahip + '/' + ayar.repo;
     var IZINLI_FOTO = { 'image/jpeg': '.jpg', 'image/png': '.png', 'image/webp': '.webp' };
 
     function gh(yol, secenekler) {
       secenekler = secenekler || {};
+      var basliklar = KAPI
+        ? { 'X-KE-Kapi': '1', 'Content-Type': 'application/json' }
+        : { Authorization: 'Bearer ' + jeton, Accept: 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28' };
       return fetch(API + yol, {
         method: secenekler.method || 'GET',
-        headers: {
-          Authorization: 'Bearer ' + jeton,
-          Accept: 'application/vnd.github+json',
-          'X-GitHub-Api-Version': '2022-11-28'
-        },
+        credentials: 'same-origin',
+        headers: basliklar,
         body: secenekler.body ? JSON.stringify(secenekler.body) : undefined
       }).then(function (r) {
         if (r.status === 204) return {};
         return r.json().catch(function () { return {}; }).then(function (govde) {
           if (!r.ok) {
             var mesaj = govde.message || ('GitHub hatası (' + r.status + ')');
-            if (r.status === 401) mesaj = 'Jeton geçersiz ya da süresi dolmuş.';
+            if (r.status === 401) mesaj = KAPI ? (govde.message || 'Oturum süresi doldu, yeniden giriş yapın.')
+              : 'Jeton geçersiz ya da süresi dolmuş.';
             if (r.status === 403 && /rate limit/i.test(mesaj)) mesaj = 'GitHub istek sınırına takıldı, biraz bekleyin.';
             if (r.status === 403 && /Resource not accessible/i.test(govde.message || '')) {
               mesaj = 'Jetonun bu işlem için yetkisi yok (Contents ve Actions izinlerini kontrol edin).';
@@ -300,10 +307,28 @@
     return {
       ayar: ayar,
 
+      kapi: KAPI,
+
+      /* Kapı kipinde argüman ortak şifredir; boşsa mevcut oturum denenir. */
       girisYap: function (yeniJeton) {
-        jeton = String(yeniJeton || '').trim();
-        if (!jeton) return Promise.reject(new Error('Jeton boş olamaz.'));
-        return gh(repoYol).then(function (repo) {
+        var deger = String(yeniJeton || '').trim();
+        var on;
+        if (KAPI) {
+          on = !deger ? Promise.resolve() : fetch('/kapi/giris', {
+            method: 'POST', credentials: 'same-origin',
+            headers: { 'Content-Type': 'application/json', 'X-KE-Kapi': '1' },
+            body: JSON.stringify({ sifre: deger })
+          }).then(function (r) {
+            return r.json().catch(function () { return {}; }).then(function (d) {
+              if (!r.ok) throw new Error(d.hata || ('Giriş yapılamadı (' + r.status + ')'));
+            });
+          });
+        } else {
+          jeton = deger;
+          if (!jeton) return Promise.reject(new Error('Jeton boş olamaz.'));
+          on = Promise.resolve();
+        }
+        return on.then(function () { return gh(repoYol); }).then(function (repo) {
           if (repo.permissions && !repo.permissions.push) {
             throw new Error('Bu jetonun repoya yazma izni yok (Contents: Read and write gerekli).');
           }
@@ -311,7 +336,13 @@
         });
       },
 
-      cikis: function () { jeton = ''; },
+      cikis: function () {
+        jeton = '';
+        if (KAPI) {
+          fetch('/kapi/cikis', { method: 'POST', credentials: 'same-origin',
+            headers: { 'X-KE-Kapi': '1' } }).catch(function () {});
+        }
+      },
 
       hayvanlarYukle: hayvanlarYukle,
 

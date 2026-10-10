@@ -75,12 +75,27 @@
   /* Yerel sunucu yok → GitHub kipi. Şema statik dosyadan gelir. */
   function githubBaslat() {
     if (!window.KE_GH) return cevrimdisiCiz();
-    gh = window.KE_GH();
-    fetch('assets/data/sema.json', { cache: 'no-store' })
+    /* admin.kurtaranev.org'da şifreli kapı var mı? (cloudflare/admin/_worker.js) */
+    var kapiDurumu = null;
+    fetch('kapi/durum', { cache: 'no-store', credentials: 'same-origin' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
+      .then(function (d) {
+        if (d && d.kapi) { window.KE_KAPI = true; kapiDurumu = d; }
+        gh = window.KE_GH();
+        return fetch('assets/data/sema.json', { cache: 'no-store' });
+      })
       .then(function (r) { if (!r.ok) throw new Error('yok'); return r.json(); })
       .then(function (s) {
         sema = s;
         mod = 'github';
+        if (kapiDurumu) {
+          if (!kapiDurumu.girisli) return kapiGirisCiz();
+          return gh.girisYap('')
+            .then(function () { return gh.hayvanlarYukle(); })
+            .then(function (liste) { hayvanlar = liste; panelCiz(); })
+            .catch(function () { kapiGirisCiz(); });
+        }
         var kayitli = localStorage.getItem(GH_ANAHTAR) || sessionStorage.getItem(GH_ANAHTAR);
         if (kayitli) {
           return gh.girisYap(kayitli)
@@ -141,6 +156,33 @@
           return api('hayvanlar');
         })
         .then(function (d) { hayvanlar = d.hayvanlar; panelCiz(); })
+        .catch(function (err) { durum.textContent = err.message; });
+    });
+  }
+
+  /* Kapı kipi girişi — ekibin ortak şifresi (jeton Cloudflare'de durur). */
+  function kapiGirisCiz() {
+    kok.innerHTML =
+      '<div class="container">' +
+        '<form class="login" id="giris-form">' +
+          '<h1>Yönetim paneli</h1>' +
+          '<p>İlan eklemek, düzenlemek ve silmek için ekip şifresiyle giriş yapın.</p>' +
+          '<div class="field">' +
+            '<label for="sifre">Şifre</label>' +
+            '<input id="sifre" type="password" autocomplete="current-password" required autofocus>' +
+          '</div>' +
+          '<button class="btn" type="submit">Giriş yap <span aria-hidden="true">→</span></button>' +
+          '<p class="form-status" role="status" id="giris-durum"></p>' +
+        '</form>' +
+      '</div>';
+
+    document.getElementById('giris-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var durum = document.getElementById('giris-durum');
+      durum.textContent = 'Kontrol ediliyor…';
+      gh.girisYap(document.getElementById('sifre').value)
+        .then(function () { return gh.hayvanlarYukle(); })
+        .then(function (liste) { hayvanlar = liste; panelCiz(); })
         .catch(function (err) { durum.textContent = err.message; });
     });
   }
@@ -587,7 +629,7 @@
       gh.cikis();
       localStorage.removeItem(GH_ANAHTAR);
       sessionStorage.removeItem(GH_ANAHTAR);
-      githubGirisCiz();
+      if (gh.kapi) kapiGirisCiz(); else githubGirisCiz();
       return;
     }
     api('cikis', { method: 'POST', body: {} }).catch(function () {});
