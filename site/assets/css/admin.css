@@ -89,17 +89,11 @@
 }
 .modal__head .modal__title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-/* Türkçe / İngilizce metin kipi */
-.dil-sekme { display: inline-flex; border: var(--border) solid var(--navy); flex: none; }
-.dil-sekme button {
-  border: 0; background: var(--white); color: var(--navy);
-  font: inherit; font-size: .85rem; font-weight: 700; padding: .45rem .9rem; cursor: pointer;
-}
-.dil-sekme button + button { border-left: var(--border) solid var(--navy); }
-.dil-sekme button[aria-pressed="true"] { background: var(--navy); color: var(--white); }
+/* İlan metinleri: Türkçe | İngilizce yan yana */
+.metin-cift { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; margin-bottom: 18px; }
+.metin-cift .field { min-width: 0; }
 .kip-not { font-size: .85rem; opacity: .75; margin: 0 0 18px; }
 .fieldset__grid .kip-not { margin: 0; }
-.field-ref { font-style: italic; }
 
 .modal__title { font-family: var(--serif); font-size: 1.7rem; }
 .modal__close { border: 0; background: none; font-size: 1.8rem; line-height: 1; cursor: pointer; padding: 0 .3rem; }
@@ -192,9 +186,8 @@
   .fieldset__grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 620px) {
-  .modal__head { flex-wrap: wrap; padding: 14px 16px; }
-  .modal__head .dil-sekme { order: 3; width: 100%; }
-  .dil-sekme button { flex: 1; }
+  .modal__head { padding: 14px 16px; }
+  .metin-cift { grid-template-columns: 1fr; gap: 12px; }
   .modal__body { padding: 18px 16px; }
   .modal__foot { padding: 12px 16px; }
 }
