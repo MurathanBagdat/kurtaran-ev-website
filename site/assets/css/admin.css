@@ -58,35 +58,56 @@
 .btn-mini--danger:hover { background: var(--orange); color: var(--navy); }
 
 /* --- düzenleme kipi ------------------------------------------------------- */
+/* Panel ekrana sabit yükseklikte oturur; yalnızca gövde kayar. Başlık ve alt
+   çubuk kayan içeriğin üstüne binmez (eskiden kipin kendisi kayıyordu ve
+   içerik başlığın üstünden / kaydet çubuğunun altından görünüyordu). */
 .modal[hidden] { display: none; }
 .modal {
   position: fixed; inset: 0; z-index: 200;
-  display: grid; place-items: start center;
-  padding: 28px 16px;
+  display: grid; place-items: center;
+  padding: 24px 16px;
   background: rgba(24, 54, 83, .55);
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .modal__panel {
   width: min(920px, 100%);
+  max-height: calc(100vh - 48px);
+  max-height: calc(100dvh - 48px);
+  display: flex; flex-direction: column;
   background: var(--cream);
   border: var(--rule) solid var(--navy);
   box-shadow: 10px 10px 0 rgba(24, 54, 83, .35);
 }
+.modal__panel > form { display: flex; flex-direction: column; flex: 1; min-height: 0; }
 
 .modal__head {
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-  padding: 20px 26px; border-bottom: var(--border) solid var(--navy);
-  background: var(--cream-warm); position: sticky; top: 0; z-index: 1;
+  flex: none;
+  display: flex; align-items: center; gap: 1rem;
+  padding: 18px 26px; border-bottom: var(--border) solid var(--navy);
+  background: var(--cream-warm);
 }
+.modal__head .modal__title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Türkçe / İngilizce metin kipi */
+.dil-sekme { display: inline-flex; border: var(--border) solid var(--navy); flex: none; }
+.dil-sekme button {
+  border: 0; background: var(--white); color: var(--navy);
+  font: inherit; font-size: .85rem; font-weight: 700; padding: .45rem .9rem; cursor: pointer;
+}
+.dil-sekme button + button { border-left: var(--border) solid var(--navy); }
+.dil-sekme button[aria-pressed="true"] { background: var(--navy); color: var(--white); }
+.kip-not { font-size: .85rem; opacity: .75; margin: 0 0 18px; }
+.fieldset__grid .kip-not { margin: 0; }
+.field-ref { font-style: italic; }
 
 .modal__title { font-family: var(--serif); font-size: 1.7rem; }
 .modal__close { border: 0; background: none; font-size: 1.8rem; line-height: 1; cursor: pointer; padding: 0 .3rem; }
-.modal__body { padding: 26px; }
+.modal__body { padding: 26px; overflow-y: auto; flex: 1; min-height: 0; }
 .modal__foot {
+  flex: none;
   display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
-  padding: 18px 26px; border-top: var(--border) solid var(--navy); background: var(--cream-warm);
-  position: sticky; bottom: 0;
+  padding: 16px 26px; border-top: var(--border) solid var(--navy); background: var(--cream-warm);
 }
 
 /* --- form ----------------------------------------------------------------- */
@@ -169,4 +190,11 @@
 
 @media (max-width: 620px) {
   .fieldset__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .modal__head { flex-wrap: wrap; padding: 14px 16px; }
+  .modal__head .dil-sekme { order: 3; width: 100%; }
+  .dil-sekme button { flex: 1; }
+  .modal__body { padding: 18px 16px; }
+  .modal__foot { padding: 12px 16px; }
 }
