@@ -93,9 +93,34 @@ jobs:
             git push
           fi
 
+  # Panelden kayıt (push) sonrası: Türkçesi olup İngilizcesi boş kalan metinleri
+  # çevirir (tools/translate_en.py yalnızca eksik alanları doldurur; elle yazılmış
+  # İngilizceye dokunmaz). Eksik yoksa model çağrılmaz.
+  ceviri:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Eksik İngilizce metinleri çevir
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python3 tools/translate_en.py
+      - name: Değişiklik varsa commit'le
+        run: |
+          git config user.name "kurtaranev-bot"
+          git config user.email "actions@github.com"
+          git add site/assets/data
+          if git diff --cached --quiet; then
+            echo "Çevrilecek metin yok."
+          else
+            git commit -m "Çeviri: eksik İngilizce ilan metinleri ($(date -u +%Y-%m-%d))"
+            git pull --rebase --quiet origin main
+            git push
+          fi
+
   deploy:
-    # sync atlansa da (push tetiklemesi) çalışsın; sync başarısızsa çalışmasın
-    needs: sync
+    # sync/ceviri atlansa da çalışsın; biri başarısızsa çalışmasın
+    needs: [sync, ceviri]
     if: ${{ !failure() && !cancelled() }}
     runs-on: ubuntu-latest
     environment:

@@ -54,6 +54,7 @@ def main() -> int:
         return 0
 
     cevrilen = 0
+    degisen: set = set()
     for kayit in yapilacak:
         etiket = f"{kayit.get('isim')} ({kayit.get('id')})"
         eksik = eksik_alanlar(kayit) or list(animals.EN_ESLESME)
@@ -65,7 +66,12 @@ def main() -> int:
         except RuntimeError as e:
             print(f"  ! {etiket}: çevrilemedi — {e}")
             continue
-        kayit.update(en)
+        # Yalnızca EKSİK alanlar yazılır: elle yazılmış İngilizce korunur.
+        # (--hepsi verilirse hepsi yeniden çevrilir.)
+        hedef_alanlar = (list(animals.EN_ESLESME.values()) if args.hepsi or not eksik_alanlar(kayit)
+                         else [animals.EN_ESLESME[tr] for tr in eksik])
+        kayit.update({alan: en.get(alan) for alan in hedef_alanlar})
+        degisen.add(kayit.get("id"))
         cevrilen += 1
         print(f"  ✓ {etiket}: {', '.join(eksik)}")
 
@@ -75,7 +81,9 @@ def main() -> int:
 
     if cevrilen:
         # normalize + JSON/JS/şema dosyalarını birlikte tazeler
-        animals.save([animals.normalize(h)[0] for h in hayvanlar])
+        # Yalnızca çevrilen kayıtlar normalize edilir; diğerlerinin "guncelleme"
+        # zamanı boşuna değişmesin.
+        animals.save([animals.normalize(h)[0] if h.get("id") in degisen else h for h in hayvanlar])
         print(f"{cevrilen} kayıt güncellendi → animals.json, animals.js")
     return 0 if cevrilen == len(yapilacak) else 1
 
