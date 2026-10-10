@@ -60,6 +60,8 @@ def main() -> int:
         konu = "⚠️ Kurtaran Ev senkron HATASI"
     elif "yeni ilan eklendi" in rapor:
         konu = "🐾 Kurtaran Ev — yeni ilanlar sitede"
+    elif "yuvalandı olarak işaretlendi" in rapor:
+        konu = "🏡 Kurtaran Ev — yuvalanan ilanlar güncellendi"
     else:
         konu = "Kurtaran Ev — günlük rapor (yeni ilan yok)"
     return 0 if send_email(konu, _duz_metin(rapor)) else 1

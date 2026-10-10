@@ -11,6 +11,8 @@
 # kendi sınırımızı (günde 350) uygular ve sınır dolunca istek göndermez.
 # Kullanım tools/rapidapi_kota.json'da tutulur ve her çalıştırmada
 # commit'lenir. Hesap başına son 20 gönderi (2 sayfa) → çalıştırma başına ~4 istek.
+# Ardından yuvalanma kontrolü (tools/yuvalanma_kontrol.py): yuva arayan
+# ilanların caption'larında "YUVALANDI" aranır; kendi alt bütçesi günde 200.
 #
 # Elle tetikleme: GitHub > Actions > bu workflow > "Run workflow".
 # Lokal düzenlemeler main'e push'lanınca da site yeniden yayınlanır.
@@ -68,14 +70,14 @@ jobs:
           git config user.name "kurtaranev-bot"
           git config user.email "actions@github.com"
           git add site/assets/data site/assets/img/animals tools/gorulen_gonderiler.json
-          git add tools/rapidapi_kota.json 2>/dev/null || true
+          git add tools/rapidapi_kota.json tools/yuvalanma_kontrol.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Değişiklik yok, commit gerekmedi."
           else
             if git diff --cached --quiet -- site tools/gorulen_gonderiler.json; then
               git commit -m "RapidAPI kota kaydı ($(date -u +%Y-%m-%d))"
             else
-              git commit -m "Instagram senkronu: yeni ilanlar ($(date -u +%Y-%m-%d))"
+              git commit -m "Instagram senkronu: ilanlar güncellendi ($(date -u +%Y-%m-%d))"
             fi
             git push
           fi
