@@ -106,6 +106,29 @@ Durumlar: yalnızca `yuva-ariyor` (varsayılan) ve `yuvalandi`.
 
 ---
 
+## İlan modu (Wix entegrasyonu) — ilanlar.kurtaranev.org
+
+Canlı Wix sitesinden (kurtaranev.org) açılan, yalnızca ilanları gösteren sayfalar:
+`site/ilanlar/{kopekler,kediler,ilan}.html` ve `site/ilanlar/en/` (üreten: `tools/ilanlar.py`,
+`build.py` çağırır). Menü/alt bilgi yoktur; ✕ ilgili Wix sayfasına döner, "Sahiplenme formunu
+doldur" Wix'in kullandığı Google Formunu açar. Wix sayfa ve form adresleri `tools/ilanlar.py`
+içindeki `WIX` sözlüğündedir.
+
+Yayın: **Cloudflare Pages** projesi `kurtaranev-ilanlar`, `cloudflare/ilanlar/_worker.js` ile
+GitHub Pages'in önünde süzgeçli bir kapıdır: yalnızca ilan sayfalarını, gereken CSS/JS'i, ilan
+verisini ve fotoğrafları geçirir; prototipin diğer sayfaları o adreste 404'tür. İçerik GitHub
+Pages'ten okunduğu için günlük senkron kendiliğinden yansır. Yalnızca `_worker.js` değişirse:
+
+```bash
+wrangler pages deploy cloudflare/ilanlar --project-name kurtaranev-ilanlar --branch main
+```
+
+Alan adı: Wix DNS'te `ilanlar` → `kurtaranev-ilanlar.pages.dev` CNAME kaydı.
+
+**Küçük fotoğraflar:** `tools/kucuk_foto.py` her fotoğrafın 720 px WebP kopyasını
+`site/assets/img/animals-k/` altına üretir (Pillow gerekir; CI'da günlük çalışır). Kartlar ve
+küçük resimler bunları kullanır, kopya yoksa orijinale düşer.
+
 ## Yerel sunucu ve yönetim paneli
 
 ```bash

@@ -63,13 +63,24 @@ jobs:
           python3 tools/notify_mail.py sync_rapor.md
           rm -f sync_rapor.md
 
+      # Yeni fotoğrafların küçük (WebP) kopyaları — kartlar bunları kullanır
+      - uses: actions/setup-python@v5
+        if: ${{ always() }}
+        with:
+          python-version: "3.12"
+      - name: Küçük fotoğraflar
+        if: ${{ always() }}
+        run: |
+          python -m pip install --quiet pillow
+          python tools/kucuk_foto.py
+
       # always(): senkron hata verse de kota sayacı kaybolmasın
       - name: Değişiklik varsa commit'le
         if: ${{ always() }}
         run: |
           git config user.name "kurtaranev-bot"
           git config user.email "actions@github.com"
-          git add site/assets/data site/assets/img/animals tools/gorulen_gonderiler.json
+          git add site/assets/data site/assets/img/animals site/assets/img/animals-k tools/gorulen_gonderiler.json
           git add tools/rapidapi_kota.json tools/yuvalanma_kontrol.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Değişiklik yok, commit gerekmedi."
