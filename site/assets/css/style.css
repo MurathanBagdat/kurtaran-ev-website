@@ -1332,7 +1332,7 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
 
 .animal-card__media {
   position: relative;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;      /* Instagram dikey formatı — fotoğrafların ~%95'i kırpılmadan oturur */
   overflow: hidden;
   border-bottom: var(--border) solid var(--navy);
   background: var(--cream-warm);
