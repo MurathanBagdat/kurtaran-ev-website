@@ -53,6 +53,7 @@ def _pencereyi_tazele(durum: dict, simdi: float) -> dict:
         durum["bizimSayac"] = 0
         durum["kalan"] = None
         durum["kategoriler"] = {}
+        durum["saglayiciLimiti"] = False
     return durum
 
 
@@ -71,6 +72,10 @@ def izin_al(kategori: str | None = None) -> None:
     `kategori` verilirse istek o kategorinin günlük sayacına da yazılır
     (ör. "yuvalanma" — kendi alt bütçesi olan işler için)."""
     durum = _pencereyi_tazele(_yukle(), time.time())
+    if durum.get("saglayiciLimiti"):
+        _kaydet(durum)
+        raise KotaAsildi("API sağlayıcısı bu pencerede 'reached requests limit' döndürdü; "
+                         f"istek gönderilmedi. Sıfırlanma: {_saat(durum['pencereBitis'])}")
     if kullanilan(durum) >= GUNLUK_SINIR:
         _kaydet(durum)
         raise KotaAsildi(f"RapidAPI günlük sınırı doldu ({kullanilan(durum)}/{GUNLUK_SINIR}); "
@@ -79,6 +84,14 @@ def izin_al(kategori: str | None = None) -> None:
     if kategori:
         kat = durum.setdefault("kategoriler", {})
         kat[kategori] = kat.get(kategori, 0) + 1
+    _kaydet(durum)
+
+
+def saglayici_limitine_takildi() -> None:
+    """Sağlayıcı (RapidAPI kotasından bağımsız) kendi limitini bildirdi: bu
+    pencerenin geri kalanında istek gönderme — her deneme boşa harcanır."""
+    durum = _pencereyi_tazele(_yukle(), time.time())
+    durum["saglayiciLimiti"] = True
     _kaydet(durum)
 
 

@@ -520,10 +520,13 @@ def _rapid_get(path: str, params: dict, api_key: str, kategori: str | None = Non
                 veri = json.loads(r.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             rapidapi_kota.yanit_isle(e.headers)
+            govde = e.read().decode('utf-8', 'replace')
+            if e.code == 403 and "reached requests limit" in govde:
+                rapidapi_kota.saglayici_limitine_takildi()
             if e.code == 429 and deneme < 3:
                 time.sleep(5)
                 continue
-            raise RuntimeError(f"Scraper API {e.code}: {e.read().decode('utf-8', 'replace')[:200]}") from e
+            raise RuntimeError(f"Scraper API {e.code}: {govde[:200]}") from e
         except urllib.error.URLError as e:
             raise RuntimeError(f"Ağ hatası: {e.reason}") from e
         if isinstance(veri, dict) and veri.get("message") == "Too many requests" and deneme < 3:
