@@ -1,0 +1,59 @@
+{
+  "hedefTarih": "2026-04-11",
+  "hesaplar": {
+    "kurtaranev_kopekleri": {
+      "imlec": "3810161118153589521_42022514534",
+      "enEski": "2026-01-15T17:35:13+00:00",
+      "bitti": true
+    },
+    "kurtaranev_kedileri": {
+      "imlec": "3870660038323106323_23565664304",
+      "enEski": "2026-04-08T08:57:34+00:00",
+      "bitti": true
+    }
+  },
+  "parcalar": [
+    {
+      "zaman": "2026-10-11T13:15:37+00:00",
+      "hesap": "kurtaranev_kopekleri",
+      "enEski": "2026-07-04T09:06:35+00:00",
+      "bitti": false
+    },
+    {
+      "zaman": "2026-10-11T13:18:11+00:00",
+      "hesap": "kurtaranev_kedileri",
+      "enEski": "2026-07-12T10:18:39+00:00",
+      "bitti": false
+    },
+    {
+      "zaman": "2026-10-11T13:23:34+00:00",
+      "hesap": "kurtaranev_kopekleri",
+      "enEski": "2026-05-25T14:33:59+00:00",
+      "bitti": false
+    },
+    {
+      "zaman": "2026-10-11T13:27:56+00:00",
+      "hesap": "kurtaranev_kedileri",
+      "enEski": "2026-06-08T08:13:32+00:00",
+      "bitti": false
+    },
+    {
+      "zaman": "2026-10-11T13:28:32+00:00",
+      "hesap": "kurtaranev_kopekleri",
+      "enEski": "2026-01-15T17:35:13+00:00",
+      "bitti": true
+    },
+    {
+      "zaman": "2026-10-11T13:31:22+00:00",
+      "hesap": "kurtaranev_kedileri",
+      "enEski": "2026-05-06T11:18:12+00:00",
+      "bitti": false
+    },
+    {
+      "zaman": "2026-10-11T13:34:43+00:00",
+      "hesap": "kurtaranev_kedileri",
+      "enEski": "2026-04-08T08:57:34+00:00",
+      "bitti": true
+    }
+  ]
+}

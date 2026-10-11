@@ -175,6 +175,10 @@ def _cagir(sistem: str, kullanici: str, sema: dict, sema_adi: str,
     govde = json.dumps({
         "model": model,
         "temperature": 0,
+        # Sınır verilmezse OpenRouter modelin azami çıktısını bakiyeden ayırır;
+        # bakiye azalınca 402 döner (Eylül 2026). Kardeş ilanı + İngilizce + modelin
+        # akıl yürütme token'ları; 4000 uzun bir gönderide yetmedi (finish_reason: length).
+        "max_tokens": 8000,
         "messages": [
             {"role": "system", "content": sistem},
             {"role": "user", "content": kullanici or ""},

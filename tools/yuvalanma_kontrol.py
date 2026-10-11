@@ -19,6 +19,10 @@ Dernek bir hayvan yuvalanınca gönderinin caption'ını düzenleyip en başa
     kelimeler bilerek yakalanmaz.
   * Akışta bulunamayan (silinmiş/arşivlenmiş) gönderiler otomatik
     değiştirilmez; raporda "kontrol edin" diye listelenir.
+  * Kademeli tarama: her gün yalnızca son YAKIN_GUN günün ilanları (akışın
+    ilk birkaç sayfası). Daha eski ilanlar (ör. geçmişten doldurulanlar) için
+    derin tarama haftada bir, DERIN_GUN'de; yarım kalmış derin tarama varsa
+    (imleç kayıtlı) ertesi gün de derin devam edilir.
 """
 
 from __future__ import annotations
@@ -26,7 +30,7 @@ from __future__ import annotations
 import json
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import animals
@@ -37,6 +41,8 @@ GUNLUK_BUTCE = 200
 KATEGORI = "yuvalanma"
 DURUM_PATH = Path(__file__).resolve().parent / "yuvalanma_kontrol.json"
 SAYFA_BEKLEME = 2  # sn, hız limiti
+YAKIN_GUN = 60    # her gün kontrol edilen ilanların yaş sınırı (gönderi tarihi)
+DERIN_GUN = 6     # tüm ilanların tarandığı gün (datetime.weekday(): 6 = pazar, UTC)
 
 _DESEN = re.compile(r"\byuvalandi(lar)?\b|\byuvasina kavustu|\byuvasini buldu"
                     r"|\bsahiplendirildi(ler)?\b")
@@ -101,26 +107,34 @@ def _isaretlenecekler(kayitlar: list[dict], caption: str) -> list[dict]:
 
 
 def calistir(rapid_get, hesap_pk: dict[str, str], api_key: str,
-             onbellek: dict[str, list[dict]] | None = None, kuru: bool = False) -> dict:
+             onbellek: dict[str, list[dict]] | None = None, kuru: bool = False,
+             derin: bool | None = None) -> dict:
     """Taramayı yapar, yuvalananları işaretler (kuru değilse) ve özet döner.
 
     rapid_get(path, params, api_key, kategori) — instagram_sync._rapid_get
     hesap_pk — {kullanıcı adı: Instagram pk}
     onbellek — {pk: [o çalıştırmada zaten çekilmiş /feed yanıtları]}
+    derin — True: tüm ilanlar; False: son YAKIN_GUN gün; None: takvime göre
     """
     onbellek = onbellek or {}
     hayvanlar = animals.load()
     durum = _yukle()
     imlecler = durum.setdefault("imlec", {})
+    if derin is None:
+        derin = (datetime.now(timezone.utc).weekday() == DERIN_GUN
+                 or any(imlecler.values()))
+    sinir = 0 if derin else time.time() - YAKIN_GUN * 24 * 60 * 60
     sonuc = {"isaretlenen": [], "bulunamayan": [], "sayfa": {}, "ucretsiz": {},
-             "tamamlandi": {}, "hata": None}
+             "tamamlandi": {}, "hata": None, "derin": derin}
 
     # Daha önce otomatik "yuvalandı" yapılıp panelden geri "yuva arıyor"a
     # alınmış ilanlar (kaynak.yuvalanma dolu) yeniden işaretlenmez: ekibin
     # elle verdiği karar caption'daki ibareden önce gelir.
     hedefler_tum = [a for a in hayvanlar
                     if a.get("durum") == "yuva-ariyor" and (a.get("kaynak") or {}).get("gonderiId")
-                    and not (a.get("kaynak") or {}).get("yuvalanma")]
+                    and not (a.get("kaynak") or {}).get("yuvalanma")
+                    # Hafta içi yalnızca yakın tarihli ilanlar (tarihsizler derin günde)
+                    and (derin or (_ts(a["kaynak"].get("tarih")) or 0) >= sinir)]
     hesaplar = [h for h in hesap_pk if any(a["kaynak"].get("hesap") == h for a in hedefler_tum)]
 
     for sira, hesap in enumerate(hesaplar):
@@ -241,7 +255,8 @@ def ozet_satiri(sonuc: dict) -> str:
     ucretsiz = sum(sonuc["ucretsiz"].values())
     tamam = all(sonuc["tamamlandi"].values()) if sonuc["tamamlandi"] else True
     durum = "tam tarama tamamlandı" if tamam else "bütçe doldu, kalan sayfalar yarın taranacak"
-    return (f"Yuvalanma kontrolü: bugün {sonuc['harcanan']} / {GUNLUK_BUTCE} istek "
+    kapsam = "tüm ilanlar, haftalık derin tarama" if sonuc.get("derin") else f"son {YAKIN_GUN} günün ilanları"
+    return (f"Yuvalanma kontrolü ({kapsam}): bugün {sonuc['harcanan']} / {GUNLUK_BUTCE} istek "
             f"({sayfalar or 'aktif ilan yok'}"
             + (f"; {ucretsiz} sayfa senkrondan ücretsiz" if ucretsiz else "")
             + f") · {durum}")
