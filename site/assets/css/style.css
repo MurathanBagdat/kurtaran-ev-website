@@ -1315,11 +1315,12 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
 /* --- kart ızgarası -------------------------------------------------------- */
 .animal-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
 }
 
 .animal-card {
+  min-width: 0;            /* iOS Safari: fotoğrafın 720 px'lik doğal genişliği sütunu açmasın */
   display: flex;
   flex-direction: column;
   border: var(--border) solid var(--navy);
@@ -1338,7 +1339,7 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
   background: var(--cream-warm);
 }
 
-.animal-card__media img { width: 100%; height: 100%; object-fit: cover; }
+.animal-card__media img { display: block; width: 100%; height: 100%; min-width: 0; object-fit: cover; }
 
 /* fotoğrafsız ilanlar için yer tutucu */
 .animal-card__placeholder {
@@ -1597,14 +1598,14 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
    22. Katalog — duyarlılık
    ========================================================================== */
 @media (max-width: 1100px) {
-  .animal-grid { grid-template-columns: repeat(2, 1fr); }
+  .animal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .filters__row > * { border-bottom: 1px solid var(--navy-15); }
   .animal-detail { grid-template-columns: 1fr; gap: 40px; }
   .animal-detail__name { font-size: 2.8rem; }
 }
 
 @media (max-width: 760px) {
-  .animal-grid { grid-template-columns: 1fr; gap: 24px; }
+  .animal-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .filters__row { grid-template-columns: 1fr 1fr; }
   .spec-grid { grid-template-columns: 1fr; }
   .animal-detail__name { font-size: 2.2rem; }
@@ -1633,6 +1634,7 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
   font-size: .85rem;
   font-weight: 700;
   cursor: pointer;
+  touch-action: manipulation;   /* iOS: hızlı iki dokunuş sayfayı yakınlaştırmasın */
 }
 
 .view-toggle__btn + .view-toggle__btn { border-left: var(--border) solid var(--navy); }
@@ -1640,7 +1642,7 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
 .view-toggle__btn[aria-pressed="true"] { background: var(--navy); color: var(--white); }
 
 /* --- ızgara görünümü: küçük kartlar, ekranda daha çok ilan -------------------- */
-.animal-grid--izgara { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.animal-grid--izgara { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
 .animal-grid--izgara .animal-card__tags,
 .animal-grid--izgara .animal-card__cta { display: none; }
 .animal-grid--izgara .animal-card__body { padding: 12px 14px 14px; gap: .3rem; }
@@ -1650,11 +1652,11 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
 .animal-grid--izgara .animal-card__placeholder svg { width: 40px; height: 40px; }
 
 @media (max-width: 1100px) {
-  .animal-grid--izgara { grid-template-columns: repeat(3, 1fr); }
+  .animal-grid--izgara { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 760px) {
-  .animal-grid--izgara { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .animal-grid--izgara { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .animal-grid--izgara .animal-card__body { padding: 9px 10px 11px; gap: .2rem; }
   .animal-grid--izgara .animal-card__name { font-size: 1.1rem; }
   .animal-grid--izgara .animal-card__facts { font-size: .76rem; }
