@@ -300,12 +300,20 @@
 
   if (temizle) temizle.addEventListener('click', temizleFiltreler);
 
-  /* Görünüm: liste (büyük kartlar) | ızgara (küçük kartlar, mobilde 2 sütun).
-     Seçim tarayıcıda hatırlanır; depolama kapalıysa her açılışta liste. */
+  /* Görünüm: ızgara (küçük kartlar) | liste (büyük kartlar).
+     Masaüstünde (> 760 px) hep ızgara, düğme gizli (CSS). Mobilde varsayılan
+     ızgara; seçim tarayıcıda hatırlanır. */
   var GORUNUM_ANAHTARI = 'ke-katalog-gorunum';
   var gorunumDugmeleri = kok.querySelectorAll('[data-view]');
+  var mobil = window.matchMedia('(max-width: 760px)');
+
+  function kayitliGorunum() {
+    try { return localStorage.getItem(GORUNUM_ANAHTARI) === 'liste' ? 'liste' : 'izgara'; }
+    catch (e) { return 'izgara'; }
+  }
 
   function gorunumUygula(g) {
+    if (!mobil.matches) g = 'izgara';
     izgara.classList.toggle('animal-grid--izgara', g === 'izgara');
     gorunumDugmeleri.forEach(function (b) {
       b.setAttribute('aria-pressed', String(b.getAttribute('data-view') === g));
@@ -315,13 +323,15 @@
   gorunumDugmeleri.forEach(function (b) {
     b.addEventListener('click', function () {
       var g = b.getAttribute('data-view');
-      gorunumUygula(g);
       try { localStorage.setItem(GORUNUM_ANAHTARI, g); } catch (e) { /* depolama kapalı */ }
+      gorunumUygula(g);
     });
   });
 
-  try { gorunumUygula(localStorage.getItem(GORUNUM_ANAHTARI) || 'liste'); }
-  catch (e) { gorunumUygula('liste'); }
+  function mobilDegisti() { gorunumUygula(kayitliGorunum()); }
+  if (mobil.addEventListener) mobil.addEventListener('change', mobilDegisti);
+  else if (mobil.addListener) mobil.addListener(mobilDegisti);   /* eski Safari */
+  mobilDegisti();
 
   /* Örnek kayıt uyarısı — yalnızca örnek kayıt varsa göster */
   var uyari = document.querySelector('[data-ornek-uyari]');

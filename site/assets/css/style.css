@@ -1613,11 +1613,11 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
   .results-bar { margin-bottom: 16px; }
 }
 
-/* --- görünüm düğmesi (liste | ızgara) -------------------------------------- */
+/* --- görünüm düğmesi (ızgara | liste) — yalnızca mobilde ------------------- */
 .results-bar { align-items: center; }
 
 .view-toggle {
-  display: inline-flex;
+  display: none;
   border: var(--border) solid var(--navy);
   background: var(--white);
 }
@@ -1665,6 +1665,7 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
   .animal-grid--izgara .animal-card__placeholder span { display: none; }
   .animal-grid--izgara .animal-card__facts em { display: none; }   /* (tahmini) satırı kaydırıyor */
   .animal-grid--izgara .animal-card:hover { transform: none; box-shadow: none; }
+  .view-toggle { display: inline-flex; }
   .view-toggle__btn { padding: .4rem .6rem; }
 }
 
