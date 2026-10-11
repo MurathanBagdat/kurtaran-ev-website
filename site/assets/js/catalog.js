@@ -300,6 +300,29 @@
 
   if (temizle) temizle.addEventListener('click', temizleFiltreler);
 
+  /* Görünüm: liste (büyük kartlar) | ızgara (küçük kartlar, mobilde 2 sütun).
+     Seçim tarayıcıda hatırlanır; depolama kapalıysa her açılışta liste. */
+  var GORUNUM_ANAHTARI = 'ke-katalog-gorunum';
+  var gorunumDugmeleri = kok.querySelectorAll('[data-view]');
+
+  function gorunumUygula(g) {
+    izgara.classList.toggle('animal-grid--izgara', g === 'izgara');
+    gorunumDugmeleri.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-view') === g));
+    });
+  }
+
+  gorunumDugmeleri.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var g = b.getAttribute('data-view');
+      gorunumUygula(g);
+      try { localStorage.setItem(GORUNUM_ANAHTARI, g); } catch (e) { /* depolama kapalı */ }
+    });
+  });
+
+  try { gorunumUygula(localStorage.getItem(GORUNUM_ANAHTARI) || 'liste'); }
+  catch (e) { gorunumUygula('liste'); }
+
   /* Örnek kayıt uyarısı — yalnızca örnek kayıt varsa göster */
   var uyari = document.querySelector('[data-ornek-uyari]');
   if (uyari) uyari.hidden = !veri.some(function (h) { return h.ornek && h.tur === TUR; });

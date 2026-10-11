@@ -1612,6 +1612,60 @@ a.tile:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--nav
   .results-bar { margin-bottom: 16px; }
 }
 
+/* --- görünüm düğmesi (liste | ızgara) -------------------------------------- */
+.results-bar { align-items: center; }
+
+.view-toggle {
+  display: inline-flex;
+  border: var(--border) solid var(--navy);
+  background: var(--white);
+}
+
+.view-toggle__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .75rem;
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  font: inherit;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.view-toggle__btn + .view-toggle__btn { border-left: var(--border) solid var(--navy); }
+.view-toggle__btn:hover { background: var(--cream-warm); }
+.view-toggle__btn[aria-pressed="true"] { background: var(--navy); color: var(--white); }
+
+/* --- ızgara görünümü: küçük kartlar, ekranda daha çok ilan -------------------- */
+.animal-grid--izgara { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.animal-grid--izgara .animal-card__tags,
+.animal-grid--izgara .animal-card__cta { display: none; }
+.animal-grid--izgara .animal-card__body { padding: 12px 14px 14px; gap: .3rem; }
+.animal-grid--izgara .animal-card__name { font-size: 1.25rem; }
+.animal-grid--izgara .animal-card__facts { font-size: .82rem; gap: .1rem .45rem; }
+.animal-grid--izgara .animal-card__facts li { gap: .35rem; }
+.animal-grid--izgara .animal-card__placeholder svg { width: 40px; height: 40px; }
+
+@media (max-width: 1100px) {
+  .animal-grid--izgara { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .animal-grid--izgara { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .animal-grid--izgara .animal-card__body { padding: 9px 10px 11px; gap: .2rem; }
+  .animal-grid--izgara .animal-card__name { font-size: 1.1rem; }
+  .animal-grid--izgara .animal-card__facts { font-size: .76rem; }
+  .animal-grid--izgara .animal-card__badges { top: 7px; left: 7px; right: 7px; gap: 4px; }
+  .animal-grid--izgara .badge { font-size: .58rem; padding: .2rem .4rem; }
+  .animal-grid--izgara .animal-card__placeholder span { display: none; }
+  .animal-grid--izgara .animal-card__facts em { display: none; }   /* (tahmini) satırı kaydırıyor */
+  .animal-grid--izgara .animal-card:hover { transform: none; box-shadow: none; }
+  .view-toggle__btn { padding: .4rem .6rem; }
+}
+
 /* ---------------------------------------------------------------------------
    İlan modu (site/ilanlar/) — Wix sitesinden açılan yalın ilan sayfaları
    --------------------------------------------------------------------------- */
