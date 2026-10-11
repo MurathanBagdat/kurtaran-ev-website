@@ -1,4 +1,714 @@
 {
+  "DW-9gSPDCJg": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:34:43+00:00"
+  },
+  "DX1j5yejLi2": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:31:51+00:00"
+  },
+  "DX87R0eMNSc": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:31:48+00:00"
+  },
+  "DXBopTUjMcC": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:34:39+00:00"
+  },
+  "DXBzBPXDD48": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:34:26+00:00"
+  },
+  "DXER1AyDIpo": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:34:22+00:00"
+  },
+  "DXG7ptbCGDy": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:28:32+00:00"
+  },
+  "DXJY3lBDNpJ": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:34:10+00:00"
+  },
+  "DXJw2A8DGsv": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:34:00+00:00"
+  },
+  "DXLtnAkjKuD": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:33:48+00:00"
+  },
+  "DXOkBCgDDqo": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:33:37+00:00"
+  },
+  "DXQ-3AtjCA4": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:33:13+00:00"
+  },
+  "DXQ5uMRjFAd": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:33:27+00:00"
+  },
+  "DXT0ETtDHuf": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:33:05+00:00"
+  },
+  "DXWCEQUjJwb": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:33:03+00:00"
+  },
+  "DXYihwSDGp-": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:32:53+00:00"
+  },
+  "DX_sjQrjCEE": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:31:22+00:00"
+  },
+  "DXbPoOUjOED": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:32:41+00:00"
+  },
+  "DXcLKkXjE3K": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:32:41+00:00"
+  },
+  "DXduTh1jFm7": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:32:41+00:00"
+  },
+  "DXgdmpDDNQ9": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:32:32+00:00"
+  },
+  "DXljkkTDMPr": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:32:21+00:00"
+  },
+  "DXrKqlejJiX": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:32:12+00:00"
+  },
+  "DXtd6_ODElZ": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:32:03+00:00"
+  },
+  "DY1bFPpjDo-": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:29:19+00:00"
+  },
+  "DY1hhLvDgyY": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:23:26+00:00"
+  },
+  "DY4TSBPDom-": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:23:16+00:00"
+  },
+  "DY4Y4mWDN13": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:29:10+00:00"
+  },
+  "DY4jUwmjAKx": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:23:04+00:00"
+  },
+  "DY7QH9xjKZG": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:23:01+00:00"
+  },
+  "DY9ceBhDk8X": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:23:01+00:00"
+  },
+  "DYHRe3hDA8f": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:31:11+00:00"
+  },
+  "DYKPoF_jGxA": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:31:02+00:00"
+  },
+  "DYMhcPnDESK": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:30:50+00:00"
+  },
+  "DYO5L2iDr7i": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:28:29+00:00"
+  },
+  "DYPl9LQDA25": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:30:43+00:00"
+  },
+  "DYUAK5Hsol7": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:30:40+00:00"
+  },
+  "DYWovzIDG0k": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:30:24+00:00"
+  },
+  "DYZIBOojKVK": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:30:20+00:00"
+  },
+  "DYb2ppLDARD": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:30:01+00:00"
+  },
+  "DYhTI-dDCoJ": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:29:53+00:00"
+  },
+  "DYjbSYGDPvO": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:29:53+00:00"
+  },
+  "DYjpESODENO": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:29:53+00:00"
+  },
+  "DYov0jtjNtx": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:29:45+00:00"
+  },
+  "DYrbCPtjFXz": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:29:45+00:00"
+  },
+  "DYrhd3-DmIT": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:28:14+00:00"
+  },
+  "DYtlhvojI5L": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:29:45+00:00"
+  },
+  "DYw-D11DDP6": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:23:34+00:00"
+  },
+  "DYwgzXdjPP-": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:29:38+00:00"
+  },
+  "DYzIpTLDLd_": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:29:30+00:00"
+  },
+  "DZ1g0clDLtV": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:20:26+00:00"
+  },
+  "DZ2IITYjDVW": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:26:02+00:00"
+  },
+  "DZ4iTPoDKk7": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:25:48+00:00"
+  },
+  "DZ5ESKisFTl": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:25:48+00:00"
+  },
+  "DZ7LwJVDl-Z": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:20:17+00:00"
+  },
+  "DZ9UQMlDnp8": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:20:08+00:00"
+  },
+  "DZ9rni5DFYk": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:25:45+00:00"
+  },
+  "DZCeLAkDtCA": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:22:52+00:00"
+  },
+  "DZCvsHWDpAt": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:22:52+00:00"
+  },
+  "DZFO-ATjG8s": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:28:58+00:00"
+  },
+  "DZHX_2jjBk1": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:28:58+00:00"
+  },
+  "DZKOuB0DBon": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:28:49+00:00"
+  },
+  "DZKniJyDDPQ": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:22:40+00:00"
+  },
+  "DZNLCWyDL0P": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:22:32+00:00"
+  },
+  "DZO_KXHDCtB": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:22:22+00:00"
+  },
+  "DZPVCYJDIlr": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:28:35+00:00"
+  },
+  "DZRqCQuDJRO": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:28:35+00:00"
+  },
+  "DZRtrDnjnG2": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:22:12+00:00"
+  },
+  "DZSZ5qKjGWe": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:21:54+00:00"
+  },
+  "DZUIDeVDmZC": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:21:38+00:00"
+  },
+  "DZUVpjFDEes": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:27:56+00:00"
+  },
+  "DZW9WfEDgGp": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:21:38+00:00"
+  },
+  "DZW9iCpDM0n": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:27:46+00:00"
+  },
+  "DZW_v4Ajptw": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:21:23+00:00"
+  },
+  "DZXSMmCjm9_": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:21:23+00:00"
+  },
+  "DZZg8_IjF2S": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:27:36+00:00"
+  },
+  "DZ_-vv5DvFw": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:19:58+00:00"
+  },
+  "DZb8kGejrq1": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:21:23+00:00"
+  },
+  "DZcGMXFDMlw": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:27:15+00:00"
+  },
+  "DZfVd4mjGEN": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:21:17+00:00"
+  },
+  "DZheer1jIjc": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:27:15+00:00"
+  },
+  "DZhn_B2jY07": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:21:07+00:00"
+  },
+  "DZmh9G_jOvy": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:27:15+00:00"
+  },
+  "DZmvFT9Du_8": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:21:07+00:00"
+  },
+  "DZpCD0bjJI6": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:27:03+00:00"
+  },
+  "DZr4NLijmyI": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:20:57+00:00"
+  },
+  "DZrhDf2jEj_": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:27:03+00:00"
+  },
+  "DZt_NFiDFaz": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:26:51+00:00"
+  },
+  "DZuQvKejNx6": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:26:51+00:00"
+  },
+  "DZuVCP1jpb5": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:20:47+00:00"
+  },
+  "DZupE5_sMXr": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:26:39+00:00"
+  },
+  "DZw_ktkjm9U": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:20:47+00:00"
+  },
+  "DZwlfCsDDQT": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:26:30+00:00"
+  },
+  "DZzYk7LDD3I": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:26:13+00:00"
+  },
+  "DZzi1GoDCBY": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:26:13+00:00"
+  },
+  "Da-Mfe9jghi": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:13:52+00:00"
+  },
+  "Da-o2lyjN04": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:17:45+00:00"
+  },
+  "Da21BWSDMpY": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:14:16+00:00"
+  },
+  "Da4jrMBDlql": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:14:04+00:00"
+  },
+  "Da7xNsmDDny": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:17:45+00:00"
+  },
+  "Da8Kd4dDBCh": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:13:52+00:00"
+  },
+  "DaAQzi3jCcs": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:25:41+00:00"
+  },
+  "DaC4pCFDn0l": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:19:45+00:00"
+  },
+  "DaCyNUyjJEW": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:25:28+00:00"
+  },
+  "DaFHux4DPlT": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:25:18+00:00"
+  },
+  "DaFLPNajgyz": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:19:31+00:00"
+  },
+  "DaGG1e7sZVp": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:25:18+00:00"
+  },
+  "DaHiM4FDINi": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:25:09+00:00"
+  },
+  "DaKRtSrDkYo": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:19:20+00:00"
+  },
+  "DaM7iJAjIab": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:25:09+00:00"
+  },
+  "DaN0yCwjEPC": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:19:11+00:00"
+  },
+  "DaP-ZwKjpSj": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:19:00+00:00"
+  },
+  "DaPa5TNDgGE": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:19:11+00:00"
+  },
+  "DaPmR7NDGzq": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:25:03+00:00"
+  },
+  "DaSIjFLjOhK": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:24:50+00:00"
+  },
+  "DaSvxuZjCW-": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:18:51+00:00"
+  },
+  "DaVDCTlDJKX": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:24:50+00:00"
+  },
+  "DaVPsdvDrIB": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:18:41+00:00"
+  },
+  "DaXYY5fjmgx": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:15:37+00:00"
+  },
+  "DaaT4SNDBYJ": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:24:50+00:00"
+  },
+  "DaaUdzvjrfc": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:15:37+00:00"
+  },
+  "Dac5WiOMWIZ": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:24:34+00:00"
+  },
+  "Dacq7kFjPHc": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:24:41+00:00"
+  },
+  "Dacx735DtqD": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:15:26+00:00"
+  },
+  "Dae_wNWjJv9": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:24:31+00:00"
+  },
+  "DahZonzjozl": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:15:16+00:00"
+  },
+  "DahjB94DGA-": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:24:23+00:00"
+  },
+  "DahrrloDsHj": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:15:07+00:00"
+  },
+  "Dak0acRDJte": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:24:15+00:00"
+  },
+  "DakIBHbjrxN": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:15:07+00:00"
+  },
+  "Dam0uh_jPh1": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:24:07+00:00"
+  },
+  "Dam6gZvDoqx": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:14:59+00:00"
+  },
+  "DanJP3ZsqbD": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:23:54+00:00"
+  },
+  "DapltonDAQi": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:23:49+00:00"
+  },
+  "DarzWC7jgHe": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:14:59+00:00"
+  },
+  "DasG_uIjKvf": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:18:10+00:00"
+  },
+  "Dau6616jPzC": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:18:10+00:00"
+  },
+  "DavEaxiDNwg": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:14:46+00:00"
+  },
+  "DaxTLV8DF42": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:18:10+00:00"
+  },
+  "DaxusObDO0b": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:14:37+00:00"
+  },
+  "Daz4JPXDp1k": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:14:25+00:00"
+  },
+  "Daz9p5CjDKR": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:17:58+00:00"
+  },
   "Db-ksfzDHMf": {
     "hesap": "kurtaranev_kedileri",
     "karar": "ilan",
@@ -9,6 +719,36 @@
     "karar": "ilan değil",
     "tarih": "2026-08-16T20:11:58+00:00"
   },
+  "Db08_mTo8eJ": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "yuvalanma duyurusu",
+    "tarih": "2026-10-11T13:12:21+00:00"
+  },
+  "Db0xxNmokYS": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:15:55+00:00"
+  },
+  "Db2jhLuDnEH": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:12:15+00:00"
+  },
+  "Db3KaLGDJ9A": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:12:03+00:00"
+  },
+  "Db5PupvDuR_": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:12:03+00:00"
+  },
+  "Db5YRr2jMyb": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:15:52+00:00"
+  },
   "Db5lMFDI4Z8": {
     "hesap": "kurtaranev_kedileri",
     "karar": "ilan değil",
@@ -18,6 +758,166 @@
     "hesap": "kurtaranev_kopekleri",
     "karar": "ilan",
     "tarih": "2026-08-16T20:11:58+00:00"
+  },
+  "DbAfCcXDBRo": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:17:31+00:00"
+  },
+  "DbAtaTCDt9B": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:13:37+00:00"
+  },
+  "DbC9q-yjLVM": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:17:31+00:00"
+  },
+  "DbFj-z3jeDB": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:13:37+00:00"
+  },
+  "DbFpS5-jGw4": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:17:31+00:00"
+  },
+  "DbI6YLGDEg7": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:17:16+00:00"
+  },
+  "DbIXBsDjrVn": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:13:26+00:00"
+  },
+  "DbKqf5zDkWE": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:13:26+00:00"
+  },
+  "DbKwgvLDL7Y": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:17:02+00:00"
+  },
+  "DbN82LXDI2y": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:13:18+00:00"
+  },
+  "DbNds6jDEye": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:16:47+00:00"
+  },
+  "DbP0KX1DSTK": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:13:18+00:00"
+  },
+  "DbTOkTYjMpD": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:13:06+00:00"
+  },
+  "DbVjbvUDA9w": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:16:37+00:00"
+  },
+  "DbWAUzIDm1p": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:13:06+00:00"
+  },
+  "DbX65j-Djgx": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:12:57+00:00"
+  },
+  "DbaZ800jp8m": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:12:54+00:00"
+  },
+  "DbakTr0jJOL": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:16:37+00:00"
+  },
+  "Dbcr7SkjifE": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:12:54+00:00"
+  },
+  "DbcsqO7jKs_": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:16:37+00:00"
+  },
+  "DbfKIW-jOuC": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:12:54+00:00"
+  },
+  "DbiGIPlDA0p": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:16:37+00:00"
+  },
+  "DbiO4HUDp7v": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:12:54+00:00"
+  },
+  "Dbk1Jz-Dmin": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:12:54+00:00"
+  },
+  "Dbk3sTIjHcB": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:16:27+00:00"
+  },
+  "Dbm8AykjD76": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:16:11+00:00"
+  },
+  "DbqKG_tjnWQ": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:12:42+00:00"
+  },
+  "DbsWCLODBb_": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan değil",
+    "tarih": "2026-10-11T13:16:11+00:00"
+  },
+  "DbtKN8MDhTw": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:12:42+00:00"
+  },
+  "DbxY9y_jvLD": {
+    "hesap": "kurtaranev_kopekleri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:12:30+00:00"
+  },
+  "Dbxt-09jOKG": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "geriye: yuvalanmış",
+    "tarih": "2026-10-11T13:16:07+00:00"
+  },
+  "Dbz-guRDJUy": {
+    "hesap": "kurtaranev_kedileri",
+    "karar": "ilan",
+    "tarih": "2026-10-11T13:16:07+00:00"
   },
   "Dc-uti6DGss": {
     "hesap": "kurtaranev_kedileri",

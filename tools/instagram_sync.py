@@ -248,7 +248,7 @@ def fotograf_indir(url: str, dosya_adi: str) -> str | None:
         return None
 
 
-def gonderi_fotograflari(gonderi: dict, ig_id: str) -> list[str]:
+def gonderi_fotograflari(gonderi: dict, ig_id: str, en_fazla: int = 6) -> list[str]:
     yollar = []
     adaylar = []
     if gonderi.get("media_type") == "CAROUSEL_ALBUM":
@@ -260,7 +260,7 @@ def gonderi_fotograflari(gonderi: dict, ig_id: str) -> list[str]:
     elif gonderi.get("thumbnail_url"):
         adaylar.append(gonderi["thumbnail_url"])
 
-    for i, url in enumerate(adaylar[:6]):
+    for i, url in enumerate(adaylar[:en_fazla]):
         uzanti = ".jpg"
         yol = fotograf_indir(url, f"ig-{ig_id}-{i}{uzanti}")
         if yol:
@@ -289,7 +289,7 @@ AI_ALANLAR = ("isim", "tur", "cinsiyet", "yasAy", "kiloKg", "cins", "boyut", "re
 
 
 def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool = True,
-                   ai: bool = False) -> tuple[list[dict], str | None]:
+                   ai: bool = False, en_fazla_foto: int = 6) -> tuple[list[dict], str | None]:
     """Bir gönderiden 0, 1 ya da birden çok (kardeş ilanı) kayıt üretir.
 
     (kayitlar, atlama_nedeni) döner: gönderi ilan değilse kayıtlar boş,
@@ -326,7 +326,7 @@ def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool =
 
     fotograflar = None
     if fotograf_cek:
-        fotograflar = gonderi_fotograflari(gonderi, gonderi.get("id", "x"))
+        fotograflar = gonderi_fotograflari(gonderi, gonderi.get("id", "x"), en_fazla_foto)
 
     for sira, kayit in enumerate(kayitlar):
         kayit["tur"] = tur or kayit.get("tur") or "kopek"  # hesap türü biliniyorsa o kazanır
@@ -687,7 +687,7 @@ def kip_rapid(args) -> int:
     # "YUVALANDI" var mı? Senkronun çektiği sayfalar yeniden kullanılır.
     kontrol = None
     if not args.yuvalanma_yok:
-        kontrol = _yuvalanma_calistir(api_key, kuru=args.kuru)
+        kontrol = _yuvalanma_calistir(api_key, kuru=args.kuru, derin=args.derin)
         if kontrol["hata"]:
             hatalar.append(f"Yuvalanma kontrolü: {kontrol['hata']}")
 
@@ -699,10 +699,10 @@ def kip_rapid(args) -> int:
     return 1 if hatalar and not toplam and not (kontrol and kontrol["isaretlenen"]) else 0
 
 
-def _yuvalanma_calistir(api_key: str, kuru: bool = False) -> dict:
+def _yuvalanma_calistir(api_key: str, kuru: bool = False, derin: bool | None = None) -> dict:
     print("\n▸ Yuvalanma kontrolü (caption başında YUVALANDI)")
     kontrol = yuvalanma_kontrol.calistir(_rapid_get, RAPID_PK, api_key,
-                                         onbellek=SAYFA_ONBELLEGI, kuru=kuru)
+                                         onbellek=SAYFA_ONBELLEGI, kuru=kuru, derin=derin)
     for k in kontrol["isaretlenen"]:
         print(f"  🏡 {k.get('isim')} — yuvalandı olarak işaretlendi"
               + (" (kuru: yazılmadı)" if kuru else ""))
@@ -720,7 +720,7 @@ def kip_yuvalanma(args) -> int:
     if not api_key:
         print("! RapidAPI anahtarı yok.")
         return 2
-    kontrol = _yuvalanma_calistir(api_key, kuru=args.kuru)
+    kontrol = _yuvalanma_calistir(api_key, kuru=args.kuru, derin=args.derin)
     print(f"\n{rapidapi_kota.ozet()}")
     return 1 if kontrol["hata"] else 0
 
@@ -912,6 +912,8 @@ def main() -> int:
                     help="Yalnızca yuva arayan ilanların yuvalanma kontrolünü çalıştır")
     ap.add_argument("--yuvalanma-yok", action="store_true",
                     help="--rapid: yuvalanma kontrolünü atla")
+    ap.add_argument("--derin", action="store_true", default=None,
+                    help="Yuvalanma kontrolünde (takvimden bağımsız) tüm ilanları tara")
     ap.add_argument("--guncelle", action="store_true",
                     help="--rapid: zaten kayıtlı gönderileri de yeniden işle")
     args = ap.parse_args()
