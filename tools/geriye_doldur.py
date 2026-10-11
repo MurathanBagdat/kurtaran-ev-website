@@ -11,12 +11,16 @@ ilanlarını parça parça (varsayılan 30 gün) geriye doğru ekler:
   python3 tools/geriye_doldur.py               # sonraki 30 günü işle
   python3 tools/geriye_doldur.py --gun 45      # parça boyu
   python3 tools/geriye_doldur.py --durum       # nerede kaldık
+  python3 tools/geriye_doldur.py --hedef 2026-01-01   # daha geriye uzat
 
   * Başlangıç noktası: hesabın daha önce görülmüş en eski gönderisi. Feed
     imleci ({media_pk}_{hesap_pk}) gönderinin kısa kodundan hesaplanır;
     yeni gönderileri yeniden gezmek için istek harcanmaz.
   * Kaldığı yer tools/geriye_doldurma.json'da; her çalıştırma oradan bir
-    parça daha geriye iner, HEDEF_TARIH'e varınca o hesap biter.
+    parça daha geriye iner, hedef tarihe varınca o hesap biter. Hedef
+    --hedef ile daha geriye çekilirse hesaplar en eski GÖRÜLMÜŞ gönderiden
+    yeniden başlar (kayıtlı imleç hedefin ötesine geçmiş olabilir; aradaki
+    gönderiler görülmeden atlanmıştı). Görülenler zaten atlanır.
   * Caption'ın başında YUVALANDI yazan gönderiler AI'ya gönderilmez,
     fotoğrafı indirilmez; yalnızca "görüldü" kaydedilir. AI de yuvalandı
     derse kayıt eklenmez — yalnızca hâlâ yuva arayanlar gelir.
@@ -24,6 +28,9 @@ ilanlarını parça parça (varsayılan 30 gün) geriye doğru ekler:
     sıraladığı için eski ilanlar en üstte değil, tarihlerindeki yerde durur.
   * İlan başına en fazla FOTO_SAYISI fotoğraf (depolama: GitHub Pages 1 GB).
   * Kayıtlar kaynak.geriye = true ile işaretlenir.
+  * Aynı hayvan daha yeni bir gönderide varsa (yeni ilanı ya da YUVALANDI
+    gönderisi; bkz. tools/mukerrer.py) eski gönderiden ilan çıkmaz. Önce
+    tools/gonderi_dizini.py ile dizin güncellenmeli.
   * RapidAPI: "geriye" kategorisi, günde en fazla --butce istek (genel
     350/gün ve 120/saat sınırları rapidapi_kota.py'de geçerli).
 """
@@ -40,11 +47,13 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import animals  # noqa: E402
+import gonderi_dizini  # noqa: E402
 import instagram_sync as sync  # noqa: E402
+import mukerrer  # noqa: E402
 import rapidapi_kota  # noqa: E402
 from yuvalanma_kontrol import baslikta_yuvalandi, sonraki_imlec, _caption  # noqa: E402
 
-HEDEF_TARIH = "2026-04-11"   # 6 ay geriye (11.10.2026'da karar verildi)
+HEDEF_TARIH = "2026-04-11"   # ilk hedef: 6 ay geriye (11.10.2026); güncel hedef durum dosyasında
 FOTO_SAYISI = 3
 KATEGORI = "geriye"
 DURUM_PATH = Path(__file__).resolve().parent / "geriye_doldurma.json"
@@ -108,9 +117,11 @@ def _isle(item: dict, hesap: str, tur: str, args, gorulen: dict, sonuc: dict) ->
         kayitlar = []
         print(f"  🏡 {tarih} yuvalanmış, atlandı: {gonderi['caption'][:50]!r}")
     else:
+        # Fotoğraflar ancak kayıt kesinleşince indirilir (yuvalanmış / tekrar
+        # paylaşım çıkan gönderilerin fotoğrafları repoda yetim kalıyordu).
         kayitlar, neden = sync.gonderiyi_isle(
-            gonderi, tur, hesap, fotograf_cek=not args.kuru,
-            ai=args._ai and not args.kuru, en_fazla_foto=FOTO_SAYISI)
+            gonderi, tur, hesap, fotograf_cek=False, ai=args._ai and not args.kuru,
+            ai_zorunlu=not args.kuru)
         karar = neden or "ilan"
         if any(k["durum"] == "yuvalandi" for k in kayitlar):
             # Ayrıştırıcı yuvalandı dedi (ör. ibare ilk iki satırda değil)
@@ -118,10 +129,22 @@ def _isle(item: dict, hesap: str, tur: str, args, gorulen: dict, sonuc: dict) ->
             print(f"  🏡 {tarih} yuvalanmış (ayrıştırıcı), atlandı")
         elif not kayitlar:
             print(f"  – {tarih} atlandı ({neden}): {gonderi['caption'][:50]!r}")
+        mevcut = animals.load() + sonuc["kayitlar"]
+        tekrar = [(k, mukerrer.daha_yeni_eslesme(k, sonuc["dizin"], mevcut)) for k in kayitlar]
+        for k, e in tekrar:
+            if e:
+                print(f"  ⟳ {tarih} {k.get('isim')} daha yeni gönderide var ({e[1]}, {e[0]}), atlandı")
+        kayitlar = [k for k, e in tekrar if not e]
+        if tekrar and not kayitlar:
+            karar = "geriye: tekrar paylaşım"
+        fotograflar = (sync.gonderi_fotograflari(gonderi, gonderi["id"], FOTO_SAYISI)
+                       if kayitlar and not args.kuru else [])
         for k in kayitlar:
             k["kaynak"]["geriye"] = True
+            k["fotograflar"] = list(fotograflar)
             print(f"  ✓ {tarih} {k.get('isim') or 'İsimsiz'} — {sync._ozet(k)}")
     sonuc["yuvalanmis" if karar == "geriye: yuvalanmış" else
+          "tekrar" if karar == "geriye: tekrar paylaşım" else
           "ilan" if kayitlar else "diger"] += 1
     sonuc["kayitlar"].extend(kayitlar)
     if not args.kuru:
@@ -131,9 +154,9 @@ def _isle(item: dict, hesap: str, tur: str, args, gorulen: dict, sonuc: dict) ->
 
 def hesap_parcasi(hesap: str, tur: str, durum_h: dict, args, api_key: str,
                   gorulen: dict, sonuc: dict) -> None:
-    """Hesabın akışında kaldığı yerden --gun gün (en fazla HEDEF_TARIH'e kadar) iner."""
+    """Hesabın akışında kaldığı yerden --gun gün (en fazla hedef tarihe kadar) iner."""
     pk = sync.RAPID_PK[hesap]
-    hedef = datetime.fromisoformat(HEDEF_TARIH).replace(tzinfo=timezone.utc).timestamp()
+    hedef = datetime.fromisoformat(args.hedef).replace(tzinfo=timezone.utc).timestamp()
     alt = max(hedef, datetime.fromisoformat(durum_h["enEski"]).timestamp() - args.gun * _GUN)
     print(f"\n▸ @{hesap}: {durum_h['enEski'][:10]} → {_iso(alt)[:10]}")
     sayfa = 0
@@ -169,7 +192,7 @@ def hesap_parcasi(hesap: str, tur: str, durum_h: dict, args, api_key: str,
             durum_h["imlec"] = imlec
         if not imlec or (en_eski is not None and en_eski < hedef):
             durum_h["bitti"] = True
-            print(f"  ✔ @{hesap} hedef tarihe ({HEDEF_TARIH}) ulaştı")
+            print(f"  ✔ @{hesap} hedef tarihe ({args.hedef}) ulaştı")
             break
         if en_eski is not None and en_eski < alt:
             break
@@ -185,6 +208,7 @@ def main() -> int:
     ap.add_argument("--kuru", action="store_true",
                     help="Hiçbir şey yazma; AI ve fotoğraf yok, kural tabanlı önizleme")
     ap.add_argument("--durum", action="store_true", help="Nerede kalındığını göster")
+    ap.add_argument("--hedef", help="Hedef tarihi (YYYY-AA-GG) daha geriye çek")
     args = ap.parse_args()
 
     cfg = sync.config_yukle()
@@ -194,6 +218,14 @@ def main() -> int:
     durum = _yukle()
     durum.setdefault("hedefTarih", HEDEF_TARIH)
     hesaplar = durum.setdefault("hesaplar", {})
+    if args.hedef and args.hedef < durum["hedefTarih"]:
+        print(f"Hedef {durum['hedefTarih']} → {args.hedef}; hesaplar en eski görülen gönderiden yeniden başlıyor.")
+        if args.kuru:
+            hesaplar = {}
+        else:
+            durum["hedefTarih"] = args.hedef
+            durum["hesaplar"] = hesaplar = {}
+    args.hedef = min(args.hedef or durum["hedefTarih"], durum["hedefTarih"])
     for hesap in sync.HESAPLAR:
         if hesap not in hesaplar:
             hesaplar[hesap] = _baslangic(hesap, sync.RAPID_PK[hesap], gorulen)
@@ -201,7 +233,7 @@ def main() -> int:
     if args.durum:
         for h, d in hesaplar.items():
             print(f"@{h}: {'bitti' if d['bitti'] else 'devam'} — en eski {d['enEski'][:10]}"
-                  f" (hedef {HEDEF_TARIH})")
+                  f" (hedef {args.hedef})")
         print(rapidapi_kota.ozet())
         return 0
     if not api_key:
@@ -213,7 +245,11 @@ def main() -> int:
     print("Kuru çalıştırma: hiçbir şey yazılmayacak, AI çağrılmayacak." if args.kuru
           else f"Ayrıştırıcı: AI · ilan başına en fazla {FOTO_SAYISI} fotoğraf")
 
-    sonuc = {"ilan": 0, "yuvalanmis": 0, "diger": 0, "kayitlar": [], "eklendi": 0, "sayfa": 0}
+    sonuc = {"ilan": 0, "yuvalanmis": 0, "tekrar": 0, "diger": 0, "kayitlar": [], "eklendi": 0,
+             "sayfa": 0, "dizin": gonderi_dizini.yukle()}
+    if not sonuc["dizin"]:
+        print("! Gönderi dizini yok; önce: python3 tools/gonderi_dizini.py --bas <hedef tarih>")
+        return 2
     hata = None
     for hesap, tur in sync.HESAPLAR.items():
         if (args.hesap and hesap != args.hesap) or hesaplar[hesap]["bitti"]:
@@ -235,7 +271,8 @@ def main() -> int:
 
     print(f"\nSonuç: {sonuc['ilan']} ilan gönderisi"
           + (f" → {sonuc['eklendi']} kayıt eklendi" if not args.kuru else " (kuru: eklenmedi)")
-          + f", {sonuc['yuvalanmis']} yuvalanmış, {sonuc['diger']} ilan değil · {sonuc['sayfa']} sayfa")
+          + f", {sonuc['yuvalanmis']} yuvalanmış, {sonuc['tekrar']} tekrar paylaşım,"
+          f" {sonuc['diger']} ilan değil · {sonuc['sayfa']} sayfa")
     print(rapidapi_kota.ozet())
     if not args.kuru and sonuc["eklendi"]:
         print("Sonraki adım: python tools/kucuk_foto.py (Pillow gerekir), sonra commit + PR.")

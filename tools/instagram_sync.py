@@ -289,7 +289,8 @@ AI_ALANLAR = ("isim", "tur", "cinsiyet", "yasAy", "kiloKg", "cins", "boyut", "re
 
 
 def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool = True,
-                   ai: bool = False, en_fazla_foto: int = 6) -> tuple[list[dict], str | None]:
+                   ai: bool = False, en_fazla_foto: int = 6,
+                   ai_zorunlu: bool = False) -> tuple[list[dict], str | None]:
     """Bir gönderiden 0, 1 ya da birden çok (kardeş ilanı) kayıt üretir.
 
     (kayitlar, atlama_nedeni) döner: gönderi ilan değilse kayıtlar boş,
@@ -307,6 +308,8 @@ def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool =
         try:
             sonuc = ai_parser.ai_parse(caption)
         except RuntimeError as e:
+            if ai_zorunlu:  # geriye doldurma: bozuk kayıt üretmektense dur
+                raise
             print(f"  ! AI ayrıştırılamadı, kural tabanlıya dönüldü: {e}")
         else:
             ayristirici = "ai"
