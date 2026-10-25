@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T17:36:46+00:00",
+  "guncelleme": "2026-10-25T17:40:59+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -12119,7 +12119,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Telve",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Chocolate Labrador",
       "yasAy": 18,
@@ -12169,12 +12169,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-06-01T12:14:45+00:00",
-      "guncelleme": "2026-10-25T17:20:12+00:00",
+      "guncelleme": "2026-10-25T17:40:58+00:00",
       "yasMetni": "1,5 yaşında",
-      "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "telve chocolate labrador telve yaklaşık 1,5 yaşında, dişi ve kısır. kıpır kıpır, sevgi delisi bir kız. başka köpeklerle sosyal, neşeli kızımızın ömürlük yuvasını arıyoruz. oyuncu sevecen",
-      "aramaEn": "telve chocolate labrador telve is about 1.5 years old, female, and spayed. she is a lively, affectionate girl. friendly with other dogs, we are looking for a forever home for our cheerful girl. playful affectionate"
+      "arama": "telve chocolate labrador telve yaklaşık 1,5 yaşında, dişi ve kısır. kıpır kıpır, sevgi delisi bir kız. başka köpeklerle sosyal, neşeli kızımızın ömürlük yuvasını arıyoruz. oyuncu sevecen"
     },
     {
       "id": "kopek-foxy-e65460",
