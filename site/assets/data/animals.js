@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T17:41:03+00:00",
+  "guncelleme": "2026-10-25T17:42:30+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -14923,7 +14923,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Soho",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Terrier",
       "yasAy": 54,
@@ -14973,12 +14973,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-03-10T06:36:04+00:00",
-      "guncelleme": "2026-10-25T17:20:12+00:00",
+      "guncelleme": "2026-10-25T17:42:29+00:00",
       "yasMetni": "4,5 yaşında",
-      "yasMetniEn": "4.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "soho terrier soho, 4-5 yaşlarında kısır erkek, korkak ama çok iyi huylu bir çocuk. başka köpeklerle uyumlu. i̇kinci köpek olmaya da uygun bir karakteri var. deneyimli bir yuvada daha kolay güven kazanabileceğini düşünüyoruz. biraz özenli ilgiye ihtiyacı olduğundan bir süre çok yalnız kalmayacağı bir yuva, şu aşamada onun için daha uygun olacaktır. çekingen sevecen",
-      "aramaEn": "soho terrier soho is a neutered male, around 4-5 years old. he is shy but has a very good nature. he gets along well with other dogs and has a temperament suitable to be a second dog. we believe he will build trust more easily in an experienced home. since he needs attentive care, a home where he won't be left alone for long periods would be more suitable for him at this stage. shy affectionate"
+      "arama": "soho terrier soho, 4-5 yaşlarında kısır erkek, korkak ama çok iyi huylu bir çocuk. başka köpeklerle uyumlu. i̇kinci köpek olmaya da uygun bir karakteri var. deneyimli bir yuvada daha kolay güven kazanabileceğini düşünüyoruz. biraz özenli ilgiye ihtiyacı olduğundan bir süre çok yalnız kalmayacağı bir yuva, şu aşamada onun için daha uygun olacaktır. çekingen sevecen"
     },
     {
       "id": "kedi-isimsiz-d1fb6c",
