@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-25T15:19:32+00:00",
-  "sayi": 290,
+  "guncelleme": "2026-10-25T15:20:02+00:00",
+  "sayi": 289,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -8203,69 +8203,6 @@
       "yasGrubu": "yetiskin",
       "arama": "mantı gönüllü geçici yuva mantı 3 yaşlarında, kısır dişi, ev hayatına alışık ve tuvalet eğitimi olan bir köpektir. arka ayağından operasyon geçirdi, iyileşme sürecindedir. kulak mimikleriyle çok şey anlatan, karakteristik bir çocuktur. gerektiğinde evde yalnız kalabiliyor. mantı'nın ömürlük yuvasını arıyoruz. arka ayağından operasyon geçirdi, iyileşme sürecinde. eğitimli",
       "aramaEn": "mantı foster home mantı is a spayed female dog around 3 years old who is accustomed to home life and house-trained. she underwent surgery on her hind leg and is currently recovering. she is an expressive, charming dog who communicates a lot through her ear expressions. she can stay home alone when needed. we are looking for a forever home for mantı. she underwent surgery on her hind leg and is currently in the recovery process. trained"
-    },
-    {
-      "id": "kedi-isimsiz-3759d1",
-      "tur": "kedi",
-      "isim": "İsimsiz",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 3,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "oyuncu",
-        "meraklı",
-        "sevecen"
-      ],
-      "aciklama": "Yaklaşık 2,5-3 aylık bu birbirinden güzel yavrular, güvenli ve sevgi dolu bir yuvaya kavuşmayı bekliyor. Her biri oyun oynamayı seven, meraklı ve sevgiye hasret minikler.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "playful",
-        "curious",
-        "affectionate"
-      ],
-      "aciklamaEn": "These beautiful little ones, approximately 2.5-3 months old, are waiting to find a safe and loving home. Each one is playful, curious, and eager for affection.",
-      "fotograflar": [
-        "assets/img/animals/ig-Dbk3sTIjHcB-0.jpg",
-        "assets/img/animals/ig-Dbk3sTIjHcB-1.jpg",
-        "assets/img/animals/ig-Dbk3sTIjHcB-2.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "Dbk3sTIjHcB",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/Dbk3sTIjHcB/",
-        "tarih": "2026-08-03T11:21:38+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-08-03T11:21:38+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": "3 aylık",
-      "yasMetniEn": "3 months old",
-      "yasGrubu": "yavru",
-      "arama": "i̇simsiz yaklaşık 2,5-3 aylık bu birbirinden güzel yavrular, güvenli ve sevgi dolu bir yuvaya kavuşmayı bekliyor. her biri oyun oynamayı seven, meraklı ve sevgiye hasret minikler. oyuncu meraklı sevecen",
-      "aramaEn": "i̇simsiz these beautiful little ones, approximately 2.5-3 months old, are waiting to find a safe and loving home. each one is playful, curious, and eager for affection. playful curious affectionate"
     },
     {
       "id": "kopek-nana-796dd8",
