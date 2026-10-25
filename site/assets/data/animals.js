@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:17:55+00:00",
-  "sayi": 294,
+  "guncelleme": "2026-10-25T15:18:04+00:00",
+  "sayi": 293,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -5264,61 +5264,6 @@ window.KE_DATA = {
       "yasGrubu": "yavru",
       "arama": "kömür 3 anneleriyle birlikte bir evden terk edilen kömür kardeşler'den biri. 2 aylık, kısırlaştırma şartı ile sahiplendirilecektir.",
       "aramaEn": "kömür 3 one of the kömür siblings who was abandoned from a home along with their mother. 2 months old, available for adoption on the condition of future spaying/neutering."
-    },
-    {
-      "id": "kedi-komur-4-2892b6",
-      "tur": "kedi",
-      "isim": "Kömür 4",
-      "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 2,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": false,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Anneleriyle birlikte bir evden terk edilen Kömür Kardeşler'den biri. 2 aylık, kısırlaştırma şartı ile sahiplendirilecektir.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [],
-      "aciklamaEn": "One of the Kömür siblings who was abandoned from a home along with their mother. 2 months old, available for adoption on the condition of future spaying/neutering.",
-      "fotograflar": [
-        "assets/img/animals/ig-Dc5TLFGjAf0-0.jpg",
-        "assets/img/animals/ig-Dc5TLFGjAf0-1.jpg",
-        "assets/img/animals/ig-Dc5TLFGjAf0-2.jpg",
-        "assets/img/animals/ig-Dc5TLFGjAf0-3.jpg",
-        "assets/img/animals/ig-Dc5TLFGjAf0-4.jpg",
-        "assets/img/animals/ig-Dc5TLFGjAf0-5.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "Dc5TLFGjAf0",
-        "sira": 3,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/Dc5TLFGjAf0/",
-        "tarih": "2026-09-05T06:17:59+00:00"
-      },
-      "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
-      "yasGrubu": "yavru",
-      "arama": "kömür 4 anneleriyle birlikte bir evden terk edilen kömür kardeşler'den biri. 2 aylık, kısırlaştırma şartı ile sahiplendirilecektir.",
-      "aramaEn": "kömür 4 one of the kömür siblings who was abandoned from a home along with their mother. 2 months old, available for adoption on the condition of future spaying/neutering."
     },
     {
       "id": "kopek-erik-929619",
