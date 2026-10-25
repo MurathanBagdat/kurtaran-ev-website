@@ -1562,16 +1562,18 @@ def katalog(tur: str) -> str:
     baslik = "Yuva arayan kediler" if kedi else "Yuva arayan köpekler"
     eyebrow = "Yuva Ol · Kediler" if kedi else "Yuva Ol · Köpekler"
     lead = (
-        "Sahiplendirilmeyi bekleyen kedilerimizin tamamı burada. Yaşa, cinsiyete ve "
-        "uyum durumuna göre süzebilir, ilgilendiğiniz canın ilanını açabilirsiniz."
+        "Sahiplendirilmeyi bekleyen kedilerimizin tamamı burada. Cinsiyete göre "
+        "süzebilir, ilgilendiğiniz canın ilanını açabilirsiniz."
         if kedi else
-        "Sahiplendirilmeyi bekleyen köpeklerimizin tamamı burada. Yaşa, boyuta ve "
-        "uyum durumuna göre süzebilir, ilgilendiğiniz canın ilanını açabilirsiniz."
+        "Sahiplendirilmeyi bekleyen köpeklerimizin tamamı burada. Cinsiyete ve boyuta "
+        "göre süzebilir, ilgilendiğiniz canın ilanını açabilirsiniz."
     )
     ig = IG_KEDI if kedi else IG_KOPEK
     hesap = "@kurtaranev_kedileri" if kedi else "@kurtaranev_kopekleri"
     variant = " page-hero--sky" if kedi else ""
 
+    # Kedilerde boyut verisi yok: süzgeç gizli, arama ipucunda da geçmez
+    arama_ipucu = "İsim, cinsiyet…" if kedi else "İsim, boyut, cinsiyet…"
     # Boyut süzgeci köpeklerde anlamlı; kedilerde gizli
     boyut_filtresi = "" if kedi else """
         <div class="filter">
@@ -1613,7 +1615,7 @@ def katalog(tur: str) -> str:
     <form class="filters" role="search" aria-label="İlan filtreleri" onsubmit="return false">
       <div class="filter filters__search">
         <label for="f-q">Ara</label>
-        <input id="f-q" type="search" data-filter="q" placeholder="İsim, cins, renk, karakter…">
+        <input id="f-q" type="search" data-filter="q" placeholder="{arama_ipucu}">
       </div>
 
       <div class="filters__row">
@@ -1633,32 +1635,18 @@ def katalog(tur: str) -> str:
             <option value="erkek">Erkek</option>
           </select>
         </div>
-        <div class="filter">
-          <label for="f-yas">Yaş</label>
-          <select id="f-yas" data-filter="yas">
-            <option value="">Hepsi</option>
-            <option value="yavru">Yavru (0–1 yaş)</option>
-            <option value="yetiskin">Yetişkin (1–7 yaş)</option>
-            <option value="kidemli">Kıdemli (7+ yaş)</option>
-          </select>
-        </div>{boyut_filtresi}
+{boyut_filtresi}
         <div class="filter">
           <label for="f-sirala">Sırala</label>
           <select id="f-sirala" data-filter="sirala">
-            <option value="yeni">Önce yeni eklenen</option>
-            <option value="isim">İsme göre</option>
-            <option value="yas-artan">Yaş: küçükten büyüğe</option>
-            <option value="yas-azalan">Yaş: büyükten küçüğe</option>
+            <option value="yeni">En yeni</option>
+            <option value="eski">En eski</option>
           </select>
         </div>
       </div>
 
       <div class="filters__toggles">
-        <label class="chip"><input type="checkbox" data-filter="kisir"> Kısırlaştırıldı</label>
-        <label class="chip"><input type="checkbox" data-filter="asili"> Aşıları tam</label>
-        <label class="chip"><input type="checkbox" data-filter="cocuk"> Çocuklarla uyumlu</label>
-        <label class="chip"><input type="checkbox" data-filter="kopek"> Köpeklerle uyumlu</label>
-        <label class="chip"><input type="checkbox" data-filter="kedi"> Kedilerle uyumlu</label>
+        <label class="chip" title="Engelli ve özel bakım gerektiren canları göster"><input type="checkbox" data-filter="engelli"> #engellicanlaraöncelik</label>
         <button class="filters__clear" type="button" data-clear hidden>Filtreleri temizle</button>
       </div>
     </form>

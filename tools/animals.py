@@ -75,7 +75,8 @@ FIELDS = {
     "kisir":       {"tip": "uclu",   "etiket": "Kısırlaştırıldı", "grup": "saglik"},
     "asili":       {"tip": "uclu",   "etiket": "Aşıları tam", "grup": "saglik"},
     "cipli":       {"tip": "uclu",   "etiket": "Mikroçipli", "grup": "saglik"},
-    "ozelBakim":   {"tip": "uclu",   "etiket": "Özel bakım gerekiyor", "grup": "saglik"},
+    "ozelBakim":   {"tip": "uclu",   "etiket": "Özel bakım / engelli", "grup": "saglik",
+                    "ipucu": "Evet ise ilan sitede #engellicanlaraöncelik süzgecinde görünür."},
     "saglikNotu":  {"tip": "uzunmetin", "etiket": "Sağlık notu", "grup": "saglik"},
 
     "cocuklaUyum": {"tip": "uclu",   "etiket": "Çocuklarla uyumlu", "grup": "uyum"},
