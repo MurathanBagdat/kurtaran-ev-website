@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T09:44:23+00:00",
+  "guncelleme": "2026-10-25T15:05:14+00:00",
   "sayi": 302,
   "hayvanlar": [
     {
@@ -141,7 +141,7 @@ window.KE_DATA = {
       "konum": null,
       "cins": "Maltese",
       "yasAy": 36,
-      "kiloKg": 4.0,
+      "kiloKg": 4,
       "boyut": "kucuk",
       "renk": null,
       "kisir": true,
@@ -1008,7 +1008,7 @@ window.KE_DATA = {
       "konum": "Gönüllü geçici yuva",
       "cins": null,
       "yasAy": 36,
-      "kiloKg": 12.0,
+      "kiloKg": 12,
       "boyut": "kucuk",
       "renk": null,
       "kisir": true,
@@ -1075,7 +1075,7 @@ window.KE_DATA = {
       "konum": null,
       "cins": "Maltese Terrier",
       "yasAy": 8,
-      "kiloKg": 5.0,
+      "kiloKg": 5,
       "boyut": "kucuk",
       "renk": null,
       "kisir": true,
@@ -1324,11 +1324,12 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Hazal",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 24,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": true,
@@ -1375,12 +1376,10 @@ window.KE_DATA = {
         "tarih": "2026-10-13T09:38:03+00:00"
       },
       "olusturma": "2026-10-13T09:38:03+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:05:14+00:00",
       "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "hazal evden terk edildi bize. pofuduk mu pofuduk çok güzel bir kedi. i̇lk başta biraz mesafeli ama sonra size göbeğini açar bol bol kendini sevdirir. tam mıncırmalık bir prenses kendisi. 2 yaşlarında, dişi ve kısır. çekingen sevecen",
-      "aramaEn": "hazal she was abandoned by her family to us. she is an exceptionally fluffy and beautiful cat. at first she is a bit distant, but later she opens up her belly to let you pet her endlessly. she is a total princess meant to be cuddled. she is around 2 years old, female, and spayed. shy affectionate"
+      "arama": "hazal evden terk edildi bize. pofuduk mu pofuduk çok güzel bir kedi. i̇lk başta biraz mesafeli ama sonra size göbeğini açar bol bol kendini sevdirir. tam mıncırmalık bir prenses kendisi. 2 yaşlarında, dişi ve kısır. çekingen sevecen"
     },
     {
       "id": "kopek-darcy-929896",
@@ -4761,7 +4760,7 @@ window.KE_DATA = {
       "konum": "Gönüllü geçici yuva",
       "cins": null,
       "yasAy": 72,
-      "kiloKg": 20.0,
+      "kiloKg": 20,
       "boyut": "orta",
       "renk": null,
       "kisir": true,
@@ -4889,7 +4888,7 @@ window.KE_DATA = {
       "konum": "Gönüllü geçici yuva",
       "cins": "Maltese Terrier",
       "yasAy": 8,
-      "kiloKg": 5.0,
+      "kiloKg": 5,
       "boyut": "kucuk",
       "renk": null,
       "kisir": true,
@@ -7772,7 +7771,7 @@ window.KE_DATA = {
       "konum": null,
       "cins": null,
       "yasAy": 18,
-      "kiloKg": 5.0,
+      "kiloKg": 5,
       "boyut": "kucuk",
       "renk": null,
       "kisir": true,
