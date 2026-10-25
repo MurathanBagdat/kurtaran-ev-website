@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:20:54+00:00",
-  "sayi": 287,
+  "guncelleme": "2026-10-25T15:21:05+00:00",
+  "sayi": 286,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -10968,61 +10968,6 @@ window.KE_DATA = {
       "yasGrubu": "yetiskin",
       "arama": "sisi sisi, sürekli şaşkın, kendi halinde takılan ve sevilmeyi seven bir prenses. yalandıktan sonra dilini dışarıda unutmasıyla biliniyor. 1 yaşlarında, dişi ve kısır. sakin sevecen",
       "aramaEn": "sisi sisi is a lovely princess who is constantly surprised, minds her own business, and loves affection. she often forgets her tongue sticking out after grooming herself. she is around 1 year old, female, and spayed. calm affectionate"
-    },
-    {
-      "id": "kedi-isimsiz-73aac7",
-      "tur": "kedi",
-      "isim": "İsimsiz",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": null,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": false,
-      "saglikNotu": "FIP hastalığı nedeniyle denge kaybı, baş eğikliği, böbrek ve karaciğer sorunları ile arka kısımda felç yaşadı; aylar süren tedavi sonrası artık sağlıklı.",
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "oyuncu"
-      ],
-      "aciklama": "FIP hastalığı nedeniyle denge kaybı, baş eğikliği, böbrek ve karaciğer sorunlarıyla mücadele eden ve arka kısmı felç olan minik kedi, aylar süren tedavi sürecinin ardından sağlığına kavuştu. Artık sağlıklı, mutlu ve oyun oynamayı seven genç bir kedi olarak yeni yuvasını bekliyor.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": "Suffered from FIP, loss of balance, head tilt, kidney and liver issues, and hind paralysis; fully recovered and healthy after months of treatment.",
-      "karakterEn": [
-        "playful"
-      ],
-      "aciklamaEn": "Having fought against FIP, loss of balance, head tilt, kidney and liver issues, and hind paralysis, this young cat has fully recovered after months of treatment. Healthy, happy, and playful, this little warrior is now looking for a loving home.",
-      "fotograflar": [
-        "assets/img/animals/ig-DZupE5_sMXr-0.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DZupE5_sMXr",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DZupE5_sMXr/",
-        "tarih": "2026-06-18T13:25:09+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-06-18T13:25:09+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "i̇simsiz fip hastalığı nedeniyle denge kaybı, baş eğikliği, böbrek ve karaciğer sorunlarıyla mücadele eden ve arka kısmı felç olan minik kedi, aylar süren tedavi sürecinin ardından sağlığına kavuştu. artık sağlıklı, mutlu ve oyun oynamayı seven genç bir kedi olarak yeni yuvasını bekliyor. fip hastalığı nedeniyle denge kaybı, baş eğikliği, böbrek ve karaciğer sorunları ile arka kısımda felç yaşadı; aylar süren tedavi sonrası artık sağlıklı. oyuncu",
-      "aramaEn": "i̇simsiz having fought against fip, loss of balance, head tilt, kidney and liver issues, and hind paralysis, this young cat has fully recovered after months of treatment. healthy, happy, and playful, this little warrior is now looking for a loving home. suffered from fip, loss of balance, head tilt, kidney and liver issues, and hind paralysis; fully recovered and healthy after months of treatment. playful"
     },
     {
       "id": "kedi-teddy-2969ba",
