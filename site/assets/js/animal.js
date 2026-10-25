@@ -107,23 +107,15 @@
     spec(T.sYas, I18N.yasMetni(h), tahmin('yasAy')),
     // Cins / ırk veride ve aramada duruyor ama arayüzde gösterilmiyor (AD-03).
     spec(T.sKilo, kilo, tahmin('kiloKg')),
-    spec(T.sBoyut, h.boyut ? BOYUT[h.boyut] : null, tahmin('boyut')),
-    spec(T.sRenk, I18N.alan(h, 'renk')),
+    // Kedilerde boyut verisi yok (AD-18). Renk, aşı ve uyum alanları veride
+    // duruyor ama arayüzde gösterilmiyor (AD-12…AD-16).
+    h.tur === 'kedi' ? '' : spec(T.sBoyut, h.boyut ? BOYUT[h.boyut] : null, tahmin('boyut')),
     spec(T.sKisir, uclu(h.kisir)),
-    spec(T.sAsili, uclu(h.asili)),
-    spec(T.sCocuk, uclu(h.cocuklaUyum)),
-    spec(T.sKopek, uclu(h.kopeklerleUyum)),
-    spec(T.sKedi, uclu(h.kedilerleUyum)),
     spec(T.sOzelBakim, uclu(h.ozelBakim))
   ].join('');
 
   var rozetler = ['<span class="badge badge--' + h.durum + '">' + esc(DURUM[h.durum]) + '</span>'];
   if (h.ornek) rozetler.push('<span class="badge badge--ornek">' + T.ornekKayit + '</span>');
-
-  var karakterler = I18N.alan(h, 'karakter') || [];
-  var etiketler = karakterler.map(function (k) {
-    return '<span class="tag">' + esc(h.karakterEn && EN ? k : I18N.karakter(k)) + '</span>';
-  }).join('');
 
   /* Açıklama: İngilizce alan varsa o; yoksa Türkçesi + kısa not. */
   var aciklama = I18N.alan(h, 'aciklama');
@@ -178,7 +170,6 @@
       '<h1 class="animal-detail__name">' + esc(h.isim) + '</h1>' +
       (aciklama ? '<p class="animal-detail__lead"' + (aciklamaTr ? ' lang="tr"' : '') + '>' + esc(aciklama) + '</p>' +
         (aciklamaTr ? '<p class="animal-detail__note">' + T.aciklamaTurkce + '</p>' : '') : '') +
-      (etiketler ? '<div class="animal-card__tags" style="margin-bottom:1.6rem">' + etiketler + '</div>' : '') +
       '<div class="spec-grid">' + specler + '</div>' +
       (h.saglikNotu
         ? '<div class="callout callout--cream" style="box-shadow:none;margin-bottom:1.6rem">' +
