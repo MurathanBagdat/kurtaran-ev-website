@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:21:31+00:00",
-  "sayi": 282,
+  "guncelleme": "2026-10-25T15:21:37+00:00",
+  "sayi": 281,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -11328,61 +11328,6 @@ window.KE_DATA = {
       "yasGrubu": "yavru",
       "arama": "şirin 1 hepsi birbirinden tatlı 6 yavru için ömürlük yuva aranmaktadır. yavruların bağışıklığı düşük olduğu için acil yuvaya ihtiyaçları vardır. kısırlaştırma şartı ile sahiplendirileceklerdir. bağışıklıkları düşük olduğu için toplu alanda hemen hasta olabiliyorlar.",
       "aramaEn": "şirin 1 forever homes are needed for 6 sweet babies. since their immunity is low, they urgently need a home. they will be adopted on the condition of spaying/neutering. their immunity is low, so they can get sick easily in crowded areas."
-    },
-    {
-      "id": "kedi-sirin-2-371e74",
-      "tur": "kedi",
-      "isim": "Şirin 2",
-      "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 2,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": false,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": false,
-      "saglikNotu": "Bağışıklıkları düşük olduğu için toplu alanda hemen hasta olabiliyorlar.",
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Hepsi birbirinden tatlı 6 yavru için ömürlük yuva aranmaktadır. Yavruların bağışıklığı düşük olduğu için acil yuvaya ihtiyaçları vardır. Kısırlaştırma şartı ile sahiplendirileceklerdir.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": "Their immunity is low, so they can get sick easily in crowded areas.",
-      "karakterEn": [],
-      "aciklamaEn": "Forever homes are needed for 6 sweet babies. Since their immunity is low, they urgently need a home. They will be adopted on the condition of spaying/neutering.",
-      "fotograflar": [
-        "assets/img/animals/ig-DZZg8_IjF2S-0.jpg",
-        "assets/img/animals/ig-DZZg8_IjF2S-1.jpg",
-        "assets/img/animals/ig-DZZg8_IjF2S-2.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DZZg8_IjF2S",
-        "sira": 1,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DZZg8_IjF2S/",
-        "tarih": "2026-06-10T08:28:30+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-06-10T08:28:30+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
-      "yasGrubu": "yavru",
-      "arama": "şirin 2 hepsi birbirinden tatlı 6 yavru için ömürlük yuva aranmaktadır. yavruların bağışıklığı düşük olduğu için acil yuvaya ihtiyaçları vardır. kısırlaştırma şartı ile sahiplendirileceklerdir. bağışıklıkları düşük olduğu için toplu alanda hemen hasta olabiliyorlar.",
-      "aramaEn": "şirin 2 forever homes are needed for 6 sweet babies. since their immunity is low, they urgently need a home. they will be adopted on the condition of spaying/neutering. their immunity is low, so they can get sick easily in crowded areas."
     },
     {
       "id": "kedi-santi-a235d6",
