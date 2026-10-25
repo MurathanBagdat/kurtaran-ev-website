@@ -248,8 +248,8 @@ def fotograf_indir(url: str, dosya_adi: str) -> str | None:
         return None
 
 
-def gonderi_fotograflari(gonderi: dict, ig_id: str, en_fazla: int = 6) -> list[str]:
-    yollar = []
+def foto_adaylari(gonderi: dict) -> list[str]:
+    """Gönderideki fotoğraf adresleri, paylaşım sırasıyla."""
     adaylar = []
     if gonderi.get("media_type") == "CAROUSEL_ALBUM":
         for c in (gonderi.get("children", {}).get("data") or []):
@@ -259,8 +259,12 @@ def gonderi_fotograflari(gonderi: dict, ig_id: str, en_fazla: int = 6) -> list[s
         adaylar.append(gonderi["media_url"])
     elif gonderi.get("thumbnail_url"):
         adaylar.append(gonderi["thumbnail_url"])
+    return adaylar
 
-    for i, url in enumerate(adaylar[:en_fazla]):
+
+def gonderi_fotograflari(gonderi: dict, ig_id: str, en_fazla: int = 6) -> list[str]:
+    yollar = []
+    for i, url in enumerate(foto_adaylari(gonderi)[:en_fazla]):
         uzanti = ".jpg"
         yol = fotograf_indir(url, f"ig-{ig_id}-{i}{uzanti}")
         if yol:
@@ -279,7 +283,7 @@ ATLAMA_NEDENI = {
 }
 
 # ai_parser'ın hayvan sözlüğünden kayda birebir taşınan alanlar
-AI_ALANLAR = ("isim", "tur", "cinsiyet", "yasAy", "kiloKg", "cins", "boyut", "renk",
+AI_ALANLAR = ("isim", "tur", "cinsiyet", "yasAy", "kiloKg", "kiloKgMax", "cins", "boyut", "renk",
               "kisir", "asili", "cipli", "cocuklaUyum", "kopeklerleUyum",
               "kedilerleUyum", "ozelBakim", "saglikNotu", "konum", "karakter",
               "aciklama", "tahmini",
@@ -306,7 +310,8 @@ def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool =
 
     if ai:
         try:
-            sonuc = ai_parser.ai_parse(caption)
+            # İlk fotoğraf: köpeklerde metinde olmayan boyut/kilo için (bkz. ai_parser 2b)
+            sonuc = ai_parser.ai_parse(caption, foto=(foto_adaylari(gonderi) or [None])[0])
         except RuntimeError as e:
             if ai_zorunlu:  # geriye doldurma: bozuk kayıt üretmektense dur
                 raise
@@ -859,7 +864,8 @@ def _ozet(kayit: dict) -> str:
     if kayit.get("yasAy") is not None:
         parcalar.append(animals.yas_metni(kayit["yasAy"]))
     if kayit.get("kiloKg") is not None:
-        parcalar.append(f"{kayit['kiloKg']:g} kg")
+        ust = f"–{kayit['kiloKgMax']:g}" if kayit.get("kiloKgMax") else ""
+        parcalar.append(f"{kayit['kiloKg']:g}{ust} kg")
     if kayit.get("cins"):
         parcalar.append(kayit["cins"])
     return ", ".join(parcalar) or "bilgi yok"

@@ -6,8 +6,12 @@ caption_parser.py'deki kural tabanlı ayrıştırıcının yerine geçebilen kat
 gönderi metnini modele verir, yapılandırılmış (JSON şemalı) cevap alır.
 Model her ilanı Türkçe alanlarla birlikte İngilizce karşılıklarıyla ('...En'
 ekli alanlar) döndürür; site iki dilde yayınlanıyor.
-Yalnızca metin gönderilir — fotoğraflar modele verilmez (şimdilik bilinçli
-karar; maliyet ve basitlik).
+Metnin yanında gönderinin ilk fotoğrafı da verilir (varsa). Fotoğraf yalnızca
+köpeklerin boyut ve kilosu için kullanılır, o da metinde bu bilgi yoksa;
+fotoğraftan gelen değerler `tahmini` işaretlenir. Cins (kedi ve köpek) de
+metinde yoksa fotoğraftan tahmin edilir; cins sitede gösterilmez, yalnızca
+veride ve panelde durur. Kilo aralık olabilir
+(kiloKg = alt sınır / kesin değer, kiloKgMax = üst sınır).
 
 Temel ilke: modele "bilmediğini boş bırak" talimatı verilir; metinde
 yazmayan hiçbir alan doldurulmaz, tahminî değerler `tahmini` listesinde
@@ -22,6 +26,7 @@ Tek başına deneme:
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 import sys
@@ -41,7 +46,11 @@ _HAYVAN_SEMASI = {
         "tur":            {"type": ["string", "null"], "enum": ["kopek", "kedi", None]},
         "cinsiyet":       {"type": ["string", "null"], "enum": ["disi", "erkek", None]},
         "yasAy":          {"type": ["integer", "null"], "description": "Yaş, AY cinsinden (2 yaş = 24)"},
-        "kiloKg":         {"type": ["number", "null"]},
+        "kiloMin":        {"type": ["number", "null"], "description": "Kilo (kg); aralıksa alt sınır, kesinse kilonun kendisi"},
+        "kiloMax":        {"type": ["number", "null"], "description": "Kilo (kg); aralıksa üst sınır, kesinse kiloMin ile aynı"},
+        "kiloKaynak":     {"type": ["string", "null"], "enum": ["metin", "foto", None]},
+        "boyutKaynak":    {"type": ["string", "null"], "enum": ["metin", "foto", None]},
+        "cinsKaynak":     {"type": ["string", "null"], "enum": ["metin", "foto", None]},
         "cins":           {"type": ["string", "null"], "description": "Irk, örn. 'Border Terrier'"},
         "boyut":          {"type": ["string", "null"], "enum": ["kucuk", "orta", "buyuk", None]},
         "renk":           {"type": ["string", "null"]},
@@ -73,7 +82,8 @@ _HAYVAN_SEMASI = {
                            "description": "karakter etiketlerinin İngilizcesi, aynı sıra ve sayıda"},
         "aciklamaEn":     {"type": ["string", "null"], "description": "aciklama alanının İngilizcesi"},
     },
-    "required": ["isim", "tur", "cinsiyet", "yasAy", "kiloKg", "cins", "boyut",
+    "required": ["isim", "tur", "cinsiyet", "yasAy", "kiloMin", "kiloMax", "kiloKaynak",
+                 "boyutKaynak", "cinsKaynak", "cins", "boyut",
                  "renk", "kisir", "asili", "cipli", "cocuklaUyum", "kopeklerleUyum",
                  "kedilerleUyum", "ozelBakim", "saglikNotu", "konum", "karakter",
                  "aciklama", "tahmini",
@@ -103,7 +113,7 @@ SEMA = {
 }
 
 SISTEM = """Kurtaran Ev, sahipsiz kedi ve köpekleri kurtaran bir Türk hayvan derneğidir.
-Sana derneğin Instagram gönderilerinden birinin metni verilecek. İki görevin var:
+Sana derneğin Instagram gönderilerinden birinin metni ve (varsa) ilk fotoğrafı verilecek.
 
 1) SINIFLANDIR:
    - "ilan": belirli hayvan(lar)ın sahiplendirilmesi için yazılmış ilan.
@@ -119,7 +129,9 @@ Sana derneğin Instagram gönderilerinden birinin metni verilecek. İki görevin
    - Kardeş/çoklu ilanlarda ("ikisi erkek, biri dişi") her hayvan için ayrı kayıt üret;
      isimleri yoksa ortak addan numaralandır ("Kutu 1", "Kutu 2"...).
    - EN ÖNEMLİ KURAL: yalnızca metinde AÇIKÇA yazan bilgiyi doldur. Yazmıyorsa null bırak.
-     Fotoğraf göremiyorsun; renk, boyut, cins gibi bilgileri ASLA uydurma.
+     Fotoğraftan YALNIZCA köpeklerin boyut ve kilosu (2b) ile kedi ve köpeklerin cinsi (2c)
+     tahmin edilebilir; renk, yaş, cinsiyet ve diğer tüm alanlar yalnızca metinden gelir,
+     ASLA uydurma.
    - "yaklaşık", "tahmini", "3-4 yaşlarında", "1 yaş civarı" gibi ifadelerde değeri doldur
      (aralıklarda ortalama) ve alan adını "tahmini" listesine ekle.
    - yasAy her zaman AY cinsindendir: "2 yaşında" → 24, "5 aylık" → 5, "4-5 haftalık" → 1.
@@ -132,6 +144,36 @@ Sana derneğin Instagram gönderilerinden birinin metni verilecek. İki görevin
    - aciklama: hashtag'ler, DM/bağlantı çağrıları ve tekrarlar atılmış, akıcı bir ilan metni.
    - karakter: metindeki mizaç ifadelerini kısa etiketlere çevir (oyuncu, sakin, sevecen,
      çekingen, meraklı, eğitimli, koruyucu, sadık gibi).
+
+2b) BOYUT VE KİLO:
+   - ÖNCELİK METİNDE: metin ya da hashtag'ler boyut ("küçük ırk", "#ortaırk", "büyük boy")
+     veya kilo ("12 kg", "8-10 kilo") söylüyorsa onu kullan, fotoğrafı yok say;
+     boyutKaynak / kiloKaynak = "metin". Kesin kilo: kiloMin = kiloMax = o değer;
+     aralık: kiloMin / kiloMax = aralığın uçları. "Yaklaşık 20 kg" gibi ifadelerde
+     "kiloKg" alan adını "tahmini" listesine ekle.
+   - KEDİLERDE boyut ve kilo YALNIZCA metinden gelir; fotoğraftan asla tahmin etme.
+   - Köpekte metinde yoksa ve fotoğraf verildiyse fotoğraftan tahmin et; kaynak = "foto"
+     ve alan adını ("boyut", "kiloKg") "tahmini" listesine ekle:
+       · kilo her zaman ARALIK olsun (kiloMin < kiloMax), en fazla ~6 kg genişliğinde.
+       · boyut: kucuk = 12 kg altı, orta = 12–25 kg, buyuk = 25 kg üstü. Boyutu kilo
+         aralığının ORTA NOKTASINA göre seç; boyut ve kilo tutarlı olmalı.
+   - EMİN DEĞİLSEN BOŞ BIRAK (null, kaynak null). Fotoğraftan tahmin YAPMA:
+       · hayvan net görünmüyor, kısmen kadrajda ya da ölçek verecek bir şey (insan, eşya) yok;
+       · fotoğrafta birden fazla hayvan var ve ilandaki hayvanın hangisi olduğu belli değil;
+       · 6 aydan küçük yavrunun boyutu (yetişkin boyu belli değil) — kilo aralığı verilebilir;
+       · fotoğraf yazı/kolaj ağırlıklı.
+   - Kardeş/çoklu ilanlarda tek fotoğraf hepsi içindir: ancak hepsine uyan bir tahmin
+     yapabiliyorsan doldur, yoksa null.
+
+2c) CİNS (kedi ve köpek):
+   - ÖNCELİK METİNDE: metin ya da hashtag'ler cinsi söylüyorsa ("#germanshorthairpointer",
+     "Golden Retriever", "Tekir", "Scottish Fold") onu kullan; cinsKaynak = "metin".
+   - Metinde yoksa ve fotoğraf verildiyse fotoğraftan tahmin et; cinsKaynak = "foto" ve
+     "cins" alan adını "tahmini" listesine ekle. Belirgin bir ırk görünüyorsa adını yaz
+     ("Labrador Retriever melezi", "Tekir", "Van kedisi"); belirgin bir ırk yoksa "Melez"
+     (köpek) ya da "Sokak kedisi" (kedi) yaz.
+   - EMİN DEĞİLSEN null bırak (cinsKaynak null): hayvan net görünmüyorsa, birden fazla
+     hayvandan hangisinin ilandaki olduğu belli değilse.
 
 3) İNGİLİZCESİNİ DE ÜRET — site hem Türkçe hem İngilizce yayınlanıyor:
    - Serbest metin alanlarının İngilizce karşılığını "En" ekli alanlara yaz:
@@ -165,7 +207,7 @@ def _anahtar_bul() -> str | None:
     return None
 
 
-def _cagir(sistem: str, kullanici: str, sema: dict, sema_adi: str,
+def _cagir(sistem: str, kullanici: str | list, sema: dict, sema_adi: str,
            api_key: str | None, model: str) -> dict:
     """OpenRouter'a JSON şemalı tek bir istek atar, çözülmüş sözlüğü döner."""
     api_key = api_key or _anahtar_bul()
@@ -209,16 +251,66 @@ def _cagir(sistem: str, kullanici: str, sema: dict, sema_adi: str,
         raise RuntimeError(f"Model cevabı çözülemedi: {str(cevap)[:300]}") from e
 
 
+def _foto_icerigi(foto: str | None) -> dict | None:
+    """İlk fotoğrafı (yerel yol ya da adres) modele verilecek data-URL'e çevirir.
+    Okunamazsa None — ayrıştırma yalnızca metinle sürer."""
+    if not foto:
+        return None
+    try:
+        if foto.startswith("http"):
+            istek = urllib.request.Request(foto, headers={"User-Agent": "KurtaranEv-Sync/1.0"})
+            with urllib.request.urlopen(istek, timeout=60) as r:
+                veri = r.read()
+        else:
+            veri = Path(foto).read_bytes()
+    except Exception as e:  # fotoğraf yoksa metinle devam
+        print(f"  ! fotoğraf modele verilemedi: {e}")
+        return None
+    return {"type": "image_url",
+            "image_url": {"url": "data:image/jpeg;base64," + base64.b64encode(veri).decode()}}
+
+
+def _kilo_boyut_uygula(hayvan: dict) -> dict:
+    """Modelin kiloMin/kiloMax/kaynak alanlarını kayıt alanlarına (kiloKg,
+    kiloKgMax, tahmini) çevirir. Kedide fotoğraftan gelen değer atılır."""
+    kmin, kmax = hayvan.pop("kiloMin", None), hayvan.pop("kiloMax", None)
+    kilo_k, boyut_k = hayvan.pop("kiloKaynak", None), hayvan.pop("boyutKaynak", None)
+    tahmini = hayvan.setdefault("tahmini", [])
+    tahmini[:] = list(dict.fromkeys("kiloKg" if t == "kilo" else t for t in tahmini))
+    if hayvan.pop("cinsKaynak", None) == "foto" and hayvan.get("cins") and "cins" not in tahmini:
+        tahmini.append("cins")
+    if kmin is None and kmax is not None:
+        kmin = kmax
+    hayvan["kiloKg"] = kmin
+    hayvan["kiloKgMax"] = kmax if (kmin is not None and kmax is not None and kmax > kmin) else None
+    if hayvan.get("tur") == "kedi":
+        if kilo_k == "foto":
+            hayvan["kiloKg"] = hayvan["kiloKgMax"] = None
+        if boyut_k == "foto":
+            hayvan["boyut"] = None
+        tahmini[:] = [t for t in tahmini if not (t in ("kiloKg", "kilo") and kilo_k == "foto")
+                      and not (t == "boyut" and boyut_k == "foto")]
+    else:
+        if kilo_k == "foto" and hayvan["kiloKg"] is not None and "kiloKg" not in tahmini:
+            tahmini.append("kiloKg")
+        if boyut_k == "foto" and hayvan.get("boyut") and "boyut" not in tahmini:
+            tahmini.append("boyut")
+    return hayvan
+
+
 def ai_parse(caption: str, api_key: str | None = None,
-             model: str = VARSAYILAN_MODEL) -> dict:
+             model: str = VARSAYILAN_MODEL, foto: str | None = None) -> dict:
     """Gönderi metnini modele ayrıştırtır.
 
     Dönen sözlük: {"icerikTuru": ..., "yuvalandi": bool, "hayvanlar": [...]}
     Her hayvan sözlüğü Türkçe alanların yanında İngilizce karşılıklarını da
-    ("...En" ekli alanlar) taşır. Hata durumunda RuntimeError fırlatır —
-    çağıran taraf kural tabanlı ayrıştırıcıya düşebilir.
+    ("...En" ekli alanlar) taşır. foto: gönderinin ilk fotoğrafı (yerel yol ya
+    da adres). Hata durumunda RuntimeError fırlatır — çağıran taraf kural
+    tabanlı ayrıştırıcıya düşebilir.
     """
-    sonuc = _cagir(SISTEM, caption, SEMA, "gonderi_ayristirma", api_key, model)
+    foto_icerigi = _foto_icerigi(foto)
+    kullanici = [{"type": "text", "text": caption or ""}, foto_icerigi] if foto_icerigi else caption
+    sonuc = _cagir(SISTEM, kullanici, SEMA, "gonderi_ayristirma", api_key, model)
 
     # asgari doğrulama — şemaya güvenme, çağıranın beklediği yapıyı garanti et
     if not isinstance(sonuc, dict) or "icerikTuru" not in sonuc:
@@ -227,6 +319,7 @@ def ai_parse(caption: str, api_key: str | None = None,
     sonuc.setdefault("hayvanlar", [])
     for hayvan in sonuc["hayvanlar"]:
         if isinstance(hayvan, dict):
+            _kilo_boyut_uygula(hayvan)
             _en_tutarla(hayvan)
     return sonuc
 

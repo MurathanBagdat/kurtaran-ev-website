@@ -234,9 +234,13 @@ Pipeline ne yapıyor?
    yaşam alanı) çıkarır. Kardeş gönderileri ("ikisi erkek, biri dişi")
    hayvan başına ayrı kayda açılır.
    Ayrıştırmayı varsayılan olarak **yapay zekâ** yapar (`tools/ai_parser.py`,
-   OpenRouter üzerinden `google/gemini-3.6-flash`; yalnızca metin gönderilir,
-   fotoğraflar gönderilmez). Modele "metinde yazmayanı doldurma" talimatı
-   verilir; bilinmeyen alanlar boş kalır. Anahtar yoksa ya da `--klasik`
+   OpenRouter üzerinden `google/gemini-3.6-flash`; metinle birlikte gönderinin
+   ilk fotoğrafı da gönderilir). Modele "metinde yazmayanı doldurma" talimatı
+   verilir; bilinmeyen alanlar boş kalır. İstisna: metinde yoksa köpeklerin
+   boyutu ve kilosu (kilo aralık olarak: `kiloKg`–`kiloKgMax`) ile kedi ve
+   köpeklerin cinsi fotoğraftan tahmin edilir ve `tahmini` işaretlenir; model
+   emin değilse boş bırakır. Cins sitede gösterilmez. Mevcut köpek ilanlarındaki
+   boşluklar `tools/foto_tahmini_doldur.py` ile dolduruldu. Anahtar yoksa ya da `--klasik`
    verilirse `caption_parser.py`'deki kural tabanlı ayrıştırıcı devreye girer;
    model hata verirse de aynı yedeğe düşülür. Anahtar:
    `instagram_config.json > openrouter_key`.

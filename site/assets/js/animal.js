@@ -101,14 +101,16 @@
   }
 
   /* --- künye ------------------------------------------------------------- */
-  var kilo = h.kiloKg == null ? null : String(h.kiloKg).replace('.', EN ? '.' : ',') + ' kg';
+  /* Kesin kilo "20 kg", aralık "20–26 kg" */
+  function kiloS(v) { return String(v).replace('.', EN ? '.' : ','); }
+  var kilo = h.kiloKg == null ? null : kiloS(h.kiloKg) + (h.kiloKgMax ? '–' + kiloS(h.kiloKgMax) : '') + ' kg';
   var specler = [
     spec(T.sCinsiyet, h.cinsiyet ? CINSIYET[h.cinsiyet] : null),
     spec(T.sYas, I18N.yasMetni(h), tahmin('yasAy')),
     // Cins / ırk veride ve aramada duruyor ama arayüzde gösterilmiyor (AD-03).
-    spec(T.sKilo, kilo, tahmin('kiloKg')),
-    // Kedilerde boyut verisi yok (AD-18). Renk, aşı ve uyum alanları veride
-    // duruyor ama arayüzde gösterilmiyor (AD-12…AD-16).
+    // Kedilerde kilo ve boyut gösterilmiyor (AD-18, AD-19). Renk, aşı ve uyum
+    // alanları veride duruyor ama arayüzde gösterilmiyor (AD-12…AD-16).
+    h.tur === 'kedi' ? '' : spec(T.sKilo, kilo, tahmin('kiloKg')),
     h.tur === 'kedi' ? '' : spec(T.sBoyut, h.boyut ? BOYUT[h.boyut] : null, tahmin('boyut')),
     spec(T.sKisir, uclu(h.kisir)),
     spec(T.sOzelBakim, uclu(h.ozelBakim))

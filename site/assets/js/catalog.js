@@ -74,9 +74,11 @@
       ' onerror="this.onerror=null;this.src=\'' + esc(BASE + yol) + '\'">';
   }
 
+  /* Kesin kilo "20 kg", aralık "20–26 kg". Kedilerde kilo gösterilmiyor. */
   function kiloMetni(hayvan) {
-    if (hayvan.kiloKg == null) return null;
-    return String(hayvan.kiloKg).replace('.', EN ? '.' : ',') + ' kg';
+    if (hayvan.kiloKg == null || hayvan.tur === 'kedi') return null;
+    function s(v) { return String(v).replace('.', EN ? '.' : ','); }
+    return s(hayvan.kiloKg) + (hayvan.kiloKgMax ? '–' + s(hayvan.kiloKgMax) : '') + ' kg';
   }
 
   /* ---------------------------------------------------------------------
