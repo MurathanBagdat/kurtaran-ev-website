@@ -37,14 +37,9 @@
     q: '',
     durum: 'yuva-ariyor',   // '' = hepsi
     cinsiyet: '',
-    yas: '',
     boyut: '',
-    sirala: 'yeni',
-    kisir: false,
-    asili: false,
-    cocuk: false,
-    kopek: false,
-    kedi: false
+    sirala: 'yeni',         // 'yeni' | 'eski' (ilan tarihi)
+    engelli: false          // #engellicanlaraöncelik → ozelBakim === true
   };
   var durum = Object.assign({}, VARSAYILAN);
 
@@ -92,47 +87,29 @@
     if (durum.durum && h.durum !== durum.durum) return false;
 
     if (durum.cinsiyet && h.cinsiyet !== durum.cinsiyet) return false;
-    if (durum.yas && h.yasGrubu !== durum.yas) return false;
     if (durum.boyut && h.boyut !== durum.boyut) return false;
 
-    /* Üç durumlu alanlar: kutucuk işaretliyse yalnızca kesin "evet" olanlar.
-       Bilinmeyen (null) kayıtlar elenir — kullanıcı "kısırlaştırılmış" diye
-       süzdüyse, emin olmadığımız bir hayvanı ona göstermek doğru olmaz. */
-    if (durum.kisir && h.kisir !== true) return false;
-    if (durum.asili && h.asili !== true) return false;
-    if (durum.cocuk && h.cocuklaUyum !== true) return false;
-    if (durum.kopek && h.kopeklerleUyum !== true) return false;
-    if (durum.kedi && h.kedilerleUyum !== true) return false;
+    /* Bilinmeyen (null) kayıtlar elenir — emin olmadığımız bir hayvanı
+       "engelli" süzgecinde göstermek doğru olmaz. */
+    if (durum.engelli && h.ozelBakim !== true) return false;
 
     if (durum.q) {
-      var q = sade(durum.q);
-      /* EN sayfada İngilizce arama dizini kullanılır; çevirisi olmayan
-         alanlarda o dizin zaten Türkçesine düşüyor (animals.py > aramaEn). */
-      var hedef = sade((EN && h.aramaEn) || h.arama || (h.isim + ' ' + (h.cins || '')));
-      if (hedef.indexOf(q) === -1) return false;
+      /* Arama yalnızca isim, boyut ve cinsiyette (client: AD-06). Her sorgu
+         sözcüğü bir hedef sözcüğün başıyla eşleşmeli — "male" araması
+         "female" kayıtlarını getirmesin. */
+      var hedef = sade([h.isim, I18N.boyut[h.boyut], CINSIYET[h.cinsiyet]].join(' ')).split(/\s+/);
+      var uyuyor = sade(durum.q).split(/\s+/).filter(Boolean).every(function (s) {
+        return hedef.some(function (w) { return w.indexOf(s) === 0; });
+      });
+      if (!uyuyor) return false;
     }
     return true;
   }
 
   function sirala(liste) {
     var kopya = liste.slice();
-    if (durum.sirala === 'isim') {
-      kopya.sort(function (a, b) { return (a.isim || '').localeCompare(b.isim || '', EN ? 'en' : 'tr'); });
-    } else if (durum.sirala === 'yas-artan') {
-      kopya.sort(function (a, b) {
-        if (a.yasAy == null) return 1;               // bilinmeyen yaş sona
-        if (b.yasAy == null) return -1;
-        return a.yasAy - b.yasAy;
-      });
-    } else if (durum.sirala === 'yas-azalan') {
-      kopya.sort(function (a, b) {
-        if (a.yasAy == null) return 1;
-        if (b.yasAy == null) return -1;
-        return b.yasAy - a.yasAy;
-      });
-    } else {
-      kopya.sort(function (a, b) { return (b.olusturma || '').localeCompare(a.olusturma || ''); });
-    }
+    var yon = durum.sirala === 'eski' ? -1 : 1;
+    kopya.sort(function (a, b) { return yon * (b.olusturma || '').localeCompare(a.olusturma || ''); });
     /* Yuvalananlar her zaman en sonda dursun. */
     kopya.sort(function (a, b) {
       return (a.durum === 'yuvalandi' ? 1 : 0) - (b.durum === 'yuvalandi' ? 1 : 0);
@@ -272,6 +249,8 @@
     /* "hepsi" = filtre yok; eski paylaşılmış bağlantılardaki müsait/rezerve → yuva arıyor */
     if (durum.durum === 'hepsi') durum.durum = '';
     else if (DURUM[durum.durum] === undefined && durum.durum !== '') durum.durum = VARSAYILAN.durum;
+    /* eski bağlantılardaki isim / yaş sıralaması → en yeni */
+    if (durum.sirala !== 'eski') durum.sirala = VARSAYILAN.sirala;
   }
 
   /* ---------------------------------------------------------------------

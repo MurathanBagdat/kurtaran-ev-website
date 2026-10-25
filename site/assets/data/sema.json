@@ -90,8 +90,9 @@
     },
     "ozelBakim": {
       "tip": "uclu",
-      "etiket": "Özel bakım gerekiyor",
-      "grup": "saglik"
+      "etiket": "Özel bakım / engelli",
+      "grup": "saglik",
+      "ipucu": "Evet ise ilan sitede #engellicanlaraöncelik süzgecinde görünür."
     },
     "saglikNotu": {
       "tip": "uzunmetin",

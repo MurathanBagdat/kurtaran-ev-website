@@ -9,16 +9,18 @@ def katalog(tur: str) -> str:
     baslik = "Cats looking for a home" if kedi else "Dogs looking for a home"
     eyebrow = "Adopt · Cats" if kedi else "Adopt · Dogs"
     lead = (
-        "Every cat waiting for adoption is here. Filter by age, sex and compatibility, "
+        "Every cat waiting for adoption is here. Filter by sex, "
         "then open the listing of the one you'd like to meet."
         if kedi else
-        "Every dog waiting for adoption is here. Filter by age, size and compatibility, "
+        "Every dog waiting for adoption is here. Filter by sex and size, "
         "then open the listing of the one you'd like to meet."
     )
     ig = IG_KEDI if kedi else IG_KOPEK
     hesap = "@kurtaranev_kedileri" if kedi else "@kurtaranev_kopekleri"
     variant = " page-hero--sky" if kedi else ""
 
+    # Cats have no size data: no size filter, and no size in the search hint
+    arama_ipucu = "Name, sex…" if kedi else "Name, size, sex…"
     # Size filter only makes sense for dogs
     boyut_filtresi = "" if kedi else """
         <div class="filter">
@@ -66,7 +68,7 @@ def katalog(tur: str) -> str:
     <form class="filters" role="search" aria-label="Listing filters" onsubmit="return false">
       <div class="filter filters__search">
         <label for="f-q">Search</label>
-        <input id="f-q" type="search" data-filter="q" placeholder="Name, breed, colour, character…">
+        <input id="f-q" type="search" data-filter="q" placeholder="{arama_ipucu}">
       </div>
 
       <div class="filters__row">
@@ -86,32 +88,18 @@ def katalog(tur: str) -> str:
             <option value="erkek">Male</option>
           </select>
         </div>
-        <div class="filter">
-          <label for="f-yas">Age</label>
-          <select id="f-yas" data-filter="yas">
-            <option value="">All</option>
-            <option value="yavru">Young (0–1 yr)</option>
-            <option value="yetiskin">Adult (1–7 yrs)</option>
-            <option value="kidemli">Senior (7+ yrs)</option>
-          </select>
-        </div>{boyut_filtresi}
+{boyut_filtresi}
         <div class="filter">
           <label for="f-sirala">Sort</label>
           <select id="f-sirala" data-filter="sirala">
-            <option value="yeni">Newest first</option>
-            <option value="isim">By name</option>
-            <option value="yas-artan">Age: youngest first</option>
-            <option value="yas-azalan">Age: oldest first</option>
+            <option value="yeni">Newest</option>
+            <option value="eski">Oldest</option>
           </select>
         </div>
       </div>
 
       <div class="filters__toggles">
-        <label class="chip"><input type="checkbox" data-filter="kisir"> Neutered</label>
-        <label class="chip"><input type="checkbox" data-filter="asili"> Fully vaccinated</label>
-        <label class="chip"><input type="checkbox" data-filter="cocuk"> Good with children</label>
-        <label class="chip"><input type="checkbox" data-filter="kopek"> Good with dogs</label>
-        <label class="chip"><input type="checkbox" data-filter="kedi"> Good with cats</label>
+        <label class="chip" title="Show disabled animals and those needing special care"><input type="checkbox" data-filter="engelli"> #engellicanlaraöncelik</label>
         <button class="filters__clear" type="button" data-clear hidden>Clear filters</button>
       </div>
     </form>
