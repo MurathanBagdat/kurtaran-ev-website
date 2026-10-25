@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-25T15:16:39+00:00",
-  "sayi": 297,
+  "guncelleme": "2026-10-25T15:17:03+00:00",
+  "sayi": 296,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -2940,67 +2940,6 @@
       "yasGrubu": "yetiskin",
       "arama": "toffee kurtaran ev kedi evi üretimden kurtarılıp kedi evimize yolu düşen toffee, aşırı sosyal ve sevgi dolu bir prenses. sevdiğiniz an mırlayıp kendini kollarınıza bırakıyor. sosyal sevecen",
       "aramaEn": "toffee kurtaran ev cat house rescued from a breeding facility, toffee came to our cat house. she is an extremely social and affectionate princess who starts purring and melts into your arms the moment you pet her. social affectionate"
-    },
-    {
-      "id": "kopek-mocha-8504c3",
-      "tur": "kopek",
-      "isim": "Mocha",
-      "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": "Miniature Pinscher",
-      "yasAy": 54,
-      "kiloKg": null,
-      "boyut": "kucuk",
-      "renk": null,
-      "kisir": true,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "çekingen"
-      ],
-      "aciklama": "Belediye barınağından kurtarıldı. Toplu ortamda çok korkuyor. Kısırlaştırıldı. Latte ile anne-oğul oldukları tahmin ediliyor. Birlikte veya ayrı ayrı, ev ortamında sevgi göreceği yuvasını arıyor.",
-      "cinsEn": "Miniature Pinscher",
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "shy"
-      ],
-      "aciklamaEn": "Rescued from a municipal shelter. Very scared in crowded environments. Neutered. Estimated to be mother and son with Latte. Looking for a loving home, either together or separately.",
-      "fotograflar": [
-        "assets/img/animals/ig-Ddx4lNtjr2o-0.jpg",
-        "assets/img/animals/ig-Ddx4lNtjr2o-1.jpg",
-        "assets/img/animals/ig-Ddx4lNtjr2o-2.jpg",
-        "assets/img/animals/ig-Ddx4lNtjr2o-3.jpg",
-        "assets/img/animals/ig-Ddx4lNtjr2o-4.jpg",
-        "assets/img/animals/ig-Ddx4lNtjr2o-5.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kopekleri",
-        "gonderiId": "Ddx4lNtjr2o",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/Ddx4lNtjr2o/",
-        "tarih": "2026-09-27T05:42:20+00:00"
-      },
-      "olusturma": "2026-09-27T05:42:20+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": "4,5 yaşında",
-      "yasMetniEn": "4.5 years old",
-      "yasGrubu": "yetiskin",
-      "arama": "mocha miniature pinscher belediye barınağından kurtarıldı. toplu ortamda çok korkuyor. kısırlaştırıldı. latte ile anne-oğul oldukları tahmin ediliyor. birlikte veya ayrı ayrı, ev ortamında sevgi göreceği yuvasını arıyor. çekingen",
-      "aramaEn": "mocha miniature pinscher rescued from a municipal shelter. very scared in crowded environments. neutered. estimated to be mother and son with latte. looking for a loving home, either together or separately. shy"
     },
     {
       "id": "kopek-latte-610983",
