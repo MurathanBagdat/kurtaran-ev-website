@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:23:24+00:00",
+  "guncelleme": "2026-10-25T15:23:41+00:00",
   "sayi": 266,
   "hayvanlar": [
     {
@@ -14462,13 +14462,14 @@ window.KE_DATA = {
     {
       "id": "kedi-isimsiz-cd42e9",
       "tur": "kedi",
-      "isim": "İsimsiz",
+      "isim": "Hürrem",
       "cinsiyet": "disi",
       "durum": "yuva-ariyor",
       "konum": null,
       "cins": "Scottish Longhair",
       "yasAy": 12,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": true,
@@ -14511,12 +14512,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-03-10T06:38:36+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:23:40+00:00",
       "yasMetni": "1 yaşında",
-      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "i̇simsiz scottish longhair 1 yaşındayım, dişiyim ve kısırım. yumuşacık tüylerim ve kocaman sarı gözlerim var ama en güzel tarafım insanlarla yakın olmayı çok sevmem. sevildiğimde hemen mırıldamaya başlayan sakin ve tatlı bir kızım. sakin sevecen",
-      "aramaEn": "i̇simsiz scottish longhair i am 1 year old, female, and spayed. i have soft fur and big yellow eyes, but my best trait is that i love being close to people. i am a calm and sweet girl who starts purring right away when petted. calm affectionate"
+      "arama": "hürrem scottish longhair 1 yaşındayım, dişiyim ve kısırım. yumuşacık tüylerim ve kocaman sarı gözlerim var ama en güzel tarafım insanlarla yakın olmayı çok sevmem. sevildiğimde hemen mırıldamaya başlayan sakin ve tatlı bir kızım. sakin sevecen"
     },
     {
       "id": "kopek-soho-46e9af",
