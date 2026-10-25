@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-25T15:05:14+00:00",
+  "guncelleme": "2026-10-25T15:15:07+00:00",
   "sayi": 302,
   "hayvanlar": [
     {
@@ -571,13 +571,14 @@
     {
       "id": "kedi-isimsiz-fe4fa7",
       "tur": "kedi",
-      "isim": "İsimsiz",
+      "isim": "Yavru",
       "cinsiyet": "erkek",
       "durum": "yuva-ariyor",
       "konum": null,
       "cins": null,
       "yasAy": 3,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": false,
@@ -616,12 +617,10 @@
         "tarih": "2026-10-19T19:11:50+00:00"
       },
       "olusturma": "2026-10-19T19:11:50+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:15:07+00:00",
       "yasMetni": "3 aylık",
-      "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
-      "arama": "i̇simsiz i̇nşaatın içinde, molozların arasında bulundu. dünya onun için kocaman bir yer. henüz hayatı tanımadan korkuyla tanıştı. şimdi bu kocaman dünyada sığınabileceği güvenli bir yer, sevgiyle sarılacağı bir aile arıyor. hikayesi molozların arasında başladı ama orada devam etmek zorunda değil. 3 aylık, erkek. kısırlaştırma şartı ile sahiplendirilecektir.",
-      "aramaEn": "i̇simsiz he was found inside a construction site, among the rubble. the world is a huge place for him. before even getting to know life, he met fear. now in this big world, he is looking for a safe shelter and a loving family. his story started among the rubble, but it doesn't have to continue there. 3 months old, male. available for adoption on the condition of neutering."
+      "arama": "yavru i̇nşaatın içinde, molozların arasında bulundu. dünya onun için kocaman bir yer. henüz hayatı tanımadan korkuyla tanıştı. şimdi bu kocaman dünyada sığınabileceği güvenli bir yer, sevgiyle sarılacağı bir aile arıyor. hikayesi molozların arasında başladı ama orada devam etmek zorunda değil. 3 aylık, erkek. kısırlaştırma şartı ile sahiplendirilecektir."
     },
     {
       "id": "kopek-findik-a59aa6",
