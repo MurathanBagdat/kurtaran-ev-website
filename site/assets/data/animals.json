@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-25T15:20:30+00:00",
-  "sayi": 288,
+  "guncelleme": "2026-10-25T15:20:54+00:00",
+  "sayi": 287,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -10283,57 +10283,6 @@
       "yasGrubu": "yetiskin",
       "arama": "masal terrier mix masal yaklaşık 4 yaşında, kısır, dişi ve hayat dolu bir kız. i̇nsanlarla vakit geçirmeyi, oyun oynamayı ve ilgi görmeyi çok seviyor. gülümseyen yüzü ve neşeli enerjisiyle bulunduğu her ortama mutluluk katıyor. masal’ın en güzel özelliklerinden biri de sosyal karakteri. diğer köpeklerle çok iyi anlaşıyor, oyun arkadaşı olmaya her zaman hazır. doğru tanıştırmayla kedili bir eve de uyum sağlayabileceğini düşünüyoruz. oyuncu sevecen sosyal",
       "aramaEn": "masal terrier mix masal is a spayed female, around 4 years old and full of life. she loves spending time with people, playing, and getting attention. with her smiling face and cheerful energy, she brings happiness to every environment. one of masal's best qualities is her social character. she gets along very well with other dogs and is always ready to be a playmate. we believe she can also adapt to a home with cats given a proper introduction. playful affectionate social"
-    },
-    {
-      "id": "kedi-yavru-1-0ea2a4",
-      "tur": "kedi",
-      "isim": "Yavru 1",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": null,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Otoparkta bir kutu içine bırakılarak kaderine terk edilen iki yavrudan biri. Kendisini bir daha asla yarı yolda bırakmayacak, sevgi dolu ömürlük yuvasını arıyor.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [],
-      "aciklamaEn": "One of two young ones who were left in a box in a parking lot. Looking for a loving forever home that will never abandon them.",
-      "fotograflar": [
-        "assets/img/animals/ig-DaGG1e7sZVp-0.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DaGG1e7sZVp",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DaGG1e7sZVp/",
-        "tarih": "2026-06-27T16:06:37+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-06-27T16:06:37+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "yavru 1 otoparkta bir kutu içine bırakılarak kaderine terk edilen iki yavrudan biri. kendisini bir daha asla yarı yolda bırakmayacak, sevgi dolu ömürlük yuvasını arıyor.",
-      "aramaEn": "yavru 1 one of two young ones who were left in a box in a parking lot. looking for a loving forever home that will never abandon them."
     },
     {
       "id": "kopek-cake-34e0a5",
