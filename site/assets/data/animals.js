@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:23:41+00:00",
-  "sayi": 266,
+  "guncelleme": "2026-10-25T15:23:53+00:00",
+  "sayi": 265,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -15540,59 +15540,6 @@ window.KE_DATA = {
       "yasGrubu": null,
       "arama": "malinois 7 malinois terk edilmiş malinois. bu ırkı iyi bilen, bilinçli ve ömürlük bir yuva aranıyor.",
       "aramaEn": "malinois 7 belgian malinois abandoned belgian malinois looking for a knowledgeable and responsible forever home."
-    },
-    {
-      "id": "kopek-malinois-8-b62340",
-      "tur": "kopek",
-      "isim": "Malinois 8",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": "Malinois",
-      "yasAy": null,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Terk edilmiş Malinois. Bu ırkı iyi bilen, bilinçli ve ömürlük bir yuva aranıyor.",
-      "cinsEn": "Belgian Malinois",
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [],
-      "aciklamaEn": "Abandoned Belgian Malinois looking for a knowledgeable and responsible forever home.",
-      "fotograflar": [
-        "assets/img/animals/ig-DUajBMejPat-0.jpg",
-        "assets/img/animals/ig-DUajBMejPat-1.jpg",
-        "assets/img/animals/ig-DUajBMejPat-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kopekleri",
-        "gonderiId": "DUajBMejPat",
-        "sira": 7,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DUajBMejPat/",
-        "tarih": "2026-02-06T11:28:50+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-02-06T11:28:50+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "malinois 8 malinois terk edilmiş malinois. bu ırkı iyi bilen, bilinçli ve ömürlük bir yuva aranıyor.",
-      "aramaEn": "malinois 8 belgian malinois abandoned belgian malinois looking for a knowledgeable and responsible forever home."
     },
     {
       "id": "kopek-rookie-c518ff",
