@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T17:35:15+00:00",
+  "guncelleme": "2026-10-25T17:36:46+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -3145,7 +3145,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Latte",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Miniature Pinscher",
       "yasAy": 90,
@@ -3195,12 +3195,10 @@ window.KE_DATA = {
         "tarih": "2026-09-27T05:42:20+00:00"
       },
       "olusturma": "2026-09-27T05:42:20+00:00",
-      "guncelleme": "2026-10-25T17:20:12+00:00",
+      "guncelleme": "2026-10-25T17:36:45+00:00",
       "yasMetni": "7,5 yaşında",
-      "yasMetniEn": "7.5 years old",
       "yasGrubu": "kidemli",
-      "arama": "latte miniature pinscher belediye barınağından kurtarıldı. toplu ortamda çok korkuyor. kısırlaştırıldı. mocha ile anne-oğul oldukları tahmin ediliyor. birlikte veya ayrı ayrı, ev ortamında sevgi göreceği yuvasını arıyor. çekingen",
-      "aramaEn": "latte miniature pinscher rescued from a municipal shelter. very scared in crowded environments. spayed. estimated to be mother and son with mocha. looking for a loving home, either together or separately. shy"
+      "arama": "latte miniature pinscher belediye barınağından kurtarıldı. toplu ortamda çok korkuyor. kısırlaştırıldı. mocha ile anne-oğul oldukları tahmin ediliyor. birlikte veya ayrı ayrı, ev ortamında sevgi göreceği yuvasını arıyor. çekingen"
     },
     {
       "id": "kedi-atlas-a796ef",
