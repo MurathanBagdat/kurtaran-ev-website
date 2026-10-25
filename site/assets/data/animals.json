@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-25T15:24:46+00:00",
+  "guncelleme": "2026-10-25T16:19:12+00:00",
   "sayi": 259,
   "hayvanlar": [
     {
@@ -72,11 +72,12 @@
       "tur": "kedi",
       "isim": "İbo",
       "cinsiyet": "erkek",
-      "durum": "yuvalandi",
+      "durum": "yuva-ariyor",
       "konum": null,
       "cins": null,
       "yasAy": 3,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": false,
@@ -123,12 +124,10 @@
         }
       },
       "olusturma": "2026-10-23T16:13:03+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T16:19:11+00:00",
       "yasMetni": "3 aylık",
-      "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
-      "arama": "i̇bo kutu kardeşlerden biri i̇bo, aylardır yuva bekliyor fakat henüz ona yuva olmak isteyen kimse çıkmadı. kardeşleri yuvalandı, şimdi sıra onda. küçük i̇bo çok sevgi dolu bir kucak bebeği. 3 aylık, erkek ve kısırlaştırma şartı ile sahiplendirilecektir. sevecen",
-      "aramaEn": "i̇bo one of the 'box siblings', i̇bo has been waiting for a home for months, but no one has come forward yet. his siblings have been adopted, now it's his turn. little i̇bo is a very affectionate lap baby. he is 3 months old, male, and available for adoption on the condition of neutering. affectionate"
+      "arama": "i̇bo kutu kardeşlerden biri i̇bo, aylardır yuva bekliyor fakat henüz ona yuva olmak isteyen kimse çıkmadı. kardeşleri yuvalandı, şimdi sıra onda. küçük i̇bo çok sevgi dolu bir kucak bebeği. 3 aylık, erkek ve kısırlaştırma şartı ile sahiplendirilecektir. sevecen"
     },
     {
       "id": "kopek-lola-ab066e",
