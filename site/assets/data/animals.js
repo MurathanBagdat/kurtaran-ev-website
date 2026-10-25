@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:20:02+00:00",
-  "sayi": 289,
+  "guncelleme": "2026-10-25T15:20:30+00:00",
+  "sayi": 288,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -10336,57 +10336,6 @@ window.KE_DATA = {
       "yasGrubu": null,
       "arama": "yavru 1 otoparkta bir kutu içine bırakılarak kaderine terk edilen iki yavrudan biri. kendisini bir daha asla yarı yolda bırakmayacak, sevgi dolu ömürlük yuvasını arıyor.",
       "aramaEn": "yavru 1 one of two young ones who were left in a box in a parking lot. looking for a loving forever home that will never abandon them."
-    },
-    {
-      "id": "kedi-yavru-2-fa471d",
-      "tur": "kedi",
-      "isim": "Yavru 2",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": null,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Otoparkta bir kutu içine bırakılarak kaderine terk edilen iki yavrudan biri. Kendisini bir daha asla yarı yolda bırakmayacak, sevgi dolu ömürlük yuvasını arıyor.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [],
-      "aciklamaEn": "One of two young ones who were left in a box in a parking lot. Looking for a loving forever home that will never abandon them.",
-      "fotograflar": [
-        "assets/img/animals/ig-DaGG1e7sZVp-0.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DaGG1e7sZVp",
-        "sira": 1,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DaGG1e7sZVp/",
-        "tarih": "2026-06-27T16:06:37+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-06-27T16:06:37+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "yavru 2 otoparkta bir kutu içine bırakılarak kaderine terk edilen iki yavrudan biri. kendisini bir daha asla yarı yolda bırakmayacak, sevgi dolu ömürlük yuvasını arıyor.",
-      "aramaEn": "yavru 2 one of two young ones who were left in a box in a parking lot. looking for a loving forever home that will never abandon them."
     },
     {
       "id": "kopek-cake-34e0a5",
