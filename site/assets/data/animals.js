@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:16:21+00:00",
+  "guncelleme": "2026-10-25T15:16:39+00:00",
   "sayi": 297,
   "hayvanlar": [
     {
@@ -2379,11 +2379,12 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Felix",
       "cinsiyet": null,
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Beşiktaş",
       "cins": null,
       "yasAy": null,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": null,
@@ -2425,12 +2426,10 @@ window.KE_DATA = {
         "tarih": "2026-10-02T12:43:25+00:00"
       },
       "olusturma": "2026-10-02T12:43:25+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:16:39+00:00",
       "yasMetni": null,
-      "yasMetniEn": null,
       "yasGrubu": null,
-      "arama": "felix beşiktaş görme engelli felix, sahibi öldükten sonra bize gelmiş ve yuvalandırılmıştı. ancak ne yazık ki beşiktaş yaşam alanımıza tekrar terk edildi. yeniden güvenmeye ve güvende olduğunu hissetmeye ihtiyacı olan felix'e onu bir daha terk etmeyecek ömürlük bir yuva arıyoruz. görme engelli. hassas",
-      "aramaEn": "felix beşiktaş visually impaired felix originally came to us after his owner passed away and was adopted, but unfortunately he has been abandoned back at our beşiktaş shelter. felix needs to feel safe and learn to trust again. we are looking for a forever home that will love him and never abandon him again. visually impaired. sensitive"
+      "arama": "felix beşiktaş görme engelli felix, sahibi öldükten sonra bize gelmiş ve yuvalandırılmıştı. ancak ne yazık ki beşiktaş yaşam alanımıza tekrar terk edildi. yeniden güvenmeye ve güvende olduğunu hissetmeye ihtiyacı olan felix'e onu bir daha terk etmeyecek ömürlük bir yuva arıyoruz. görme engelli. hassas"
     },
     {
       "id": "kopek-bucuk-807969",
