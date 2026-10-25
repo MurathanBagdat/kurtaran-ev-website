@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:24:12+00:00",
+  "guncelleme": "2026-10-25T15:24:17+00:00",
   "sayi": 262,
   "hayvanlar": [
     {
