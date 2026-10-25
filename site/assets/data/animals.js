@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:18:26+00:00",
+  "guncelleme": "2026-10-25T15:18:57+00:00",
   "sayi": 291,
   "hayvanlar": [
     {
@@ -5664,13 +5664,14 @@ window.KE_DATA = {
     {
       "id": "kedi-bu-e991af",
       "tur": "kedi",
-      "isim": "Bu",
+      "isim": "Terk edilen kardeşler",
       "cinsiyet": "disi",
       "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": null,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": null,
@@ -5717,12 +5718,10 @@ window.KE_DATA = {
         }
       },
       "olusturma": "2026-09-02T08:41:53+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:18:56+00:00",
       "yasMetni": null,
-      "yasMetniEn": null,
       "yasGrubu": null,
-      "arama": "bu bu iki can, yuva bildikleri aile tarafından “yurt dışına taşınıyoruz” bahanesiyle terk edildi. şimdi ne olduğunu, neden bir anda kendilerini burada bulduklarını anlamaya çalışıyorlar. o kadar korkuyorlar ki neredeyse hiç yemek yemiyor, birbirlerinden bir an olsun ayrılmadan yan yana duruyorlar. şu an tek sığınakları birbirleri 😞 onların bu korkuyu geride bırakabilmeleri için acilen güvenli, sevgi dolu bir yuvaya ihtiyaçları var. sahiplenmek için kurtaranev.org/sahiplendirme sayfamızdan form doldurabilirsiniz. 🙏 sevecen",
-      "aramaEn": "bu these two souls were abandoned by the family they considered home under the pretext of 'moving abroad'. now they are trying to understand what happened and why they suddenly found themselves here. they are so scared that they barely eat and stand side by side without leaving each other for even a moment. right now, their only refuge is each other 😞 they urgently need a safe, loving home so they can leave this fear behind. to adopt, you can fill out the form on our kurtaranev.org/sahiplendirme page. 🙏 affectionate"
+      "arama": "terk edilen kardeşler bu iki can, yuva bildikleri aile tarafından “yurt dışına taşınıyoruz” bahanesiyle terk edildi. şimdi ne olduğunu, neden bir anda kendilerini burada bulduklarını anlamaya çalışıyorlar. o kadar korkuyorlar ki neredeyse hiç yemek yemiyor, birbirlerinden bir an olsun ayrılmadan yan yana duruyorlar. şu an tek sığınakları birbirleri 😞 onların bu korkuyu geride bırakabilmeleri için acilen güvenli, sevgi dolu bir yuvaya ihtiyaçları var. sahiplenmek için kurtaranev.org/sahiplendirme sayfamızdan form doldurabilirsiniz. 🙏 sevecen"
     },
     {
       "id": "kopek-komur-be9d92",
