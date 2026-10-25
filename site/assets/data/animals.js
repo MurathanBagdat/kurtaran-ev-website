@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T17:43:27+00:00",
+  "guncelleme": "2026-10-25T17:43:50+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -15995,7 +15995,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Mavi",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Husky",
       "yasAy": 24,
@@ -16045,12 +16045,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-01-13T07:19:29+00:00",
-      "guncelleme": "2026-10-25T17:20:12+00:00",
+      "guncelleme": "2026-10-25T17:43:49+00:00",
       "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "mavi husky mavi, 2 yaşlarında, kısır erkek, sosyal ve iyi huylu bir çocuk. başka köpeklerle iyi anlaşıyor, onlarla oyun oynamayı seviyor. geçici veya kalıcı yuvasını arıyor. oyuncu sevecen",
-      "aramaEn": "mavi husky mavi is a social and good-natured neutered male around 2 years old. he gets along well with other dogs and loves playing with them. we are looking for a foster or permanent home for him. playful affectionate"
+      "arama": "mavi husky mavi, 2 yaşlarında, kısır erkek, sosyal ve iyi huylu bir çocuk. başka köpeklerle iyi anlaşıyor, onlarla oyun oynamayı seviyor. geçici veya kalıcı yuvasını arıyor. oyuncu sevecen"
     },
     {
       "id": "kopek-izzie-6439d0",
