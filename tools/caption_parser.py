@@ -158,6 +158,12 @@ def hashtagler(caption: str) -> list[str]:
     return re.findall(r"#(\w+)", caption, re.UNICODE)
 
 
+def engelli_etiketi(caption: str) -> bool:
+    """Ekip engelli canları #engellicanlaraöncelik ile etiketliyor; sitedeki
+    aynı adlı süzgeç ozelBakim'e bakar (feedback AD-10)."""
+    return any(_sade(h) == "engellicanlaraoncelik" for h in hashtagler(caption))
+
+
 def hashtag_boyut(caption: str) -> str | None:
     for h in hashtagler(caption):
         b = HASHTAG_BOYUT.get(_sade(h))
