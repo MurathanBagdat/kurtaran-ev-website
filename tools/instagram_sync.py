@@ -38,7 +38,7 @@ import animals  # noqa: E402
 import ai_parser  # noqa: E402
 import rapidapi_kota  # noqa: E402
 import yuvalanma_kontrol  # noqa: E402
-from caption_parser import parse_all, icerik_turu, yuvalandi_mi  # noqa: E402
+from caption_parser import parse_all, icerik_turu, yuvalandi_mi, engelli_etiketi  # noqa: E402
 
 GRAPH = "https://graph.facebook.com/v21.0"
 CONFIG_PATH = animals.ROOT / "tools" / "instagram_config.json"
@@ -335,6 +335,8 @@ def gonderiyi_isle(gonderi: dict, tur: str, kullanici: str, fotograf_cek: bool =
         kayit["tur"] = tur or kayit.get("tur") or "kopek"  # hesap türü biliniyorsa o kazanır
         kayit["durum"] = "yuvalandi" if yuvalandi else "yuva-ariyor"
         kayit["konum"] = kayit.get("konum") or None
+        if engelli_etiketi(caption):  # ekibin etiketi ayrıştırıcının tahmininden önce gelir
+            kayit["ozelBakim"] = True
         kayit["kaynak"] = {
             "tip": "instagram",
             "hesap": kullanici,

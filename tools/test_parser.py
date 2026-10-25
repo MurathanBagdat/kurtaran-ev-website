@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from caption_parser import parse, parse_all, ilan_mi, yuvalandi_mi, icerik_turu  # noqa: E402
+from caption_parser import parse, parse_all, ilan_mi, yuvalandi_mi, icerik_turu, engelli_etiketi  # noqa: E402
 
 VAKALAR = [
     (
@@ -169,6 +169,19 @@ def main() -> int:
         if all(icerik_turu(m) == b for m, b in ((ARYA, "koruyucu-melek"),
                                                 (KUTU_KARDESLER, "ilan"))):
             print("  ✓ içerik türü sınıflandırması")
+
+    # #engellicanlaraöncelik etiketi (yazım farklarına dayanıklı)
+    etiket_vakalari = (("#kömür #engellicanlaraöncelik\nKömür 9 yaşında", True),
+                       ("#EngelliCanlaraÖncelik Pekmez", True),
+                       ("#engellicanlaraoncelik", True),
+                       ("Engelli canlara öncelik veriyoruz", False),
+                       ("#yavrukedi #sahiplendirme", False))
+    yanlis = [m for m, b in etiket_vakalari if engelli_etiketi(m) != b]
+    if yanlis:
+        print(f"  ✗ engelli_etiketi: {yanlis}")
+        hata += 1
+    else:
+        print("  ✓ #engellicanlaraöncelik etiketi")
 
     print()
     print("TÜM TESTLER GEÇTİ" if hata == 0 else f"{hata} TEST BAŞARISIZ")

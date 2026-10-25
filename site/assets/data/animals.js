@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-24T17:07:09+00:00",
+  "guncelleme": "2026-10-25T09:44:23+00:00",
   "sayi": 302,
   "hayvanlar": [
     {
@@ -6149,7 +6149,7 @@ window.KE_DATA = {
       "kisir": false,
       "asili": null,
       "cipli": null,
-      "ozelBakim": false,
+      "ozelBakim": true,
       "saglikNotu": null,
       "cocuklaUyum": null,
       "kopeklerleUyum": null,
@@ -6188,7 +6188,7 @@ window.KE_DATA = {
         "tarih": "2026-09-03T08:56:03+00:00"
       },
       "olusturma": "2026-09-03T08:56:03+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T09:44:23+00:00",
       "yasMetni": "3 aylık",
       "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
@@ -6388,7 +6388,7 @@ window.KE_DATA = {
       "kisir": true,
       "asili": null,
       "cipli": null,
-      "ozelBakim": null,
+      "ozelBakim": true,
       "saglikNotu": "Araba çarpması sonrası gençlik hastalığıyla da mücadele eden Kömür, uzun ve zorlu tedavi süreçlerinin ardından sağlığına kavuştu.",
       "cocuklaUyum": null,
       "kopeklerleUyum": null,
@@ -6423,7 +6423,7 @@ window.KE_DATA = {
         "tarih": "2026-09-01T08:35:17+00:00"
       },
       "olusturma": "2026-09-01T08:35:17+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T09:44:23+00:00",
       "yasMetni": "9 yaşında",
       "yasMetniEn": "9 years old",
       "yasGrubu": "kidemli",
@@ -6445,7 +6445,7 @@ window.KE_DATA = {
       "kisir": true,
       "asili": null,
       "cipli": null,
-      "ozelBakim": null,
+      "ozelBakim": true,
       "saglikNotu": null,
       "cocuklaUyum": null,
       "kopeklerleUyum": null,
@@ -6482,7 +6482,7 @@ window.KE_DATA = {
         "tarih": "2026-09-01T07:23:49+00:00"
       },
       "olusturma": "2026-09-01T07:23:49+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T09:44:23+00:00",
       "yasMetni": "2 yaşında",
       "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
