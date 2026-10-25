@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:22:53+00:00",
-  "sayi": 270,
+  "guncelleme": "2026-10-25T15:23:01+00:00",
+  "sayi": 269,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -12634,57 +12634,6 @@ window.KE_DATA = {
       "yasGrubu": null,
       "arama": "yavru kedi 8 beşiktaş kedi evi annesini kaybetmiş yavru kedimiz acil ömürlük yuvasını arıyor. yavrular toplu alanda hemen hastalanabileceği için acilen sahiplendirilmesi gerekmektedir. tanışmak için her gün 10.00-16.00 arası beşiktaş kedi evi'ni ziyaret edebilirsiniz.",
       "aramaEn": "yavru kedi 8 beşiktaş cat house our orphaned kitten is urgently looking for a forever home. since kittens can easily get sick in group environments, they need to be adopted urgently. you can visit beşiktaş cat house any day between 10:00 and 16:00 to meet them."
-    },
-    {
-      "id": "kedi-yavru-kedi-9-f27fd3",
-      "tur": "kedi",
-      "isim": "Yavru Kedi 9",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": "Beşiktaş Kedi Evi",
-      "cins": null,
-      "yasAy": null,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Annesini kaybetmiş yavru kedimiz acil ömürlük yuvasını arıyor. Yavrular toplu alanda hemen hastalanabileceği için acilen sahiplendirilmesi gerekmektedir. Tanışmak için her gün 10.00-16.00 arası Beşiktaş Kedi Evi'ni ziyaret edebilirsiniz.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": "Beşiktaş Cat House",
-      "saglikNotuEn": null,
-      "karakterEn": [],
-      "aciklamaEn": "Our orphaned kitten is urgently looking for a forever home. Since kittens can easily get sick in group environments, they need to be adopted urgently. You can visit Beşiktaş Cat House any day between 10:00 and 16:00 to meet them.",
-      "fotograflar": [
-        "assets/img/animals/ig-DYUAK5Hsol7-0.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DYUAK5Hsol7",
-        "sira": 8,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DYUAK5Hsol7/",
-        "tarih": "2026-05-14T08:38:12+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-05-14T08:38:12+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "yavru kedi 9 beşiktaş kedi evi annesini kaybetmiş yavru kedimiz acil ömürlük yuvasını arıyor. yavrular toplu alanda hemen hastalanabileceği için acilen sahiplendirilmesi gerekmektedir. tanışmak için her gün 10.00-16.00 arası beşiktaş kedi evi'ni ziyaret edebilirsiniz.",
-      "aramaEn": "yavru kedi 9 beşiktaş cat house our orphaned kitten is urgently looking for a forever home. since kittens can easily get sick in group environments, they need to be adopted urgently. you can visit beşiktaş cat house any day between 10:00 and 16:00 to meet them."
     },
     {
       "id": "kopek-benek-85e94a",
