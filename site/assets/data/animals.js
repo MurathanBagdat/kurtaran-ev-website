@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T17:40:59+00:00",
+  "guncelleme": "2026-10-25T17:41:03+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -12169,7 +12169,7 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-06-01T12:14:45+00:00",
-      "guncelleme": "2026-10-25T17:40:58+00:00",
+      "guncelleme": "2026-10-25T17:41:02+00:00",
       "yasMetni": "1,5 yaşında",
       "yasGrubu": "yetiskin",
       "arama": "telve chocolate labrador telve yaklaşık 1,5 yaşında, dişi ve kısır. kıpır kıpır, sevgi delisi bir kız. başka köpeklerle sosyal, neşeli kızımızın ömürlük yuvasını arıyoruz. oyuncu sevecen"
