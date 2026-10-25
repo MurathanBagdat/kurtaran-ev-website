@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-25T15:17:36+00:00",
-  "sayi": 295,
+  "guncelleme": "2026-10-25T15:17:45+00:00",
+  "sayi": 294,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -4774,67 +4774,6 @@
       "yasGrubu": "yavru",
       "arama": "kutu 1 2 aylık kedi yavrusu. tuvalet eğitimi var ve diğer kedilerle çok güzel anlaşıyor. i̇nsan canlısı, kucağı seven ve çok sevecen bir bebek. kısırlaştırma şartıyla sahiplendirilecektir. sevecen eğitimli",
       "aramaEn": "kutu 1 a 2-month-old kitten. he is litter trained and gets along very well with other cats. he is very affectionate and loves human contact. he will be adopted on the condition of neutering. affectionate trained"
-    },
-    {
-      "id": "kedi-kutu-3-9cdeff",
-      "tur": "kedi",
-      "isim": "Kutu 3",
-      "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 2,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": false,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": true,
-      "karakter": [
-        "sevecen",
-        "eğitimli"
-      ],
-      "aciklama": "2 aylık kedi yavrusu. Tuvalet eğitimi var ve diğer kedilerle çok güzel anlaşıyor. İnsan canlısı, kucağı seven ve çok sevecen bir bebek. Kısırlaştırma şartıyla sahiplendirilecektir.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "affectionate",
-        "trained"
-      ],
-      "aciklamaEn": "A 2-month-old kitten. She is litter trained and gets along very well with other cats. She is very affectionate and loves human contact. She will be adopted on the condition of spaying.",
-      "fotograflar": [
-        "assets/img/animals/ig-DdD7gEKjJT0-0.jpg",
-        "assets/img/animals/ig-DdD7gEKjJT0-1.jpg",
-        "assets/img/animals/ig-DdD7gEKjJT0-2.jpg",
-        "assets/img/animals/ig-DdD7gEKjJT0-3.jpg",
-        "assets/img/animals/ig-DdD7gEKjJT0-4.jpg",
-        "assets/img/animals/ig-DdD7gEKjJT0-5.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DdD7gEKjJT0",
-        "sira": 2,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DdD7gEKjJT0/",
-        "tarih": "2026-09-09T09:22:46+00:00"
-      },
-      "olusturma": "2026-09-09T09:22:46+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
-      "yasGrubu": "yavru",
-      "arama": "kutu 3 2 aylık kedi yavrusu. tuvalet eğitimi var ve diğer kedilerle çok güzel anlaşıyor. i̇nsan canlısı, kucağı seven ve çok sevecen bir bebek. kısırlaştırma şartıyla sahiplendirilecektir. sevecen eğitimli",
-      "aramaEn": "kutu 3 a 2-month-old kitten. she is litter trained and gets along very well with other cats. she is very affectionate and loves human contact. she will be adopted on the condition of spaying. affectionate trained"
     },
     {
       "id": "kopek-taco-01d1e3",
