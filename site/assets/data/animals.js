@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:15:35+00:00",
-  "sayi": 301,
+  "guncelleme": "2026-10-25T15:15:48+00:00",
+  "sayi": 300,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -1635,65 +1635,6 @@ window.KE_DATA = {
       "yasGrubu": null,
       "arama": "boncuk 1 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
       "aramaEn": "boncuk 1 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
-    },
-    {
-      "id": "kedi-boncuk-3-0db7ff",
-      "tur": "kedi",
-      "isim": "Boncuk 3",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": null,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "sevecen"
-      ],
-      "aciklama": "Anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. Ömürlük yuvasını arıyor.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "affectionate"
-      ],
-      "aciklamaEn": "Abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. Looking for a forever home.",
-      "fotograflar": [
-        "assets/img/animals/ig-DeUBlSfDM8b-0.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-1.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-2.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-3.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-4.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-5.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DeUBlSfDM8b",
-        "sira": 2,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DeUBlSfDM8b/",
-        "tarih": "2026-10-10T11:55:09+00:00"
-      },
-      "olusturma": "2026-10-10T11:55:09+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "boncuk 3 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
-      "aramaEn": "boncuk 3 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
     },
     {
       "id": "kedi-boncuk-4-90f11a",
