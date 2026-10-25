@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-25T15:18:15+00:00",
+  "guncelleme": "2026-10-25T15:18:26+00:00",
   "sayi": 291,
   "hayvanlar": [
     {
@@ -5101,13 +5101,14 @@
     {
       "id": "kedi-komur-1-744c56",
       "tur": "kedi",
-      "isim": "Kömür 1",
+      "isim": "Kömür Kardeşler",
       "cinsiyet": "disi",
       "durum": "yuva-ariyor",
       "konum": null,
       "cins": null,
       "yasAy": 2,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": false,
@@ -5146,12 +5147,10 @@
         "tarih": "2026-09-05T06:17:59+00:00"
       },
       "olusturma": "2026-09-05T06:17:59+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:18:26+00:00",
       "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
-      "arama": "kömür 1 anneleriyle birlikte bir evden terk edilen kömür kardeşler'den biri. 2 aylık, kısırlaştırma şartı ile sahiplendirilecektir.",
-      "aramaEn": "kömür 1 one of the kömür siblings who was abandoned from a home along with their mother. 2 months old, available for adoption on the condition of future spaying/neutering."
+      "arama": "kömür kardeşler anneleriyle birlikte bir evden terk edilen kömür kardeşler'den biri. 2 aylık, kısırlaştırma şartı ile sahiplendirilecektir."
     },
     {
       "id": "kopek-erik-929619",
