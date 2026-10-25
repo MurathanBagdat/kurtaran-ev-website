@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:24:36+00:00",
+  "guncelleme": "2026-10-25T15:24:46+00:00",
   "sayi": 259,
   "hayvanlar": [
     {
@@ -15173,13 +15173,14 @@ window.KE_DATA = {
     {
       "id": "kopek-malinois-1-fb6720",
       "tur": "kopek",
-      "isim": "Malinois 1",
+      "isim": "Malinois",
       "cinsiyet": null,
       "durum": "yuva-ariyor",
       "konum": null,
       "cins": "Malinois",
       "yasAy": null,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": null,
@@ -15216,12 +15217,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-02-06T11:28:50+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:24:45+00:00",
       "yasMetni": null,
-      "yasMetniEn": null,
       "yasGrubu": null,
-      "arama": "malinois 1 malinois terk edilmiş malinois. bu ırkı iyi bilen, bilinçli ve ömürlük bir yuva aranıyor.",
-      "aramaEn": "malinois 1 belgian malinois abandoned belgian malinois looking for a knowledgeable and responsible forever home."
+      "arama": "malinois malinois terk edilmiş malinois. bu ırkı iyi bilen, bilinçli ve ömürlük bir yuva aranıyor."
     },
     {
       "id": "kopek-rookie-c518ff",
