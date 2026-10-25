@@ -141,10 +141,7 @@
     var kilo = kiloMetni(h);
     if (kilo) bilgiler.push('<li>' + esc(kilo) + (tahminMi(h, 'kiloKg') ? ' <em>' + T.tahmini + '</em>' : '') + '</li>');
 
-    var etiketler = [];
-    (I18N.alan(h, 'karakter') || []).slice(0, 3).forEach(function (k) {
-      etiketler.push('<span class="tag">' + esc(h.karakterEn && EN ? k : I18N.karakter(k)) + '</span>');
-    });
+    var etiketler = [];   // karakter etiketleri gösterilmiyor (AD-17)
     if (h.kisir === true) etiketler.push('<span class="tag">' + T.kisirEtiket + '</span>');
     if (h.ozelBakim === true) etiketler.push('<span class="tag">' + T.ozelBakimEtiket + '</span>');
 
