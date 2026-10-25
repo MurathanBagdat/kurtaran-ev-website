@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:21:57+00:00",
-  "sayi": 279,
+  "guncelleme": "2026-10-25T15:22:03+00:00",
+  "sayi": 278,
   "hayvanlar": [
     {
       "id": "kopek-felix-88de2f",
@@ -12481,69 +12481,6 @@ window.KE_DATA = {
       "yasGrubu": "yavru",
       "arama": "kova kardeş 1 anneleri bir iş yerinde doğum yapıp yavrularını biraz büyüttükten sonra orada bırakmış. maalesef orada yaşamaları mümkün olmadığı için yolları bizimle kesişti. bıcır bıcır oyun oynayan, hem birbirleriyle hem oyuncaklarla oynamaya bayılan 5 mükemmel kardeşten biri. kendini sevdiren, hareketli ve çok tatlı bir yavru. yaş mama yiyor, ufaktan kuru mama yemeye de çalışıyor. kısırlaştırma şartı ile sahiplendirilecektir. oyuncu sevecen hareketli",
       "aramaEn": "kova kardeş 1 her mother gave birth at a workplace and left her there after raising her a bit. unfortunately, since it was not possible for them to live there, her path crossed with us. she is one of 5 wonderful siblings who love to play constantly, both with each other and with toys. she is an energetic, affectionate, and very sweet kitten. she eats wet food and is starting to try dry food. available for adoption on the condition of spaying/neutering. playful affectionate active"
-    },
-    {
-      "id": "kedi-kova-kardes-3-14c12d",
-      "tur": "kedi",
-      "isim": "Kova Kardeş 3",
-      "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 2,
-      "kiloKg": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": false,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "oyuncu",
-        "sevecen",
-        "hareketli"
-      ],
-      "aciklama": "Anneleri bir iş yerinde doğum yapıp yavrularını biraz büyüttükten sonra orada bırakmış. Maalesef orada yaşamaları mümkün olmadığı için yolları bizimle kesişti. Bıcır bıcır oyun oynayan, hem birbirleriyle hem oyuncaklarla oynamaya bayılan 5 mükemmel kardeşten biri. Kendini sevdiren, hareketli ve çok tatlı bir yavru. Yaş mama yiyor, ufaktan kuru mama yemeye de çalışıyor. Kısırlaştırma şartı ile sahiplendirilecektir.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "playful",
-        "affectionate",
-        "active"
-      ],
-      "aciklamaEn": "Her mother gave birth at a workplace and left her there after raising her a bit. Unfortunately, since it was not possible for them to live there, her path crossed with us. She is one of 5 wonderful siblings who love to play constantly, both with each other and with toys. She is an energetic, affectionate, and very sweet kitten. She eats wet food and is starting to try dry food. Available for adoption on the condition of spaying/neutering.",
-      "fotograflar": [
-        "assets/img/animals/ig-DYZIBOojKVK-0.jpg",
-        "assets/img/animals/ig-DYZIBOojKVK-1.jpg",
-        "assets/img/animals/ig-DYZIBOojKVK-2.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DYZIBOojKVK",
-        "sira": 2,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DYZIBOojKVK/",
-        "tarih": "2026-05-16T08:19:14+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-05-16T08:19:14+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
-      "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
-      "yasGrubu": "yavru",
-      "arama": "kova kardeş 3 anneleri bir iş yerinde doğum yapıp yavrularını biraz büyüttükten sonra orada bırakmış. maalesef orada yaşamaları mümkün olmadığı için yolları bizimle kesişti. bıcır bıcır oyun oynayan, hem birbirleriyle hem oyuncaklarla oynamaya bayılan 5 mükemmel kardeşten biri. kendini sevdiren, hareketli ve çok tatlı bir yavru. yaş mama yiyor, ufaktan kuru mama yemeye de çalışıyor. kısırlaştırma şartı ile sahiplendirilecektir. oyuncu sevecen hareketli",
-      "aramaEn": "kova kardeş 3 her mother gave birth at a workplace and left her there after raising her a bit. unfortunately, since it was not possible for them to live there, her path crossed with us. she is one of 5 wonderful siblings who love to play constantly, both with each other and with toys. she is an energetic, affectionate, and very sweet kitten. she eats wet food and is starting to try dry food. available for adoption on the condition of spaying/neutering. playful affectionate active"
     },
     {
       "id": "kedi-kova-kardes-4-0a8db3",
