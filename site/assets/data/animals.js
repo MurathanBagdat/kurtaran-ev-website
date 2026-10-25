@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:17:45+00:00",
+  "guncelleme": "2026-10-25T15:17:55+00:00",
   "sayi": 294,
   "hayvanlar": [
     {
@@ -4719,13 +4719,14 @@ window.KE_DATA = {
     {
       "id": "kedi-kutu-1-94e409",
       "tur": "kedi",
-      "isim": "Kutu 1",
+      "isim": "Kutu Kardeşler",
       "cinsiyet": "erkek",
       "durum": "yuva-ariyor",
       "konum": null,
       "cins": null,
       "yasAy": 2,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": false,
@@ -4770,12 +4771,10 @@ window.KE_DATA = {
         "tarih": "2026-09-09T09:22:46+00:00"
       },
       "olusturma": "2026-09-09T09:22:46+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:17:54+00:00",
       "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
-      "arama": "kutu 1 2 aylık kedi yavrusu. tuvalet eğitimi var ve diğer kedilerle çok güzel anlaşıyor. i̇nsan canlısı, kucağı seven ve çok sevecen bir bebek. kısırlaştırma şartıyla sahiplendirilecektir. sevecen eğitimli",
-      "aramaEn": "kutu 1 a 2-month-old kitten. he is litter trained and gets along very well with other cats. he is very affectionate and loves human contact. he will be adopted on the condition of neutering. affectionate trained"
+      "arama": "kutu kardeşler 2 aylık kedi yavrusu. tuvalet eğitimi var ve diğer kedilerle çok güzel anlaşıyor. i̇nsan canlısı, kucağı seven ve çok sevecen bir bebek. kısırlaştırma şartıyla sahiplendirilecektir. sevecen eğitimli"
     },
     {
       "id": "kopek-taco-01d1e3",
