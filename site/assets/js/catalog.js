@@ -270,6 +270,10 @@
 
   kok.addEventListener('change', function (e) {
     if (!e.target.matches('[data-filter]')) return;
+    /* Arama kutusu zaten 'input' ile işleniyor. Odak kaybında gelen 'change'
+       ızgarayı yeniden çizerse, "Filtreleri temizle" düğmesi fare basılıyken
+       değişir ve tıklama hiç gelmez. */
+    if (e.target.type === 'search') return;
     if (e.target.type === 'checkbox') {
       e.target.closest('.chip').classList.toggle('is-active', e.target.checked);
     }
