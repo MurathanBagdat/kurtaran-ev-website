@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:16:09+00:00",
+  "guncelleme": "2026-10-25T15:16:21+00:00",
   "sayi": 297,
   "hayvanlar": [
     {
@@ -1580,13 +1580,14 @@ window.KE_DATA = {
     {
       "id": "kedi-boncuk-1-cccaa5",
       "tur": "kedi",
-      "isim": "Boncuk 1",
+      "isim": "Boncuk Kardeşler",
       "cinsiyet": null,
       "durum": "yuva-ariyor",
       "konum": null,
       "cins": null,
       "yasAy": null,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": null,
       "renk": null,
       "kisir": null,
@@ -1629,12 +1630,10 @@ window.KE_DATA = {
         "tarih": "2026-10-10T11:55:09+00:00"
       },
       "olusturma": "2026-10-10T11:55:09+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:16:20+00:00",
       "yasMetni": null,
-      "yasMetniEn": null,
       "yasGrubu": null,
-      "arama": "boncuk 1 anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
-      "aramaEn": "boncuk 1 abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
+      "arama": "boncuk kardeşler anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen"
     },
     {
       "id": "kopek-zorro-4d390b",
