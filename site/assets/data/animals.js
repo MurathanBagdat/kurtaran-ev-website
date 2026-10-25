@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T17:42:30+00:00",
+  "guncelleme": "2026-10-25T17:43:27+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -15871,7 +15871,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Skye",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": null,
@@ -15919,12 +15919,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-01-15T17:35:13+00:00",
-      "guncelleme": "2026-10-25T17:20:12+00:00",
+      "guncelleme": "2026-10-25T17:43:27+00:00",
       "yasMetni": null,
-      "yasMetniEn": null,
       "yasGrubu": null,
-      "arama": "skye skye tuvalet eğitimi olan, inanılmaz derecede tatlı, sarılmayı çok seven, arabada çok uslu ve kedilerle hem de köpeklerle harika anlaşan bir dostumuzdur. ömürlük yuvasına sonsuz sevgi vermeye hazır. eğitimli sevecen sakin",
-      "aramaEn": "skye meet skye! he is potty trained, incredibly cute, loves to cuddle, behaves great in the car, and gets along wonderfully with both cats and dogs. he is ready to give endless love to his forever home. trained affectionate calm"
+      "arama": "skye skye tuvalet eğitimi olan, inanılmaz derecede tatlı, sarılmayı çok seven, arabada çok uslu ve kedilerle hem de köpeklerle harika anlaşan bir dostumuzdur. ömürlük yuvasına sonsuz sevgi vermeye hazır. eğitimli sevecen sakin"
     },
     {
       "id": "kopek-astra-e234ce",
