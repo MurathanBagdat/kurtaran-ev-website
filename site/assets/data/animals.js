@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T15:18:57+00:00",
+  "guncelleme": "2026-10-25T15:19:22+00:00",
   "sayi": 291,
   "hayvanlar": [
     {
@@ -5897,13 +5897,14 @@ window.KE_DATA = {
     {
       "id": "kopek-deneyimsiz-0a606b",
       "tur": "kopek",
-      "isim": "Deneyimsiz",
+      "isim": "Rita",
       "cinsiyet": "disi",
       "durum": "yuvalandi",
       "konum": "Gönüllü geçici yuva",
       "cins": null,
       "yasAy": 66,
       "kiloKg": null,
+      "kiloKgMax": null,
       "boyut": "kucuk",
       "renk": null,
       "kisir": true,
@@ -5954,12 +5955,10 @@ window.KE_DATA = {
         }
       },
       "olusturma": "2026-08-31T10:12:06+00:00",
-      "guncelleme": "2026-10-24T17:07:09+00:00",
+      "guncelleme": "2026-10-25T15:19:21+00:00",
       "yasMetni": "5,5 yaşında",
-      "yasMetniEn": "5.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "deneyimsiz gönüllü geçici yuva gönüllü geçici yuvamızdaki rita, 5-6 yaşlarında, kısır dişi, çok neşeli, müthiş insan aşığı, süper uyumlu bir kız. deneyimsiz yuva adayları çok uygun, son derece sosyal, gittiğiniz her yere uyumla size eşlik edebilecek bir çocuk. kediyle beraber yaşamaya alışık. çocuklarla çok iyi geçiniyor. sevilmekten hiç sıkılmayan, çok sevgi dolu, temas seven bir çocuk. tuvalet eğitimi tam, apartman hayatına uyumlu. arabaya alışık, uzun yol seyahatleri de seviyor. tasmada çok uyumlu yürüyor. 🐾 sahiplenemiyorsanız, ilanı paylaşabilirsiniz 🙏 sevecen eğitimli",
-      "aramaEn": "deneyimsiz volunteer foster home rita, currently in our volunteer foster home, is a 5-6 year old spayed female who is very joyful, a huge people lover, and a super adaptable girl. she is very suitable for first-time adopters, highly social, and a dog who can harmoniously accompany you wherever you go. she is used to living with cats. she gets along very well with children. she never tires of being petted, is extremely affectionate, and loves physical contact. she is fully house-trained and suitable for apartment life. she is accustomed to cars and also loves long road trips. she walks very nicely on a leash. 🐾 if you cannot adopt, please share this post 🙏 affectionate trained"
+      "arama": "rita gönüllü geçici yuva gönüllü geçici yuvamızdaki rita, 5-6 yaşlarında, kısır dişi, çok neşeli, müthiş insan aşığı, süper uyumlu bir kız. deneyimsiz yuva adayları çok uygun, son derece sosyal, gittiğiniz her yere uyumla size eşlik edebilecek bir çocuk. kediyle beraber yaşamaya alışık. çocuklarla çok iyi geçiniyor. sevilmekten hiç sıkılmayan, çok sevgi dolu, temas seven bir çocuk. tuvalet eğitimi tam, apartman hayatına uyumlu. arabaya alışık, uzun yol seyahatleri de seviyor. tasmada çok uyumlu yürüyor. 🐾 sahiplenemiyorsanız, ilanı paylaşabilirsiniz 🙏 sevecen eğitimli"
     },
     {
       "id": "kedi-juno-7e534e",
