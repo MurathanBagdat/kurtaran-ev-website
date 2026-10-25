@@ -86,6 +86,20 @@ duvarına düşüyor, herkese açık JSON uçları kapalı).
 
 ---
 
+### Fotoğraftan boyut / kilo / cins geriye doldurması (yarım kaldı, 25 Ekim 2026)
+
+Yeni gönderilerde AI ilk fotoğrafı da görüyor (AD-19…AD-21). Mevcut köpek ilanlarındaki
+boşlukları dolduran geriye doldurma 25 Ekim'de ~30 ilandan sonra durduruldu; hiçbir şey
+kaydedilmedi (betik o sürümde yalnızca sonda kaydediyordu, artık her 10 ilanda kaydediyor).
+
+- [ ] `python3 tools/foto_tahmini_doldur.py` — 146 köpek ilanında boyut / kilo / cins boş;
+      yalnızca boş alanları doldurur, kaldığı yerden sürer. Maliyet ~0,005 $ / ilan
+      (~0,75 $). OpenRouter anahtarının aylık 4 $ sınırı 1 Kasım'da sıfırlanıyor; Ekim'de
+      ~1,4 $ kaldı. Önce `--kuru --sinir 5` ile dene, sonra sonuçları fotoğraflarla
+      karşılaştırıp kontrol et, commit + PR.
+- [ ] İsteğe bağlı: mevcut kedi ilanlarının cinsi için aynı betiği kedilere genişlet
+      (cins sitede gösterilmiyor; yalnızca veri / panel için).
+
 ## 2. Yönetim paneli — canlıya çıkmadan önce
 
 Panel şu an **yalnızca yerel** kullanım için güvenli. Canlıda olduğu gibi kullanılamaz.

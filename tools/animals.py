@@ -67,7 +67,10 @@ FIELDS = {
     "cins":        {"tip": "metin",  "etiket": "Cins / ırk", "grup": "fiziksel"},
     "yasAy":       {"tip": "sayi",   "etiket": "Yaş (ay)", "grup": "fiziksel", "min": 0, "max": 360,
                     "ipucu": "36 = 3 yaşında. Bilinmiyorsa boş bırakın."},
-    "kiloKg":      {"tip": "ondalik","etiket": "Kilo (kg)", "grup": "fiziksel", "min": 0, "max": 120},
+    "kiloKg":      {"tip": "ondalik","etiket": "Kilo (kg)", "grup": "fiziksel", "min": 0, "max": 120,
+                    "ipucu": "Kesin kilo ya da aralığın alt sınırı."},
+    "kiloKgMax":   {"tip": "ondalik","etiket": "Kilo üst sınırı (kg)", "grup": "fiziksel", "min": 0, "max": 120,
+                    "ipucu": "Yalnızca aralıksa (ör. 20–26 kg). Kesin kiloda boş bırakın."},
     "boyut":       {"tip": "secim",  "etiket": "Boyut", "grup": "fiziksel", "secenekler": SIZE,
                     "ipucu": "Boş bırakılırsa kilodan tahmin edilir."},
     "renk":        {"tip": "metin",  "etiket": "Renk / desen", "grup": "fiziksel"},
@@ -185,10 +188,9 @@ AGE_GROUPS_EN = {"yavru": "Puppy / kitten (0–1)", "yetiskin": "Adult (1–7)",
 
 
 def boyut_tahmini(tur: str, kilo: float | None) -> str | None:
-    if kilo is None:
+    """Köpeğin boyutunu kilodan (aralıksa orta noktadan) türetir. Kedilerde boyut yok."""
+    if kilo is None or tur == "kedi":
         return None
-    if tur == "kedi":
-        return "kucuk"
     if kilo < 12:
         return "kucuk"
     if kilo < 25:
@@ -302,9 +304,14 @@ def normalize(ham: dict) -> tuple[dict, list[str]]:
     kayit["olusturma"] = ham.get("olusturma") or now_iso()
     kayit["guncelleme"] = now_iso()
 
-    # boyut bilinmiyorsa kilodan türet ve tahmini işaretle
-    if kayit["boyut"] is None:
-        tahmin = boyut_tahmini(tur, kayit["kiloKg"])
+    # Kilo aralığı: üst sınır alt sınırdan büyük değilse aralık yok sayılır
+    if kayit["kiloKg"] is None or (kayit["kiloKgMax"] is not None and kayit["kiloKgMax"] <= kayit["kiloKg"]):
+        kayit["kiloKgMax"] = None
+
+    # boyut bilinmiyorsa kilodan (aralıksa orta noktadan) türet ve tahmini işaretle
+    if kayit["boyut"] is None and kayit["kiloKg"] is not None:
+        orta = (kayit["kiloKg"] + (kayit["kiloKgMax"] or kayit["kiloKg"])) / 2
+        tahmin = boyut_tahmini(tur, orta)
         if tahmin:
             kayit["boyut"] = tahmin
             if "boyut" not in kayit["tahmini"]:

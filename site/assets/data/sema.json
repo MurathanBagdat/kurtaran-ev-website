@@ -55,7 +55,16 @@
       "etiket": "Kilo (kg)",
       "grup": "fiziksel",
       "min": 0,
-      "max": 120
+      "max": 120,
+      "ipucu": "Kesin kilo ya da aralığın alt sınırı."
+    },
+    "kiloKgMax": {
+      "tip": "ondalik",
+      "etiket": "Kilo üst sınırı (kg)",
+      "grup": "fiziksel",
+      "min": 0,
+      "max": 120,
+      "ipucu": "Yalnızca aralıksa (ör. 20–26 kg). Kesin kiloda boş bırakın."
     },
     "boyut": {
       "tip": "secim",

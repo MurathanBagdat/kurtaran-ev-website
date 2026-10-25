@@ -72,9 +72,9 @@
     return 'kidemli';
   }
 
+  /* animals.py > boyut_tahmini ile aynı: kedilerde boyut yok */
   function boyutTahmini(tur, kilo) {
-    if (kilo == null) return null;
-    if (tur === 'kedi') return 'kucuk';
+    if (kilo == null || tur === 'kedi') return null;
     if (kilo < 12) return 'kucuk';
     if (kilo < 25) return 'orta';
     return 'buyuk';
@@ -147,8 +147,13 @@
     kayit.olusturma = ham.olusturma || nowIso();
     kayit.guncelleme = nowIso();
 
-    if (kayit.boyut == null) {
-      var tahmin = boyutTahmini(tur, kayit.kiloKg);
+    /* Kilo aralığı: üst sınır alt sınırdan büyük değilse aralık yok sayılır */
+    if (kayit.kiloKg == null || (kayit.kiloKgMax != null && kayit.kiloKgMax <= kayit.kiloKg)) {
+      kayit.kiloKgMax = null;
+    }
+
+    if (kayit.boyut == null && kayit.kiloKg != null) {
+      var tahmin = boyutTahmini(tur, (kayit.kiloKg + (kayit.kiloKgMax || kayit.kiloKg)) / 2);
       if (tahmin) {
         kayit.boyut = tahmin;
         if (kayit.tahmini.indexOf('boyut') === -1) kayit.tahmini.push('boyut');
