@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-26T16:53:22+00:00",
+  "guncelleme": "2026-10-26T16:55:45+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -9621,7 +9621,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Nolan",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "French Bulldog",
       "yasAy": 30,
@@ -9669,12 +9669,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-07-13T13:53:51+00:00",
-      "guncelleme": "2026-10-25T17:20:12+00:00",
+      "guncelleme": "2026-10-26T16:55:45+00:00",
       "yasMetni": "2,5 yaşında",
-      "yasMetniEn": "2.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "nolan french bulldog nolan, 2-3 yaşlarında, kısır erkek bir french bulldog. i̇nsanla iletişimi çok kuvvetli, sevilmeyi çok seviyor. irk özelliklerini bilen, bakımını üstlenecek ömürlük yuvasını arıyoruz. sevecen",
-      "aramaEn": "nolan french bulldog nolan is a neutered male french bulldog around 2-3 years old. he communicates very well with people and loves affection. we are looking for a forever home with someone who knows the breed characteristics and will take care of him. affectionate"
+      "arama": "nolan french bulldog nolan, 2-3 yaşlarında, kısır erkek bir french bulldog. i̇nsanla iletişimi çok kuvvetli, sevilmeyi çok seviyor. irk özelliklerini bilen, bakımını üstlenecek ömürlük yuvasını arıyoruz. sevecen"
     },
     {
       "id": "kedi-lena-73d041",
