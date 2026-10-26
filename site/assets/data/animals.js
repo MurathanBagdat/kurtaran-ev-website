@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-25T17:43:50+00:00",
+  "guncelleme": "2026-10-26T16:53:22+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -5078,7 +5078,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Minnie",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "German Pointer Melezi",
       "yasAy": 18,
@@ -5134,12 +5134,10 @@ window.KE_DATA = {
         "tarih": "2026-09-08T08:01:37+00:00"
       },
       "olusturma": "2026-09-08T08:01:37+00:00",
-      "guncelleme": "2026-10-25T17:20:12+00:00",
+      "guncelleme": "2026-10-26T16:53:22+00:00",
       "yasMetni": "1,5 yaşında",
-      "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "minnie german pointer melezi minnie, 1-2 yaşlarında, kısır dişi, oyuncu, kıpır kıpır, çok neşeli ve eğlenceli bir kız. i̇nsanlara bayılıyor, teması çok seviyor. oyuncaklarla oynamaya bayılıyor. tabii ırkı dolayısıyla koşmaya da bayılıyor. aktif hayatı olan, sporu seven birine harika bir dost olabilir. oyuncu hareketli neşeli sevecen",
-      "aramaEn": "minnie german pointer mix minnie is a spayed female dog around 1-2 years old, playful, energetic, cheerful, and fun. she loves people and adores affection. she loves playing with toys and, true to her breed, running. she would make a wonderful companion for someone with an active lifestyle who enjoys sports. playful active cheerful affectionate"
+      "arama": "minnie german pointer melezi minnie, 1-2 yaşlarında, kısır dişi, oyuncu, kıpır kıpır, çok neşeli ve eğlenceli bir kız. i̇nsanlara bayılıyor, teması çok seviyor. oyuncaklarla oynamaya bayılıyor. tabii ırkı dolayısıyla koşmaya da bayılıyor. aktif hayatı olan, sporu seven birine harika bir dost olabilir. oyuncu hareketli neşeli sevecen"
     },
     {
       "id": "kopek-karamel-6ffb96",
