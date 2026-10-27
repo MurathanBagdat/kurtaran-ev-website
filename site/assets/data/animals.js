@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:26:57+00:00",
+  "guncelleme": "2026-10-27T17:27:06+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -15249,7 +15249,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Candy",
       "cinsiyet": null,
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -15299,12 +15299,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-03-08T11:40:31+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:27:05+00:00",
       "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
-      "arama": "candy candy, 2 aylık pufuduk bir kedi yavrusudur. annesi garajda doğum yaptıktan sonra koruma altına alınmıştır. oyuncu, meraklı ve insanlara alışkın bir yavrudur. kucağa gelmeyi sever ve sevilince hemen mırıldanmaya başlar. oyuncu meraklı sevecen",
-      "aramaEn": "candy candy is a fluffy 2-month-old kitten. taken into care after their mother gave birth in a garage, candy is playful, curious, and accustomed to people. candy loves to be held and immediately starts purring when petted. playful curious affectionate"
+      "arama": "candy candy, 2 aylık pufuduk bir kedi yavrusudur. annesi garajda doğum yaptıktan sonra koruma altına alınmıştır. oyuncu, meraklı ve insanlara alışkın bir yavrudur. kucağa gelmeyi sever ve sevilince hemen mırıldanmaya başlar. oyuncu meraklı sevecen"
     },
     {
       "id": "kedi-yumyum-319d3e",
