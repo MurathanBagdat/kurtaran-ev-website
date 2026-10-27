@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:34:07+00:00",
-  "sayi": 256,
+  "guncelleme": "2026-10-27T17:34:30+00:00",
+  "sayi": 255,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -1943,66 +1943,6 @@ window.KE_DATA = {
       "yasGrubu": "yetiskin",
       "arama": "polen yorkshire terrier gönüllü geçici yuva polen, 6-7 yaşlarında üretimden kurtarılmış bir yorkshire terrier kızı. müthiş iyi huylu ve uyumlu bir kız. başka köpeklerle de, kedilerle de sosyal, bir arada sorunsuz yaşayabiliyor. tuvalet eğitimi ped destekli olarak oturdu. kıpır kıpır çok neşeli, sizinle her yere gelip gidebilecek sosyallikte. havlama huyu yok, ev hayatına uyumlu. i̇nsan aşığı, sevilmeye bayılıyor. sevecen sosyal uyumlu neşeli",
       "aramaEn": "polen yorkshire terrier volunteer foster home polen is a female yorkshire terrier around 6-7 years old, rescued from a breeding facility. she is extraordinarily good-natured and adaptable. she is very social with both dogs and cats and can live alongside them without any issues. she is potty trained with pad support. very lively and joyful, she is social enough to accompany you anywhere. she does not bark and is fully adapted to home life. she loves humans and adores being petted. affectionate social compatible cheerful"
-    },
-    {
-      "id": "kedi-boncuk-1-cccaa5",
-      "tur": "kedi",
-      "isim": "Boncuk Kardeşler",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": null,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "sevecen"
-      ],
-      "aciklama": "Anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. Ömürlük yuvasını arıyor.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "affectionate"
-      ],
-      "aciklamaEn": "Abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. Looking for a forever home.",
-      "fotograflar": [
-        "assets/img/animals/ig-DeUBlSfDM8b-0.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-1.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-2.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-3.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-4.jpg",
-        "assets/img/animals/ig-DeUBlSfDM8b-5.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DeUBlSfDM8b",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DeUBlSfDM8b/",
-        "tarih": "2026-10-10T11:55:09+00:00"
-      },
-      "olusturma": "2026-10-10T11:55:09+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "boncuk kardeşler anneleri ve kardeşleriyle birlikte bir kutu içinde terk edilen minik yavru kedi, yaş ve kuru mama yiyor, kum kabını sorunsuz kullanıyor. ömürlük yuvasını arıyor. sevecen",
-      "aramaEn": "boncuk kardeşler abandoned in a box along with its mother and siblings, this tiny kitten eats wet and dry food and uses the litter box without any issues. looking for a forever home. affectionate"
     },
     {
       "id": "kopek-zorro-4d390b",
