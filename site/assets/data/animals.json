@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-27T17:30:55+00:00",
-  "sayi": 259,
+  "guncelleme": "2026-10-27T17:31:05+00:00",
+  "sayi": 258,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -11383,74 +11383,6 @@
       "yasGrubu": "yetiskin",
       "arama": "vanilya vanilya tam anlamıyla neşe dolu bir kız. oyunculuğu, sevimli halleri ve bitmeyen merakıyla bulunduğu her ortamın enerjisini değiştirmeyi başarıyor. 1 yaşında, dişi ve kısır. oyuncu sevecen meraklı",
       "aramaEn": "vanilya vanilya is a truly joyful girl. with her playful nature, charming ways, and endless curiosity, she manages to brighten up the energy of any environment she is in. she is 1 year old, female, and spayed. playful affectionate curious"
-    },
-    {
-      "id": "kopek-susam-7e9bf9",
-      "tur": "kopek",
-      "isim": "Susam",
-      "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
-      "konum": "Geçici yuva",
-      "cins": null,
-      "yasAy": 24,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": "orta",
-      "renk": null,
-      "kisir": true,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": false,
-      "saglikNotu": null,
-      "cocuklaUyum": true,
-      "kopeklerleUyum": true,
-      "kedilerleUyum": true,
-      "karakter": [
-        "sevecen",
-        "neşeli",
-        "sosyal",
-        "eğitimli",
-        "uyumlu"
-      ],
-      "aciklama": "Bizim tatlı Susam’ımız geçici yuvaya çıktı. Susam 2 yaşlarında, kısır dişi, küçük-orta ırk arası bir kız. Tuvalet eğitimi var. Çocuklarla çok iyi anlaşıyor. Bütün gün sevseniz sıkılmayacak, müthiş tatlı ve yumuşacık huylu bir sevgi pıtırcığı. Gerektiğinde evde yalnız kalabiliyor. Başka köpeklerle sorunsuz; kediyle de beraber yaşayabileceğini düşünüyoruz. Çok hızlı bağ kurabilen, çok pozitif ve neşeli bir kız. Arabaya alışık. Her ortama ayak uydurabilen, sizinle ofise, kafeye, her yere birlikte gelebilecek sosyallikte bir çocuk. Ömürlük yuvasını arıyoruz.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": "Foster home",
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "affectionate",
-        "cheerful",
-        "social",
-        "trained",
-        "adaptable"
-      ],
-      "aciklamaEn": "Our sweet Susam has moved into a foster home. Susam is around 2 years old, a spayed female, small-to-medium sized dog. She is house-trained and gets along very well with children. She is an amazingly sweet, gentle, and affectionate soul who never gets tired of love. She can stay home alone when necessary. She is great with other dogs and we believe she can live with cats as well. She bonds very quickly and is a very positive, cheerful girl. She is used to car rides and is social enough to adapt to any environment, joining you at the office, cafes, or anywhere else. We are looking for her forever home.",
-      "fotograflar": [
-        "assets/img/animals/ig-DZw_ktkjm9U-0.jpg",
-        "assets/img/animals/ig-DZw_ktkjm9U-1.jpg",
-        "assets/img/animals/ig-DZw_ktkjm9U-2.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kopekleri",
-        "gonderiId": "DZw_ktkjm9U",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DZw_ktkjm9U/",
-        "tarih": "2026-06-19T11:18:36+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-06-19T11:18:36+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
-      "yasGrubu": "yetiskin",
-      "arama": "susam geçici yuva bizim tatlı susam’ımız geçici yuvaya çıktı. susam 2 yaşlarında, kısır dişi, küçük-orta ırk arası bir kız. tuvalet eğitimi var. çocuklarla çok iyi anlaşıyor. bütün gün sevseniz sıkılmayacak, müthiş tatlı ve yumuşacık huylu bir sevgi pıtırcığı. gerektiğinde evde yalnız kalabiliyor. başka köpeklerle sorunsuz; kediyle de beraber yaşayabileceğini düşünüyoruz. çok hızlı bağ kurabilen, çok pozitif ve neşeli bir kız. arabaya alışık. her ortama ayak uydurabilen, sizinle ofise, kafeye, her yere birlikte gelebilecek sosyallikte bir çocuk. ömürlük yuvasını arıyoruz. sevecen neşeli sosyal eğitimli uyumlu",
-      "aramaEn": "susam foster home our sweet susam has moved into a foster home. susam is around 2 years old, a spayed female, small-to-medium sized dog. she is house-trained and gets along very well with children. she is an amazingly sweet, gentle, and affectionate soul who never gets tired of love. she can stay home alone when necessary. she is great with other dogs and we believe she can live with cats as well. she bonds very quickly and is a very positive, cheerful girl. she is used to car rides and is social enough to adapt to any environment, joining you at the office, cafes, or anywhere else. we are looking for her forever home. affectionate cheerful social trained adaptable"
     },
     {
       "id": "kedi-sisi-ab9b94",
