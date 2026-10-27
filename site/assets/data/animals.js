@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:27:18+00:00",
+  "guncelleme": "2026-10-27T17:28:13+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -14271,7 +14271,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Smile",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 24,
@@ -14317,12 +14317,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-03-27T10:02:16+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:28:12+00:00",
       "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "smile sokakta besleme yaparken çenesinden darbe almış halde bulunan smile, ameliyat oldu ve şu an hiçbir sağlık problemi yok. keyfi gayet yerinde, kendini sevdirmeye bayılan 2 yaşında erkek bir kedi. çenesinden darbe almış ve ameliyat olmuştur, şu an hiçbir sağlık problemi yoktur. sevecen",
-      "aramaEn": "smile smile was found during street feeding after suffering a jaw injury. he underwent surgery and now has no health issues. he is a 2-year-old male cat in great spirits who loves affection. he suffered an injury to his jaw and underwent surgery; he currently has no health problems. affectionate"
+      "arama": "smile sokakta besleme yaparken çenesinden darbe almış halde bulunan smile, ameliyat oldu ve şu an hiçbir sağlık problemi yok. keyfi gayet yerinde, kendini sevdirmeye bayılan 2 yaşında erkek bir kedi. çenesinden darbe almış ve ameliyat olmuştur, şu an hiçbir sağlık problemi yoktur. sevecen"
     },
     {
       "id": "kedi-momo-9e6c22",
