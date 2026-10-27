@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:33:23+00:00",
+  "guncelleme": "2026-10-27T17:33:35+00:00",
   "sayi": 258,
   "hayvanlar": [
     {
@@ -4889,7 +4889,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Cimcime",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -4941,12 +4941,10 @@ window.KE_DATA = {
         "tarih": "2026-09-10T12:32:17+00:00"
       },
       "olusturma": "2026-09-10T12:32:17+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:33:34+00:00",
       "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
-      "arama": "cimcime adı gibi kendisi de tam bir cimcime! aşırı meraklı, oyuncu ve insanlarla vakit geçirmeye bayılan minik bir kız. sevgi dolu ve çok tatlı. 1.5 aylık dişi kedi, kısırlaştırma şartı ile sahiplendirilecektir. meraklı oyuncu sevecen",
-      "aramaEn": "cimcime living up to her name, cimcime is an extremely curious, playful little girl who loves spending time with people. full of love and sweetness, this 1.5-month-old female kitten is looking for a home on the condition of future spaying. curious playful affectionate"
+      "arama": "cimcime adı gibi kendisi de tam bir cimcime! aşırı meraklı, oyuncu ve insanlarla vakit geçirmeye bayılan minik bir kız. sevgi dolu ve çok tatlı. 1.5 aylık dişi kedi, kısırlaştırma şartı ile sahiplendirilecektir. meraklı oyuncu sevecen"
     },
     {
       "id": "kopek-rex-e93b7e",
