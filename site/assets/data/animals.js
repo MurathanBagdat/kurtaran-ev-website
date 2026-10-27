@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:30:11+00:00",
+  "guncelleme": "2026-10-27T17:30:19+00:00",
   "sayi": 259,
   "hayvanlar": [
     {
@@ -12263,7 +12263,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Mira",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -12311,12 +12311,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-06-03T07:23:56+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:30:19+00:00",
       "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
-      "arama": "mira isırmamak için zor duracağınız bir güzellik. biraz mesafeli olsa da sevmeye başladığınızda hemen size güvenir ve gur gur yapar. 2 aylık dişi, kısırlaştırma şartı ile sahiplendirilecektir. çekingen sevecen",
-      "aramaEn": "mira she is an irresistible beauty. although she can be a little distant at first, she trusts you immediately once you start petting her and begins to purr. she is a 2-month-old female and will be adopted on the condition of spaying. shy affectionate"
+      "arama": "mira isırmamak için zor duracağınız bir güzellik. biraz mesafeli olsa da sevmeye başladığınızda hemen size güvenir ve gur gur yapar. 2 aylık dişi, kısırlaştırma şartı ile sahiplendirilecektir. çekingen sevecen"
     },
     {
       "id": "kopek-telve-ffe7a7",
