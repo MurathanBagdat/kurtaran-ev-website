@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-27T17:33:35+00:00",
-  "sayi": 258,
+  "guncelleme": "2026-10-27T17:33:57+00:00",
+  "sayi": 257,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -3847,64 +3847,6 @@
       "yasGrubu": "yetiskin",
       "arama": "vita vita, 4-5 yaşlarında, kısır dişi. yıllarca evde yaşadıktan sonra, taşınma sebebiyle terk edildi. toplu alana alışması çok zor artık. i̇nsanla bağı yüksek, sevilmeyi seven ve çabuk bağ kuran bir çocuk. tuvalet eğitimi var. apartman hayatına alışık. çocuklarla iyi geçiniyor. sevecen",
       "aramaEn": "vita vita is a 4-5 year old spayed female. after living in a home for years, she was abandoned due to relocation. it is very hard for her to adapt to a shelter environment now. she has a strong connection with humans, loves being petted, and bonds quickly. she is house-trained, used to apartment life, and gets along well with children. affectionate"
-    },
-    {
-      "id": "kedi-citos-9c8849",
-      "tur": "kedi",
-      "isim": "Çitos",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 1,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": false,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Çitos henüz 25 günlük, dünyayı yeni yeni tanımaya başlayan minicik bir bebek. Şu an en çok ihtiyacı olan şey sevgi, güven ve doğru bakım. Çitos çok küçük olduğu için onun için yavru kedi bakımına hakim, beslenme ve tuvalet sürecini takip edebilecek, sorumluluğunun bilincinde bir yuva arıyoruz. Yaş mama yiyor ve kum kullanıyor. Kısırlaştırma şartı ile sahiplendirilecektir.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [],
-      "aciklamaEn": "Çitos is a tiny baby just 25 days old, barely starting to discover the world. Right now, what Çitos needs most is love, trust, and proper care. Because Çitos is very young, we are looking for a responsible home experienced in kitten care that can monitor feeding and litter box routine. Çitos eats wet food and uses the litter box. Adoption is subject to a spay/neuter agreement.",
-      "fotograflar": [
-        "assets/img/animals/ig-DdeCUCdjOPY-0.jpg",
-        "assets/img/animals/ig-DdeCUCdjOPY-1.jpg",
-        "assets/img/animals/ig-DdeCUCdjOPY-2.jpg",
-        "assets/img/animals/ig-DdeCUCdjOPY-3.jpg",
-        "assets/img/animals/ig-DdeCUCdjOPY-4.jpg",
-        "assets/img/animals/ig-DdeCUCdjOPY-5.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DdeCUCdjOPY",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DdeCUCdjOPY/",
-        "tarih": "2026-09-19T12:42:33+00:00"
-      },
-      "olusturma": "2026-09-19T12:42:33+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": "1 aylık",
-      "yasMetniEn": "1 month old",
-      "yasGrubu": "yavru",
-      "arama": "çitos çitos henüz 25 günlük, dünyayı yeni yeni tanımaya başlayan minicik bir bebek. şu an en çok ihtiyacı olan şey sevgi, güven ve doğru bakım. çitos çok küçük olduğu için onun için yavru kedi bakımına hakim, beslenme ve tuvalet sürecini takip edebilecek, sorumluluğunun bilincinde bir yuva arıyoruz. yaş mama yiyor ve kum kullanıyor. kısırlaştırma şartı ile sahiplendirilecektir.",
-      "aramaEn": "çitos çitos is a tiny baby just 25 days old, barely starting to discover the world. right now, what çitos needs most is love, trust, and proper care. because çitos is very young, we are looking for a responsible home experienced in kitten care that can monitor feeding and litter box routine. çitos eats wet food and uses the litter box. adoption is subject to a spay/neuter agreement."
     },
     {
       "id": "kopek-tofu-c58e2e",
