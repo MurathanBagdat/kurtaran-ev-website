@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-27T17:33:57+00:00",
-  "sayi": 257,
+  "guncelleme": "2026-10-27T17:34:07+00:00",
+  "sayi": 256,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -3527,70 +3527,6 @@
       "yasGrubu": null,
       "arama": "dusty dusty, kabin boy, kısır bir erkek. enerjisi yüksek, hareketli ve hayatı dolu dolu yaşamayı seven bir çocuk. küçük boyunun içine kocaman bir enerji sığdıran dusty, onunla vakit geçirecek, hareketli yaşamına eşlik edecek ve ömürlük yuvasını paylaşacak ailesini bekliyor. enerjik hareketli",
       "aramaEn": "dusty dusty is a cabin-sized, neutered male dog. he is a high-energy, active boy who loves living life to the fullest. packing a huge amount of energy into his small body, dusty is waiting for a forever family to spend time with him and accompany his active lifestyle. energetic active"
-    },
-    {
-      "id": "kedi-alaska-c38afe",
-      "tur": "kedi",
-      "isim": "Alaska",
-      "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 12,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": true,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": false,
-      "karakter": [
-        "çekingen",
-        "sevecen"
-      ],
-      "aciklama": "Alaska bize evden terk edildi. İlk geldiğinde çok korkak ve ürkekti, kedilerden bile korkuyordu. Halen kedilere tam olarak güvenmiş değil ama insanlara aşırı bayılıyor. İnsanının yanına gelmeye çekiniyor ama siz onu sevince daha çok sevmeniz için elinden geleni yapıyor. 1 yaşlarında, erkek ve kısır.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "shy",
-        "affectionate"
-      ],
-      "aciklamaEn": "Alaska was abandoned to us from a home. When he first arrived, he was very timid and scared, even afraid of cats. He still doesn't fully trust cats, but he absolutely loves humans. He is hesitant to approach his human, but when you show him affection, he does everything he can to be loved even more. Around 1 year old, male, and neutered.",
-      "fotograflar": [
-        "assets/img/animals/ig-DdqtW11jDO5-0.jpg",
-        "assets/img/animals/ig-DdqtW11jDO5-1.jpg",
-        "assets/img/animals/ig-DdqtW11jDO5-2.jpg",
-        "assets/img/animals/ig-DdqtW11jDO5-3.jpg",
-        "assets/img/animals/ig-DdqtW11jDO5-4.jpg",
-        "assets/img/animals/ig-DdqtW11jDO5-5.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DdqtW11jDO5",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DdqtW11jDO5/",
-        "tarih": "2026-09-24T10:49:34+00:00"
-      },
-      "olusturma": "2026-09-24T10:49:34+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": "1 yaşında",
-      "yasMetniEn": "1 year old",
-      "yasGrubu": "yetiskin",
-      "arama": "alaska alaska bize evden terk edildi. i̇lk geldiğinde çok korkak ve ürkekti, kedilerden bile korkuyordu. halen kedilere tam olarak güvenmiş değil ama insanlara aşırı bayılıyor. i̇nsanının yanına gelmeye çekiniyor ama siz onu sevince daha çok sevmeniz için elinden geleni yapıyor. 1 yaşlarında, erkek ve kısır. çekingen sevecen",
-      "aramaEn": "alaska alaska was abandoned to us from a home. when he first arrived, he was very timid and scared, even afraid of cats. he still doesn't fully trust cats, but he absolutely loves humans. he is hesitant to approach his human, but when you show him affection, he does everything he can to be loved even more. around 1 year old, male, and neutered. shy affectionate"
     },
     {
       "id": "kopek-dante-04dca4",
