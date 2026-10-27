@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-27T17:28:13+00:00",
+  "guncelleme": "2026-10-27T17:28:27+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -14021,7 +14021,7 @@
       "tur": "kedi",
       "isim": "Pörtlek",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 3,
@@ -14069,12 +14069,10 @@
         "geriye": true
       },
       "olusturma": "2026-04-07T11:40:45+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:28:26+00:00",
       "yasMetni": "3 aylık",
-      "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
-      "arama": "pörtlek otoparkta bacağı kırık halde bulunan pörtlek, ameliyat oldu ve tamamen iyileşti. artık koşup oyun oynayabilen, insanlara bayılan ve enerji dolu tatlı bir kedi. otoparkta bacağı kırık halde bulundu, ameliyat oldu ve iyileşti. hiçbir problemi veya engeli yoktur. oyuncu sevecen",
-      "aramaEn": "pörtlek found in a parking lot with a broken leg, pörtlek underwent surgery and fully recovered. he is now a sweet, energetic kitten who loves running around, playing, and adores humans. found in a parking lot with a broken leg, underwent surgery and fully recovered. has no problems or disabilities. playful affectionate"
+      "arama": "pörtlek otoparkta bacağı kırık halde bulunan pörtlek, ameliyat oldu ve tamamen iyileşti. artık koşup oyun oynayabilen, insanlara bayılan ve enerji dolu tatlı bir kedi. otoparkta bacağı kırık halde bulundu, ameliyat oldu ve iyileşti. hiçbir problemi veya engeli yoktur. oyuncu sevecen"
     },
     {
       "id": "kopek-mona-451d13",
