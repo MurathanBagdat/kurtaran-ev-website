@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-26T19:40:54+00:00",
+  "guncelleme": "2026-10-27T17:24:41+00:00",
   "sayi": 264,
   "hayvanlar": [
     {
@@ -279,8 +279,8 @@ window.KE_DATA = {
       "konum": null,
       "cins": "Golden Retriever melezi",
       "yasAy": 24,
-      "kiloKg": 15.0,
-      "kiloKgMax": 20.0,
+      "kiloKg": 15,
+      "kiloKgMax": 20,
       "boyut": "orta",
       "renk": null,
       "kisir": true,
@@ -475,7 +475,7 @@ window.KE_DATA = {
       "konum": null,
       "cins": "Maltese",
       "yasAy": 36,
-      "kiloKg": 4.0,
+      "kiloKg": 4,
       "kiloKgMax": null,
       "boyut": "kucuk",
       "renk": null,
@@ -1360,7 +1360,7 @@ window.KE_DATA = {
       "konum": "Gönüllü geçici yuva",
       "cins": null,
       "yasAy": 36,
-      "kiloKg": 12.0,
+      "kiloKg": 12,
       "kiloKgMax": null,
       "boyut": "kucuk",
       "renk": null,
@@ -1428,7 +1428,7 @@ window.KE_DATA = {
       "konum": null,
       "cins": "Maltese Terrier",
       "yasAy": 8,
-      "kiloKg": 5.0,
+      "kiloKg": 5,
       "kiloKgMax": null,
       "boyut": "kucuk",
       "renk": null,
@@ -4827,7 +4827,7 @@ window.KE_DATA = {
       "konum": "Gönüllü geçici yuva",
       "cins": null,
       "yasAy": 72,
-      "kiloKg": 20.0,
+      "kiloKg": 20,
       "kiloKgMax": null,
       "boyut": "orta",
       "renk": null,
@@ -4957,7 +4957,7 @@ window.KE_DATA = {
       "konum": "Gönüllü geçici yuva",
       "cins": "Maltese Terrier",
       "yasAy": 8,
-      "kiloKg": 5.0,
+      "kiloKg": 5,
       "kiloKgMax": null,
       "boyut": "kucuk",
       "renk": null,
@@ -7538,7 +7538,7 @@ window.KE_DATA = {
       "konum": null,
       "cins": null,
       "yasAy": 18,
-      "kiloKg": 5.0,
+      "kiloKg": 5,
       "kiloKgMax": null,
       "boyut": "kucuk",
       "renk": null,
@@ -16457,7 +16457,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Anka",
       "cinsiyet": null,
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": null,
@@ -16505,12 +16505,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-01-05T17:35:16+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:24:41+00:00",
       "yasMetni": null,
-      "yasMetniEn": null,
       "yasGrubu": null,
-      "arama": "anka şiddet gördüğü sokaklardan kurtarılan anka'nın yaraları iyileşti. nörolojik olarak bir denge problemi ve biraz sarsak adımları var, ancak koşup oyun oynayabiliyor ve sevgi dolu yuvasını bekliyor. nörolojik denge problemi var, adımları biraz sarsak. oyuncu sevecen",
-      "aramaEn": "anka rescued from the streets where anka suffered violence, anka's physical wounds have healed. anka has a neurological balance issue causing slightly unsteady steps, but loves to run, play, and is waiting for a loving home. has a neurological balance problem and slightly unsteady steps. playful affectionate"
+      "arama": "anka şiddet gördüğü sokaklardan kurtarılan anka'nın yaraları iyileşti. nörolojik olarak bir denge problemi ve biraz sarsak adımları var, ancak koşup oyun oynayabiliyor ve sevgi dolu yuvasını bekliyor. nörolojik denge problemi var, adımları biraz sarsak. oyuncu sevecen"
     },
     {
       "id": "kedi-bonnie-77d786",
