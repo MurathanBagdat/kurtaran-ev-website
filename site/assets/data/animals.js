@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:32:08+00:00",
+  "guncelleme": "2026-10-27T17:33:23+00:00",
   "sayi": 258,
   "hayvanlar": [
     {
@@ -5420,7 +5420,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Thalia",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Scottish Fold",
       "yasAy": 12,
@@ -5469,12 +5469,10 @@ window.KE_DATA = {
         "tarih": "2026-09-07T08:54:49+00:00"
       },
       "olusturma": "2026-09-07T08:54:49+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:33:22+00:00",
       "yasMetni": "1 yaşında",
-      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "thalia scottish fold sakinliği ve yumuşacık karakteriyle insanın kalbini hemen kazanan, dünya tatlısı bir kız. i̇nsan canlısı, sevilmeye bayılan, uyumlu ve huzurlu bir prenses. sakin sevecen",
-      "aramaEn": "thalia scottish fold a sweet girl who quickly wins hearts with her calmness and gentle nature. she is a friendly, peaceful princess who loves affection and gets along well with everyone. calm affectionate"
+      "arama": "thalia scottish fold sakinliği ve yumuşacık karakteriyle insanın kalbini hemen kazanan, dünya tatlısı bir kız. i̇nsan canlısı, sevilmeye bayılan, uyumlu ve huzurlu bir prenses. sakin sevecen"
     },
     {
       "id": "kopek-jerry-d582f3",
