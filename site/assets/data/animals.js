@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:27:06+00:00",
+  "guncelleme": "2026-10-27T17:27:18+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -14823,7 +14823,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Sarman",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 12,
@@ -14869,12 +14869,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-03-15T12:56:00+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:27:17+00:00",
       "yasMetni": "1 yaşında",
-      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "sarman sokakta donmak üzereyken bulunup kurtarıldı. tedavisi yaptırıldı, şu an gayet sağlıklı. çok cana yakın ve sevgi dolu. sokakta donmak üzereyken bulunup kurtarıldı. tedavisi yaptırıldı, şu an gayet sağlıklı. sevecen",
-      "aramaEn": "sarman he was rescued from the street when he was about to freeze. his treatment has been completed and he is currently very healthy. he is very friendly and affectionate. he was rescued from the street when he was about to freeze. his treatment has been completed and he is currently very healthy. affectionate"
+      "arama": "sarman sokakta donmak üzereyken bulunup kurtarıldı. tedavisi yaptırıldı, şu an gayet sağlıklı. çok cana yakın ve sevgi dolu. sokakta donmak üzereyken bulunup kurtarıldı. tedavisi yaptırıldı, şu an gayet sağlıklı. sevecen"
     },
     {
       "id": "kopek-botty-6c9e3c",
