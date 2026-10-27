@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:26:40+00:00",
-  "sayi": 262,
+  "guncelleme": "2026-10-27T17:26:57+00:00",
+  "sayi": 261,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -15243,68 +15243,6 @@ window.KE_DATA = {
       "yasGrubu": "yetiskin",
       "arama": "i̇simsiz otoban kenarında, gürültünün ve tehlikenin tam ortasında bulundu. ama o korku dolu günler artık geride kalsın istiyoruz. i̇nsanlara güvenini tekrar kazandı. kendini sevdirmek için can atıyor. 2 yaşında, erkek, kısır. sevecen",
       "aramaEn": "i̇simsiz he was found by the highway, right in the middle of noise and danger. we want those fearful days to be left behind. he has regained his trust in people and is eager to be loved. 2 years old, male, neutered. affectionate"
-    },
-    {
-      "id": "kedi-sunny-b90585",
-      "tur": "kedi",
-      "isim": "Sunny",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 2,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "oyuncu",
-        "meraklı",
-        "sevecen"
-      ],
-      "aciklama": "Sunny, 2 aylık pufuduk bir kedi yavrusudur. Annesi garajda doğum yaptıktan sonra koruma altına alınmıştır. Oyuncu, meraklı ve insanlara alışkın bir yavrudur. Kucağa gelmeyi sever ve sevilince hemen mırıldanmaya başlar.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "playful",
-        "curious",
-        "affectionate"
-      ],
-      "aciklamaEn": "Sunny is a fluffy 2-month-old kitten. Taken into care after their mother gave birth in a garage, Sunny is playful, curious, and accustomed to people. Sunny loves to be held and immediately starts purring when petted.",
-      "fotograflar": [
-        "assets/img/animals/ig-DVn0NC6DC-N-0.jpg",
-        "assets/img/animals/ig-DVn0NC6DC-N-1.jpg",
-        "assets/img/animals/ig-DVn0NC6DC-N-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DVn0NC6DC-N",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DVn0NC6DC-N/",
-        "tarih": "2026-03-08T11:40:31+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-03-08T11:40:31+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
-      "yasGrubu": "yavru",
-      "arama": "sunny sunny, 2 aylık pufuduk bir kedi yavrusudur. annesi garajda doğum yaptıktan sonra koruma altına alınmıştır. oyuncu, meraklı ve insanlara alışkın bir yavrudur. kucağa gelmeyi sever ve sevilince hemen mırıldanmaya başlar. oyuncu meraklı sevecen",
-      "aramaEn": "sunny sunny is a fluffy 2-month-old kitten. taken into care after their mother gave birth in a garage, sunny is playful, curious, and accustomed to people. sunny loves to be held and immediately starts purring when petted. playful curious affectionate"
     },
     {
       "id": "kedi-candy-8f3930",
