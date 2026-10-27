@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:29:23+00:00",
+  "guncelleme": "2026-10-27T17:29:34+00:00",
   "sayi": 260,
   "hayvanlar": [
     {
@@ -13119,7 +13119,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Dante",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 24,
@@ -13161,12 +13161,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-05-11T10:51:15+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:29:33+00:00",
       "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "dante sahipleri hastalandığı ve artık bakamayacağı için yeni yuvasını arıyor. 2 yaşında, erkek ve kısır. hala terkedilmenin şokunu yaşıyor.",
-      "aramaEn": "dante he is looking for a new home because his owner fell ill and can no longer care for him. he is 2 years old, male, and neutered. he is still in shock from being abandoned."
+      "arama": "dante sahipleri hastalandığı ve artık bakamayacağı için yeni yuvasını arıyor. 2 yaşında, erkek ve kısır. hala terkedilmenin şokunu yaşıyor."
     },
     {
       "id": "kedi-daphne-5f2d5d",
