@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:29:14+00:00",
+  "guncelleme": "2026-10-27T17:29:23+00:00",
   "sayi": 260,
   "hayvanlar": [
     {
@@ -13173,7 +13173,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Daphne",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 24,
@@ -13215,12 +13215,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-05-11T10:51:15+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:29:22+00:00",
       "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "daphne sahipleri hastalandığı ve artık bakamayacağı için yeni yuvasını arıyor. 2 yaşında, dişi ve kısır. hala terkedilmenin şokunu yaşıyor.",
-      "aramaEn": "daphne she is looking for a new home because her owner fell ill and can no longer care for her. she is 2 years old, female, and spayed. she is still in shock from being abandoned."
+      "arama": "daphne sahipleri hastalandığı ve artık bakamayacağı için yeni yuvasını arıyor. 2 yaşında, dişi ve kısır. hala terkedilmenin şokunu yaşıyor."
     },
     {
       "id": "kedi-kartal-de3d39",
