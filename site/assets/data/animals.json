@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-27T17:26:15+00:00",
-  "sayi": 264,
+  "guncelleme": "2026-10-27T17:26:27+00:00",
+  "sayi": 263,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -15725,66 +15725,6 @@
       "yasGrubu": null,
       "arama": "bart bombay sahibi tarafından terk edildikten sonra hayatı belirsizliğe gömülen bart, şu an güvenli bir yerde ancak sıcak bir yuvaya ihtiyaç duyuyor. i̇nsanlara olan güvenini kaybetmiş olsa da sevilmeye olan ihtiyacını asla kaybetmeyen bu yakışıklı erkek kedi hak ettiği yuvayı arıyor.",
       "aramaEn": "bart bombay after being abandoned by his owner, bart's life was plunged into uncertainty. he is currently in a safe place, but he deeply misses having a warm home. although he may have lost his trust in humans, this handsome male cat who never lost his need for love is looking for the loving home he deserves."
-    },
-    {
-      "id": "kedi-pera-5b5868",
-      "tur": "kedi",
-      "isim": "Pera",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": null,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": true,
-      "saglikNotu": "Görme engelli.",
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "çekingen",
-        "hassas"
-      ],
-      "aciklama": "Pera ile tanıştığınızda size hemen koşmayacak, hatta belki irkilip bir köşeye saklanacak. Göremediği bu dünyada her adımdan ve sesten biraz korkan, görme engelli ve son derece hassas bir kedi. Pera'nın güvenini kazanmak sabır ve sessiz bir şefkat ister. Minicik burnu elinize bir kez değdiğinde, bir canlının size duyduğu sarsılmaz güveni kazanmış olacaksınız. Karanlık dünyasında sizin sesinizi ve huzurunuzu bekliyor.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": "Visually impaired.",
-      "karakterEn": [
-        "shy",
-        "sensitive"
-      ],
-      "aciklamaEn": "When you meet Pera, she won't run to you right away; she might even startle and hide in a corner. In this world she cannot see, she is a bit afraid of every step and sound—a visually impaired, deeply sensitive cat. Gaining Pera's trust takes patience and quiet affection. But once her tiny nose touches your hand, you win her unwavering trust. In her dark world, she is waiting for your voice and peace.",
-      "fotograflar": [
-        "assets/img/animals/ig-DUbJhoyDFJH-0.jpg",
-        "assets/img/animals/ig-DUbJhoyDFJH-1.jpg",
-        "assets/img/animals/ig-DUbJhoyDFJH-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DUbJhoyDFJH",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DUbJhoyDFJH/",
-        "tarih": "2026-02-06T17:05:18+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-02-06T17:05:18+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "pera pera ile tanıştığınızda size hemen koşmayacak, hatta belki irkilip bir köşeye saklanacak. göremediği bu dünyada her adımdan ve sesten biraz korkan, görme engelli ve son derece hassas bir kedi. pera'nın güvenini kazanmak sabır ve sessiz bir şefkat ister. minicik burnu elinize bir kez değdiğinde, bir canlının size duyduğu sarsılmaz güveni kazanmış olacaksınız. karanlık dünyasında sizin sesinizi ve huzurunuzu bekliyor. görme engelli. çekingen hassas",
-      "aramaEn": "pera when you meet pera, she won't run to you right away; she might even startle and hide in a corner. in this world she cannot see, she is a bit afraid of every step and sound—a visually impaired, deeply sensitive cat. gaining pera's trust takes patience and quiet affection. but once her tiny nose touches your hand, you win her unwavering trust. in her dark world, she is waiting for your voice and peace. visually impaired. shy sensitive"
     },
     {
       "id": "kopek-malinois-1-fb6720",
