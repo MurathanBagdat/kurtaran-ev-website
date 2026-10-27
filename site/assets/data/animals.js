@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:34:30+00:00",
+  "guncelleme": "2026-10-27T18:25:45+00:00",
   "sayi": 255,
   "hayvanlar": [
     {
@@ -12605,7 +12605,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Thomas",
       "cinsiyet": "erkek",
-      "durum": "yuvalandi",
+      "durum": "yuva-ariyor",
       "konum": null,
       "cins": "Scottish",
       "yasAy": 24,
@@ -12655,7 +12655,7 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-05-17T09:45:12+00:00",
-      "guncelleme": "2026-10-27T17:29:47+00:00",
+      "guncelleme": "2026-10-27T18:25:45+00:00",
       "yasMetni": "2 yaşında",
       "yasGrubu": "yetiskin",
       "arama": "thomas scottish thomas yakışıklılar yakışıklısı bir çocuk. scottish olduğuna bakmayın tam mıncıklanmalık. kedilerle ve köpeklerle uyumu çok iyidir, siz oturduğunuz an kendini sevdirmeye gelir ve sizinle konuşur. sevecen sosyal"

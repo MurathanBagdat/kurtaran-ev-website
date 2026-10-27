@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-27T17:34:30+00:00",
+  "guncelleme": "2026-10-27T18:25:45+00:00",
   "sayi": 255,
   "hayvanlar": [
     {
@@ -12603,7 +12603,7 @@
       "tur": "kedi",
       "isim": "Thomas",
       "cinsiyet": "erkek",
-      "durum": "yuvalandi",
+      "durum": "yuva-ariyor",
       "konum": null,
       "cins": "Scottish",
       "yasAy": 24,
@@ -12653,7 +12653,7 @@
         "geriye": true
       },
       "olusturma": "2026-05-17T09:45:12+00:00",
-      "guncelleme": "2026-10-27T17:29:47+00:00",
+      "guncelleme": "2026-10-27T18:25:45+00:00",
       "yasMetni": "2 yaşında",
       "yasGrubu": "yetiskin",
       "arama": "thomas scottish thomas yakışıklılar yakışıklısı bir çocuk. scottish olduğuna bakmayın tam mıncıklanmalık. kedilerle ve köpeklerle uyumu çok iyidir, siz oturduğunuz an kendini sevdirmeye gelir ve sizinle konuşur. sevecen sosyal"
