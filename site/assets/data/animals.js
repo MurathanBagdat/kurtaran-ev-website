@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:28:39+00:00",
+  "guncelleme": "2026-10-27T17:28:58+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -13287,7 +13287,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Kartal",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -13335,12 +13335,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-05-09T09:55:36+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:28:57+00:00",
       "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
-      "arama": "kartal otoban kenarında tek başına acı acı miyavlarken bulundu. bulunduğunda çok korkmuştu ve tir tir titriyordu. i̇lk geldiğinde korkudan kafesin bir köşesine pısıp kaldı ama insanlara ve ortama alıştıkça içindeki minik oyuncuyu ortaya çıkardı. tam bir kucak bebesi; her an sevilmek için can atıyor. oyuncu sevecen",
-      "aramaEn": "kartal he was found all alone, meowing painfully by the side of the highway. he was terrified and trembling when we first found him. at first, he hid in a corner of his crate out of fear, but now that he has gotten used to people and his environment, his playful side has come out. he is a total lap cat who longs to be loved every single second. playful affectionate"
+      "arama": "kartal otoban kenarında tek başına acı acı miyavlarken bulundu. bulunduğunda çok korkmuştu ve tir tir titriyordu. i̇lk geldiğinde korkudan kafesin bir köşesine pısıp kaldı ama insanlara ve ortama alıştıkça içindeki minik oyuncuyu ortaya çıkardı. tam bir kucak bebesi; her an sevilmek için can atıyor. oyuncu sevecen"
     },
     {
       "id": "kedi-jericho-ba9325",
