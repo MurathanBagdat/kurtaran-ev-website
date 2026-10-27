@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-27T17:30:42+00:00",
+  "guncelleme": "2026-10-27T17:30:55+00:00",
   "sayi": 259,
   "hayvanlar": [
     {
@@ -11457,7 +11457,7 @@
       "tur": "kedi",
       "isim": "Sisi",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 12,
@@ -11507,12 +11507,10 @@
         "geriye": true
       },
       "olusturma": "2026-06-19T07:30:39+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:30:54+00:00",
       "yasMetni": "1 yaşında",
-      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "sisi sisi, sürekli şaşkın, kendi halinde takılan ve sevilmeyi seven bir prenses. yalandıktan sonra dilini dışarıda unutmasıyla biliniyor. 1 yaşlarında, dişi ve kısır. sakin sevecen",
-      "aramaEn": "sisi sisi is a lovely princess who is constantly surprised, minds her own business, and loves affection. she often forgets her tongue sticking out after grooming herself. she is around 1 year old, female, and spayed. calm affectionate"
+      "arama": "sisi sisi, sürekli şaşkın, kendi halinde takılan ve sevilmeyi seven bir prenses. yalandıktan sonra dilini dışarıda unutmasıyla biliniyor. 1 yaşlarında, dişi ve kısır. sakin sevecen"
     },
     {
       "id": "kedi-teddy-2969ba",
