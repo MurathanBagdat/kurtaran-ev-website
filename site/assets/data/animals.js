@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:28:27+00:00",
+  "guncelleme": "2026-10-27T17:28:39+00:00",
   "sayi": 261,
   "hayvanlar": [
     {
@@ -13777,7 +13777,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Jane",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 24,
@@ -13823,12 +13823,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-04-15T12:36:44+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:28:39+00:00",
       "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "jane kendini sevdirmeye ve taranmaya bayılan bir çocuk. her fırsatta size kendini sevdirmek için fırsat kolluyor ama maalesef ki yuvalandırdığımız evden geri geldi. hadi ona tekrar güvenebileceği bir yuva bulalım. sevecen",
-      "aramaEn": "jane a sweet girl who loves being petted and brushed. she looks for every opportunity to get affection, but unfortunately she was returned from the home where she was adopted. let's find her a home where she can trust again. affectionate"
+      "arama": "jane kendini sevdirmeye ve taranmaya bayılan bir çocuk. her fırsatta size kendini sevdirmek için fırsat kolluyor ama maalesef ki yuvalandırdığımız evden geri geldi. hadi ona tekrar güvenebileceği bir yuva bulalım. sevecen"
     },
     {
       "id": "kedi-zuzu-8eb279",
