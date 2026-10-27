@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-27T17:30:00+00:00",
-  "sayi": 260,
+  "guncelleme": "2026-10-27T17:30:11+00:00",
+  "sayi": 259,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -12439,64 +12439,6 @@
       "yasGrubu": "yetiskin",
       "arama": "foxy foxy, 3 yaşlarında, kısır dişi, kıpır kıpır ve sevgi dolu bir kız. severken küçük bacaklarıyla koala gibi sarılıyor insana. oyuncu sevecen",
       "aramaEn": "foxy foxy is a 3-year-old spayed female, lively and loving. when you show her affection, she hugs you like a koala with her little legs. playful affectionate"
-    },
-    {
-      "id": "kedi-peri-e06e2f",
-      "tur": "kedi",
-      "isim": "Peri",
-      "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 12,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": true,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "nazik"
-      ],
-      "aciklama": "Kendisi tam bir peri kızı, çok nazik ve maalesef bu yüzden ortak alana kolay uyum sağlayamaz. Kafesinde yeni yuvasını bekliyor.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "gentle"
-      ],
-      "aciklamaEn": "She is a true fairy girl, very gentle, and unfortunately does not easily adapt to a shared area. She is waiting for her new home in her cage.",
-      "fotograflar": [
-        "assets/img/animals/ig-DY4Y4mWDN13-0.jpg",
-        "assets/img/animals/ig-DY4Y4mWDN13-1.jpg",
-        "assets/img/animals/ig-DY4Y4mWDN13-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DY4Y4mWDN13",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DY4Y4mWDN13/",
-        "tarih": "2026-05-28T11:43:04+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-05-28T11:43:04+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": "1 yaşında",
-      "yasMetniEn": "1 year old",
-      "yasGrubu": "yetiskin",
-      "arama": "peri kendisi tam bir peri kızı, çok nazik ve maalesef bu yüzden ortak alana kolay uyum sağlayamaz. kafesinde yeni yuvasını bekliyor. nazik",
-      "aramaEn": "peri she is a true fairy girl, very gentle, and unfortunately does not easily adapt to a shared area. she is waiting for her new home in her cage. gentle"
     },
     {
       "id": "kopek-yogi-efb775",
