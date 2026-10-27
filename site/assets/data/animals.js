@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:29:48+00:00",
+  "guncelleme": "2026-10-27T17:30:00+00:00",
   "sayi": 260,
   "hayvanlar": [
     {
@@ -12695,7 +12695,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Yuki",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -12737,12 +12737,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-05-26T10:44:58+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:30:00+00:00",
       "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
-      "arama": "yuki yuki, kardeşi lokum ile birlikte sıcak ve sevgi dolu bir yuva arıyor. 2 aylık, dişi. kısırlaştırma şartı ile sahiplendirilecektir.",
-      "aramaEn": "yuki yuki is looking for a warm and loving home with her sibling lokum. she is 2 months old, female. to be adopted on the condition of spaying."
+      "arama": "yuki yuki, kardeşi lokum ile birlikte sıcak ve sevgi dolu bir yuva arıyor. 2 aylık, dişi. kısırlaştırma şartı ile sahiplendirilecektir."
     },
     {
       "id": "kopek-poncik-411259",
