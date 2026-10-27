@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:24:41+00:00",
+  "guncelleme": "2026-10-27T17:26:15+00:00",
   "sayi": 264,
   "hayvanlar": [
     {
@@ -15907,7 +15907,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Gece",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 36,
@@ -15953,12 +15953,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-01-21T09:32:33+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:26:14+00:00",
       "yasMetni": "3 yaşında",
-      "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
-      "arama": "gece gece, henüz küçücük bir yavruyken orman beslemesinde görme engelli ve yardıma muhtaç halde bulundu. zor günleri geride bırakan gece, sevgiyle büyüdü ve şimdi 3 yaşında, sevgi dolu, zarif bir hanımefendi oldu. ömürlük yuvasını arıyor. görme engelli. sevecen",
-      "aramaEn": "gece gece was found as a visually impaired kitten in need of help during a forest feeding. having left those difficult days behind, she grew up with love and is now a loving, graceful 3-year-old lady looking for her forever home. visually impaired. affectionate"
+      "arama": "gece gece, henüz küçücük bir yavruyken orman beslemesinde görme engelli ve yardıma muhtaç halde bulundu. zor günleri geride bırakan gece, sevgiyle büyüdü ve şimdi 3 yaşında, sevgi dolu, zarif bir hanımefendi oldu. ömürlük yuvasını arıyor. görme engelli. sevecen"
     },
     {
       "id": "kopek-blondie-670619",
