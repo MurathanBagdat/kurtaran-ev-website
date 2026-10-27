@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:28:58+00:00",
-  "sayi": 261,
+  "guncelleme": "2026-10-27T17:29:14+00:00",
+  "sayi": 260,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -13221,66 +13221,6 @@ window.KE_DATA = {
       "yasGrubu": "yetiskin",
       "arama": "daphne sahipleri hastalandığı ve artık bakamayacağı için yeni yuvasını arıyor. 2 yaşında, dişi ve kısır. hala terkedilmenin şokunu yaşıyor.",
       "aramaEn": "daphne she is looking for a new home because her owner fell ill and can no longer care for her. she is 2 years old, female, and spayed. she is still in shock from being abandoned."
-    },
-    {
-      "id": "kedi-puskul-97fb75",
-      "tur": "kedi",
-      "isim": "Püskül",
-      "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 2,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": false,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": true,
-      "saglikNotu": "Görme engelli.",
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "çekingen",
-        "sevecen"
-      ],
-      "aciklama": "Püskül hem görme engelli hem de henüz çok küçük bir kedi. Göremediği için başlarda çekinip korksa da güvendiğinde tam bir sevgi pıtırcığına dönüşüyor. Onun ışığı olup sıcacık yuvanızı açmak ister misiniz?",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": "Visually impaired.",
-      "karakterEn": [
-        "shy",
-        "affectionate"
-      ],
-      "aciklamaEn": "Püskül is a visually impaired kitten. Although she is fearful at first because she cannot see, she turns into a total sweetheart once she trusts you. Would you like to be her light and open your warm home to her?",
-      "fotograflar": [
-        "assets/img/animals/ig-DYKPoF_jGxA-0.jpg",
-        "assets/img/animals/ig-DYKPoF_jGxA-1.jpg",
-        "assets/img/animals/ig-DYKPoF_jGxA-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DYKPoF_jGxA",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DYKPoF_jGxA/",
-        "tarih": "2026-05-10T13:37:06+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-05-10T13:37:06+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
-      "yasGrubu": "yavru",
-      "arama": "püskül püskül hem görme engelli hem de henüz çok küçük bir kedi. göremediği için başlarda çekinip korksa da güvendiğinde tam bir sevgi pıtırcığına dönüşüyor. onun ışığı olup sıcacık yuvanızı açmak ister misiniz? görme engelli. çekingen sevecen",
-      "aramaEn": "püskül püskül is a visually impaired kitten. although she is fearful at first because she cannot see, she turns into a total sweetheart once she trusts you. would you like to be her light and open your warm home to her? visually impaired. shy affectionate"
     },
     {
       "id": "kedi-kartal-de3d39",
