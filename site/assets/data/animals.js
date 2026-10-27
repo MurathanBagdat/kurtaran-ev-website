@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:31:21+00:00",
+  "guncelleme": "2026-10-27T17:31:36+00:00",
   "sayi": 258,
   "hayvanlar": [
     {
@@ -9769,7 +9769,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Mırmır",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 18,
@@ -9815,12 +9815,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-07-14T10:41:18+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:31:35+00:00",
       "yasMetni": "1,5 yaşında",
-      "yasMetniEn": "1.5 years old",
       "yasGrubu": "yetiskin",
-      "arama": "mırmır mırmır geçen kış donmak üzereyken bulundu. tedavileri yapıldı ve sağlığına kavuştu. şimdi onu çok sevecek ve sürekli mırlayabileceği yuvasını arıyor. geçen kış donmak üzereyken bulunmuştu, tedavileri yapıldı ve sağlığına kavuştu. sevecen",
-      "aramaEn": "mırmır mırmır was found nearly freezing last winter. he underwent treatment and has fully recovered. now he is looking for a loving forever home where he can purr happily. he was found nearly frozen last winter, received treatment, and has fully recovered. affectionate"
+      "arama": "mırmır mırmır geçen kış donmak üzereyken bulundu. tedavileri yapıldı ve sağlığına kavuştu. şimdi onu çok sevecek ve sürekli mırlayabileceği yuvasını arıyor. geçen kış donmak üzereyken bulunmuştu, tedavileri yapıldı ve sağlığına kavuştu. sevecen"
     },
     {
       "id": "kopek-nolan-096b7a",
