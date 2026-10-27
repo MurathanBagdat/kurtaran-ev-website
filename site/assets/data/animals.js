@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:29:34+00:00",
+  "guncelleme": "2026-10-27T17:29:48+00:00",
   "sayi": 260,
   "hayvanlar": [
     {
@@ -12933,7 +12933,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Thomas",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Scottish",
       "yasAy": 24,
@@ -12983,12 +12983,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-05-17T09:45:12+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:29:47+00:00",
       "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "thomas scottish thomas yakışıklılar yakışıklısı bir çocuk. scottish olduğuna bakmayın tam mıncıklanmalık. kedilerle ve köpeklerle uyumu çok iyidir, siz oturduğunuz an kendini sevdirmeye gelir ve sizinle konuşur. sevecen sosyal",
-      "aramaEn": "thomas scottish thomas is a very handsome boy. don't let his scottish breed fool you, he is super cuddly. he gets along very well with cats and dogs; the moment you sit down, he comes to ask for pets and talks to you. affectionate social"
+      "arama": "thomas scottish thomas yakışıklılar yakışıklısı bir çocuk. scottish olduğuna bakmayın tam mıncıklanmalık. kedilerle ve köpeklerle uyumu çok iyidir, siz oturduğunuz an kendini sevdirmeye gelir ve sizinle konuşur. sevecen sosyal"
     },
     {
       "id": "kedi-kova-kardes-1-da2688",
