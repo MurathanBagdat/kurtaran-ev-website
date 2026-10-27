@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:26:27+00:00",
-  "sayi": 263,
+  "guncelleme": "2026-10-27T17:26:40+00:00",
+  "sayi": 262,
   "hayvanlar": [
     {
       "id": "kopek-hellim-02f069",
@@ -15367,68 +15367,6 @@ window.KE_DATA = {
       "yasGrubu": "yavru",
       "arama": "candy candy, 2 aylık pufuduk bir kedi yavrusudur. annesi garajda doğum yaptıktan sonra koruma altına alınmıştır. oyuncu, meraklı ve insanlara alışkın bir yavrudur. kucağa gelmeyi sever ve sevilince hemen mırıldanmaya başlar. oyuncu meraklı sevecen",
       "aramaEn": "candy candy is a fluffy 2-month-old kitten. taken into care after their mother gave birth in a garage, candy is playful, curious, and accustomed to people. candy loves to be held and immediately starts purring when petted. playful curious affectionate"
-    },
-    {
-      "id": "kedi-owen-27e809",
-      "tur": "kedi",
-      "isim": "Owen",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 2,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "oyuncu",
-        "meraklı",
-        "sevecen"
-      ],
-      "aciklama": "Owen, 2 aylık pufuduk bir kedi yavrusudur. Annesi garajda doğum yaptıktan sonra koruma altına alınmıştır. Oyuncu, meraklı ve insanlara alışkın bir yavrudur. Kucağa gelmeyi sever ve sevilince hemen mırıldanmaya başlar.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "playful",
-        "curious",
-        "affectionate"
-      ],
-      "aciklamaEn": "Owen is a fluffy 2-month-old kitten. Taken into care after their mother gave birth in a garage, Owen is playful, curious, and accustomed to people. Owen loves to be held and immediately starts purring when petted.",
-      "fotograflar": [
-        "assets/img/animals/ig-DVn0NC6DC-N-0.jpg",
-        "assets/img/animals/ig-DVn0NC6DC-N-1.jpg",
-        "assets/img/animals/ig-DVn0NC6DC-N-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DVn0NC6DC-N",
-        "sira": 2,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DVn0NC6DC-N/",
-        "tarih": "2026-03-08T11:40:31+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-03-08T11:40:31+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
-      "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
-      "yasGrubu": "yavru",
-      "arama": "owen owen, 2 aylık pufuduk bir kedi yavrusudur. annesi garajda doğum yaptıktan sonra koruma altına alınmıştır. oyuncu, meraklı ve insanlara alışkın bir yavrudur. kucağa gelmeyi sever ve sevilince hemen mırıldanmaya başlar. oyuncu meraklı sevecen",
-      "aramaEn": "owen owen is a fluffy 2-month-old kitten. taken into care after their mother gave birth in a garage, owen is playful, curious, and accustomed to people. owen loves to be held and immediately starts purring when petted. playful curious affectionate"
     },
     {
       "id": "kedi-yumyum-319d3e",
