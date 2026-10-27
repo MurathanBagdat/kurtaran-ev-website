@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:30:19+00:00",
+  "guncelleme": "2026-10-27T17:30:42+00:00",
   "sayi": 259,
   "hayvanlar": [
     {
@@ -11645,7 +11645,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Crash",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 3,
@@ -11699,12 +11699,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-06-17T08:15:44+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:30:41+00:00",
       "yasMetni": "3 aylık",
-      "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
-      "arama": "crash crash, sevgi dolu karakteri ve insanlara olan yakınlığıyla gönülleri fethediyor. yanınıza gelip ilgi istemeyi, oyun oynamayı ve sevildiğini hissetmeyi çok seviyor. meraklı, neşeli ve enerjik yapısıyla bulunduğu ortama mutluluk katıyor. 2.5 aylık, kısırlaştırma şartı ile sahiplendirilecektir. sevecen oyuncu meraklı enerjik",
-      "aramaEn": "crash crash wins hearts with his loving nature and closeness to people. he loves coming up to ask for attention, playing games, and feeling loved. with his curious, cheerful, and energetic personality, he brings joy to his environment. he is 2.5 months old, male, and available for adoption on the condition of neutering. affectionate playful curious energetic"
+      "arama": "crash crash, sevgi dolu karakteri ve insanlara olan yakınlığıyla gönülleri fethediyor. yanınıza gelip ilgi istemeyi, oyun oynamayı ve sevildiğini hissetmeyi çok seviyor. meraklı, neşeli ve enerjik yapısıyla bulunduğu ortama mutluluk katıyor. 2.5 aylık, kısırlaştırma şartı ile sahiplendirilecektir. sevecen oyuncu meraklı enerjik"
     },
     {
       "id": "kopek-lara-3c6b8a",
