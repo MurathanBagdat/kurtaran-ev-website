@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-10-27T17:31:48+00:00",
+  "guncelleme": "2026-10-27T17:32:08+00:00",
   "sayi": 258,
   "hayvanlar": [
     {
@@ -8185,7 +8185,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Minnoş",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 5,
@@ -8237,12 +8237,10 @@ window.KE_DATA = {
         "tarih": "2026-08-15T12:09:10+00:00"
       },
       "olusturma": "2026-08-15T12:09:10+00:00",
-      "guncelleme": "2026-10-26T19:40:54+00:00",
+      "guncelleme": "2026-10-27T17:32:07+00:00",
       "yasMetni": "5 aylık",
-      "yasMetniEn": "5 months old",
       "yasGrubu": "yavru",
-      "arama": "minnoş çok sakin ve aşırı sevimli biri kendisi, görüp ona hayran olmamak mümkün değil. herkesle dost olabilen, çok uyumlu ve çok az oyuncu bir prenses. 5 aylık, dişi ve kısır. sakin sevecen oyuncu",
-      "aramaEn": "minnoş she is very calm and extremely cute, it is impossible not to fall in love with her when you see her. she is a princess who gets along with everyone, is very adaptable, and just a little bit playful. she is 5 months old, female, and spayed. calm affectionate playful"
+      "arama": "minnoş çok sakin ve aşırı sevimli biri kendisi, görüp ona hayran olmamak mümkün değil. herkesle dost olabilen, çok uyumlu ve çok az oyuncu bir prenses. 5 aylık, dişi ve kısır. sakin sevecen oyuncu"
     },
     {
       "id": "kopek-lily-f0abbe",
