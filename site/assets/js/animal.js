@@ -24,6 +24,11 @@
     '<path d="M34 30c8 0 15 6 15 13 0 6-5 9-11 9-3 0-5-1-8-1s-5 1-8 1c-6 0-11-3-11-9 0-7 7-13 15-13z"/>' +
     '</svg>';
 
+  /* Galeri okları (sağa bakan; önceki ok CSS ile çevrilir) */
+  var OK_SVG =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" ' +
+    'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
+
   var CINSIYET = I18N.cinsiyet;
   var BOYUT = I18N.boyut;
   var DURUM = I18N.durum;
@@ -86,7 +91,12 @@
   if (fotograflar.length) {
     galeri =
       '<div class="animal-gallery__main"><img id="ana-foto" src="' + esc(BASE + fotograflar[0]) +
-        '" alt="' + esc(h.isim) + '"></div>' +
+        '" alt="' + esc(h.isim) + '">' +
+        (fotograflar.length > 1
+          ? '<button type="button" class="animal-gallery__nav animal-gallery__nav--prev" data-foto-git="-1" aria-label="' + T.oncekiFoto + '">' + OK_SVG + '</button>' +
+            '<button type="button" class="animal-gallery__nav animal-gallery__nav--next" data-foto-git="1" aria-label="' + T.sonrakiFoto + '">' + OK_SVG + '</button>'
+          : '') +
+        '</div>' +
       (fotograflar.length > 1
         ? '<div class="animal-gallery__thumbs">' + fotograflar.map(function (f, i) {
             return '<button type="button" data-foto="' + esc(BASE + f) + '"' +
@@ -284,15 +294,27 @@
     digerBolum.hidden = false;
   }
 
-  /* Galeri geçişi */
+  /* Galeri geçişi: küçük resimler ve ana fotoğraftaki önceki/sonraki okları */
   var thumbs = kok.querySelector('.animal-gallery__thumbs');
   if (thumbs) {
+    var dugmeler = [].slice.call(thumbs.querySelectorAll('[data-foto]'));
+    var goster = function (i) {
+      var n = dugmeler.length;
+      i = ((i % n) + n) % n;                              // uçlarda başa/sona sarar
+      kok.querySelector('#ana-foto').src = dugmeler[i].getAttribute('data-foto');
+      dugmeler.forEach(function (b, j) { b.classList.toggle('is-active', j === i); });
+    };
+    var etkin = function () {
+      for (var j = 0; j < dugmeler.length; j++) if (dugmeler[j].classList.contains('is-active')) return j;
+      return 0;
+    };
     thumbs.addEventListener('click', function (e) {
       var dugme = e.target.closest('[data-foto]');
-      if (!dugme) return;
-      kok.querySelector('#ana-foto').src = dugme.getAttribute('data-foto');
-      thumbs.querySelectorAll('button').forEach(function (b) { b.classList.remove('is-active'); });
-      dugme.classList.add('is-active');
+      if (dugme) goster(dugmeler.indexOf(dugme));
+    });
+    kok.querySelector('.animal-gallery__main').addEventListener('click', function (e) {
+      var ok = e.target.closest('[data-foto-git]');
+      if (ok) goster(etkin() + Number(ok.getAttribute('data-foto-git')));
     });
   }
 })();
