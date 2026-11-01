@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-11-01T13:18:39+00:00",
-  "sayi": 294,
+  "guncelleme": "2026-11-01T13:30:32+00:00",
+  "sayi": 292,
   "hayvanlar": [
     {
       "id": "kopek-pia-03b328",
@@ -17527,70 +17527,6 @@ window.KE_DATA = {
       "aramaEn": "turşu domestic shorthair little turşu is a 3-month-old female kitten. she was found abandoned, scared, and helpless in yıldız park before coming to us. turşu is an incredibly sweet kitten who loves to play and be petted, and she is now looking for her forever home. playful affectionate"
     },
     {
-      "id": "kedi-isimsiz-58d2cb",
-      "tur": "kedi",
-      "isim": "İsimsiz",
-      "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
-      "konum": "İstanbul",
-      "cins": "British Shorthair",
-      "yasAy": 24,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": false,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": false,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": false,
-      "karakter": [
-        "uysal",
-        "sakin",
-        "sevecen",
-        "eğitimli"
-      ],
-      "aciklama": "Yuva bulamazsa barınağa bırakılmak zorunda kalacak. Şu anda geçici olarak kedi pansiyonunda kalıyor. Toplu yaşayabilecek bir kedi değildir. Çok uysal, sessiz, sakin ve sıcakkanlıdır; kendini sevdirmeye bayılır. Tuvalet eğitimi bulunmaktadır. Kısırlaştırma şartıyla sahiplendirilecektir.",
-      "cinsEn": "British Shorthair",
-      "renkEn": null,
-      "konumEn": "Istanbul",
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "gentle",
-        "calm",
-        "affectionate",
-        "trained"
-      ],
-      "aciklamaEn": "If he cannot find a home, he will have to be left at a shelter. He is currently staying temporarily at a cat boarding facility. He is not suited for communal living with other animals. He is very gentle, quiet, calm, and friendly, and loves affection. He is litter box trained. He will be adopted out on the condition of spaying/neutering.",
-      "fotograflar": [
-        "assets/img/animals/ig-DPjsbCtDMtq-0.jpg",
-        "assets/img/animals/ig-DPjsbCtDMtq-1.jpg",
-        "assets/img/animals/ig-DPjsbCtDMtq-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DPjsbCtDMtq",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DPjsbCtDMtq/",
-        "tarih": "2025-10-08T18:07:12+00:00",
-        "geriye": true
-      },
-      "olusturma": "2025-10-08T18:07:12+00:00",
-      "guncelleme": "2026-11-01T13:18:26+00:00",
-      "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
-      "yasGrubu": "yetiskin",
-      "arama": "i̇simsiz british shorthair i̇stanbul yuva bulamazsa barınağa bırakılmak zorunda kalacak. şu anda geçici olarak kedi pansiyonunda kalıyor. toplu yaşayabilecek bir kedi değildir. çok uysal, sessiz, sakin ve sıcakkanlıdır; kendini sevdirmeye bayılır. tuvalet eğitimi bulunmaktadır. kısırlaştırma şartıyla sahiplendirilecektir. uysal sakin sevecen eğitimli",
-      "aramaEn": "i̇simsiz british shorthair istanbul if he cannot find a home, he will have to be left at a shelter. he is currently staying temporarily at a cat boarding facility. he is not suited for communal living with other animals. he is very gentle, quiet, calm, and friendly, and loves affection. he is litter box trained. he will be adopted out on the condition of spaying/neutering. gentle calm affectionate trained"
-    },
-    {
       "id": "kedi-yogi-b50e73",
       "tur": "kedi",
       "isim": "Yogi",
@@ -17653,68 +17589,6 @@ window.KE_DATA = {
       "yasGrubu": null,
       "arama": "yogi melez yogi, boynundaki yara nedeniyle uzun bir tedavi süreci geçirdi ve sağlığına kavuştu. i̇ri yapılı, çekingen ama bir o kadar da sevgi dolu, koruyucu ve sosyal bir erkek kedi. kısırlaştırılmıştır. hak ettiği sevgiyi verecek ailesini arıyor. boynunda uzun süre kapanmayan yara nedeniyle tedavi gördü, tedavisi tamamlandı ve tamamen sağlıklı. çekingen sevecen koruyucu sosyal",
       "aramaEn": "yogi mixed breed yogi went through a long treatment process for a neck wound and has fully recovered. he is a large, somewhat shy yet deeply affectionate, protective, and social neutered male cat. he is looking for a forever family that will give him the love he deserves. he underwent a long treatment for a persistent neck wound; his treatment is now complete and he is completely healthy. shy affectionate protective social"
-    },
-    {
-      "id": "kedi-isimsiz-c71d18",
-      "tur": "kedi",
-      "isim": "İsimsiz",
-      "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
-      "konum": "İstanbul",
-      "cins": "Sokak kedisi",
-      "yasAy": null,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": true,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "oyuncu",
-        "sevecen"
-      ],
-      "aciklama": "Şu an bir iş yerinde bakılıyor ve iş yeri kapanacağı için acil yuva arayışında. Erkek, kısır, oyun oynamayı çok seven, kucak delisi, pofuduk dünyalar güzeli bir çocuk. Ailesini arıyor.",
-      "cinsEn": "Domestic shorthair",
-      "renkEn": null,
-      "konumEn": "Istanbul",
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "playful",
-        "affectionate"
-      ],
-      "aciklamaEn": "He is currently being cared for at a workplace, but since the workplace is closing, he urgently needs a home. He is a neutered male, very affectionate, lap-loving, fluffy boy who loves to play. Looking for his forever family.",
-      "fotograflar": [
-        "assets/img/animals/ig-DPbh6rmjDqL-0.jpg",
-        "assets/img/animals/ig-DPbh6rmjDqL-1.jpg",
-        "assets/img/animals/ig-DPbh6rmjDqL-2.jpg"
-      ],
-      "tahmini": [
-        "cins"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DPbh6rmjDqL",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DPbh6rmjDqL/",
-        "tarih": "2025-10-05T14:01:28+00:00",
-        "geriye": true
-      },
-      "olusturma": "2025-10-05T14:01:28+00:00",
-      "guncelleme": "2026-11-01T13:18:26+00:00",
-      "yasMetni": null,
-      "yasMetniEn": null,
-      "yasGrubu": null,
-      "arama": "i̇simsiz sokak kedisi i̇stanbul şu an bir iş yerinde bakılıyor ve iş yeri kapanacağı için acil yuva arayışında. erkek, kısır, oyun oynamayı çok seven, kucak delisi, pofuduk dünyalar güzeli bir çocuk. ailesini arıyor. oyuncu sevecen",
-      "aramaEn": "i̇simsiz domestic shorthair istanbul he is currently being cared for at a workplace, but since the workplace is closing, he urgently needs a home. he is a neutered male, very affectionate, lap-loving, fluffy boy who loves to play. looking for his forever family. playful affectionate"
     },
     {
       "id": "kedi-minis-1-376839",
