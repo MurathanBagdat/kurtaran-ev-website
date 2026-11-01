@@ -316,5 +316,21 @@
       var ok = e.target.closest('[data-foto-git]');
       if (ok) goster(etkin() + Number(ok.getAttribute('data-foto-git')));
     });
+
+    /* Parmakla kaydırma: sola kaydır → sonraki, sağa → önceki. Yalnızca belirgin
+       yatay hareket sayılır; dikey kaydırma (sayfayı aşağı inmek) bozulmaz. */
+    var ana = kok.querySelector('.animal-gallery__main');
+    var bas = null;
+    ana.addEventListener('touchstart', function (e) {
+      bas = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null;
+    }, { passive: true });
+    ana.addEventListener('touchend', function (e) {
+      if (!bas) return;
+      var dx = e.changedTouches[0].clientX - bas.x;
+      var dy = e.changedTouches[0].clientY - bas.y;
+      bas = null;
+      if (Math.abs(dx) >= 40 && Math.abs(dx) > Math.abs(dy) * 1.5) goster(etkin() + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+    ana.addEventListener('touchcancel', function () { bas = null; }, { passive: true });
   }
 })();
