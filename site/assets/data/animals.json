@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-01T14:21:14+00:00",
-  "sayi": 380,
+  "guncelleme": "2026-11-01T14:28:06+00:00",
+  "sayi": 377,
   "hayvanlar": [
     {
       "id": "kopek-pia-03b328",
@@ -8779,68 +8779,6 @@
       "aramaEn": "potter potter is around 3 years old, neutered, male, a very good-natured and friendly boy. he loves being petted and receiving attention; he quickly trusts everyone he meets and endears himself to them. he gets along well with other dogs and is indifferent to cats. he has a unique appearance with his slightly crooked front legs, but this condition does not restrict his movements. with his warm personality, we are looking for the loving forever home he deserves. he has slightly crooked front legs, but this does not restrict his movements. affectionate"
     },
     {
-      "id": "kopek-pofik-7b1721",
-      "tur": "kopek",
-      "isim": "Pofik",
-      "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 12,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": "orta",
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [
-        "sevecen",
-        "oyuncu"
-      ],
-      "aciklama": "Pofik, 1 yaş civarında, iyi huylu ve hareketli bir kız. İnsanlarla iletişimi güzel, enerjisi ve neşesiyle bulunduğu ortama hemen renk katıyor. Yaşının da verdiği hareketlilikle oyun oynamayı ve hayatın içinde olmayı çok seviyor. Pofik’in onu ömür boyu sevecek kalıcı yuvasını arıyoruz.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "affectionate",
-        "playful"
-      ],
-      "aciklamaEn": "Pofik is a sweet-natured and active girl around 1 year old. She interacts well with people and brightens up her surroundings with her energy and joy. With the playfulness typical of her age, she loves playing and being actively involved in life. We are looking for a forever home where Pofik will be loved for a lifetime.",
-      "fotograflar": [
-        "assets/img/animals/ig-Db2jhLuDnEH-0.jpg",
-        "assets/img/animals/ig-Db2jhLuDnEH-1.jpg",
-        "assets/img/animals/ig-Db2jhLuDnEH-2.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kopekleri",
-        "gonderiId": "Db2jhLuDnEH",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/Db2jhLuDnEH/",
-        "tarih": "2026-08-10T08:11:41+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-08-10T08:11:41+00:00",
-      "guncelleme": "2026-11-01T14:17:41+00:00",
-      "yasMetni": "1 yaşında",
-      "yasMetniEn": "1 year old",
-      "yasGrubu": "yetiskin",
-      "arama": "pofik pofik, 1 yaş civarında, iyi huylu ve hareketli bir kız. i̇nsanlarla iletişimi güzel, enerjisi ve neşesiyle bulunduğu ortama hemen renk katıyor. yaşının da verdiği hareketlilikle oyun oynamayı ve hayatın içinde olmayı çok seviyor. pofik’in onu ömür boyu sevecek kalıcı yuvasını arıyoruz. sevecen oyuncu",
-      "aramaEn": "pofik pofik is a sweet-natured and active girl around 1 year old. she interacts well with people and brightens up her surroundings with her energy and joy. with the playfulness typical of her age, she loves playing and being actively involved in life. we are looking for a forever home where pofik will be loved for a lifetime. affectionate playful"
-    },
-    {
       "id": "kedi-joy-ccb057",
       "tur": "kedi",
       "isim": "Joy",
@@ -9275,60 +9213,6 @@
       "yasGrubu": "yetiskin",
       "arama": "daisy evden terk edilmiş olan daisy, alışmakta zorlansa da artık travmalarını atlatmış mutlu bir çocuk. tek ihtiyacı onu ömür boyu sevecek sıcacık bir yuva. mutlu",
       "aramaEn": "daisy daisy was abandoned by his family and had a tough time adjusting, but he is now a happy boy who has overcome his traumas. all he needs is a warm forever home where he will be loved. happy"
-    },
-    {
-      "id": "kedi-benek-b2d5a3",
-      "tur": "kedi",
-      "isim": "Benek",
-      "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": null,
-      "yasAy": 24,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": true,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": false,
-      "saglikNotu": "Henüz yavruyken bulunduğunda durumu çok kötüydü, tedavileri yapıldı ve iyileşti.",
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Benek henüz yavruyken bulundu ve bulunduğunda durumu çok kötüydü. Tedavileri yapıldı, zamanla kendisi de kalbi de iyileşti. 2 yaşında, erkek ve kısır olan Benek 2 yıldır sıcak bir yuva bekliyor.",
-      "cinsEn": null,
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": "When he was found as a baby, his condition was very bad. He received treatment and recovered.",
-      "karakterEn": [],
-      "aciklamaEn": "Benek was found in very poor condition when he was just a baby. He received treatment and recovered over time. At 2 years old, male, and neutered, Benek has been waiting for a loving home for 2 years.",
-      "fotograflar": [
-        "assets/img/animals/ig-DbKwgvLDL7Y-0.jpg",
-        "assets/img/animals/ig-DbKwgvLDL7Y-1.jpg",
-        "assets/img/animals/ig-DbKwgvLDL7Y-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kedileri",
-        "gonderiId": "DbKwgvLDL7Y",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DbKwgvLDL7Y/",
-        "tarih": "2026-07-24T07:58:38+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-07-24T07:58:38+00:00",
-      "guncelleme": "2026-11-01T14:17:41+00:00",
-      "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
-      "yasGrubu": "yetiskin",
-      "arama": "benek benek henüz yavruyken bulundu ve bulunduğunda durumu çok kötüydü. tedavileri yapıldı, zamanla kendisi de kalbi de iyileşti. 2 yaşında, erkek ve kısır olan benek 2 yıldır sıcak bir yuva bekliyor. henüz yavruyken bulunduğunda durumu çok kötüydü, tedavileri yapıldı ve iyileşti.",
-      "aramaEn": "benek benek was found in very poor condition when he was just a baby. he received treatment and recovered over time. at 2 years old, male, and neutered, benek has been waiting for a loving home for 2 years. when he was found as a baby, his condition was very bad. he received treatment and recovered."
     },
     {
       "id": "kopek-sufle-5ccbad",
@@ -12083,68 +11967,6 @@
       "yasGrubu": "yetiskin",
       "arama": "şanti böyle sert baktığına bakmayın, içinde geveze bir çocuk var. sizinle sürekli konuşur, kendini sevdirmek için sürekli yanınıza gelir. sevmeyince de konuşmaya başlar, sevdirmeye bayılıyor. 2 yaşlarında, kısır erkek. sevecen",
       "aramaEn": "şanti don't be fooled by his stern look, he has a chatty spirit inside. he constantly talks to you and comes up to you to be petted. when you stop petting him, he starts talking again—he simply loves affection. he is an approximately 2-year-old neutered male. affectionate"
-    },
-    {
-      "id": "kopek-polen-c512d4",
-      "tur": "kopek",
-      "isim": "Polen",
-      "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
-      "konum": "Gönüllü geçici yuva",
-      "cins": "Yorkshire Terrier",
-      "yasAy": 78,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": "kucuk",
-      "renk": null,
-      "kisir": null,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": true,
-      "kedilerleUyum": true,
-      "karakter": [
-        "sevecen",
-        "sosyal",
-        "oyuncu"
-      ],
-      "aciklama": "Gönüllü geçici yuvamızdaki Polen, 6,5 yaşında üretimden kurtarılmış bir kız. Müthiş iyi huylu ve uyumlu bir kız. Başka köpeklerle de, kedilerle de sosyal, bir arada yaşayabiliyor. Tuvalet eğitimi henüz yok. Kıpır kıpır çok neşeli, sizinle her yere gelip gidebilecek sosyallikte bir kız. Havlama huyu yok, ev hayatına uyumlu. İnsan aşığı, sevilmeye bayılıyor. Polen’in ömürlük yuvasını arıyoruz.",
-      "cinsEn": "Yorkshire Terrier",
-      "renkEn": null,
-      "konumEn": "Volunteer foster home",
-      "saglikNotuEn": null,
-      "karakterEn": [
-        "affectionate",
-        "social",
-        "playful"
-      ],
-      "aciklamaEn": "Polen, currently in our volunteer foster home, is a 6.5-year-old female rescued from breeding. She is extremely good-natured and adaptable. She is social with both other dogs and cats and can live together with them. She is not house-trained yet. She is lively and very cheerful, social enough to go anywhere with you. She has no barking habit and is well-adapted to home life. She loves humans and adores being petted. We are looking for a forever home for Polen.",
-      "fotograflar": [
-        "assets/img/animals/ig-DZW9WfEDgGp-0.jpg",
-        "assets/img/animals/ig-DZW9WfEDgGp-1.jpg",
-        "assets/img/animals/ig-DZW9WfEDgGp-2.jpg"
-      ],
-      "tahmini": [],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kopekleri",
-        "gonderiId": "DZW9WfEDgGp",
-        "sira": 0,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DZW9WfEDgGp/",
-        "tarih": "2026-06-09T08:38:56+00:00",
-        "geriye": true
-      },
-      "olusturma": "2026-06-09T08:38:56+00:00",
-      "guncelleme": "2026-11-01T14:17:41+00:00",
-      "yasMetni": "6,5 yaşında",
-      "yasMetniEn": "6.5 years old",
-      "yasGrubu": "yetiskin",
-      "arama": "polen yorkshire terrier gönüllü geçici yuva gönüllü geçici yuvamızdaki polen, 6,5 yaşında üretimden kurtarılmış bir kız. müthiş iyi huylu ve uyumlu bir kız. başka köpeklerle de, kedilerle de sosyal, bir arada yaşayabiliyor. tuvalet eğitimi henüz yok. kıpır kıpır çok neşeli, sizinle her yere gelip gidebilecek sosyallikte bir kız. havlama huyu yok, ev hayatına uyumlu. i̇nsan aşığı, sevilmeye bayılıyor. polen’in ömürlük yuvasını arıyoruz. sevecen sosyal oyuncu",
-      "aramaEn": "polen yorkshire terrier volunteer foster home polen, currently in our volunteer foster home, is a 6.5-year-old female rescued from breeding. she is extremely good-natured and adaptable. she is social with both other dogs and cats and can live together with them. she is not house-trained yet. she is lively and very cheerful, social enough to go anywhere with you. she has no barking habit and is well-adapted to home life. she loves humans and adores being petted. we are looking for a forever home for polen. affectionate social playful"
     },
     {
       "id": "kopek-joyce-28e5ba",
