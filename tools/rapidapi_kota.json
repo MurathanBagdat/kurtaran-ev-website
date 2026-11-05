@@ -1,24 +1,12 @@
 {
-  "bizimSayac": 11,
-  "kalan": 389,
-  "kategoriler": {
-    "yuvalanma": 7
-  },
-  "pencereBitis": 1793887674,
+  "bizimSayac": 1,
+  "kalan": 399,
+  "kategoriler": {},
+  "pencereBitis": 1793974073,
   "planLimiti": 400,
   "saglayiciLimiti": false,
-  "sonGuncelleme": "2026-11-04T20:38:39+00:00",
+  "sonGuncelleme": "2026-11-05T20:53:10+00:00",
   "sonSaat": [
-    1793824616,
-    1793824621,
-    1793824645,
-    1793824649,
-    1793824686,
-    1793824691,
-    1793824696,
-    1793824701,
-    1793824706,
-    1793824711,
-    1793824716
+    1793911987
   ]
 }
