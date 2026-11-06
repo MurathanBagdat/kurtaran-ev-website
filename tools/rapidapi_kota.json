@@ -1,12 +1,24 @@
 {
-  "bizimSayac": 1,
-  "kalan": 399,
-  "kategoriler": {},
-  "pencereBitis": 1793974073,
+  "bizimSayac": 11,
+  "kalan": 389,
+  "kategoriler": {
+    "yuvalanma": 7
+  },
+  "pencereBitis": 1794060473,
   "planLimiti": 400,
   "saglayiciLimiti": false,
-  "sonGuncelleme": "2026-11-05T20:53:10+00:00",
+  "sonGuncelleme": "2026-11-06T20:12:11+00:00",
   "sonSaat": [
-    1793911987
+    1793995818,
+    1793995824,
+    1793995870,
+    1793995875,
+    1793995895,
+    1793995900,
+    1793995905,
+    1793995911,
+    1793995917,
+    1793995922,
+    1793995927
   ]
 }
