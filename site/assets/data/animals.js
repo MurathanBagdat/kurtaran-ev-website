@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-11-14T18:55:47+00:00",
+  "guncelleme": "2026-11-15T19:37:23+00:00",
   "sayi": 406,
   "hayvanlar": [
     {
@@ -6397,7 +6397,7 @@ window.KE_DATA = {
       "tur": "kedi",
       "isim": "Prenses",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 3,
@@ -6444,10 +6444,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DdTtjOIDLA1/",
-        "tarih": "2026-09-15T12:28:43+00:00"
+        "tarih": "2026-09-15T12:28:43+00:00",
+        "yuvalanma": {
+          "tarih": "2026-11-15T19:37:20+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-15T12:28:43+00:00",
-      "guncelleme": "2026-11-14T18:55:13+00:00",
+      "guncelleme": "2026-11-15T19:37:20+00:00",
       "yasMetni": "3 aylık",
       "yasMetniEn": "3 months old",
       "yasGrubu": "yavru",
@@ -6983,7 +6987,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "George",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Gönüllü geçici yuva",
       "cins": null,
       "yasAy": 72,
@@ -7034,10 +7038,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DdG-VLRDobE/",
-        "tarih": "2026-09-10T13:45:13+00:00"
+        "tarih": "2026-09-10T13:45:13+00:00",
+        "yuvalanma": {
+          "tarih": "2026-11-15T19:31:08+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-10T13:45:13+00:00",
-      "guncelleme": "2026-11-14T18:55:13+00:00",
+      "guncelleme": "2026-11-15T19:31:08+00:00",
       "yasMetni": "6 yaşında",
       "yasMetniEn": "6 years old",
       "yasGrubu": "yetiskin",
@@ -7113,7 +7121,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Rex",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Gönüllü geçici yuva",
       "cins": "Maltese Terrier",
       "yasAy": 8,
@@ -7163,10 +7171,14 @@ window.KE_DATA = {
         "sira": 0,
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DdGt3kTjhMh/",
-        "tarih": "2026-09-10T11:21:22+00:00"
+        "tarih": "2026-09-10T11:21:22+00:00",
+        "yuvalanma": {
+          "tarih": "2026-11-15T19:31:08+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-09-10T11:21:22+00:00",
-      "guncelleme": "2026-11-14T18:55:13+00:00",
+      "guncelleme": "2026-11-15T19:31:08+00:00",
       "yasMetni": "8 aylık",
       "yasMetniEn": "8 months old",
       "yasGrubu": "yavru",
@@ -13127,7 +13139,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Arlo",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Pointer Melezi",
       "yasAy": 36,
@@ -13178,10 +13190,14 @@ window.KE_DATA = {
         "ayristirici": "ai",
         "baglanti": "https://www.instagram.com/p/DZ9UQMlDnp8/",
         "tarih": "2026-06-24T06:10:12+00:00",
-        "geriye": true
+        "geriye": true,
+        "yuvalanma": {
+          "tarih": "2026-11-15T19:32:03+00:00",
+          "yontem": "instagram-caption"
+        }
       },
       "olusturma": "2026-06-24T06:10:12+00:00",
-      "guncelleme": "2026-11-14T18:55:13+00:00",
+      "guncelleme": "2026-11-15T19:32:03+00:00",
       "yasMetni": "3 yaşında",
       "yasMetniEn": "3 years old",
       "yasGrubu": "yetiskin",
