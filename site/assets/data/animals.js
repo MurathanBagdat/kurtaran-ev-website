@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-11-19T16:25:02+00:00",
+  "guncelleme": "2026-11-19T16:25:42+00:00",
   "sayi": 411,
   "hayvanlar": [
     {
@@ -17894,7 +17894,7 @@ window.KE_DATA = {
       "kisir": true,
       "asili": null,
       "cipli": null,
-      "ozelBakim": true,
+      "ozelBakim": false,
       "saglikNotu": "Sağlığı şu an çok iyi ama atlattığı bir hastalık sebebiyle, bağışıklığının yüksek tutulması gerekiyor.",
       "cocuklaUyum": null,
       "kopeklerleUyum": null,
@@ -17931,12 +17931,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-02-04T13:38:43+00:00",
-      "guncelleme": "2026-11-17T21:58:30+00:00",
+      "guncelleme": "2026-11-19T16:25:41+00:00",
       "yasMetni": "6 aylık",
-      "yasMetniEn": "6 months old",
       "yasGrubu": "yavru",
-      "arama": "rookie rookie 6 aylık, kısır erkek, insanın içini eriten bakışlarıyla müthiş sevimli bir çocuk. büyüyünce küçük-orta ırk arası olacak. çok iyi huylu ve uyumlu bir çocuk. sağlığı şu an çok iyi ama atlattığı bir hastalık sebebiyle, bağışıklığının yüksek tutulması gerekiyor. yavru bakımının zorluklarının farkında, çok uzun süre yalnız kalmayacağı bir yuva arıyoruz. sağlığı şu an çok iyi ama atlattığı bir hastalık sebebiyle, bağışıklığının yüksek tutulması gerekiyor. sevecen sakin",
-      "aramaEn": "rookie rookie is a 6-month-old neutered male dog with heart-melting eyes who is incredibly cute. he will be small-to-medium sized when fully grown. he is a very good-natured and adaptable pup. his health is currently very good, but due to a past illness, his immune system needs to be kept strong. we are looking for a home aware of the responsibilities of puppy care and where he will not be left alone for long periods. his health is currently very good, but due to a past illness, his immunity needs to be kept high. affectionate calm"
+      "arama": "rookie rookie 6 aylık, kısır erkek, insanın içini eriten bakışlarıyla müthiş sevimli bir çocuk. büyüyünce küçük-orta ırk arası olacak. çok iyi huylu ve uyumlu bir çocuk. sağlığı şu an çok iyi ama atlattığı bir hastalık sebebiyle, bağışıklığının yüksek tutulması gerekiyor. yavru bakımının zorluklarının farkında, çok uzun süre yalnız kalmayacağı bir yuva arıyoruz. sağlığı şu an çok iyi ama atlattığı bir hastalık sebebiyle, bağışıklığının yüksek tutulması gerekiyor. sevecen sakin"
     },
     {
       "id": "kedi-gece-474d94",
