@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-23T18:14:03+00:00",
+  "guncelleme": "2026-11-23T18:14:35+00:00",
   "sayi": 417,
   "hayvanlar": [
     {
@@ -24953,7 +24953,7 @@
       "tur": "kopek",
       "isim": "Pan",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Australian Collie",
       "yasAy": 10,
@@ -25004,12 +25004,10 @@
         "geriye": true
       },
       "olusturma": "2025-03-17T13:07:50+00:00",
-      "guncelleme": "2026-11-22T20:32:09+00:00",
+      "guncelleme": "2026-11-23T18:14:34+00:00",
       "yasMetni": "10 aylık",
-      "yasMetniEn": "10 months old",
       "yasGrubu": "yavru",
-      "arama": "pan australian collie pan daha çok genç olduğu ve toplu alanda büyüdüğü için şehir ve başka insanlar onun için çok yeni şeyler, ama sevgi gördüğü an rahatlamaya, yüzü gülmeye başlıyor. henüz 10-11 aylık, dişi, kısır, başka her köpekle çok sosyal, yumuşacık huylu bir kız. önünde upuzun bir hayat var ve harika bir aileyi hak ediyor. sosyal sevecen",
-      "aramaEn": "pan australian collie since pan is still very young and grew up in a group shelter environment, the city and new people are very new to her, but the moment she receives love, she relaxes and brightens up. she is only 10-11 months old, female, spayed, very social with all other dogs, and has a sweet, gentle temperament. she has a long life ahead of her and deserves a wonderful family. social affectionate"
+      "arama": "pan australian collie pan daha çok genç olduğu ve toplu alanda büyüdüğü için şehir ve başka insanlar onun için çok yeni şeyler, ama sevgi gördüğü an rahatlamaya, yüzü gülmeye başlıyor. henüz 10-11 aylık, dişi, kısır, başka her köpekle çok sosyal, yumuşacık huylu bir kız. önünde upuzun bir hayat var ve harika bir aileyi hak ediyor. sosyal sevecen"
     },
     {
       "id": "kedi-karabiber-ff45c9",
