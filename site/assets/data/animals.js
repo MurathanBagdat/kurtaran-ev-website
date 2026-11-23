@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-11-23T17:55:45+00:00",
+  "guncelleme": "2026-11-23T17:58:11+00:00",
   "sayi": 419,
   "hayvanlar": [
     {
@@ -5214,7 +5214,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Zorro",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": null,
       "yasAy": 2,
@@ -5262,12 +5262,10 @@ window.KE_DATA = {
         "tarih": "2026-10-09T16:58:58+00:00"
       },
       "olusturma": "2026-10-09T16:58:58+00:00",
-      "guncelleme": "2026-11-22T20:32:09+00:00",
+      "guncelleme": "2026-11-23T17:58:09+00:00",
       "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
       "yasGrubu": "yavru",
-      "arama": "zorro zorro'nun yeni yuvasını arıyoruz. 2 aylık beş kardeşten yalnızca biri. büyüyünce orta-büyük ırk arası olacağını tahmin ediyoruz. erkek, tatlı mı tatlı ve henüz hayatın çok başında; ev ve şehir hayatına dair her şeyi öğrenmesi, büyürken sabırla ve sevgiyle desteklenmesi gerekecek. yavru bakımının sorumluluklarının farkında olan, onunla vakit geçirebilecek ve uzun saatler yalnız kalmayacağı bir yuva arıyoruz. zamanı geldiğinde kısırlaştırma şartıyla sahiplendirilecek. kedisiz ve küçük çocuksuz yuvalara öncelik verilecektir. sevecen",
-      "aramaEn": "zorro we are looking for a new home for zorro. he is just one of five 2-month-old siblings. we estimate he will grow into a medium-to-large breed. he is a boy, super sweet, and right at the beginning of his life; he will need to learn everything about home and city life, supported with patience and love as he grows. we are looking for a home that understands the responsibilities of caring for a puppy, can spend time with him, and won't leave him alone for long hours. he will be adopted on the condition of neutering when the time comes. homes without cats and young children will be prioritized. affectionate"
+      "arama": "zorro zorro'nun yeni yuvasını arıyoruz. 2 aylık beş kardeşten yalnızca biri. büyüyünce orta-büyük ırk arası olacağını tahmin ediyoruz. erkek, tatlı mı tatlı ve henüz hayatın çok başında; ev ve şehir hayatına dair her şeyi öğrenmesi, büyürken sabırla ve sevgiyle desteklenmesi gerekecek. yavru bakımının sorumluluklarının farkında olan, onunla vakit geçirebilecek ve uzun saatler yalnız kalmayacağı bir yuva arıyoruz. zamanı geldiğinde kısırlaştırma şartıyla sahiplendirilecek. kedisiz ve küçük çocuksuz yuvalara öncelik verilecektir. sevecen"
     },
     {
       "id": "kopek-findik-c9c378",
