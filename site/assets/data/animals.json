@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-23T18:16:55+00:00",
+  "guncelleme": "2026-11-23T18:17:22+00:00",
   "sayi": 412,
   "hayvanlar": [
     {
@@ -23868,7 +23868,7 @@
       "tur": "kopek",
       "isim": "Bugs",
       "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": "Gönüllü geçici yuva",
       "cins": "Melez",
       "yasAy": 12,
@@ -23906,8 +23906,8 @@
         "assets/img/animals/ig-DJdklZSMvI2-2.jpg"
       ],
       "tahmini": [
-        "yasAy",
-        "cins"
+        "cins",
+        "yasAy"
       ],
       "ornek": false,
       "kaynak": {
@@ -23921,12 +23921,10 @@
         "geriye": true
       },
       "olusturma": "2025-05-10T05:54:54+00:00",
-      "guncelleme": "2026-11-22T20:32:09+00:00",
+      "guncelleme": "2026-11-23T18:17:21+00:00",
       "yasMetni": "1 yaşında",
-      "yasMetniEn": "1 year old",
       "yasGrubu": "yetiskin",
-      "arama": "bugs melez gönüllü geçici yuva gönüllü geçici yuvamızdaki bugs’ın yeni yuvasını arıyoruz. bugs 1 yaşlarında, dişi, kısır ve 6.5 kilo çok oyuncu bir bebek. tuvalet eğitimi ped destekli yeni yeni oturuyor. başlarda çekingen davranabilen bugs insanlara alıştıkça açılıyor, kucakta yatma ve göbek sevdirme hobilerini gözler önüne seriyor. bugs çözdüğü kompleks oyuncaklardan sonra aksatmadan yaptığı gururlu oturuşuyla evinizin neşe kaynağı olmaya aday! bugs kedilerle sorunsuzca yaşayabilir, biraz zaman verilirse kendinden büyük olmayan bir köpekle aynı evde yaşayabilir. genç bir köpek olduğu için, uzun saatler yalnız kalmayacağı, enerji atma ihtiyacının karşılanabileceği, ömür boyu yüzünden bu kendinden memnun gülümsemeyi silmeyecek kalıcı yuvasını arıyoruz. oyuncu çekingen sevecen",
-      "aramaEn": "bugs mixed breed volunteer foster home we are looking for a forever home for bugs, who is currently in our volunteer foster home. bugs is around 1 year old, female, spayed, and weighs 6.5 kg. she is a very playful pup. her toilet training is gradually settling with pad support. bugs, who can be shy at first, warms up as she gets used to people, revealing her favorite hobbies of cuddling in laps and getting belly rubs. bugs can comfortably live with cats, and with a bit of time, she can live in the same house with a dog that is not larger than her. since she is a young dog, we are looking for a forever home where she won't be left alone for long hours, where her energy needs can be met, and where her self-satisfied smile will never leave her face. playful shy affectionate"
+      "arama": "bugs melez gönüllü geçici yuva gönüllü geçici yuvamızdaki bugs’ın yeni yuvasını arıyoruz. bugs 1 yaşlarında, dişi, kısır ve 6.5 kilo çok oyuncu bir bebek. tuvalet eğitimi ped destekli yeni yeni oturuyor. başlarda çekingen davranabilen bugs insanlara alıştıkça açılıyor, kucakta yatma ve göbek sevdirme hobilerini gözler önüne seriyor. bugs çözdüğü kompleks oyuncaklardan sonra aksatmadan yaptığı gururlu oturuşuyla evinizin neşe kaynağı olmaya aday! bugs kedilerle sorunsuzca yaşayabilir, biraz zaman verilirse kendinden büyük olmayan bir köpekle aynı evde yaşayabilir. genç bir köpek olduğu için, uzun saatler yalnız kalmayacağı, enerji atma ihtiyacının karşılanabileceği, ömür boyu yüzünden bu kendinden memnun gülümsemeyi silmeyecek kalıcı yuvasını arıyoruz. oyuncu çekingen sevecen"
     },
     {
       "id": "kopek-boy-094245",
