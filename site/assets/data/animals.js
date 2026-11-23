@@ -1,7 +1,7 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-11-23T17:58:11+00:00",
+  "guncelleme": "2026-11-23T18:02:14+00:00",
   "sayi": 419,
   "hayvanlar": [
     {
@@ -14724,7 +14724,7 @@ window.KE_DATA = {
       "tur": "kopek",
       "isim": "Brownie",
       "cinsiyet": "erkek",
-      "durum": "yuva-ariyor",
+      "durum": "yuvalandi",
       "konum": null,
       "cins": "Terrier",
       "yasAy": 24,
@@ -14772,12 +14772,10 @@ window.KE_DATA = {
         "geriye": true
       },
       "olusturma": "2026-06-11T07:08:16+00:00",
-      "guncelleme": "2026-11-22T20:32:09+00:00",
+      "guncelleme": "2026-11-23T18:02:12+00:00",
       "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
       "yasGrubu": "yetiskin",
-      "arama": "brownie terrier brownie, 2 yaşlarında kısır erkek, sevgi dolu, orta enerjili bir çocuk. başka köpeklerle sosyal. sevecen",
-      "aramaEn": "brownie terrier brownie is a loving, medium-energy neutered male around 2 years old. he is social with other dogs. affectionate"
+      "arama": "brownie terrier brownie, 2 yaşlarında kısır erkek, sevgi dolu, orta enerjili bir çocuk. başka köpeklerle sosyal. sevecen"
     },
     {
       "id": "kedi-santi-a235d6",
