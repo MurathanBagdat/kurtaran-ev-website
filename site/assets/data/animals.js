@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-11-23T18:17:22+00:00",
-  "sayi": 412,
+  "guncelleme": "2026-11-23T18:18:13+00:00",
+  "sayi": 411,
   "hayvanlar": [
     {
       "id": "kopek-poti-0bb674",
@@ -25137,62 +25137,6 @@ window.KE_DATA = {
       "yasGrubu": null,
       "arama": "köfte sokak kedisi genç olduğunu tahmin ettiğimiz köfte tam bir pofuduk. dişi, kısır, sevecen ve sevilmeyi seven bu güzel kızımız yeni ailesini arıyor. sevecen",
       "aramaEn": "köfte domestic longhair köfte, who we estimate to be young, is a truly fluffy cat. this beautiful, spayed female is affectionate and loves being petted, and she is looking for her forever family. affectionate"
-    },
-    {
-      "id": "kopek-elsa-3dbb05",
-      "tur": "kopek",
-      "isim": "Elsa",
-      "cinsiyet": "disi",
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": "Samoyed",
-      "yasAy": 24,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": null,
-      "renk": null,
-      "kisir": true,
-      "asili": true,
-      "cipli": null,
-      "ozelBakim": false,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Zor durumdan kurtarılan Elsa'nın tedavisi tamamlandı, aşıları yapıldı ve kısırlaştırıldı. Tahmini 2 yaşında olan Elsa yeni yuvasını arıyor.",
-      "cinsEn": "Samoyed",
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [],
-      "aciklamaEn": "Rescued from a difficult situation, Elsa's treatment is complete, her vaccinations are up to date, and she has been spayed. Estimated to be around 2 years old, Elsa is looking for her forever home.",
-      "fotograflar": [
-        "assets/img/animals/ig-DGabvH0sLOi-0.jpg",
-        "assets/img/animals/ig-DGabvH0sLOi-1.jpg",
-        "assets/img/animals/ig-DGabvH0sLOi-2.jpg"
-      ],
-      "tahmini": [
-        "yasAy"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kopekleri",
-        "gonderiId": "DGabvH0sLOi",
-        "sira": 1,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DGabvH0sLOi/",
-        "tarih": "2025-02-23T11:05:41+00:00",
-        "geriye": true
-      },
-      "olusturma": "2025-02-23T11:05:41+00:00",
-      "guncelleme": "2026-11-22T20:32:09+00:00",
-      "yasMetni": "2 yaşında",
-      "yasMetniEn": "2 years old",
-      "yasGrubu": "yetiskin",
-      "arama": "elsa samoyed zor durumdan kurtarılan elsa'nın tedavisi tamamlandı, aşıları yapıldı ve kısırlaştırıldı. tahmini 2 yaşında olan elsa yeni yuvasını arıyor.",
-      "aramaEn": "elsa samoyed rescued from a difficult situation, elsa's treatment is complete, her vaccinations are up to date, and she has been spayed. estimated to be around 2 years old, elsa is looking for her forever home."
     },
     {
       "id": "kopek-alissa-10665e",
