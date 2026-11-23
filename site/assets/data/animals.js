@@ -1,8 +1,8 @@
 /* Otomatik üretildi — bu dosyayı elle düzenlemeyin.
    Kaynak: assets/data/animals.json · Üreten: tools/animals.py */
 window.KE_DATA = {
-  "guncelleme": "2026-11-23T18:13:54+00:00",
-  "sayi": 418,
+  "guncelleme": "2026-11-23T18:14:03+00:00",
+  "sayi": 417,
   "hayvanlar": [
     {
       "id": "kopek-poti-0bb674",
@@ -23675,63 +23675,6 @@ window.KE_DATA = {
       "yasGrubu": "yavru",
       "arama": "yedi cüceler 3 melez bu 7 kardeşe kendileri kadar güzel yeni yuvalarını arıyoruz. 2 aylık civarılar, anneleri orta-büyük ırk olduğu için orta ırk olacaklarını tahmin ediyoruz. yavru bakımının zorluklarının farkında olan, zamanı gelince kısırlaştırma şartımızı kabul edecek yeni yuvalarını arıyoruz.",
       "aramaEn": "yedi cüceler 3 mixed breed we are looking for forever homes as beautiful as themselves for these 7 siblings. they are around 2 months old, and we predict they will be medium-sized since their mother is a medium-to-large breed. we are seeking new homes aware of the challenges of puppy care and willing to accept our spay/neuter condition when the time comes."
-    },
-    {
-      "id": "kopek-yedi-cuceler-4-166c8c",
-      "tur": "kopek",
-      "isim": "Yedi Cüceler 4",
-      "cinsiyet": null,
-      "durum": "yuva-ariyor",
-      "konum": null,
-      "cins": "Melez",
-      "yasAy": 2,
-      "kiloKg": null,
-      "kiloKgMax": null,
-      "boyut": "orta",
-      "renk": null,
-      "kisir": false,
-      "asili": null,
-      "cipli": null,
-      "ozelBakim": null,
-      "saglikNotu": null,
-      "cocuklaUyum": null,
-      "kopeklerleUyum": null,
-      "kedilerleUyum": null,
-      "karakter": [],
-      "aciklama": "Bu 7 kardeşe kendileri kadar güzel yeni yuvalarını arıyoruz. 2 aylık civarılar, anneleri orta-büyük ırk olduğu için orta ırk olacaklarını tahmin ediyoruz. Yavru bakımının zorluklarının farkında olan, zamanı gelince kısırlaştırma şartımızı kabul edecek yeni yuvalarını arıyoruz.",
-      "cinsEn": "Mixed breed",
-      "renkEn": null,
-      "konumEn": null,
-      "saglikNotuEn": null,
-      "karakterEn": [],
-      "aciklamaEn": "We are looking for forever homes as beautiful as themselves for these 7 siblings. They are around 2 months old, and we predict they will be medium-sized since their mother is a medium-to-large breed. We are seeking new homes aware of the challenges of puppy care and willing to accept our spay/neuter condition when the time comes.",
-      "fotograflar": [
-        "assets/img/animals/ig-DJ1oYlusHnR-0.jpg",
-        "assets/img/animals/ig-DJ1oYlusHnR-1.jpg",
-        "assets/img/animals/ig-DJ1oYlusHnR-2.jpg"
-      ],
-      "tahmini": [
-        "yasAy",
-        "cins"
-      ],
-      "ornek": false,
-      "kaynak": {
-        "tip": "instagram",
-        "hesap": "kurtaranev_kopekleri",
-        "gonderiId": "DJ1oYlusHnR",
-        "sira": 3,
-        "ayristirici": "ai",
-        "baglanti": "https://www.instagram.com/p/DJ1oYlusHnR/",
-        "tarih": "2025-05-19T14:09:52+00:00",
-        "geriye": true
-      },
-      "olusturma": "2025-05-19T14:09:52+00:00",
-      "guncelleme": "2026-11-22T20:32:09+00:00",
-      "yasMetni": "2 aylık",
-      "yasMetniEn": "2 months old",
-      "yasGrubu": "yavru",
-      "arama": "yedi cüceler 4 melez bu 7 kardeşe kendileri kadar güzel yeni yuvalarını arıyoruz. 2 aylık civarılar, anneleri orta-büyük ırk olduğu için orta ırk olacaklarını tahmin ediyoruz. yavru bakımının zorluklarının farkında olan, zamanı gelince kısırlaştırma şartımızı kabul edecek yeni yuvalarını arıyoruz.",
-      "aramaEn": "yedi cüceler 4 mixed breed we are looking for forever homes as beautiful as themselves for these 7 siblings. they are around 2 months old, and we predict they will be medium-sized since their mother is a medium-to-large breed. we are seeking new homes aware of the challenges of puppy care and willing to accept our spay/neuter condition when the time comes."
     },
     {
       "id": "kopek-yedi-cuceler-5-e2f97c",
